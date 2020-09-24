@@ -1,0 +1,170 @@
+Partition 311C1E36-AC64-11E0-B4F5-9F034A4DF9AD
+InterfaceDescriptorData 9EFAA159-EADA-410E-80B8-43ECD7659A3F
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member(0)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 191049462
+                AccessType FieldAccessType_Source
+            member(1)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -1312383531
+                AccessType FieldAccessType_Source
+            member(2)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 1188203099
+                AccessType FieldAccessType_Target
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ModelAnimationEntityData 71FEDA85-B86B-4D73-B76A-EC3DD369CA10
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 1
+    Realm Realm_ClientAndServer
+    AutoStart False
+    Looping True
+    ResetAfterStop False
+    PlayFirstFrame True
+    DefaultAnimation WireLight_01_Anim
+    AnimationIndex 0
+    AnimationSet Animations/Characters/SP/SP_Sniper/WireLights/WireLight_AnimSet/191FA3E7-1322-FA8F-598A-9B4E17461203
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName AITrajectory
+    RootMeshBoneName AITrajectory
+    EnableJointWorldTransformOutput True
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds::array
+        member(0) -1031074154
+        member(1) 2015841709
+        member(2) 2015841710
+        member(3) -381747463
+        member(4) 2015841711
+        member(5) 2015841704
+        member(6) -381747462
+        member(7) 2015841705
+RandomDelayEntityData D5AB3598-0E67-43DE-A45D-D380A671CE89
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    MinDelay 3.0
+    MaxDelay 5.0
+    Realm Realm_ClientAndServer
+    AutoStart True
+    RunOnce True
+ReferenceObjectData 05A650ED-A4FF-4744-856A-ABE4B1D9601F
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Animations/Characters/SP/SP_Sniper/WireLights/WireLights_Model/68E11E9D-EE8D-3788-7BC7-FA0E918B0968
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 93A5DAEC-E90A-9F18-9E3B-2A9ADEC8776A #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Sniper/Prefabs/Props/WireWithLights_01
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 71FEDA85-B86B-4D73-B76A-EC3DD369CA10
+                            Target 9EFAA159-EADA-410E-80B8-43ECD7659A3F
+                            SourceFieldId -381747462
+                            TargetFieldId 191049462
+                        member(1)::PropertyConnection
+                            Source 71FEDA85-B86B-4D73-B76A-EC3DD369CA10
+                            Target 9EFAA159-EADA-410E-80B8-43ECD7659A3F
+                            SourceFieldId -381747463
+                            TargetFieldId -1312383531
+                        member(2)::PropertyConnection
+                            Source 9EFAA159-EADA-410E-80B8-43ECD7659A3F
+                            Target 71FEDA85-B86B-4D73-B76A-EC3DD369CA10
+                            SourceFieldId 1188203099
+                            TargetFieldId 1188203099
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source 71FEDA85-B86B-4D73-B76A-EC3DD369CA10
+                            Target 05A650ED-A4FF-4744-856A-ABE4B1D9601F
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source D5AB3598-0E67-43DE-A45D-D380A671CE89
+                        Target 71FEDA85-B86B-4D73-B76A-EC3DD369CA10
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 9EFAA159-EADA-410E-80B8-43ECD7659A3F
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 05A650ED-A4FF-4744-856A-ABE4B1D9601F
+            member(1) 71FEDA85-B86B-4D73-B76A-EC3DD369CA10
+            member(2) D5AB3598-0E67-43DE-A45D-D380A671CE89

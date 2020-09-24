@@ -1,0 +1,91 @@
+Partition 00710B6F-39E3-11E0-B59D-F43575416749
+PresenceServerBrowserServiceData A2246C83-086A-FCE3-8660-7DCAB9E9CC69 #primary instance
+    $::PresenceServiceData
+        $::Asset
+            $::DataContainer
+            Name Persistence/OnlineServices/ServerBrowserService
+    FilterCriterias::MatchmakingCriteria
+        SizeRule::MatchmakingSizeRule
+            Setting mode
+            Configurations *nullArray*
+        PingSiteRule::MatchmakingPingSiteRule
+            MinFitThreshold *nullString*
+        RankedRule::MatchmakingRankedRule
+            MinFitThreshold requireExactMatch
+        GenericRules::array
+            member(0)::MatchmakingGenericRule
+                Rule levelRule
+                MinFitThresHold requireExactMatch
+                Setting level
+                DesiredValues *nullArray*
+                IgnoreIfDefault True
+                MergeValues False
+                SortValues False
+            member(1)::MatchmakingGenericRule
+                Rule gameModeRule
+                MinFitThresHold requireExactMatch
+                Setting mode
+                DesiredValues *nullArray*
+                IgnoreIfDefault True
+                MergeValues False
+                SortValues False
+            member(2)::MatchmakingGenericRule
+                Rule modRule
+                MinFitThresHold requireExactMatch
+                Setting mod
+                DesiredValues *nullArray*
+                IgnoreIfDefault True
+                MergeValues False
+                SortValues False
+            member(3)::MatchmakingGenericRule
+                Rule presetRule
+                MinFitThresHold requireExactMatch
+                Setting preset
+                DesiredValues *nullArray*
+                IgnoreIfDefault True
+                MergeValues False
+                SortValues False
+            member(4)::MatchmakingGenericRule
+                Rule rspPingSiteRule
+                MinFitThresHold requireExactMatch
+                Setting pingsite
+                DesiredValues *nullArray*
+                IgnoreIfDefault True
+                MergeValues False
+                SortValues False
+            member(5)::MatchmakingGenericRule
+                Rule matchStateRule
+                MinFitThresHold requireExactMatch
+                Setting *nullString*
+                DesiredValues::array
+                    member(0)::MatchmakingRuleString
+                        Value inactive
+                        Platform MatchmakingPlatform_Any
+                        Licenses *nullArray*
+                        UseOnlyIfEmpty False
+                IgnoreIfDefault False
+                MergeValues False
+                SortValues False
+            member(6)::MatchmakingGenericRule
+                Rule premiumRule
+                MinFitThresHold requireExactMatch
+                Setting premium
+                DesiredValues::array
+                    member(0)::MatchmakingRuleString
+                        Value true
+                        Platform MatchmakingPlatform_Any
+                        Licenses *nullArray*
+                        UseOnlyIfEmpty False
+                    member(1)::MatchmakingRuleString
+                        Value false
+                        Platform MatchmakingPlatform_Any
+                        Licenses *nullArray*
+                        UseOnlyIfEmpty False
+                IgnoreIfDefault False
+                MergeValues False
+                SortValues False
+        VirtualizedRule::MatchmakingVirtualizedRule
+            MinFitThreshold requireExactMatch
+            VirtualizationMode MatchmakingVirtualizationMode_Any
+        UEDRules *nullArray*
+    ListCapacity 1000

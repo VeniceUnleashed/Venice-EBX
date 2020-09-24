@@ -1,0 +1,140 @@
+Partition EA8D3923-D25A-11E0-ADF9-83A8E768AD70
+InterfaceDescriptorData DFF80C08-C09E-46C6-A6C2-5760E98F5173
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member(0)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -2132289043
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id 2084504595
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id 712501883
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ModelAnimationEntityData 97074F2B-61AA-47FD-83EC-F9955317B2A9
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 1
+    Realm Realm_Client
+    AutoStart False
+    Looping False
+    ResetAfterStop True
+    PlayFirstFrame False
+    DefaultAnimation RadioTower01RuinTerrain2_anim
+    AnimationIndex 2
+    AnimationSet Animations/Characters/MP/Buildings/RadioTower01Ruin/RadioTower01Ruin_AnimSet/7A4FD994-D1A3-6B47-7EAB-B587E6962714
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling True
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName Connect
+    RootMeshBoneName Base
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+ReferenceObjectData 16996A4A-7CDF-42EB-AA11-FEC92866A27B
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 0
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Animations/Characters/MP/Buildings/RadioTower01Ruin/RadioTower01Ruin_Model/C6AE7B48-D912-DD42-A104-48CB84B94483
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 2F4EA349-F859-E9E4-3FBC-1CCF1148AA3C #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/Characters/MP/Buildings/RadioTower01Ruin/RadioTower01Ruin_Model_Terrain2_Prefab
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source DFF80C08-C09E-46C6-A6C2-5760E98F5173
+                            Target 97074F2B-61AA-47FD-83EC-F9955317B2A9
+                            SourceFieldId -2132289043
+                            TargetFieldId -2132289043
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source 97074F2B-61AA-47FD-83EC-F9955317B2A9
+                            Target 16996A4A-7CDF-42EB-AA11-FEC92866A27B
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source DFF80C08-C09E-46C6-A6C2-5760E98F5173
+                        Target 97074F2B-61AA-47FD-83EC-F9955317B2A9
+                        SourceEvent::EventSpec
+                            Id 2084504595
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source 97074F2B-61AA-47FD-83EC-F9955317B2A9
+                        Target DFF80C08-C09E-46C6-A6C2-5760E98F5173
+                        SourceEvent::EventSpec
+                            Id -1176973715
+                        TargetEvent::EventSpec
+                            Id 712501883
+                        TargetType EventConnectionTargetType_Client
+                Descriptor DFF80C08-C09E-46C6-A6C2-5760E98F5173
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 16996A4A-7CDF-42EB-AA11-FEC92866A27B
+            member(1) 97074F2B-61AA-47FD-83EC-F9955317B2A9

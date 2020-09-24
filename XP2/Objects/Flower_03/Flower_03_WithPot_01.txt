@@ -1,0 +1,104 @@
+Partition E69DF387-CE77-47B2-919E-82A6F47F0B98
+InterfaceDescriptorData C5BC4171-3410-443A-956D-BD358D12388F
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -274579609
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 913DFF8B-9ECA-4381-A9C5-745F3605838E
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 0.800000011921
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 0.800000011921
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 0.800000011921
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint XP2/Objects/FlowerPot_02/FlowerPot_02/DBE17D07-7F3F-42A4-AD6C-3C356436DFF4
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 34FF6D4A-74D4-4A9A-BEE1-8087E681D265
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.437796533108
+            z 0.0
+    Blueprint XP2/Objects/Flower_03/Flower_03/53B88FA6-E50D-4F1A-8A67-2A8ECE885713
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint EB929DC6-3276-4D29-BDDD-588D16C95645 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP2/Objects/Flower_03/Flower_03_WithPot_01
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source C5BC4171-3410-443A-956D-BD358D12388F
+                        Target 913DFF8B-9ECA-4381-A9C5-745F3605838E
+                        SourceEvent::EventSpec
+                            Id -274579609
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                    member(1)::EventConnection
+                        Source 913DFF8B-9ECA-4381-A9C5-745F3605838E
+                        Target 34FF6D4A-74D4-4A9A-BEE1-8087E681D265
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                Descriptor C5BC4171-3410-443A-956D-BD358D12388F
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 913DFF8B-9ECA-4381-A9C5-745F3605838E
+            member(1) 34FF6D4A-74D4-4A9A-BEE1-8087E681D265

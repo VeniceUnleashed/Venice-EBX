@@ -1,0 +1,287 @@
+Partition 168F529B-17F6-11E0-8CD8-85483A75A7C5
+HavokAsset 99578AFB-A37E-4AB7-8CB1-DC37B10D045E
+    $::Asset
+        $::DataContainer
+        Name Weapons/SMAW/SMAW_HE_Projectile_Physics_0_Win32
+    Scale 1.0
+    ExternalAssets *nullArray*
+MissileEntityData 168F529C-17F6-11E0-8CD8-85483A75A7C5
+    $::MeshProjectileEntityData
+        $::ProjectileEntityData
+            $::GamePhysicsEntityData
+                $::GameEntityData
+                    $::SpatialEntityData
+                        $::EntityData
+                            $::GameObjectData
+                                $::GameDataContainer
+                                    $::DataContainer
+                                IsEventConnectionTarget 2
+                                IsPropertyConnectionTarget 2
+                                IndexInBlueprint 0
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.0
+                                z 0.0
+                    Enabled False
+                    Components *nullArray*
+                    RuntimeComponentCount 0
+                PhysicsData 5FA451B7-574E-BE6B-1F27-C612C898400A
+            InitialSpeed 350.0
+            TimeToLive 10.0
+            MaxCount 0
+            InitMeshHideTime 0.0
+            VisualConvergeDistance 20.0
+            DetonateOnTimeout False
+            ServerProjectileDisabled False
+            Explosion F88F469B-E075-4770-AC03-42D9320CF000
+            SuppressionData 09218EFC-884A-428D-A4BF-D3C718685134
+            AmmunitionType 85mm
+            MaterialPair Materials/MaterialContainer/58CCCF46-EAFE-478E-98EB-7898DD469680
+            HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+            SuppressOwnerVehicleDamage False
+        Mesh weapons/smaw/smaw_he_projectile_Mesh/AA04EEE8-57FF-CE46-11BC-FDE8AD3B20A7
+        TrailEffect FX/Weapons/Trails/FX_Trail_ThinSmoke/D286A60D-9FBB-4CBE-C4CB-07AC1E0BD50C
+        IsAttachable False
+        MaxAttachableInclination 45.0
+        ExtraDamping False
+        InitialAngularVelocity::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    EngineEffect FX/Weapons/TrailEngine/FX_TrailEngine_SmallMissile/14C31BE9-1AA0-4986-A5CF-063CB45FDA2A
+    DudExplosion 12E3D0E8-C262-4CFD-9C33-C80C6412B80B
+    FlyBySound *nullGuid*
+    EngineStrength 10.0
+    MaxSpeed 100.0
+    EngineTimeToIgnition 0.0
+    EngineTimeToLive 40.0
+    TimeToActivateGuidingSystem 0.0
+    TimeToArm 0.5
+    MaxTurnAngle 90.0
+    Drag 0.0
+    Gravity -1.5
+    ApplyGravityWhenGuided True
+    FlyBySoundRadius 5.0
+    FlyBySoundSpeed 10.0
+    ImpactImpulse 5000.0
+    Damage 225.0
+    DefaultTeam TeamNeutral
+    WarnTarget wtWarnNone
+    WarnOnPointingMissile False
+    LockingController *nullGuid*
+    LockableInfo::MissileLockableInfoData
+        HeatSignature 0.0
+        RadarSignature 0.0
+    UnguidedData::MissileUnguidedData
+        UseStaticPosition False
+        StaticPosition::Vec2
+            x 0.0
+            y 0.0
+        UseTargetPosition False
+        TargetPositionOffset::Vec2
+            x 0.0
+            y 0.0
+    NearTargetDetonation::NearTargetDetonationData
+        DetonateNearTarget False
+        DetonationRadius 10.0
+        MaxDetonationDelay 3.0
+        MinDetonationDelay 0.0
+PhysicsEntityData 5FA451B7-574E-BE6B-1F27-C612C898400A
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 65535
+    Asset *nullGuid*
+    ScaledAssets::array
+        member(0) 99578AFB-A37E-4AB7-8CB1-DC37B10D045E
+    RigidBodies::array
+        member(0) 2E1F397C-8D17-0E18-A50E-33B772D53A6C
+    EncapsulatePartsInLists False
+    FloatPhysics *nullGuid*
+    Mass 1000010.0
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    Friction 1000010.0
+    Restitution 1000010.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    Proximity *nullGuid*
+    Constraints *nullArray*
+    MovableParts False
+ProjectileBlueprint 90BAEBC0-C9E6-CB0B-7531-110499218677 #primary instance
+    $::ObjectBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Weapons/SMAW/SMAW_HE_Projectile
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections *nullArray*
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Object 168F529C-17F6-11E0-8CD8-85483A75A7C5
+RigidBodyData 2E1F397C-8D17-0E18-A50E-33B772D53A6C
+    $::DataContainer
+    RigidBodyType RBTypeCollision
+    Mass 1.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Dynamic
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+VeniceExplosionEntityData F88F469B-E075-4770-AC03-42D9320CF000
+    $::ExplosionEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 3
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint 65535
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        DetonationEffect FX/Weapons/Grenades/Frag/FX_Grenade_Frag_01/FAFA506C-816A-4339-B108-3E957F48AE2D
+        UseEntityTransformForDetonationEffect False
+        MaskVolume *nullGuid*
+        DestructionMaskVolume *nullGuid*
+        MaterialPair Materials/MaterialContainer/C0A9D7EF-277A-4E21-82BD-145F86FB508D
+        DamageIndicationType DamageIndicationType_GiverPlayer
+        EmpTime 0.0
+        MaxOcclusionRaycastRadius 0.25
+        InnerBlastRadius 0.34999999404
+        BlastDamage 112.0
+        BlastRadius 4.0
+        BlastImpulse 2000.0
+        HasStunEffect False
+        ShockwaveDamage 1.0
+        ShockwaveRadius 10.0
+        ShockwaveImpulse 500.0
+        ShockwaveTime 0.25
+        DisableOcclusion False
+        DisableStaticEntityOcclusion True
+        CameraShockwaveRadius 0.0
+        SpawnDelay 0.0
+        TriggerImpairedHearing True
+        DetonateOnce True
+        ShowOnMinimap False
+    IsCausingSuppression True
+    UnspotsOnExplode False
+    SpotsOnExplode False
+    UnspottableTime 1.0
+VeniceExplosionEntityData 12E3D0E8-C262-4CFD-9C33-C80C6412B80B
+    $::ExplosionEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 3
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint 65535
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        DetonationEffect FX/Weapons/Grenades/Frag/FX_Grenade_Frag_01/FAFA506C-816A-4339-B108-3E957F48AE2D
+        UseEntityTransformForDetonationEffect False
+        MaskVolume *nullGuid*
+        DestructionMaskVolume *nullGuid*
+        MaterialPair Materials/MaterialContainer/BF2E75A9-3D17-42F7-8384-4713DA4E431B
+        DamageIndicationType DamageIndicationType_GiverPlayer
+        EmpTime 0.0
+        MaxOcclusionRaycastRadius 0.25
+        InnerBlastRadius 2.09999990463
+        BlastDamage 56.0
+        BlastRadius 4.0
+        BlastImpulse 500.0
+        HasStunEffect False
+        ShockwaveDamage 1.0
+        ShockwaveRadius 7.0
+        ShockwaveImpulse 100.0
+        ShockwaveTime 0.25
+        DisableOcclusion False
+        DisableStaticEntityOcclusion True
+        CameraShockwaveRadius 0.0
+        SpawnDelay 0.0
+        TriggerImpairedHearing True
+        DetonateOnce True
+        ShowOnMinimap False
+    IsCausingSuppression True
+    UnspotsOnExplode False
+    SpotsOnExplode False
+    UnspottableTime 1.0
+WeaponSuppressionData 09218EFC-884A-428D-A4BF-D3C718685134
+    $::DataContainer
+    MaxMultiplier 50.0
+    MinMultiplier 50.0
+    MinDistance 3.0
+    MaxDistance 500.0

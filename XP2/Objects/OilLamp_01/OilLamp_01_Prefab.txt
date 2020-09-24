@@ -1,0 +1,96 @@
+Partition 1CE1B8CF-BF04-4D62-98A2-366C47E400B0
+InterfaceDescriptorData 3E5B5BF3-22FF-409C-A944-F503F2F2933D
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id -1452333337
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 7F08B784-A84D-4D5A-B597-ED8B3BDF46C8
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.5
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y -0.821216106415
+            z 0.0
+    Blueprint XP2/Objects/PalaceLanternMedium_01/PalaceLantern_Medium_Line/DEBD9917-D3DA-A58E-2C26-C34A3910141B
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 8459F7FA-0CB6-460E-ACF4-CD9AB01560FD
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y -0.821216106415
+            z 0.0
+    Blueprint XP2/Objects/OilLamp_01/OilLamp_01/FC0ECF64-87A2-3991-94BC-047C1AEB8DB1
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable False
+    Excluded False
+SpatialPrefabBlueprint 857E2985-9A31-41D5-8C33-07085071A3D3 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP2/Objects/OilLamp_01/OilLamp_01_Prefab
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 8459F7FA-0CB6-460E-ACF4-CD9AB01560FD
+                        Target 3E5B5BF3-22FF-409C-A944-F503F2F2933D
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -1452333337
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 3E5B5BF3-22FF-409C-A944-F503F2F2933D
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 7F08B784-A84D-4D5A-B597-ED8B3BDF46C8
+            member(1) 8459F7FA-0CB6-460E-ACF4-CD9AB01560FD

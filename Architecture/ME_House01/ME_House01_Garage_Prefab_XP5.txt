@@ -1,0 +1,414 @@
+Partition C2B1D424-BECA-475E-86F5-1662FB118A60
+FloatEntityData C1B96391-144B-4AA9-822C-28F556631A51
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 6
+    Realm Realm_Client
+    DefaultValue 0.0
+    IncDecValue 1.0
+FloatEntityData 44FCCB78-72D2-4310-9543-77F86450DFEF
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 8
+    Realm Realm_Client
+    DefaultValue 1.0
+    IncDecValue 0.125
+InterfaceDescriptorData 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id 848795827
+        member(1)::DynamicEvent
+            Id 848795824
+        member(2)::DynamicEvent
+            Id 848795826
+        member(3)::DynamicEvent
+            Id 848795825
+        member(4)::DynamicEvent
+            Id 848795830
+        member(5)::DynamicEvent
+            Id 848795831
+        member(6)::DynamicEvent
+            Id 848795828
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+IrReverbEntityData E7DE383A-20FD-4614-9612-FF38F6BCA864
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 2
+    ImpulseResponse Sound/Impulse_Responses/IR_Indoor_Big_Room/93BDA147-83FF-24F5-BD28-9B07C65B541A
+    Gain -18.0
+    Volume 0.0
+    FadeCurve FadeCurveType_SineAmplitude
+MathOpEntityData 929FBF00-8368-427A-A11C-9558D5627248
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 7
+    Realm Realm_Client
+    Operators::array
+        member(0) *nullEnum*
+MixerEntityData 64A84F6B-82DA-4276-A2B2-0C4224664039
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 4
+    ActivateOnCreation True
+    Mixer Sound/Mixers/AmbientType_Mixer/63BE4D2A-6830-45EE-BE47-4C5D662E508C
+MixerEntityData 27F65C62-2201-490A-AAF9-01354AE1FE2D
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 5
+    ActivateOnCreation True
+    Mixer Sound/Mixers/AreaType_Mixer/E02AEB28-4FAD-4746-AA5B-882F6A2BC4EE
+ReferenceObjectData C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 3
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Architecture/ME_House01/ME_House01_Garage_Destruction/4FD89229-7326-6148-92C3-AA6750C1BC2C
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SoundAreaEntityData 7ABCDE1B-2B3E-40AC-872D-4E2FDC3181D2
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 1
+    Sound Sound/Levels/XP5_KiasarRail/Ambients/XP5_AMB_KiasarRail_Object_INT_MEHouse_01_Garage_01/274B54ED-AA5E-4CFC-BD3A-FDE6F12BC1B3
+    BigWorld *nullGuid*
+    FadeWidth 2.0
+    ProximityMultiplier 0.850000023842
+    FadeCurve FadeCurveType_SineAmplitude
+SpatialPrefabBlueprint 953CA17B-5258-4892-9E04-ABE7A5063F2E #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Architecture/ME_House01/ME_House01_Garage_Prefab_XP5
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 7ABCDE1B-2B3E-40AC-872D-4E2FDC3181D2
+                            Target E7DE383A-20FD-4614-9612-FF38F6BCA864
+                            SourceFieldId 258157264
+                            TargetFieldId -1136955571
+                        member(1)::PropertyConnection
+                            Source 7ABCDE1B-2B3E-40AC-872D-4E2FDC3181D2
+                            Target 64A84F6B-82DA-4276-A2B2-0C4224664039
+                            SourceFieldId 258157264
+                            TargetFieldId 1579081631
+                        member(2)::PropertyConnection
+                            Source 7ABCDE1B-2B3E-40AC-872D-4E2FDC3181D2
+                            Target 27F65C62-2201-490A-AAF9-01354AE1FE2D
+                            SourceFieldId 258157264
+                            TargetFieldId -2120426542
+                        member(3)::PropertyConnection
+                            Source C1B96391-144B-4AA9-822C-28F556631A51
+                            Target 929FBF00-8368-427A-A11C-9558D5627248
+                            SourceFieldId 225375086
+                            TargetFieldId 193450867
+                        member(4)::PropertyConnection
+                            Source 44FCCB78-72D2-4310-9543-77F86450DFEF
+                            Target 929FBF00-8368-427A-A11C-9558D5627248
+                            SourceFieldId 225375086
+                            TargetFieldId 193450866
+                        member(5)::PropertyConnection
+                            Source 929FBF00-8368-427A-A11C-9558D5627248
+                            Target 7ABCDE1B-2B3E-40AC-872D-4E2FDC3181D2
+                            SourceFieldId 193453899
+                            TargetFieldId 1947336347
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source 7ABCDE1B-2B3E-40AC-872D-4E2FDC3181D2
+                            Target A92BF5AB-2B92-41BF-B2B4-C82136B3DDF0
+                            SourceFieldId 838548383
+                            TargetFieldId 0
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target C1B96391-144B-4AA9-822C-28F556631A51
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 44FCCB78-72D2-4310-9543-77F86450DFEF
+                        SourceEvent::EventSpec
+                            Id 848795826
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(2)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 44FCCB78-72D2-4310-9543-77F86450DFEF
+                        SourceEvent::EventSpec
+                            Id 848795827
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(3)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 44FCCB78-72D2-4310-9543-77F86450DFEF
+                        SourceEvent::EventSpec
+                            Id 848795824
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(4)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 44FCCB78-72D2-4310-9543-77F86450DFEF
+                        SourceEvent::EventSpec
+                            Id 848795825
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(5)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 44FCCB78-72D2-4310-9543-77F86450DFEF
+                        SourceEvent::EventSpec
+                            Id 848795830
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(6)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 44FCCB78-72D2-4310-9543-77F86450DFEF
+                        SourceEvent::EventSpec
+                            Id 848795831
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(7)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 44FCCB78-72D2-4310-9543-77F86450DFEF
+                        SourceEvent::EventSpec
+                            Id 848795828
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(8)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 848795827
+                        TargetEvent::EventSpec
+                            Id 848795827
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(9)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 848795824
+                        TargetEvent::EventSpec
+                            Id 848795824
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(10)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 848795826
+                        TargetEvent::EventSpec
+                            Id 848795826
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(11)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 848795825
+                        TargetEvent::EventSpec
+                            Id 848795825
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(12)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 848795830
+                        TargetEvent::EventSpec
+                            Id 848795830
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(13)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 848795831
+                        TargetEvent::EventSpec
+                            Id 848795831
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(14)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 848795828
+                        TargetEvent::EventSpec
+                            Id 848795828
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(15)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795826
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(16)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795827
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(17)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795824
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(18)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795825
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(19)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795830
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(20)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795831
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(21)::EventConnection
+                        Source C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+                        Target 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                        SourceEvent::EventSpec
+                            Id 351212879
+                        TargetEvent::EventSpec
+                            Id 848795828
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 2DD7E639-7360-45E9-8BA7-2E938ADAFAEC
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) A92BF5AB-2B92-41BF-B2B4-C82136B3DDF0
+            member(1) 7ABCDE1B-2B3E-40AC-872D-4E2FDC3181D2
+            member(2) E7DE383A-20FD-4614-9612-FF38F6BCA864
+            member(3) C0245D90-0BE4-49E5-AC00-DAD5E992DB6D
+            member(4) 64A84F6B-82DA-4276-A2B2-0C4224664039
+            member(5) 27F65C62-2201-490A-AAF9-01354AE1FE2D
+            member(6) C1B96391-144B-4AA9-822C-28F556631A51
+            member(7) 929FBF00-8368-427A-A11C-9558D5627248
+            member(8) 44FCCB78-72D2-4310-9543-77F86450DFEF
+VolumeVectorShapeData A92BF5AB-2B92-41BF-B2B4-C82136B3DDF0
+    $::VectorShapeData
+        $::BaseShapeData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 0
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 0
+        Points::array
+            member(0)::Vec3
+                x -6.26087474823
+                y -0.313446044922
+                z 4.23497438431
+            member(1)::Vec3
+                x 1.62653744221
+                y -0.313446044922
+                z 4.23497486115
+            member(2)::Vec3
+                x 1.626537323
+                y -0.313446044922
+                z -10.5426368713
+            member(3)::Vec3
+                x -6.2608757019
+                y -0.313446044922
+                z -10.5426368713
+        Normals::array
+            member(0)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member(1)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member(2)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member(3)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+        Tension 0.0
+        IsClosed True
+        AllowRoll False
+    Height 4.0

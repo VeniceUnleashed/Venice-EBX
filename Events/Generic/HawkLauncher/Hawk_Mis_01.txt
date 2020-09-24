@@ -1,0 +1,214 @@
+Partition 93C30670-931C-11DE-8A2D-F0FCD7DE0B2D
+AssemblyDescriptorData E2224B81-A34F-4E3E-9E59-CD07381ADED5
+    $::InterfaceDescriptorData
+        $::DynamicDataContainer
+            $::DataContainer
+            Fields *nullArray*
+        InputEvents::array
+            member(0)::DynamicEvent
+                Id 2088671869
+            member(1)::DynamicEvent
+                Id -117303631
+            member(2)::DynamicEvent
+                Id 229946160
+            member(3)::DynamicEvent
+                Id 901540267
+        OutputEvents *nullArray*
+        InputLinks *nullArray*
+        OutputLinks *nullArray*
+BoolEntityData EB1994B2-3E0D-424B-B745-B079C3687007
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    Realm Realm_Client
+    DefaultValue True
+BoolEntityData F1AA9347-1CF3-4E33-9A61-29081E4508B6
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 4
+    Realm Realm_Client
+    DefaultValue False
+EffectReferenceObjectData B58D9CB6-C60C-453E-BF91-2FE0E94E892E
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Blueprint FX/Ambient/Warfare/Missiles/HawkMissile/FX_Rocket_Flame_01/441EFACE-F741-328D-59B9-EE590E21081F
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+PrefabBlueprint BFB8BD54-5AE9-6079-6476-9D02101D3904 #primary instance
+    $::Blueprint
+        $::EntityBusData
+            $::DataBusData
+                $::Asset
+                    $::DataContainer
+                    Name Events/Generic/HawkLauncher/Hawk_Mis_01
+                PropertyConnections::array
+                    member(0)::PropertyConnection
+                        Source EB1994B2-3E0D-424B-B745-B079C3687007
+                        Target ECA92BD0-8141-4EE8-A7B8-435D0BCA9451
+                        SourceFieldId 225375086
+                        TargetFieldId 901540267
+                    member(1)::PropertyConnection
+                        Source F1AA9347-1CF3-4E33-9A61-29081E4508B6
+                        Target 0C4A9DEF-43DF-4017-9F6A-39991CAE40B6
+                        SourceFieldId 225375086
+                        TargetFieldId 901540267
+                LinkConnections *nullArray*
+            EventConnections::array
+                member(0)::EventConnection
+                    Source E2224B81-A34F-4E3E-9E59-CD07381ADED5
+                    Target F1AA9347-1CF3-4E33-9A61-29081E4508B6
+                    SourceEvent::EventSpec
+                        Id 2088671869
+                    TargetEvent::EventSpec
+                        Id -1541066415
+                    TargetType EventConnectionTargetType_Client
+                member(1)::EventConnection
+                    Source E2224B81-A34F-4E3E-9E59-CD07381ADED5
+                    Target EB1994B2-3E0D-424B-B745-B079C3687007
+                    SourceEvent::EventSpec
+                        Id -117303631
+                    TargetEvent::EventSpec
+                        Id 668205626
+                    TargetType EventConnectionTargetType_Client
+                member(2)::EventConnection
+                    Source E2224B81-A34F-4E3E-9E59-CD07381ADED5
+                    Target F1AA9347-1CF3-4E33-9A61-29081E4508B6
+                    SourceEvent::EventSpec
+                        Id -117303631
+                    TargetEvent::EventSpec
+                        Id 668205626
+                    TargetType EventConnectionTargetType_Client
+                member(3)::EventConnection
+                    Source E2224B81-A34F-4E3E-9E59-CD07381ADED5
+                    Target B58D9CB6-C60C-453E-BF91-2FE0E94E892E
+                    SourceEvent::EventSpec
+                        Id 2088671869
+                    TargetEvent::EventSpec
+                        Id 230748069
+                    TargetType EventConnectionTargetType_Client
+                member(4)::EventConnection
+                    Source E2224B81-A34F-4E3E-9E59-CD07381ADED5
+                    Target B58D9CB6-C60C-453E-BF91-2FE0E94E892E
+                    SourceEvent::EventSpec
+                        Id -117303631
+                    TargetEvent::EventSpec
+                        Id 2089401213
+                    TargetType EventConnectionTargetType_Client
+                member(5)::EventConnection
+                    Source E2224B81-A34F-4E3E-9E59-CD07381ADED5
+                    Target EB1994B2-3E0D-424B-B745-B079C3687007
+                    SourceEvent::EventSpec
+                        Id 229946160
+                    TargetEvent::EventSpec
+                        Id -1541066415
+                    TargetType EventConnectionTargetType_Client
+                member(6)::EventConnection
+                    Source E2224B81-A34F-4E3E-9E59-CD07381ADED5
+                    Target F1AA9347-1CF3-4E33-9A61-29081E4508B6
+                    SourceEvent::EventSpec
+                        Id 901540267
+                    TargetEvent::EventSpec
+                        Id -1541066415
+                    TargetType EventConnectionTargetType_Client
+            Descriptor E2224B81-A34F-4E3E-9E59-CD07381ADED5
+            NeedNetworkId False
+            InterfaceHasConnections True
+            AlwaysCreateEntityBusClient False
+            AlwaysCreateEntityBusServer False
+    Objects::array
+        member(0) ECA92BD0-8141-4EE8-A7B8-435D0BCA9451
+        member(1) 0C4A9DEF-43DF-4017-9F6A-39991CAE40B6
+        member(2) B58D9CB6-C60C-453E-BF91-2FE0E94E892E
+        member(3) EB1994B2-3E0D-424B-B745-B079C3687007
+        member(4) F1AA9347-1CF3-4E33-9A61-29081E4508B6
+ReferenceObjectData ECA92BD0-8141-4EE8-A7B8-435D0BCA9451
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 0
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint props/StreetProps/hawklauncher_01/HawkLauncher_Mis_01/131B8524-D5C0-51AE-6165-20B2A02AE7E3
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 0C4A9DEF-43DF-4017-9F6A-39991CAE40B6
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 0
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint props/StreetProps/hawklauncher_01/HawkLauncher_Flame_01/D62807E5-274F-2A9B-93A5-7F988EB53EDA
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False

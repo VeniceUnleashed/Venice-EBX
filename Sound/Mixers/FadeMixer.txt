@@ -1,0 +1,81 @@
+Partition DE5A6831-F70D-11DF-8F57-F70A435F8E9A
+AudioGraphParameter CCBB976A-6015-4300-BE9F-8BD2E9E603C5
+    $::DataContainer
+    DefaultValue 1.0
+    NameHash 3184089288
+    ValueIndex 2
+AudioGraphParameter 2857C7F9-2D1C-4792-A79A-C6E9488D4E2B
+    $::DataContainer
+    DefaultValue 1.0
+    NameHash 702114485
+    ValueIndex 3
+MixerAsset 71E6D61B-894F-7DE8-EC9B-F7AD855A823A #primary instance
+    $::Asset
+        $::DataContainer
+        Name Sound/Mixers/FadeMixer
+    Graph F2A17364-4D41-8943-7525-841C6E06F854
+    Presets::array
+        member(0) AD2CB41A-D2E2-CC97-B77D-BA97936E967E
+    DefaultPreset AD2CB41A-D2E2-CC97-B77D-BA97936E967E
+MixerGraphData F2A17364-4D41-8943-7525-841C6E06F854
+    $::AudioGraphData
+        $::DataContainer
+        Nodes::array
+            member(0) B7FE2C40-7931-4190-8828-3657C173DD8D
+            member(1) 174D7185-14F2-4D7B-BFFC-16FB7B57375B
+        PublicParameters *nullArray*
+        PublicEvents *nullArray*
+        PublicAssetParameters *nullArray*
+        PublicValueCount 1
+        ValueCount 4
+    Inputs::array
+        member(0) CCBB976A-6015-4300-BE9F-8BD2E9E603C5
+    AccumulateModes::array
+        member(0) *nullEnum*
+    Outputs::array
+        member(0) 2857C7F9-2D1C-4792-A79A-C6E9488D4E2B
+MixerInputEntry F28EB8FC-5710-47D6-90C7-D975CC86E88C
+    $::AudioGraphNodePortGroup
+        $::DataContainer
+    Out::AudioGraphNodePort
+        UnconnectedValue 0.0
+        ValueIndex 1
+        IsConnected True
+    Source CCBB976A-6015-4300-BE9F-8BD2E9E603C5
+    AccumulateMode MixerValueAccumulateMode_None
+MixerInputNodeData B7FE2C40-7931-4190-8828-3657C173DD8D
+    $::AudioGraphNodeData
+        $::DataContainer
+    Entries::array
+        member(0) F28EB8FC-5710-47D6-90C7-D975CC86E88C
+MixerOutputEntry 2F17EDDF-EB62-4D7B-86EF-CC16221E7993
+    $::AudioGraphNodePortGroup
+        $::DataContainer
+    In::AudioGraphNodePort
+        UnconnectedValue 0.0
+        ValueIndex 1
+        IsConnected True
+    Target 2857C7F9-2D1C-4792-A79A-C6E9488D4E2B
+MixerOutputNodeData 174D7185-14F2-4D7B-BFFC-16FB7B57375B
+    $::AudioGraphNodeData
+        $::DataContainer
+    Entries::array
+        member(0) 2F17EDDF-EB62-4D7B-86EF-CC16221E7993
+MixerPreset AD2CB41A-D2E2-CC97-B77D-BA97936E967E
+    $::DataContainer
+    NameHash 0
+    Groups::array
+        member(0)::MixerPresetGroupData
+            Group Sound/MixerSystem/822DB9E7-E916-462E-BCFA-3B9CEAF2CB62
+            State MixGroupState_Normal
+            AttackTime 0.10000000149
+            ReleaseTime 0.20000000298
+            IsDominant False
+            Properties::array
+                member(0)::MixGroupPropertyValue
+                    Property 0
+                    Value 0.0
+                member(1)::MixGroupPropertyValue
+                    Property 1
+                    Value 1.0
+    Nodes *nullArray*

@@ -1,0 +1,211 @@
+Partition 133D8E07-5641-11E1-B93C-908B945C9CFB
+BinaryLogicNode 3DA6DE8A-5251-4170-91EE-E02981B3E2B9
+    $::UINodeData
+        $::DataContainer
+        Name RequestPending
+        IsRootNode False
+        ParentGraph 0535970F-39F1-EEAA-2BF0-161516301C5B
+        ParentIsScreen True
+    In 98175FD1-086C-4353-B729-43A5C547FBCA
+    True 1123520A-E8D0-41EE-86C9-147C756B900E
+    False EC91FF1C-3C3D-4104-AC40-F00E6FEA0AED
+    DataSourceInfo::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+InstanceOutputNode 60DA27A3-46AE-490B-A191-4638846B1287
+    $::UINodeData
+        $::DataContainer
+        Name RequestDone
+        IsRootNode False
+        ParentGraph 0535970F-39F1-EEAA-2BF0-161516301C5B
+        ParentIsScreen True
+    In 03CDE112-1AB1-46CE-AB54-D1F26D24D3CA
+    Id -1543822604
+    DestroyGraph True
+UIDynamicDataBinding 8B7E7896-AF60-46F0-91E8-254042F5E52F
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName Visible
+            DataCategory UI/UIComponents/UIManagePlayersComp/E5ACAC70-A016-1FAF-2DF4-516E4F58B0AC
+            DataKey 0
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UIDynamicDataBinding 2C26F983-D4D9-4430-8C6D-49DFE3F764C6
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName Visibility
+            DataCategory *nullGuid*
+            DataKey 0
+            UseDirectAccess False
+            UpdateOnInitialize False
+        member(1)::UIDataSourceInfo
+            DataName StartVisible
+            DataCategory *nullGuid*
+            DataKey 0
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UIDynamicDataBinding F67402C8-174B-46E6-8D2D-4045A8CA2339
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName Key
+            DataCategory UI/UIComponents/UIManagePlayersComp/E5ACAC70-A016-1FAF-2DF4-516E4F58B0AC
+            DataKey 629151515
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UINodeConnection FCE2BD16-AF35-4D6E-9266-E80F3CAED4B3
+    $::DataContainer
+    SourceNode DE9C0A26-AEC1-4D0B-B9F6-D38CD5810F05
+    TargetNode 3DA6DE8A-5251-4170-91EE-E02981B3E2B9
+    SourcePort 1D4D82B9-2B09-4EC7-80D7-534C6CE7A9D8
+    TargetPort 98175FD1-086C-4353-B729-43A5C547FBCA
+    NumScreensToPop 0
+UINodeConnection 235465E1-4008-48AF-AAD6-9420DB87A188
+    $::DataContainer
+    SourceNode 3DA6DE8A-5251-4170-91EE-E02981B3E2B9
+    TargetNode 60DA27A3-46AE-490B-A191-4638846B1287
+    SourcePort EC91FF1C-3C3D-4104-AC40-F00E6FEA0AED
+    TargetPort 03CDE112-1AB1-46CE-AB54-D1F26D24D3CA
+    NumScreensToPop 0
+UINodePort 2B10ED52-8766-4E76-B8A3-BA6F01B6E85B
+    $::DataContainer
+    Name FadeIn
+    InstanceName Dimmer_00
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort 075652BE-FDA7-4B35-900B-D53C839AA2BB
+    $::DataContainer
+    Name FadeOut
+    InstanceName Dimmer_00
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort 1D4D82B9-2B09-4EC7-80D7-534C6CE7A9D8
+    $::DataContainer
+    Name KeyChanged
+    InstanceName ChangeListener_00
+    Query UIWidgetEventID_OnChanged
+    AllowManualRemove False
+UINodePort 98175FD1-086C-4353-B729-43A5C547FBCA
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 1123520A-E8D0-41EE-86C9-147C756B900E
+    $::DataContainer
+    Name True
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort EC91FF1C-3C3D-4104-AC40-F00E6FEA0AED
+    $::DataContainer
+    Name False
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 03CDE112-1AB1-46CE-AB54-D1F26D24D3CA
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UIScreenAsset 0535970F-39F1-EEAA-2BF0-161516301C5B #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Frontend/ManagePlayersWaitingScreen
+        Nodes::array
+            member(0) 0EDE50CE-180E-4284-AE77-426F1802A8CA
+            member(1) 93672742-337F-40E8-9A55-E8FDDF648C70
+            member(2) DE9C0A26-AEC1-4D0B-B9F6-D38CD5810F05
+            member(3) 3DA6DE8A-5251-4170-91EE-E02981B3E2B9
+            member(4) 60DA27A3-46AE-490B-A191-4638846B1287
+        GlobalNode *nullGuid*
+        Connections::array
+            member(0) FCE2BD16-AF35-4D6E-9266-E80F3CAED4B3
+            member(1) 235465E1-4008-48AF-AAD6-9420DB87A188
+        AudioEventMappings UI/Flow/Graph/AudioMapping/MenuAudioMapping/447DF9F9-CEE1-5924-78C5-E5010B27B07F
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal True
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+WidgetNode 0EDE50CE-180E-4284-AE77-426F1802A8CA
+    $::UINodeData
+        $::DataContainer
+        Name Dimmer
+        IsRootNode False
+        ParentGraph 0535970F-39F1-EEAA-2BF0-161516301C5B
+        ParentIsScreen True
+    WidgetAsset UI/Assets/Dimmer/28D9BB5C-24B6-7760-E726-8BE53524BA15
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 8B7E7896-AF60-46F0-91E8-254042F5E52F
+    InstanceName Dimmer_00
+    WidgetProperties::array
+        member(0)::UIWidgetProperty
+            Name DimFromStart
+            Value true
+        member(1)::UIWidgetProperty
+            Name InstantDim
+            Value true
+    Outputs *nullArray*
+    Inputs::array
+        member(0) 2B10ED52-8766-4E76-B8A3-BA6F01B6E85B
+        member(1) 075652BE-FDA7-4B35-900B-D53C839AA2BB
+WidgetNode 93672742-337F-40E8-9A55-E8FDDF648C70
+    $::UINodeData
+        $::DataContainer
+        Name LoadingSpinner
+        IsRootNode False
+        ParentGraph 0535970F-39F1-EEAA-2BF0-161516301C5B
+        ParentIsScreen True
+    WidgetAsset UI/Assets/LoadingSpinner/5A944806-A1A2-13BD-FDD0-10C6D7AF6D2E
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 2C26F983-D4D9-4430-8C6D-49DFE3F764C6
+    InstanceName LoadingSpinner_00
+    WidgetProperties::array
+        member(0)::UIWidgetProperty
+            Name startAsVisible
+            Value true
+    Outputs *nullArray*
+    Inputs *nullArray*
+WidgetNode DE9C0A26-AEC1-4D0B-B9F6-D38CD5810F05
+    $::UINodeData
+        $::DataContainer
+        Name ChangeListener
+        IsRootNode False
+        ParentGraph 0535970F-39F1-EEAA-2BF0-161516301C5B
+        ParentIsScreen True
+    WidgetAsset UI/Assets/ChangeListener/7DD2EBC2-47D2-EB01-A1FD-557CCF7A7309
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding F67402C8-174B-46E6-8D2D-4045A8CA2339
+    InstanceName ChangeListener_00
+    WidgetProperties *nullArray*
+    Outputs::array
+        member(0) 1D4D82B9-2B09-4EC7-80D7-534C6CE7A9D8
+    Inputs *nullArray*

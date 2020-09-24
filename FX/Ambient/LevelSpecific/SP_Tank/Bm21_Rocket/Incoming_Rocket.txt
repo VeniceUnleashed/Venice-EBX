@@ -1,0 +1,146 @@
+Partition 7A8C0B13-8608-11E0-BD61-FF8397D296CE
+EffectReferenceObjectData F8C1C990-9D88-4C34-9CE6-6009A9A8F587
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y -0.5
+                z -0.866025209427
+            forward::Vec3
+                x 0.0
+                y 0.866025209427
+                z -0.5
+            trans::Vec3
+                x 0.0
+                y 300.0
+                z 500.0
+        Blueprint FX/Ambient/LevelSpecific/SP_Tank/Bm21_Rocket/FX_BM21_Rocket_Incoming/C373E1DE-768E-4DD8-BE4E-2F135B519BF6
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+EffectReferenceObjectData 4104FC00-032E-4967-9455-F190A6881858
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Blueprint FX/Ambient/LevelSpecific/SP_Tank/Bm21_Rocket/FX_BM21_Rocket_Impact/9FD402E4-D7A4-4628-B8A2-86E9901A029D
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+InterfaceDescriptorData EAC0EC05-D6E1-42BE-BBF5-798CBB0AAFF3
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id 230748069
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+SequenceEntityData 647627E2-91FE-4B8B-97A6-DAF461920451
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Events::array
+        member(0)::SequenceEventData
+            Event::EventSpec
+                Id 613578040
+            Time 247
+        member(1)::SequenceEventData
+            Event::EventSpec
+                Id 613578043
+            Time 620
+    SequenceStartTime 0
+    SequenceLength 10000
+    Looping False
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_ClientAndServer
+    PropertyTracks *nullArray*
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint F9A617EF-20DB-6BAB-4E84-1BE188CB215C #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name FX/Ambient/LevelSpecific/SP_Tank/Bm21_Rocket/Incoming_Rocket
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 647627E2-91FE-4B8B-97A6-DAF461920451
+                        Target F8C1C990-9D88-4C34-9CE6-6009A9A8F587
+                        SourceEvent::EventSpec
+                            Id 613578040
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source EAC0EC05-D6E1-42BE-BBF5-798CBB0AAFF3
+                        Target 647627E2-91FE-4B8B-97A6-DAF461920451
+                        SourceEvent::EventSpec
+                            Id 230748069
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(2)::EventConnection
+                        Source 647627E2-91FE-4B8B-97A6-DAF461920451
+                        Target 4104FC00-032E-4967-9455-F190A6881858
+                        SourceEvent::EventSpec
+                            Id 613578043
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                Descriptor EAC0EC05-D6E1-42BE-BBF5-798CBB0AAFF3
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) F8C1C990-9D88-4C34-9CE6-6009A9A8F587
+            member(1) 647627E2-91FE-4B8B-97A6-DAF461920451
+            member(2) 4104FC00-032E-4967-9455-F190A6881858

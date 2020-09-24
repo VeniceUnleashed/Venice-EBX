@@ -1,0 +1,114 @@
+Partition E1D181D3-B209-11E0-83CD-B77E3434DE1E
+CompareIntEntityData 6BF244C2-5286-4C93-ABFE-9AC3888DF075
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 1
+            IndexInBlueprint 1
+    Realm Realm_Server
+    A 0
+    B 0
+    TriggerOnPropertyChange True
+    TriggerOnStart False
+EventGateEntityData 934F4ABF-7C23-4F64-BDD4-3799F6D64875
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Default False
+    Realm Realm_Server
+IntEntityData 07DCF716-FB48-4615-92B0-CC742DF9709E
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Realm Realm_Server
+    DefaultValue 0
+    IncDecValue 1
+InterfaceDescriptorData 7808A40A-1757-424F-93D7-34D996F968EE
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id 853531813
+        member(1)::DynamicEvent
+            Id 67402812
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id -1789390694
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LogicPrefabBlueprint 87779AF4-8028-7376-C3D2-E121E0EF5D73 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Logic/AllEnemiesKilled
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 07DCF716-FB48-4615-92B0-CC742DF9709E
+                            Target 6BF244C2-5286-4C93-ABFE-9AC3888DF075
+                            SourceFieldId 225375086
+                            TargetFieldId 177636
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 7808A40A-1757-424F-93D7-34D996F968EE
+                        Target 07DCF716-FB48-4615-92B0-CC742DF9709E
+                        SourceEvent::EventSpec
+                            Id 853531813
+                        TargetEvent::EventSpec
+                            Id 1736970756
+                        TargetType EventConnectionTargetType_Server
+                    member(1)::EventConnection
+                        Source 7808A40A-1757-424F-93D7-34D996F968EE
+                        Target 07DCF716-FB48-4615-92B0-CC742DF9709E
+                        SourceEvent::EventSpec
+                            Id 67402812
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Server
+                    member(2)::EventConnection
+                        Source 6BF244C2-5286-4C93-ABFE-9AC3888DF075
+                        Target 934F4ABF-7C23-4F64-BDD4-3799F6D64875
+                        SourceEvent::EventSpec
+                            Id 193445179
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Server
+                    member(3)::EventConnection
+                        Source 7808A40A-1757-424F-93D7-34D996F968EE
+                        Target 934F4ABF-7C23-4F64-BDD4-3799F6D64875
+                        SourceEvent::EventSpec
+                            Id 853531813
+                        TargetEvent::EventSpec
+                            Id 2089008817
+                        TargetType EventConnectionTargetType_Server
+                    member(4)::EventConnection
+                        Source 934F4ABF-7C23-4F64-BDD4-3799F6D64875
+                        Target 7808A40A-1757-424F-93D7-34D996F968EE
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -1789390694
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 7808A40A-1757-424F-93D7-34D996F968EE
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 07DCF716-FB48-4615-92B0-CC742DF9709E
+            member(1) 6BF244C2-5286-4C93-ABFE-9AC3888DF075
+            member(2) 934F4ABF-7C23-4F64-BDD4-3799F6D64875

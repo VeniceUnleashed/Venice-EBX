@@ -1,0 +1,158 @@
+Partition 063135AF-509F-11E0-BCBF-D5B1191D5FD8
+ComparisonLogicNode 60BB6ABE-8352-4151-BBCB-54CAB6C92A72
+    $::UINodeData
+        $::DataContainer
+        Name GameMode
+        IsRootNode False
+        ParentGraph 818D5F61-3FE2-3BAA-1748-C63D61F34E7F
+        ParentIsScreen False
+    In 1797609D-D517-4770-B357-5E783944BD91
+    Outputs::array
+        member(0) DAF69752-C1C5-445E-A7CB-367A0B05F56E
+        member(1) BE416DDE-FFC9-430B-9E13-F13D721B1941
+    DataSourceInfo::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory UI/UIComponents/UISettingsComp/3AA69203-174E-09BA-D476-141A0FD4BB9D
+        DataKey 1733092213
+        UseDirectAccess False
+        UpdateOnInitialize True
+    SkipFractionals False
+InstanceInputNode 498C1633-3952-47D1-8A42-D05E52E0370F
+    $::UINodeData
+        $::DataContainer
+        Name EnterTicketCounter
+        IsRootNode False
+        ParentGraph 818D5F61-3FE2-3BAA-1748-C63D61F34E7F
+        ParentIsScreen False
+    Out 0B24112F-DD62-412B-A7BC-F77B143252E1
+StateNode 55429EC8-CAEF-4CAD-9B37-C930426ADB23
+    $::UINodeData
+        $::DataContainer
+        Name SpawnScreenTicketCounterTDMScreen
+        IsRootNode False
+        ParentGraph 818D5F61-3FE2-3BAA-1748-C63D61F34E7F
+        ParentIsScreen False
+    Screen UI/Flow/Screen/SpawnScreenTicketCounterTDMScreen/35BC85FB-2369-1CA8-95B6-F700F8966DF1
+    In CA2299AF-349E-4B7D-91AE-B499A6CE1F47
+    Show 4DF80A07-95D6-403D-B035-14A0363C85E7
+    Hide 0972F153-C6F4-44DE-B8EB-6724D19CFD6D
+    Inputs *nullArray*
+    Outputs *nullArray*
+    RenderToTexture False
+StateNode C1CC65AE-242A-432B-810D-57EAB34EF89D
+    $::UINodeData
+        $::DataContainer
+        Name EmptyScreen
+        IsRootNode False
+        ParentGraph 818D5F61-3FE2-3BAA-1748-C63D61F34E7F
+        ParentIsScreen False
+    Screen UI/Flow/Screen/EmptyScreen/213756D6-07B6-24E6-9675-B6C29EC1BB81
+    In C22111EA-148A-4AED-A105-7682BBA8487C
+    Show 8E34B72F-5663-47F1-956B-C06D5AC30AC7
+    Hide 97FB48BB-9556-4DD5-A2B5-39267DF0FD5F
+    Inputs *nullArray*
+    Outputs *nullArray*
+    RenderToTexture False
+UIGraphAsset 818D5F61-3FE2-3BAA-1748-C63D61F34E7F #primary instance
+    $::Asset
+        $::DataContainer
+        Name UI/Flow/Graph/SpawnScreenTicketCounterTDMGraph
+    Nodes::array
+        member(0) 55429EC8-CAEF-4CAD-9B37-C930426ADB23
+        member(1) 60BB6ABE-8352-4151-BBCB-54CAB6C92A72
+        member(2) 498C1633-3952-47D1-8A42-D05E52E0370F
+        member(3) C1CC65AE-242A-432B-810D-57EAB34EF89D
+    GlobalNode *nullGuid*
+    Connections::array
+        member(0) 49418DB0-4DE4-4430-8D85-010D6755175F
+        member(1) 65EA24AD-F5CF-4D09-B94A-C551114E5577
+        member(2) F8C293E8-476F-49BD-8662-1F925F3DD6A6
+    AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultMaping/85731393-00A9-B3E1-1001-2EAD21F6CF0E
+    BundleAssetName *nullString*
+    ProtectScreens False
+    Modal False
+    EventList *nullArray*
+    IsWin32UIGraphAsset True
+    IsXenonUIGraphAsset True
+    IsPs3UIGraphAsset True
+UINodeConnection 49418DB0-4DE4-4430-8D85-010D6755175F
+    $::DataContainer
+    SourceNode 498C1633-3952-47D1-8A42-D05E52E0370F
+    TargetNode 60BB6ABE-8352-4151-BBCB-54CAB6C92A72
+    SourcePort 0B24112F-DD62-412B-A7BC-F77B143252E1
+    TargetPort 1797609D-D517-4770-B357-5E783944BD91
+    NumScreensToPop 0
+UINodeConnection 65EA24AD-F5CF-4D09-B94A-C551114E5577
+    $::DataContainer
+    SourceNode 60BB6ABE-8352-4151-BBCB-54CAB6C92A72
+    TargetNode 55429EC8-CAEF-4CAD-9B37-C930426ADB23
+    SourcePort BE416DDE-FFC9-430B-9E13-F13D721B1941
+    TargetPort CA2299AF-349E-4B7D-91AE-B499A6CE1F47
+    NumScreensToPop 0
+UINodeConnection F8C293E8-476F-49BD-8662-1F925F3DD6A6
+    $::DataContainer
+    SourceNode 60BB6ABE-8352-4151-BBCB-54CAB6C92A72
+    TargetNode C1CC65AE-242A-432B-810D-57EAB34EF89D
+    SourcePort DAF69752-C1C5-445E-A7CB-367A0B05F56E
+    TargetPort C22111EA-148A-4AED-A105-7682BBA8487C
+    NumScreensToPop 0
+UINodePort CA2299AF-349E-4B7D-91AE-B499A6CE1F47
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 4DF80A07-95D6-403D-B035-14A0363C85E7
+    $::DataContainer
+    Name Show
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 0972F153-C6F4-44DE-B8EB-6724D19CFD6D
+    $::DataContainer
+    Name Hide
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 1797609D-D517-4770-B357-5E783944BD91
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort DAF69752-C1C5-445E-A7CB-367A0B05F56E
+    $::DataContainer
+    Name GunMaster0
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove True
+UINodePort BE416DDE-FFC9-430B-9E13-F13D721B1941
+    $::DataContainer
+    Name default
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove True
+UINodePort 0B24112F-DD62-412B-A7BC-F77B143252E1
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort C22111EA-148A-4AED-A105-7682BBA8487C
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 8E34B72F-5663-47F1-956B-C06D5AC30AC7
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 97FB48BB-9556-4DD5-A2B5-39267DF0FD5F
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False

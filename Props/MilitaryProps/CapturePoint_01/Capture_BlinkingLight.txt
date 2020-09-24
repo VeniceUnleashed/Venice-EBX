@@ -1,0 +1,186 @@
+Partition 0E2ECB73-A9D9-11DF-BB83-D99B5A550CAB
+InterfaceDescriptorData 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member(0)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -1043512249
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -721416017
+        member(1)::DynamicEvent
+            Id -953956057
+        member(2)::DynamicEvent
+            Id -657632873
+        member(3)::DynamicEvent
+            Id 643343130
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData A4F13132-4153-459B-BD1E-726DD3FBD964
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Props/MilitaryProps/CapturePoint_01/CaptureLight/E22EC985-05F6-5A76-2526-379E3CFA434B
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SequenceEntityData CA455E92-02DB-4C10-A39A-A615B4051521
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Events::array
+        member(0)::SequenceEventData
+            Event::EventSpec
+                Id -1759102037
+            Time 49
+        member(1)::SequenceEventData
+            Event::EventSpec
+                Id -1875413467
+            Time 499
+    SequenceStartTime 0
+    SequenceLength 1000
+    Looping True
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_Client
+    PropertyTracks *nullArray*
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Props/MilitaryProps/CapturePoint_01/Capture_BlinkingLight
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
+                            Target A4F13132-4153-459B-BD1E-726DD3FBD964
+                            SourceFieldId -1043512249
+                            TargetFieldId -1043512249
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source CA455E92-02DB-4C10-A39A-A615B4051521
+                        Target A4F13132-4153-459B-BD1E-726DD3FBD964
+                        SourceEvent::EventSpec
+                            Id -1176973715
+                        TargetEvent::EventSpec
+                            Id -1759102997
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source CA455E92-02DB-4C10-A39A-A615B4051521
+                        Target A4F13132-4153-459B-BD1E-726DD3FBD964
+                        SourceEvent::EventSpec
+                            Id -1875413467
+                        TargetEvent::EventSpec
+                            Id -1875413499
+                        TargetType EventConnectionTargetType_Client
+                    member(2)::EventConnection
+                        Source CA455E92-02DB-4C10-A39A-A615B4051521
+                        Target A4F13132-4153-459B-BD1E-726DD3FBD964
+                        SourceEvent::EventSpec
+                            Id -1759102037
+                        TargetEvent::EventSpec
+                            Id -1759102997
+                        TargetType EventConnectionTargetType_Client
+                    member(3)::EventConnection
+                        Source 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
+                        Target A4F13132-4153-459B-BD1E-726DD3FBD964
+                        SourceEvent::EventSpec
+                            Id -721416017
+                        TargetEvent::EventSpec
+                            Id -721416017
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(4)::EventConnection
+                        Source 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
+                        Target CA455E92-02DB-4C10-A39A-A615B4051521
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member(5)::EventConnection
+                        Source 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
+                        Target CA455E92-02DB-4C10-A39A-A615B4051521
+                        SourceEvent::EventSpec
+                            Id -81881639
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                    member(6)::EventConnection
+                        Source 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
+                        Target 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
+                        SourceEvent::EventSpec
+                            Id -953956057
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member(7)::EventConnection
+                        Source 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
+                        Target 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
+                        SourceEvent::EventSpec
+                            Id -657632873
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_Server
+                    member(8)::EventConnection
+                        Source 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
+                        Target A4F13132-4153-459B-BD1E-726DD3FBD964
+                        SourceEvent::EventSpec
+                            Id 643343130
+                        TargetEvent::EventSpec
+                            Id 643343130
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) CA455E92-02DB-4C10-A39A-A615B4051521
+            member(1) A4F13132-4153-459B-BD1E-726DD3FBD964
+            member(2) 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
+SyncedBoolEntityData 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    In False

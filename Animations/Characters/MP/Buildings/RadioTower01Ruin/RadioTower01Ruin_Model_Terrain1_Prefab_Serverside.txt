@@ -1,0 +1,76 @@
+Partition 11F91FEC-BBC3-48C0-8517-E283FBCEB0B0
+InterfaceDescriptorData C9E54941-5E9F-4709-BAC8-52D61EB139DB
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member(0)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 901540267
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -117245068
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 6F502886-9107-41FC-93B8-D622807EE5DA
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Animations/Characters/MP/Buildings/RadioTower01Ruin/RadioTower01Ruin_Model/C6AE7B48-D912-DD42-A104-48CB84B94483
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 549E8BE3-4159-4983-8B4F-53BF4441CBC7 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/Characters/MP/Buildings/RadioTower01Ruin/RadioTower01Ruin_Model_Terrain1_Prefab_Serverside
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source C9E54941-5E9F-4709-BAC8-52D61EB139DB
+                            Target 6F502886-9107-41FC-93B8-D622807EE5DA
+                            SourceFieldId 901540267
+                            TargetFieldId 901540267
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source C9E54941-5E9F-4709-BAC8-52D61EB139DB
+                        Target 6F502886-9107-41FC-93B8-D622807EE5DA
+                        SourceEvent::EventSpec
+                            Id -117245068
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor C9E54941-5E9F-4709-BAC8-52D61EB139DB
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 6F502886-9107-41FC-93B8-D622807EE5DA

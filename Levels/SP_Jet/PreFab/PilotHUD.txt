@@ -1,0 +1,79 @@
+Partition 7681B965-39D8-11E0-B135-F9B78AFE103D
+InterfaceDescriptorData 1D2478AE-C985-4932-AC5E-5D05C286F333
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id 230748069
+        member(1)::DynamicEvent
+            Id 2089401213
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LogicPrefabBlueprint F8AE509A-D312-DC88-9295-DDD5FC8EEF46 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Jet/PreFab/PilotHUD
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 1D2478AE-C985-4932-AC5E-5D05C286F333
+                        Target 0581A2AF-C3AE-42F1-92F0-8024BA0C1F1B
+                        SourceEvent::EventSpec
+                            Id 2089401213
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source 1D2478AE-C985-4932-AC5E-5D05C286F333
+                        Target 0581A2AF-C3AE-42F1-92F0-8024BA0C1F1B
+                        SourceEvent::EventSpec
+                            Id 230748069
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 1D2478AE-C985-4932-AC5E-5D05C286F333
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 7699879C-62E1-4F92-B140-3651A5EAABB6
+            member(1) 0581A2AF-C3AE-42F1-92F0-8024BA0C1F1B
+LogicVisualEnvironmentEntityData 0581A2AF-C3AE-42F1-92F0-8024BA0C1F1B
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    VisualEnvironment Vehicles/F18_sp03/HelmetHUD_Visual_Environment/6213658A-78C4-4F67-7784-40AAE47B184F
+    Visibility 1.0
+SequenceEntityData 7699879C-62E1-4F92-B140-3651A5EAABB6
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 1000
+    Looping False
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_Client
+    PropertyTracks *nullArray*
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0

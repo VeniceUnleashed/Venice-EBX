@@ -1,0 +1,182 @@
+Partition 9B9A0E09-9DA0-11E0-A8FA-ED4873FF0095
+ActionNode 9EA0E85E-435B-4270-B0FD-693CBCE6F667
+    $::UINodeData
+        $::DataContainer
+        Name PressStart
+        IsRootNode False
+        ParentGraph 10068A43-4A68-17B8-0DBF-6DA458FBED25
+        ParentIsScreen True
+    ActionKey 1965619586
+    Params *nullArray*
+    AppendIncomingParams False
+    ActionAsset *nullGuid*
+    In 0692F1AD-523F-4159-BDAF-99A35209DB56
+    DataInputs *nullArray*
+    Out CACBFB9B-0896-4D49-B419-C0467F979702
+ActionNode 45A30122-FE75-4629-B930-1DE67F733088
+    $::UINodeData
+        $::DataContainer
+        Name ActiveController
+        IsRootNode False
+        ParentGraph 10068A43-4A68-17B8-0DBF-6DA458FBED25
+        ParentIsScreen True
+    ActionKey 712392631
+    Params *nullArray*
+    AppendIncomingParams False
+    ActionAsset *nullGuid*
+    In 82446E97-ABDB-4FE6-B329-763AF23E4605
+    DataInputs *nullArray*
+    Out 2467B7DF-FE3F-4F3A-9930-5CB878D6B4AE
+InstanceInputNode F6F7E9F8-6280-45C8-965E-76F63F9D6B15
+    $::UINodeData
+        $::DataContainer
+        Name Run
+        IsRootNode False
+        ParentGraph 10068A43-4A68-17B8-0DBF-6DA458FBED25
+        ParentIsScreen True
+    Out 9FDF9B42-B5F7-4258-9B2F-22C118F613B2
+InstanceOutputNode 605F7A23-7E6C-403F-8B84-A68A03530F08
+    $::UINodeData
+        $::DataContainer
+        Name RequestEnterFrontend
+        IsRootNode False
+        ParentGraph 10068A43-4A68-17B8-0DBF-6DA458FBED25
+        ParentIsScreen True
+    In C32918CB-5F46-413E-811D-961B55B58233
+    Id 985409074
+    DestroyGraph True
+UINodeConnection C927ACD2-FB6C-404B-87ED-E041EE531C57
+    $::DataContainer
+    SourceNode F14CF608-B6A1-4CE7-90BA-CEB8A425464B
+    TargetNode 605F7A23-7E6C-403F-8B84-A68A03530F08
+    SourcePort 83F4817F-B9FC-4C07-8D91-B1982BB7BEA4
+    TargetPort C32918CB-5F46-413E-811D-961B55B58233
+    NumScreensToPop 0
+UINodeConnection 18F6F227-A0E8-4F77-9934-B887B1E8B73D
+    $::DataContainer
+    SourceNode F6F7E9F8-6280-45C8-965E-76F63F9D6B15
+    TargetNode 9EA0E85E-435B-4270-B0FD-693CBCE6F667
+    SourcePort 9FDF9B42-B5F7-4258-9B2F-22C118F613B2
+    TargetPort 0692F1AD-523F-4159-BDAF-99A35209DB56
+    NumScreensToPop 0
+UINodeConnection F854DF27-95FE-4FA2-B512-64BC3E01DCB9
+    $::DataContainer
+    SourceNode 9EA0E85E-435B-4270-B0FD-693CBCE6F667
+    TargetNode 45A30122-FE75-4629-B930-1DE67F733088
+    SourcePort CACBFB9B-0896-4D49-B419-C0467F979702
+    TargetPort 82446E97-ABDB-4FE6-B329-763AF23E4605
+    NumScreensToPop 0
+UINodePort 83F4817F-B9FC-4C07-8D91-B1982BB7BEA4
+    $::DataContainer
+    Name GraphEvent
+    InstanceName InputListener_01
+    Query UIWidgetEventID_OnToggle
+    AllowManualRemove False
+UINodePort 8C2DFB38-05E2-40B2-913E-B08B04C699F3
+    $::DataContainer
+    Name TabPressed
+    InstanceName InputListener_01
+    Query UIWidgetEventID_OnItemPressed
+    AllowManualRemove False
+UINodePort 10694F2A-E16C-4045-B0AF-D8846D8992A9
+    $::DataContainer
+    Name TabRelease
+    InstanceName InputListener_01
+    Query UIWidgetEventID_OnItemReleased
+    AllowManualRemove False
+UINodePort C32918CB-5F46-413E-811D-961B55B58233
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 0692F1AD-523F-4159-BDAF-99A35209DB56
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort CACBFB9B-0896-4D49-B419-C0467F979702
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 9FDF9B42-B5F7-4258-9B2F-22C118F613B2
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 82446E97-ABDB-4FE6-B329-763AF23E4605
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 2467B7DF-FE3F-4F3A-9930-5CB878D6B4AE
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UIScreenAsset 10068A43-4A68-17B8-0DBF-6DA458FBED25 #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Frontend/DeviceSelectionScreen
+        Nodes::array
+            member(0) F14CF608-B6A1-4CE7-90BA-CEB8A425464B
+            member(1) 605F7A23-7E6C-403F-8B84-A68A03530F08
+            member(2) 9EA0E85E-435B-4270-B0FD-693CBCE6F667
+            member(3) F6F7E9F8-6280-45C8-965E-76F63F9D6B15
+            member(4) 45A30122-FE75-4629-B930-1DE67F733088
+        GlobalNode *nullGuid*
+        Connections::array
+            member(0) C927ACD2-FB6C-404B-87ED-E041EE531C57
+            member(1) 18F6F227-A0E8-4F77-9934-B887B1E8B73D
+            member(2) F854DF27-95FE-4FA2-B512-64BC3E01DCB9
+        AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41B4640B-1973-8469-A254-B1B23E4E6A04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+UIWidgetPathBinding DB8CE6C1-C640-4D26-80A1-E112B2001D51
+    $::UIDataBinding
+        $::DataContainer
+    WidgetPathQuery::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory UI/UIComponents/UserComp/FC3E3131-3A51-E098-516E-9B8F722F6DB8
+        DataKey -1736487976
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+WidgetNode F14CF608-B6A1-4CE7-90BA-CEB8A425464B
+    $::UINodeData
+        $::DataContainer
+        Name InputListener
+        IsRootNode False
+        ParentGraph 10068A43-4A68-17B8-0DBF-6DA458FBED25
+        ParentIsScreen True
+    WidgetAsset UI/Assets/InputListener/E061EE14-F95A-6AAA-DEC3-EBFAB940DF98
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding DB8CE6C1-C640-4D26-80A1-E112B2001D51
+    InstanceName InputListener_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member(0) 83F4817F-B9FC-4C07-8D91-B1982BB7BEA4
+        member(1) 8C2DFB38-05E2-40B2-913E-B08B04C699F3
+        member(2) 10694F2A-E16C-4045-B0AF-D8846D8992A9
+    Inputs *nullArray*

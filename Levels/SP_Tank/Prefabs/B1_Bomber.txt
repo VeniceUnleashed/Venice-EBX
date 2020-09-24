@@ -1,0 +1,128 @@
+Partition 09CD3F6A-8B9F-11E0-9918-D071DED0299B
+EffectReferenceObjectData CACEA091-B588-4866-BA3A-24D76E1AAE28
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 0.0194262806326
+                y 1.92792865006e-11
+                z 0.999811291695
+            up::Vec3
+                x 0.999759614468
+                y -0.0101722450927
+                z -0.0194252803922
+            forward::Vec3
+                x 0.0101703256369
+                y 0.999948263168
+                z -0.000197609086172
+            trans::Vec3
+                x 10.1427469254
+                y 1.17784953117
+                z 2.67387533188
+        Blueprint FX/Ambient/LevelSpecific/SP_Tank/BackdropFX/FX_Jet_Exhaust/2F5E682E-9166-466B-BE1D-D673AC865704
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart True
+InterfaceDescriptorData 63936A47-D9C4-4750-B67B-D11F62EC8EDF
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member(0)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -1924034008
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id 1951117852
+        member(1)::DynamicEvent
+            Id -1762982876
+        member(2)::DynamicEvent
+            Id -117303631
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 0D450410-76D3-4843-9F6E-4D6B5ED07471
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x -0.950891494751
+            y 0.483694076538
+            z 0.130115509033
+    Blueprint Levels/SP_Tank/Props/B1_Lancer/D5CB52EE-951B-30F6-FE36-2BA03E50FE6E
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint BFB1BE1C-A99D-81EC-9A4A-E7D11454E2E3 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Tank/Prefabs/B1_Bomber
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 63936A47-D9C4-4750-B67B-D11F62EC8EDF
+                            Target 0D450410-76D3-4843-9F6E-4D6B5ED07471
+                            SourceFieldId -1924034008
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 63936A47-D9C4-4750-B67B-D11F62EC8EDF
+                        Target CACEA091-B588-4866-BA3A-24D76E1AAE28
+                        SourceEvent::EventSpec
+                            Id 1951117852
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source 63936A47-D9C4-4750-B67B-D11F62EC8EDF
+                        Target CACEA091-B588-4866-BA3A-24D76E1AAE28
+                        SourceEvent::EventSpec
+                            Id -1762982876
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                    member(2)::EventConnection
+                        Source 63936A47-D9C4-4750-B67B-D11F62EC8EDF
+                        Target 0D450410-76D3-4843-9F6E-4D6B5ED07471
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 63936A47-D9C4-4750-B67B-D11F62EC8EDF
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 0D450410-76D3-4843-9F6E-4D6B5ED07471
+            member(1) CACEA091-B588-4866-BA3A-24D76E1AAE28

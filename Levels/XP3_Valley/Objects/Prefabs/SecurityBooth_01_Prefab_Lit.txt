@@ -1,0 +1,218 @@
+Partition F07B9565-FF12-4315-A83B-A1417E3C59C0
+InterfaceDescriptorData ABDD10F1-5E9F-4A88-BFB9-EDD2CECC03B4
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks::array
+        member(0)::DynamicLink
+            Id 124880329
+    OutputLinks *nullArray*
+IrReverbEntityData 160CFC04-DD35-4172-8C8E-E87BD2679C0F
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 3
+    ImpulseResponse Sound/Impulse_Responses/IR_Indoor_Big_Room/93BDA147-83FF-24F5-BD28-9B07C65B541A
+    Gain -15.0
+    Volume 0.0
+    FadeCurve FadeCurveType_LinearAmplitude
+MixerEntityData 54793B45-52F0-46DD-A652-6DBCEE124668
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 4
+    ActivateOnCreation True
+    Mixer Sound/Mixers/AmbientType_Mixer/63BE4D2A-6830-45EE-BE47-4C5D662E508C
+MixerEntityData E30189D6-D3C1-4569-A44D-F96167992195
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 5
+    ActivateOnCreation True
+    Mixer Sound/Mixers/AreaType_Mixer/E02AEB28-4FAD-4746-AA5B-882F6A2BC4EE
+ReferenceObjectData 6FF456A9-B0FA-4306-89F6-0DA86ED335BA
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Props/StreetProps/SecurityBooth_01/SecurityBooth_01/AD66F475-3A42-11DE-B56F-E920002EA6B7
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData E7F065FC-F43B-44CB-852C-CF736E091C48
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 6
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x -4.37113882867e-08
+            y 0.0
+            z 1.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x -1.0
+            y 0.0
+            z -4.37113882867e-08
+        trans::Vec3
+            x 0.0166285037994
+            y 2.240234375
+            z -0.275722980499
+    Blueprint Levels/XP3_Valley/objects/Prefabs/Lights/CeilingLight_02_Destrucible_Small/8B2473F7-2484-4532-9BB7-67EE691DF508
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SoundAreaEntityData 9AFE6451-771C-4013-A47C-4233D07A47A1
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Sound Sound/Levels/Shared/Object_Interiors/Shared_Ambients_Object_INT_SecurityBooth_01/F64F6F9D-989F-489D-A0C3-A4BAB0D557C7
+    BigWorld *nullGuid*
+    FadeWidth 1.0
+    ProximityMultiplier 1.0
+    FadeCurve FadeCurveType_SineAmplitude
+SpatialPrefabBlueprint CAEE359B-2C76-4EB3-95E2-962D99D6A237 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/XP3_Valley/objects/Prefabs/SecurityBooth_01_Prefab_Lit
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 9AFE6451-771C-4013-A47C-4233D07A47A1
+                            Target 160CFC04-DD35-4172-8C8E-E87BD2679C0F
+                            SourceFieldId 258157264
+                            TargetFieldId -1136955571
+                        member(1)::PropertyConnection
+                            Source 9AFE6451-771C-4013-A47C-4233D07A47A1
+                            Target 54793B45-52F0-46DD-A652-6DBCEE124668
+                            SourceFieldId 258157264
+                            TargetFieldId 1579081631
+                        member(2)::PropertyConnection
+                            Source 9AFE6451-771C-4013-A47C-4233D07A47A1
+                            Target E30189D6-D3C1-4569-A44D-F96167992195
+                            SourceFieldId 258157264
+                            TargetFieldId -2120426542
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source ABDD10F1-5E9F-4A88-BFB9-EDD2CECC03B4
+                            Target 610043B2-CD9E-4648-A975-FEBBC36BDB5D
+                            SourceFieldId 124880329
+                            TargetFieldId 0
+                        member(1)::LinkConnection
+                            Source 9AFE6451-771C-4013-A47C-4233D07A47A1
+                            Target 610043B2-CD9E-4648-A975-FEBBC36BDB5D
+                            SourceFieldId 838548383
+                            TargetFieldId 0
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 6FF456A9-B0FA-4306-89F6-0DA86ED335BA
+                        Target E7F065FC-F43B-44CB-852C-CF736E091C48
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                Descriptor ABDD10F1-5E9F-4A88-BFB9-EDD2CECC03B4
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 6FF456A9-B0FA-4306-89F6-0DA86ED335BA
+            member(1) 610043B2-CD9E-4648-A975-FEBBC36BDB5D
+            member(2) 9AFE6451-771C-4013-A47C-4233D07A47A1
+            member(3) 160CFC04-DD35-4172-8C8E-E87BD2679C0F
+            member(4) 54793B45-52F0-46DD-A652-6DBCEE124668
+            member(5) E30189D6-D3C1-4569-A44D-F96167992195
+            member(6) E7F065FC-F43B-44CB-852C-CF736E091C48
+VolumeVectorShapeData 610043B2-CD9E-4648-A975-FEBBC36BDB5D
+    $::VectorShapeData
+        $::BaseShapeData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 2
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 1
+        Points::array
+            member(0)::Vec3
+                x 1.83984375
+                y 0.119995139539
+                z 1.2001953125
+            member(1)::Vec3
+                x -1.8447265625
+                y 0.119995139539
+                z 1.2001953125
+            member(2)::Vec3
+                x -1.83984375
+                y 0.119995139539
+                z -1.83984363079
+            member(3)::Vec3
+                x 1.83984386921
+                y 0.119995139539
+                z -1.83984375
+        Normals::array
+            member(0)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member(1)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member(2)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member(3)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+        Tension 0.0
+        IsClosed True
+        AllowRoll False
+    Height 2.70000004768

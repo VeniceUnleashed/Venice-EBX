@@ -1,0 +1,161 @@
+Partition A8520F22-F89B-11DF-8ECE-D27A3F909B3D
+VoiceOverConversationNode FC297B7F-195E-466B-AA18-95BBD8F8FC62
+    $::VoiceOverStructureNode
+        $::VoiceOverNode
+            $::DataContainer
+        FlowMode VoiceOverLogicFlowMode_One
+    Groups::array
+        member(0) E5EB29E8-0179-4D02-A352-76D8203F2A41
+    Condition *nullArray*
+    Interval *nullGuid*
+    FinishedRelationship *nullArray*
+    BlockedRelationship *nullArray*
+    ConditionMode VoiceOverContainerConditionMode_All
+    Probability 100.0
+    Pronunciation *nullGuid*
+    InterruptMode VoiceOverConversationInterruptMode_Allow
+    Priority 0
+    QueueMode VoiceOverConversationQueueMode_Never
+    Relevancy 10.0
+    TrackCount 1
+    LastSequenceIndex 0
+VoiceOverConversationNode 31FB42EB-42BE-4388-A675-EA81BD87BD65
+    $::VoiceOverStructureNode
+        $::VoiceOverNode
+            $::DataContainer
+        FlowMode VoiceOverLogicFlowMode_One
+    Groups::array
+        member(0) A4A849EE-C483-4385-B768-1DD7441A4CC1
+    Condition *nullArray*
+    Interval *nullGuid*
+    FinishedRelationship *nullArray*
+    BlockedRelationship *nullArray*
+    ConditionMode VoiceOverContainerConditionMode_All
+    Probability 100.0
+    Pronunciation *nullGuid*
+    InterruptMode VoiceOverConversationInterruptMode_Allow
+    Priority 0
+    QueueMode VoiceOverConversationQueueMode_Never
+    Relevancy 10.0
+    TrackCount 1
+    LastSequenceIndex 0
+VoiceOverDialogClip C1466A8C-A5D1-4DC6-BAF3-F2F9BCB259DD
+    $::DataContainer
+    Offset 0.0
+    Takes::array
+        member(0)::VoiceOverDialogTake
+            Wave Sound/VO/EN/SP/sp03/sp03_08_sc01_01_F18_Pilot/B4559CE9-8538-9759-3BBD-7C376DF0E5AC
+    OffsetReferences *nullArray*
+    SequenceIndex 0
+    Events *nullGuid*
+VoiceOverDialogClip 1C66D654-58FD-40FD-AA1E-E945D6999C5D
+    $::DataContainer
+    Offset 0.0
+    Takes::array
+        member(0)::VoiceOverDialogTake
+            Wave Sound/VO/EN/SP/sp03/sp03_08_sc02_01_F18_Awacs/A74D6FC7-1B62-A062-6755-8D5C8DE2FCB8
+    OffsetReferences *nullArray*
+    SequenceIndex 0
+    Events *nullGuid*
+VoiceOverDialogGroup E5EB29E8-0179-4D02-A352-76D8203F2A41
+    $::DataContainer
+    Sound Sound/VO/VO_Radio_Pilot/89F7EA8F-5D9D-F722-8802-F4CAABB57353
+    Tracks::array
+        member(0) 8B700F59-2384-438D-9781-66DE7A4AD22F
+VoiceOverDialogGroup A4A849EE-C483-4385-B768-1DD7441A4CC1
+    $::DataContainer
+    Sound Sound/VO/VO_Radio_Pilot/89F7EA8F-5D9D-F722-8802-F4CAABB57353
+    Tracks::array
+        member(0) 4BF18755-AC33-45C0-AE36-6D37BFED16C5
+VoiceOverDialogTrack 8B700F59-2384-438D-9781-66DE7A4AD22F
+    $::DataContainer
+    Source *nullGuid*
+    TakeControl *nullGuid*
+    TakeIndexMapping *nullArray*
+    TakeSwitching VoiceOverDialogTakeBehavior_Start
+    TakeSwitchingOnResume False
+    ParentTrackIndex 0
+    Output *nullGuid*
+    SamplerNode Sound/VO/VO_Radio_Pilot/DADAB6A0-E4A5-4AF8-B61F-9DC797F5FEBC
+    QueueGroup *nullGuid*
+    Clips::array
+        member(0) C1466A8C-A5D1-4DC6-BAF3-F2F9BCB259DD
+VoiceOverDialogTrack 4BF18755-AC33-45C0-AE36-6D37BFED16C5
+    $::DataContainer
+    Source *nullGuid*
+    TakeControl *nullGuid*
+    TakeIndexMapping *nullArray*
+    TakeSwitching VoiceOverDialogTakeBehavior_Start
+    TakeSwitchingOnResume False
+    ParentTrackIndex 0
+    Output *nullGuid*
+    SamplerNode Sound/VO/VO_Radio_Pilot/DADAB6A0-E4A5-4AF8-B61F-9DC797F5FEBC
+    QueueGroup *nullGuid*
+    Clips::array
+        member(0) 1C66D654-58FD-40FD-AA1E-E945D6999C5D
+VoiceOverEvent D71E4F69-1A83-4E7C-9F9B-E25F1C4459E4
+    $::DataContainer
+    Name sp03_08_sc01
+    Parameters *nullArray*
+    Owner 0791F059-9704-E219-2A2A-C26995FEDF7C
+VoiceOverEvent 1E2B40EB-E784-4DED-A2FF-C71736D94CF2
+    $::DataContainer
+    Name sp03_08_sc02
+    Parameters *nullArray*
+    Owner 0791F059-9704-E219-2A2A-C26995FEDF7C
+VoiceOverEventNode A349573E-9298-44AE-897B-FBA9150326C7
+    $::VoiceOverStructureNode
+        $::VoiceOverNode
+            $::DataContainer
+        FlowMode VoiceOverLogicFlowMode_One
+    Interval *nullGuid*
+    Relationship::array
+        member(0) FC297B7F-195E-466B-AA18-95BBD8F8FC62
+    Redirects *nullArray*
+    Event D71E4F69-1A83-4E7C-9F9B-E25F1C4459E4
+VoiceOverEventNode CC9BB780-9AB6-4DB4-BD42-E45BB8BDF16F
+    $::VoiceOverStructureNode
+        $::VoiceOverNode
+            $::DataContainer
+        FlowMode VoiceOverLogicFlowMode_One
+    Interval *nullGuid*
+    Relationship::array
+        member(0) 31FB42EB-42BE-4388-A675-EA81BD87BD65
+    Redirects *nullArray*
+    Event 1E2B40EB-E784-4DED-A2FF-C71736D94CF2
+VoiceOverGroup 6FCE8158-B725-7C35-830F-A4FD4D214BB0
+    $::DataContainer
+    Name Default
+    Priority 0
+VoiceOverGroup 540D803F-3DF5-41E5-A669-B2E5848829ED
+    $::DataContainer
+    Name Placeholder
+    Priority 0
+VoiceOverLogicAsset 0791F059-9704-E219-2A2A-C26995FEDF7C #primary instance
+    $::Asset
+        $::DataContainer
+        Name Sound/VO/Logic/sp03_08
+    Events::array
+        member(0) D71E4F69-1A83-4E7C-9F9B-E25F1C4459E4
+        member(1) 1E2B40EB-E784-4DED-A2FF-C71736D94CF2
+    Groups::array
+        member(0) 6FCE8158-B725-7C35-830F-A4FD4D214BB0
+        member(1) 540D803F-3DF5-41E5-A669-B2E5848829ED
+    Flows::array
+        member(0) 54CFC88C-7D90-4874-987E-7AED5A2A4A89
+        member(1) 682A2165-3996-421C-9EF6-574CD92454F9
+    System Sound/VO/VO_System/A761FE91-6D3D-9299-F2DD-7EF8D078002A
+VoiceOverLogicFlow 54CFC88C-7D90-4874-987E-7AED5A2A4A89
+    $::DataContainer
+    Name sp03_08_sc01
+    Group 540D803F-3DF5-41E5-A669-B2E5848829ED
+    Locals *nullArray*
+    Roots::array
+        member(0) A349573E-9298-44AE-897B-FBA9150326C7
+VoiceOverLogicFlow 682A2165-3996-421C-9EF6-574CD92454F9
+    $::DataContainer
+    Name sp03_08_sc02
+    Group 540D803F-3DF5-41E5-A669-B2E5848829ED
+    Locals *nullArray*
+    Roots::array
+        member(0) CC9BB780-9AB6-4DB4-BD42-E45BB8BDF16F

@@ -1,0 +1,119 @@
+Partition 4AF22ED1-E7AD-4D5E-950B-DE64B5656C7D
+InterfaceDescriptorData E114E904-3ADC-4ACA-86AF-46E6EF75B393
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member(0)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 901540267
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -117245068
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 9236EBC6-C1D2-40E2-B123-63E1D3C24231
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Animations/Characters/MP/Buildings/BigRadioTower/BigRadioTower/11CADBE5-146C-7A74-F54D-83CF8782EEE3
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 2CA23006-8CB5-4D2B-B729-0FF6F4173949
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Animations/Characters/MP/Buildings/BigRadioTower/Wires/AF5D2DFF-ED26-A7F4-7A7B-6C3F59AD8B1D
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 2E980D71-8276-48BD-A7E9-736C2E12F4A8 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/Characters/MP/Buildings/BigRadioTower/BigRadioTowerMP_Serverside
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source E114E904-3ADC-4ACA-86AF-46E6EF75B393
+                            Target 9236EBC6-C1D2-40E2-B123-63E1D3C24231
+                            SourceFieldId 901540267
+                            TargetFieldId 901540267
+                        member(1)::PropertyConnection
+                            Source E114E904-3ADC-4ACA-86AF-46E6EF75B393
+                            Target 2CA23006-8CB5-4D2B-B729-0FF6F4173949
+                            SourceFieldId 901540267
+                            TargetFieldId 901540267
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source E114E904-3ADC-4ACA-86AF-46E6EF75B393
+                        Target 9236EBC6-C1D2-40E2-B123-63E1D3C24231
+                        SourceEvent::EventSpec
+                            Id -117245068
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(1)::EventConnection
+                        Source E114E904-3ADC-4ACA-86AF-46E6EF75B393
+                        Target 2CA23006-8CB5-4D2B-B729-0FF6F4173949
+                        SourceEvent::EventSpec
+                            Id -117245068
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor E114E904-3ADC-4ACA-86AF-46E6EF75B393
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 9236EBC6-C1D2-40E2-B123-63E1D3C24231
+            member(1) 2CA23006-8CB5-4D2B-B729-0FF6F4173949

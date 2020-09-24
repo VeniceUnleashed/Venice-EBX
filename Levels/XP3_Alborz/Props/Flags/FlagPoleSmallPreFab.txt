@@ -1,0 +1,139 @@
+Partition FF2CDD0D-FE36-41E7-9A3C-D73E87DEBD67
+ModelAnimationEntityData A323CD18-F92B-48CB-AC06-AD56E97E3A8B
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Realm Realm_Client
+    AutoStart True
+    Looping True
+    ResetAfterStop True
+    PlayFirstFrame False
+    DefaultAnimation FlagPoleSmall_AnimHardWind
+    AnimationIndex 0
+    AnimationSet Animations/Characters/SP/Shared/Objects/Cloths/Flags/FlagPoleSmall_AnimSet/F5F0F3A2-659A-DEFC-613F-01B370CCDCDB
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName Connect
+    RootMeshBoneName Base
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+ReferenceObjectData 0AF96C2D-2BE6-4DC1-A89C-591645D73460
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 0
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Levels/XP3_Alborz/Props/Flags/FlagPoleSmall_Object/11D24B9A-7553-43FF-8E8E-91CB12B05908
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SoundEntityData 3FA1681D-54AA-4AA0-874A-1F043C529FD1
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Sound Sound/Levels/Shared/Props/Flags/XP3_Alborz_Shared_Ambient_Object_FlagpoleSmall_01/9D108964-9A70-4634-8A1B-1F83E2BEF10E
+    PlayOnCreation True
+    ObstructionHandle -1
+SpatialPrefabBlueprint FF80B070-9E4E-43F3-8F71-3770D8C03BEA #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/XP3_Alborz/Props/Flags/FlagPoleSmallPreFab
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source A323CD18-F92B-48CB-AC06-AD56E97E3A8B
+                            Target 0AF96C2D-2BE6-4DC1-A89C-591645D73460
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 0AF96C2D-2BE6-4DC1-A89C-591645D73460
+                        Target 3FA1681D-54AA-4AA0-874A-1F043C529FD1
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                Descriptor *nullGuid*
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) A323CD18-F92B-48CB-AC06-AD56E97E3A8B
+            member(1) 0AF96C2D-2BE6-4DC1-A89C-591645D73460
+            member(2) 3FA1681D-54AA-4AA0-874A-1F043C529FD1

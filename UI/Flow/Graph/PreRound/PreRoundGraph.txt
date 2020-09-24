@@ -1,0 +1,104 @@
+Partition 3DB77682-56D0-11E0-81B0-A6381D0446D6
+InstanceInputNode C8E7E74C-5023-4406-87ED-FE48C94417F8
+    $::UINodeData
+        $::DataContainer
+        Name WaitingForPlayers
+        IsRootNode False
+        ParentGraph EE8DBFC6-F901-B167-6F0F-DDDCB279C174
+        ParentIsScreen False
+    Out ADCD3F5D-1AD1-462D-A80F-D29D493804D1
+InstanceInputNode A45AB7FD-B326-4351-91DD-B0484AC7900C
+    $::UINodeData
+        $::DataContainer
+        Name CountDown
+        IsRootNode False
+        ParentGraph EE8DBFC6-F901-B167-6F0F-DDDCB279C174
+        ParentIsScreen False
+    Out 3BFFA1C6-A31A-4894-AC27-3752DF61E27B
+StateNode 487E5328-1CBD-4EB9-9551-2E46662D15DE
+    $::UINodeData
+        $::DataContainer
+        Name StateNode
+        IsRootNode False
+        ParentGraph EE8DBFC6-F901-B167-6F0F-DDDCB279C174
+        ParentIsScreen False
+    Screen UI/Flow/Screen/Weapon/CrosshairDefault/0BFD7D1E-F907-4DAE-B0CC-A942E01F3FA6
+    In 1101F15D-EA27-44BB-AC76-86716821EB25
+    Show *nullGuid*
+    Hide *nullGuid*
+    Inputs *nullArray*
+    Outputs *nullArray*
+    RenderToTexture False
+StateNode DBAB7BDF-13E0-4946-9335-813C3973407E
+    $::UINodeData
+        $::DataContainer
+        Name StateNode
+        IsRootNode False
+        ParentGraph EE8DBFC6-F901-B167-6F0F-DDDCB279C174
+        ParentIsScreen False
+    Screen UI/Flow/Screen/OptionsScreen/7FE2392A-FD96-69A7-4D03-390E28A885E8
+    In 60EFEA85-1F5F-4E94-9A7E-A8FFB46E7D10
+    Show *nullGuid*
+    Hide *nullGuid*
+    Inputs *nullArray*
+    Outputs *nullArray*
+    RenderToTexture False
+UIGraphAsset EE8DBFC6-F901-B167-6F0F-DDDCB279C174 #primary instance
+    $::Asset
+        $::DataContainer
+        Name UI/Flow/Graph/PreRound/PreRoundGraph
+    Nodes::array
+        member(0) C8E7E74C-5023-4406-87ED-FE48C94417F8
+        member(1) A45AB7FD-B326-4351-91DD-B0484AC7900C
+        member(2) 487E5328-1CBD-4EB9-9551-2E46662D15DE
+        member(3) DBAB7BDF-13E0-4946-9335-813C3973407E
+    GlobalNode *nullGuid*
+    Connections::array
+        member(0) 77C6A34B-68BB-482B-B09E-D8020DA1A3C6
+        member(1) ACE14F7D-5DA9-45EE-B963-820AD786AEF7
+    AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41B4640B-1973-8469-A254-B1B23E4E6A04
+    BundleAssetName *nullString*
+    ProtectScreens False
+    Modal False
+    EventList *nullArray*
+    IsWin32UIGraphAsset True
+    IsXenonUIGraphAsset True
+    IsPs3UIGraphAsset True
+UINodeConnection 77C6A34B-68BB-482B-B09E-D8020DA1A3C6
+    $::DataContainer
+    SourceNode C8E7E74C-5023-4406-87ED-FE48C94417F8
+    TargetNode 487E5328-1CBD-4EB9-9551-2E46662D15DE
+    SourcePort ADCD3F5D-1AD1-462D-A80F-D29D493804D1
+    TargetPort 1101F15D-EA27-44BB-AC76-86716821EB25
+    NumScreensToPop 0
+UINodeConnection ACE14F7D-5DA9-45EE-B963-820AD786AEF7
+    $::DataContainer
+    SourceNode A45AB7FD-B326-4351-91DD-B0484AC7900C
+    TargetNode DBAB7BDF-13E0-4946-9335-813C3973407E
+    SourcePort 3BFFA1C6-A31A-4894-AC27-3752DF61E27B
+    TargetPort 60EFEA85-1F5F-4E94-9A7E-A8FFB46E7D10
+    NumScreensToPop 0
+UINodePort ADCD3F5D-1AD1-462D-A80F-D29D493804D1
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 3BFFA1C6-A31A-4894-AC27-3752DF61E27B
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 1101F15D-EA27-44BB-AC76-86716821EB25
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 60EFEA85-1F5F-4E94-9A7E-A8FFB46E7D10
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False

@@ -1,0 +1,142 @@
+Partition 3F6D0CB7-4944-4632-8C00-5963E049706F
+InterfaceDescriptorData BF5CE71D-B1F4-4C20-BCF7-324B7350ADBB
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id -1452333337
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 383E1823-9126-4F91-BDDA-9C5EEA4C3C1D
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 3.79286193848
+            y 13.684633255
+            z -0.0306517481804
+    Blueprint FX/LensFlares/Prefabs/Prefab_LensBleed_Blue_SPBank/17295FF9-579C-4308-91D4-8B180A03B79E
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData E1C5F770-C781-4006-9383-99582A20A8C5
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Objects/StreetLight_02/StreetLight_02/EF563998-1D74-CC6B-5C91-12F3ED8873EE
+    ObjectVariation Objects/StreetLight_02/StreetLight_02_LightsON/944D8BC1-3591-3CD4-CDEF-51D8B4779A1E
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 853BF6E5-D667-447B-A816-8C374791B209
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 2
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 2.23661327362
+            y 0.291153311729
+            z 9.85842696366e-09
+        up::Vec3
+            x -2.42349305069e-08
+            y 3.35254412676e-07
+            z -1.26273548603
+        forward::Vec3
+            x -0.311095654964
+            y 2.38980150223
+            z 6.41918973088e-07
+        trans::Vec3
+            x 4.06410837173
+            y 13.8901720047
+            z -0.0731914937496
+    Blueprint Levels/SP_Earthquake/Props/LightCone/LightCone_02_Blue/966A59C4-59AB-48A2-8574-2C67867B0B25
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 327C74D9-D0D7-4E12-B5D2-1BDCC9F61DE0 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Objects/StreetLight_02/StreetLight_02_Bank
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source E1C5F770-C781-4006-9383-99582A20A8C5
+                        Target 383E1823-9126-4F91-BDDA-9C5EEA4C3C1D
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(1)::EventConnection
+                        Source E1C5F770-C781-4006-9383-99582A20A8C5
+                        Target 853BF6E5-D667-447B-A816-8C374791B209
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(2)::EventConnection
+                        Source E1C5F770-C781-4006-9383-99582A20A8C5
+                        Target BF5CE71D-B1F4-4C20-BCF7-324B7350ADBB
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -1452333337
+                        TargetType EventConnectionTargetType_Client
+                Descriptor BF5CE71D-B1F4-4C20-BCF7-324B7350ADBB
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 383E1823-9126-4F91-BDDA-9C5EEA4C3C1D
+            member(1) E1C5F770-C781-4006-9383-99582A20A8C5
+            member(2) 853BF6E5-D667-447B-A816-8C374791B209

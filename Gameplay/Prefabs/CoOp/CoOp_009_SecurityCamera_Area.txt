@@ -1,0 +1,241 @@
+Partition 3EA4142A-6E85-41F0-8917-1FA912BC9168
+BoolEntityData 4AFE9EDE-BBCC-4021-802E-4F314C06C4AB
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Realm Realm_Server
+    DefaultValue True
+GeometryTriggerEntityData A38EC86A-68A6-4165-BC4C-3E8AA990246B
+    $::AreaTriggerEntityData
+        $::TriggerEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 3
+                            IsPropertyConnectionTarget 1
+                            IndexInBlueprint 0
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled True
+                Components *nullArray*
+                RuntimeComponentCount 0
+            Delay 0.0
+            RunOnce False
+        GeometryTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Include ATPlayers
+        UseCharacterEntity False
+        Radius 0.0
+        InsideAreaEventRepeatTime 0.0
+        OneInsideAreaEventPerSoldier False
+        TriggerOnlyOnLeave False
+        ResetOnEnable False
+        TriggerOnLeaveOnDeath True
+        TriggerOnLeaveOnDisable False
+InterfaceDescriptorData E9A2D290-C8E4-4881-88E5-E3D223178FED
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id 667423180
+        member(1)::DynamicEvent
+            Id -742351303
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id 818349001
+        member(1)::DynamicEvent
+            Id -894853924
+    InputLinks *nullArray*
+    OutputLinks::array
+        member(0)::DynamicLink
+            Id 838548383
+        member(1)::DynamicLink
+            Id -616190660
+LogicPrefabBlueprint 1D7D2203-310B-48A8-A6C8-9D5E8A7ECE6B #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Prefabs/CoOp/CoOp_009_SecurityCamera_Area
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 4AFE9EDE-BBCC-4021-802E-4F314C06C4AB
+                            Target A38EC86A-68A6-4165-BC4C-3E8AA990246B
+                            SourceFieldId 225375086
+                            TargetFieldId 2662400
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source A38EC86A-68A6-4165-BC4C-3E8AA990246B
+                            Target E9A2D290-C8E4-4881-88E5-E3D223178FED
+                            SourceFieldId 838548383
+                            TargetFieldId 838548383
+                        member(1)::LinkConnection
+                            Source A38EC86A-68A6-4165-BC4C-3E8AA990246B
+                            Target E9A2D290-C8E4-4881-88E5-E3D223178FED
+                            SourceFieldId -616190660
+                            TargetFieldId -616190660
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source E9A2D290-C8E4-4881-88E5-E3D223178FED
+                        Target 4AFE9EDE-BBCC-4021-802E-4F314C06C4AB
+                        SourceEvent::EventSpec
+                            Id 667423180
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member(1)::EventConnection
+                        Source E9A2D290-C8E4-4881-88E5-E3D223178FED
+                        Target 4AFE9EDE-BBCC-4021-802E-4F314C06C4AB
+                        SourceEvent::EventSpec
+                            Id -742351303
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_Server
+                    member(2)::EventConnection
+                        Source A38EC86A-68A6-4165-BC4C-3E8AA990246B
+                        Target 7B4F39D3-35FB-47BF-8EF1-09E1F01A2B5D
+                        SourceEvent::EventSpec
+                            Id -80368276
+                        TargetEvent::EventSpec
+                            Id -1688613187
+                        TargetType EventConnectionTargetType_Server
+                    member(3)::EventConnection
+                        Source A38EC86A-68A6-4165-BC4C-3E8AA990246B
+                        Target 7B4F39D3-35FB-47BF-8EF1-09E1F01A2B5D
+                        SourceEvent::EventSpec
+                            Id -70038721
+                        TargetEvent::EventSpec
+                            Id -763773646
+                        TargetType EventConnectionTargetType_Server
+                    member(4)::EventConnection
+                        Source A38EC86A-68A6-4165-BC4C-3E8AA990246B
+                        Target E9A2D290-C8E4-4881-88E5-E3D223178FED
+                        SourceEvent::EventSpec
+                            Id -70038721
+                        TargetEvent::EventSpec
+                            Id -894853924
+                        TargetType EventConnectionTargetType_Server
+                    member(5)::EventConnection
+                        Source 7B4F39D3-35FB-47BF-8EF1-09E1F01A2B5D
+                        Target C893B5C8-6B8E-4DA2-9F0C-E35FC05BF45C
+                        SourceEvent::EventSpec
+                            Id 1975570652
+                        TargetEvent::EventSpec
+                            Id 231942004
+                        TargetType EventConnectionTargetType_Server
+                    member(6)::EventConnection
+                        Source 7B4F39D3-35FB-47BF-8EF1-09E1F01A2B5D
+                        Target E9A2D290-C8E4-4881-88E5-E3D223178FED
+                        SourceEvent::EventSpec
+                            Id 1975570652
+                        TargetEvent::EventSpec
+                            Id 818349001
+                        TargetType EventConnectionTargetType_Server
+                    member(7)::EventConnection
+                        Source 7B4F39D3-35FB-47BF-8EF1-09E1F01A2B5D
+                        Target 4AFE9EDE-BBCC-4021-802E-4F314C06C4AB
+                        SourceEvent::EventSpec
+                            Id 1975570652
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_Server
+                Descriptor E9A2D290-C8E4-4881-88E5-E3D223178FED
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) A38EC86A-68A6-4165-BC4C-3E8AA990246B
+            member(1) 4AFE9EDE-BBCC-4021-802E-4F314C06C4AB
+            member(2) C893B5C8-6B8E-4DA2-9F0C-E35FC05BF45C
+            member(3) 7B4F39D3-35FB-47BF-8EF1-09E1F01A2B5D
+MultipleTriggerEntityData 7B4F39D3-35FB-47BF-8EF1-09E1F01A2B5D
+    $::TriggerEventEntityData
+        $::TriggerEntityData
+            $::GameEntityData
+                $::SpatialEntityData
+                    $::EntityData
+                        $::GameObjectData
+                            $::GameDataContainer
+                                $::DataContainer
+                            IsEventConnectionTarget 1
+                            IsPropertyConnectionTarget 3
+                            IndexInBlueprint 3
+                    Transform::LinearTransform
+                        right::Vec3
+                            x 1.0
+                            y 0.0
+                            z 0.0
+                        up::Vec3
+                            x 0.0
+                            y 1.0
+                            z 0.0
+                        forward::Vec3
+                            x 0.0
+                            y 0.0
+                            z 1.0
+                        trans::Vec3
+                            x 0.0
+                            y 0.0
+                            z 0.0
+                Enabled True
+                Components *nullArray*
+                RuntimeComponentCount 0
+            Delay 0.0
+            RunOnce False
+    TriggerAmount 1
+PrintDebugTextEntityData C893B5C8-6B8E-4DA2-9F0C-E35FC05BF45C
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_Server
+    Text ALARM STARTS
+    TextColor::Vec3
+        x 1.0
+        y 0.0
+        z 0.0
+    Enabled True

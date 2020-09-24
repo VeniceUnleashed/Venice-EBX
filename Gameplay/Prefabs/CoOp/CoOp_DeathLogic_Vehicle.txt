@@ -1,0 +1,86 @@
+Partition 6EACFA3B-A4F1-4873-9BC9-057B637AE492
+EventAndGateEntityData 0B8662BD-08A4-409F-AA76-361FE9E03541
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    Realm Realm_Server
+    EventCount 1
+EventSplitterEntityData 7D6D30F1-0FEA-4E86-B0AE-F7D7E03146E0
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    RunOnce True
+    Realm Realm_Server
+InterfaceDescriptorData 24EA3A8A-EA22-40A1-9A85-6B2E3C876D14
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -1202076924
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id -1174979740
+        member(1)::DynamicEvent
+            Id 573790353
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LogicPrefabBlueprint 20D122CB-D378-498C-B17E-C50084E356CC #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Prefabs/CoOp/CoOp_DeathLogic_Vehicle
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 0B8662BD-08A4-409F-AA76-361FE9E03541
+                        Target 7D6D30F1-0FEA-4E86-B0AE-F7D7E03146E0
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 1723395486
+                        TargetType EventConnectionTargetType_Server
+                    member(1)::EventConnection
+                        Source 7D6D30F1-0FEA-4E86-B0AE-F7D7E03146E0
+                        Target 24EA3A8A-EA22-40A1-9A85-6B2E3C876D14
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id -1174979740
+                        TargetType EventConnectionTargetType_Server
+                    member(2)::EventConnection
+                        Source 24EA3A8A-EA22-40A1-9A85-6B2E3C876D14
+                        Target 0B8662BD-08A4-409F-AA76-361FE9E03541
+                        SourceEvent::EventSpec
+                            Id -1202076924
+                        TargetEvent::EventSpec
+                            Id 193450867
+                        TargetType EventConnectionTargetType_Server
+                    member(3)::EventConnection
+                        Source 7D6D30F1-0FEA-4E86-B0AE-F7D7E03146E0
+                        Target 24EA3A8A-EA22-40A1-9A85-6B2E3C876D14
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id 573790353
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 24EA3A8A-EA22-40A1-9A85-6B2E3C876D14
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 0B8662BD-08A4-409F-AA76-361FE9E03541
+            member(1) 7D6D30F1-0FEA-4E86-B0AE-F7D7E03146E0

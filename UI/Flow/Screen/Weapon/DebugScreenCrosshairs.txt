@@ -1,0 +1,97 @@
+Partition A5C8D432-C4F1-11E0-8F3F-CECB4AF922D5
+UIDynamicDataBinding 59CD7081-6480-492A-8DA6-762E80DAF000
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName Data
+            DataCategory UI/UIComponents/UIWeaponComp/B8283ECF-FD78-DD0C-C888-EC9843787D52
+            DataKey -1924559777
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding 74CCC687-8A86-4AFD-BB89-F2CB99A45377
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName Data
+            DataCategory *nullGuid*
+            DataKey 0
+            UseDirectAccess False
+            UpdateOnInitialize False
+    Refresh True
+UINodePort AF5A7763-3619-4BD8-8B74-CED95F25F513
+    $::DataContainer
+    Name EventTriggered
+    InstanceName DebugField_02
+    Query UIWidgetEventID_OnItemHighlighted
+    AllowManualRemove False
+UINodePort E72F5D4A-864E-4646-A84D-07A65596397A
+    $::DataContainer
+    Name EventTriggered
+    InstanceName DebugField_01
+    Query UIWidgetEventID_OnItemHighlighted
+    AllowManualRemove False
+UIScreenAsset 6CAA4FD3-11EC-4EEE-4C3D-AC0A5E7765E8 #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Weapon/DebugScreenCrosshairs
+        Nodes::array
+            member(0) 775431CA-53BE-4E1C-9503-453D21DC0D5C
+            member(1) 3E48BF34-066C-4DD1-86F4-53D4439F87A4
+        GlobalNode *nullGuid*
+        Connections *nullArray*
+        AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultMaping/85731393-00A9-B3E1-1001-2EAD21F6CF0E
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+WidgetNode 775431CA-53BE-4E1C-9503-453D21DC0D5C
+    $::UINodeData
+        $::DataContainer
+        Name EventTriggered
+        IsRootNode False
+        ParentGraph 6CAA4FD3-11EC-4EEE-4C3D-AC0A5E7765E8
+        ParentIsScreen True
+    WidgetAsset UI/Assets/DebugField/64088C0B-118C-7572-8C26-39E6D080231B
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 74CCC687-8A86-4AFD-BB89-F2CB99A45377
+    InstanceName DebugField_02
+    WidgetProperties::array
+        member(0)::UIWidgetProperty
+            Name Label
+            Value EventTriggered
+    Outputs *nullArray*
+    Inputs::array
+        member(0) AF5A7763-3619-4BD8-8B74-CED95F25F513
+WidgetNode 3E48BF34-066C-4DD1-86F4-53D4439F87A4
+    $::UINodeData
+        $::DataContainer
+        Name ActiveWeaponName
+        IsRootNode False
+        ParentGraph 6CAA4FD3-11EC-4EEE-4C3D-AC0A5E7765E8
+        ParentIsScreen True
+    WidgetAsset UI/Assets/DebugField/64088C0B-118C-7572-8C26-39E6D080231B
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 59CD7081-6480-492A-8DA6-762E80DAF000
+    InstanceName DebugField_01
+    WidgetProperties::array
+        member(0)::UIWidgetProperty
+            Name Label
+            Value ActiveWeaponName
+    Outputs *nullArray*
+    Inputs::array
+        member(0) E72F5D4A-864E-4646-A84D-07A65596397A

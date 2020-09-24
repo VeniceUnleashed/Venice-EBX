@@ -1,0 +1,163 @@
+Partition 973E23B0-98D8-4D82-926C-030999E4FB10
+HavokAsset CEC6DB2F-0F60-C89D-0D0E-1B87F02FD564
+    $::Asset
+        $::DataContainer
+        Name Vehicles/F18_sp03/F18_Flares_Projectile_sp_Physics_0_Win32
+    Scale 1.0
+    ExternalAssets *nullArray*
+MissileEntityData 3CEA855C-9DDA-4A42-B67B-6863CC471F95
+    $::MeshProjectileEntityData
+        $::ProjectileEntityData
+            $::GamePhysicsEntityData
+                $::GameEntityData
+                    $::SpatialEntityData
+                        $::EntityData
+                            $::GameObjectData
+                                $::GameDataContainer
+                                    $::DataContainer
+                                IsEventConnectionTarget 2
+                                IsPropertyConnectionTarget 2
+                                IndexInBlueprint 0
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.0
+                                z 0.0
+                    Enabled False
+                    Components *nullArray*
+                    RuntimeComponentCount 0
+                PhysicsData C370F58D-CB90-4CA3-A62F-C92AEF7A47AE
+            InitialSpeed 100.0
+            TimeToLive 2.0
+            MaxCount 0
+            InitMeshHideTime 0.0
+            VisualConvergeDistance 30.0
+            DetonateOnTimeout False
+            ServerProjectileDisabled False
+            Explosion *nullGuid*
+            SuppressionData *nullGuid*
+            AmmunitionType *nullString*
+            MaterialPair *nullGuid*
+            HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+            SuppressOwnerVehicleDamage False
+        Mesh vehicles/f18_sp03/f18_flares_projectile_sp_Mesh/9DE4448B-9D57-49E1-AE3F-73FA4DF68A7A
+        TrailEffect FX/Vehicles/Misc/FX_FlareCounterMeasure/46463B28-0526-CB9A-E3FE-D797DD9FE631
+        IsAttachable False
+        MaxAttachableInclination 45.0
+        ExtraDamping False
+        InitialAngularVelocity::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    EngineEffect *nullGuid*
+    DudExplosion *nullGuid*
+    FlyBySound *nullGuid*
+    EngineStrength 0.0
+    MaxSpeed 0.0
+    EngineTimeToIgnition 0.0
+    EngineTimeToLive 4.0
+    TimeToActivateGuidingSystem 0.0
+    TimeToArm 0.0
+    MaxTurnAngle 90.0
+    Drag 0.0
+    Gravity 0.20000000298
+    ApplyGravityWhenGuided False
+    FlyBySoundRadius 5.0
+    FlyBySoundSpeed 10.0
+    ImpactImpulse 0.0
+    Damage 0.0
+    DefaultTeam TeamNeutral
+    WarnTarget wtWarnNone
+    WarnOnPointingMissile False
+    LockingController *nullGuid*
+    LockableInfo::MissileLockableInfoData
+        HeatSignature 100.0
+        RadarSignature 0.0
+    UnguidedData::MissileUnguidedData
+        UseStaticPosition False
+        StaticPosition::Vec2
+            x 0.0
+            y 0.0
+        UseTargetPosition False
+        TargetPositionOffset::Vec2
+            x 0.0
+            y 0.0
+    NearTargetDetonation::NearTargetDetonationData
+        DetonateNearTarget True
+        DetonationRadius 5.0
+        MaxDetonationDelay 0.0
+        MinDetonationDelay 0.0
+PhysicsEntityData C370F58D-CB90-4CA3-A62F-C92AEF7A47AE
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 65535
+    Asset *nullGuid*
+    ScaledAssets::array
+        member(0) CEC6DB2F-0F60-C89D-0D0E-1B87F02FD564
+    RigidBodies::array
+        member(0) B12A4E21-DEBE-4196-B349-BD8808990133
+    EncapsulatePartsInLists False
+    FloatPhysics *nullGuid*
+    Mass 1000010.0
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    Friction 1000010.0
+    Restitution 1000010.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    Proximity *nullGuid*
+    Constraints *nullArray*
+    MovableParts False
+ProjectileBlueprint 839D67AC-F0AD-4318-819B-280E31899474 #primary instance
+    $::ObjectBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Vehicles/F18_sp03/F18_Flares_Projectile_sp
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections *nullArray*
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Object 3CEA855C-9DDA-4A42-B67B-6863CC471F95
+RigidBodyData B12A4E21-DEBE-4196-B349-BD8808990133
+    $::DataContainer
+    RigidBodyType RBTypeCollision
+    Mass 1.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Dynamic
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*

@@ -1,0 +1,124 @@
+Partition A4B5AB12-E2B2-11E0-AEBB-AFA46028C121
+ModelAnimationEntityData 1CB5112D-697F-4912-8B75-5CC95E3C0CDC
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_Client
+    AutoStart False
+    Looping True
+    ResetAfterStop False
+    PlayFirstFrame False
+    DefaultAnimation WarningLabel_01_StrongWind
+    AnimationIndex 0
+    AnimationSet Animations/Characters/SP/Shared/Objects/Cloths/Flags/WarningLabel_01_AnimSet/95C52788-FE3D-39E4-9658-42B9BE308C56
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling True
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName AITrajectory
+    RootMeshBoneName AITrajectory
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+RandomDelayEntityData 039F10BB-0283-49F8-A9A2-C1CBB643ECB3
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    MinDelay 0.0
+    MaxDelay 5.0
+    Realm Realm_Client
+    AutoStart True
+    RunOnce False
+ReferenceObjectData B546B069-A31E-4FCE-8BA6-24DEA6789E86
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 0
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Animations/Characters/SP/Shared/Objects/Cloths/Flags/WarningLabel_01_Model/51248583-FE64-115A-3213-7099000736A3
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 401C82F0-75CB-6894-5F5E-6AC3B1B0A785 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/characters/SP/Shared/Objects/Cloths/Flags/WarningLabel_01_Prefab_StrongWind
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source 1CB5112D-697F-4912-8B75-5CC95E3C0CDC
+                            Target B546B069-A31E-4FCE-8BA6-24DEA6789E86
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 039F10BB-0283-49F8-A9A2-C1CBB643ECB3
+                        Target 1CB5112D-697F-4912-8B75-5CC95E3C0CDC
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                Descriptor *nullGuid*
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) B546B069-A31E-4FCE-8BA6-24DEA6789E86
+            member(1) 039F10BB-0283-49F8-A9A2-C1CBB643ECB3
+            member(2) 1CB5112D-697F-4912-8B75-5CC95E3C0CDC

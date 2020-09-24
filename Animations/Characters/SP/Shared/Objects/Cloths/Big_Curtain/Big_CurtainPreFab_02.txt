@@ -1,0 +1,120 @@
+Partition 6E8C0CB6-11F9-48A7-A745-D83430048E37
+InterfaceDescriptorData F66D40C3-3428-42B2-A333-961CA2821104
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -117303631
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ModelAnimationEntityData 1412DF69-CA76-49CC-A401-CD5D49FE477D
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Realm Realm_Client
+    AutoStart True
+    Looping True
+    ResetAfterStop True
+    PlayFirstFrame False
+    DefaultAnimation Big_Curtain_Anim2
+    AnimationIndex 1
+    AnimationSet Animations/Characters/SP/Shared/Objects/Cloths/Big_Curtain/Big_Curtain_Rig/ADECDABA-1462-7309-3F76-81B4C7799994
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling False
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName Connect
+    RootMeshBoneName Base
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+ReferenceObjectData 63E40BBA-2598-465C-AB41-FEC626BBEACB
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Animations/Characters/SP/Shared/Objects/Cloths/Big_Curtain/Big_CurtainModel/6F17E09D-C63C-55AE-2F50-B67052E7CE0E
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint E08B5533-A42C-4189-8D0F-47E37DB6CBD0 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Animations/Characters/SP/Shared/Objects/Cloths/Big_Curtain/Big_CurtainPreFab_02
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source 1412DF69-CA76-49CC-A401-CD5D49FE477D
+                            Target 63E40BBA-2598-465C-AB41-FEC626BBEACB
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source F66D40C3-3428-42B2-A333-961CA2821104
+                        Target 63E40BBA-2598-465C-AB41-FEC626BBEACB
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor F66D40C3-3428-42B2-A333-961CA2821104
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 63E40BBA-2598-465C-AB41-FEC626BBEACB
+            member(1) 1412DF69-CA76-49CC-A401-CD5D49FE477D

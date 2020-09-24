@@ -1,0 +1,270 @@
+Partition 1E6B143D-9666-11E0-9731-BA643DBF77A4
+FloatEntityData BB2BBE93-10E0-4EEC-A02E-5D7968BA46F6
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_Client
+    DefaultValue 1.0
+    IncDecValue 0.125
+FloatEntityData 2B2D34B6-37F8-4A80-80FA-FA2C8993D366
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    Realm Realm_Client
+    DefaultValue 0.0
+    IncDecValue 1.0
+InterfaceDescriptorData 0B6A5A8F-A5BE-48FE-A18A-88CE225BF049
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member(0)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 258157264
+                AccessType FieldAccessType_Source
+    InputEvents *nullArray*
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id -1828304424
+        member(1)::DynamicEvent
+            Id 1460616217
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+IrReverbEntityData 47847E56-EA88-42CF-9157-BF79035EA383
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 6
+    ImpulseResponse Sound/Impulse_Responses/IR_Indoor_Big_Room/93BDA147-83FF-24F5-BD28-9B07C65B541A
+    Gain -12.0
+    Volume 0.0
+    FadeCurve FadeCurveType_SineAmplitude
+MathOpEntityData 39F42BB4-E25F-4DBC-9E08-8AC83ED2C938
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 4
+    Realm Realm_Client
+    Operators::array
+        member(0) *nullEnum*
+MixerEntityData 1BA1078B-3FC2-410A-AD2C-31BCE12A8FE5
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 7
+    ActivateOnCreation True
+    Mixer Sound/Mixers/AmbientType_Mixer/63BE4D2A-6830-45EE-BE47-4C5D662E508C
+MixerEntityData 2D6E0A71-5BD9-48C6-A88E-D0E06FB3BA08
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 8
+    ActivateOnCreation True
+    Mixer Sound/Mixers/AreaType_Mixer/E02AEB28-4FAD-4746-AA5B-882F6A2BC4EE
+ReferenceObjectData 5E314708-E545-43F6-9CC5-A503EA540949
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Architecture/Barrack_02/Barrack_02/A32FC125-C8C6-2552-5729-E0E7B670197C
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SoundAreaEntityData E11D697B-FBB2-4D6D-9EA6-A41B461BD0A4
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 5
+    Sound Sound/Levels/Shared/Object_Interiors/Shared_Ambients_Object_INT_Barrack_02/FB91B3F5-B10A-491D-A5E6-9C6804328EB7
+    BigWorld *nullGuid*
+    FadeWidth 1.0
+    ProximityMultiplier 0.899999976158
+    FadeCurve FadeCurveType_SineAmplitude
+SpatialPrefabBlueprint 96AF1360-E60A-0E09-B5B3-08EB00B80DB1 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Architecture/Barrack_02/Barrack_02_Prefab
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 2B2D34B6-37F8-4A80-80FA-FA2C8993D366
+                            Target 39F42BB4-E25F-4DBC-9E08-8AC83ED2C938
+                            SourceFieldId 225375086
+                            TargetFieldId 193450867
+                        member(1)::PropertyConnection
+                            Source BB2BBE93-10E0-4EEC-A02E-5D7968BA46F6
+                            Target 39F42BB4-E25F-4DBC-9E08-8AC83ED2C938
+                            SourceFieldId 225375086
+                            TargetFieldId 193450866
+                        member(2)::PropertyConnection
+                            Source E11D697B-FBB2-4D6D-9EA6-A41B461BD0A4
+                            Target 47847E56-EA88-42CF-9157-BF79035EA383
+                            SourceFieldId 258157264
+                            TargetFieldId -1136955571
+                        member(3)::PropertyConnection
+                            Source 39F42BB4-E25F-4DBC-9E08-8AC83ED2C938
+                            Target E11D697B-FBB2-4D6D-9EA6-A41B461BD0A4
+                            SourceFieldId 193453899
+                            TargetFieldId 1947336347
+                        member(4)::PropertyConnection
+                            Source E11D697B-FBB2-4D6D-9EA6-A41B461BD0A4
+                            Target 0B6A5A8F-A5BE-48FE-A18A-88CE225BF049
+                            SourceFieldId 258157264
+                            TargetFieldId 258157264
+                        member(5)::PropertyConnection
+                            Source E11D697B-FBB2-4D6D-9EA6-A41B461BD0A4
+                            Target 1BA1078B-3FC2-410A-AD2C-31BCE12A8FE5
+                            SourceFieldId 258157264
+                            TargetFieldId 1579081631
+                        member(6)::PropertyConnection
+                            Source E11D697B-FBB2-4D6D-9EA6-A41B461BD0A4
+                            Target 2D6E0A71-5BD9-48C6-A88E-D0E06FB3BA08
+                            SourceFieldId 258157264
+                            TargetFieldId -2120426542
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source E11D697B-FBB2-4D6D-9EA6-A41B461BD0A4
+                            Target 34B112B6-13A5-4BCD-8FF6-7FE14CF6A7A4
+                            SourceFieldId 838548383
+                            TargetFieldId 0
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 5E314708-E545-43F6-9CC5-A503EA540949
+                        Target 2B2D34B6-37F8-4A80-80FA-FA2C8993D366
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source 5E314708-E545-43F6-9CC5-A503EA540949
+                        Target BB2BBE93-10E0-4EEC-A02E-5D7968BA46F6
+                        SourceEvent::EventSpec
+                            Id -1911867759
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_Client
+                    member(2)::EventConnection
+                        Source 5E314708-E545-43F6-9CC5-A503EA540949
+                        Target 0B6A5A8F-A5BE-48FE-A18A-88CE225BF049
+                        SourceEvent::EventSpec
+                            Id -1828304424
+                        TargetEvent::EventSpec
+                            Id -1828304424
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(3)::EventConnection
+                        Source 5E314708-E545-43F6-9CC5-A503EA540949
+                        Target 0B6A5A8F-A5BE-48FE-A18A-88CE225BF049
+                        SourceEvent::EventSpec
+                            Id 1460616217
+                        TargetEvent::EventSpec
+                            Id 1460616217
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 0B6A5A8F-A5BE-48FE-A18A-88CE225BF049
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 5E314708-E545-43F6-9CC5-A503EA540949
+            member(1) 34B112B6-13A5-4BCD-8FF6-7FE14CF6A7A4
+            member(2) BB2BBE93-10E0-4EEC-A02E-5D7968BA46F6
+            member(3) 2B2D34B6-37F8-4A80-80FA-FA2C8993D366
+            member(4) 39F42BB4-E25F-4DBC-9E08-8AC83ED2C938
+            member(5) E11D697B-FBB2-4D6D-9EA6-A41B461BD0A4
+            member(6) 47847E56-EA88-42CF-9157-BF79035EA383
+            member(7) 1BA1078B-3FC2-410A-AD2C-31BCE12A8FE5
+            member(8) 2D6E0A71-5BD9-48C6-A88E-D0E06FB3BA08
+VolumeVectorShapeData 34B112B6-13A5-4BCD-8FF6-7FE14CF6A7A4
+    $::VectorShapeData
+        $::BaseShapeData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 0
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 1
+        Points::array
+            member(0)::Vec3
+                x 2.68354010582
+                y 0.806152164936
+                z 6.42449855804
+            member(1)::Vec3
+                x -2.66017866135
+                y 0.806152164936
+                z 6.42449951172
+            member(2)::Vec3
+                x -2.66017866135
+                y 0.806152164936
+                z -6.43208885193
+            member(3)::Vec3
+                x 2.68353939056
+                y 0.806152164936
+                z -6.43208837509
+        Normals::array
+            member(0)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member(1)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member(2)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member(3)::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+        Tension 0.0
+        IsClosed True
+        AllowRoll False
+    Height 3.70000004768

@@ -1,0 +1,123 @@
+Partition 0AEFDEF7-AA39-11E0-A5D9-82B4486E46B8
+InterfaceDescriptorData DE8F1C88-7CD5-4608-867E-BA4B4192FF47
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member(0)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -1174111641
+                AccessType FieldAccessType_Source
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -567950349
+        member(1)::DynamicEvent
+            Id -639346773
+    OutputEvents *nullArray*
+    InputLinks::array
+        member(0)::DynamicLink
+            Id -510838215
+    OutputLinks *nullArray*
+ReferenceObjectData 52F94FA7-EBAC-4974-9628-37221194B0D1
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Objects/HEMMT_Truck_01/HEMMT_Main/8EE83D86-9AE4-9E44-E81A-6EBDE0B65515
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData E4665EA2-DE4D-4E8A-B9D5-676E3FA4100D
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Objects/HEMMT_Truck_01/HEMMT_Tank/1760C29B-8972-9981-35F3-3AB5A62D3033
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint E894B52E-30E8-566B-2A57-9079F2271A21 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Objects/HEMMT_Truck_01/HEMMT_Fueltank_Prefab
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 52F94FA7-EBAC-4974-9628-37221194B0D1
+                            Target DE8F1C88-7CD5-4608-867E-BA4B4192FF47
+                            SourceFieldId -1174111641
+                            TargetFieldId -1174111641
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source DE8F1C88-7CD5-4608-867E-BA4B4192FF47
+                            Target 52F94FA7-EBAC-4974-9628-37221194B0D1
+                            SourceFieldId -510838215
+                            TargetFieldId -510838215
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source DE8F1C88-7CD5-4608-867E-BA4B4192FF47
+                        Target 52F94FA7-EBAC-4974-9628-37221194B0D1
+                        SourceEvent::EventSpec
+                            Id -567950349
+                        TargetEvent::EventSpec
+                            Id -567950349
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source DE8F1C88-7CD5-4608-867E-BA4B4192FF47
+                        Target 52F94FA7-EBAC-4974-9628-37221194B0D1
+                        SourceEvent::EventSpec
+                            Id -639346773
+                        TargetEvent::EventSpec
+                            Id -639346773
+                        TargetType EventConnectionTargetType_Client
+                Descriptor DE8F1C88-7CD5-4608-867E-BA4B4192FF47
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 52F94FA7-EBAC-4974-9628-37221194B0D1
+            member(1) E4665EA2-DE4D-4E8A-B9D5-676E3FA4100D

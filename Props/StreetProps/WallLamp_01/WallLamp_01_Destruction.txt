@@ -1,0 +1,214 @@
+Partition DBE5E282-635C-4F4D-A40C-7950B2974698
+HavokAsset 035D7B31-F2A8-F306-80DD-C7F3FC95DE8F
+    $::Asset
+        $::DataContainer
+        Name Props/StreetProps/WallLamp_01/WallLamp_01_Destruction_Physics_0_Win32
+    Scale 1.0
+    ExternalAssets *nullArray*
+HealthStateData 899D9619-68BA-441F-8226-DE760B3270AF
+    $::DataContainer
+    Objects *nullArray*
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 100.0
+    PartIndex 0
+    CanSupportOtherParts True
+HealthStateData 6FF2EB09-224A-4252-9D59-64ED99C2FA4C
+    $::DataContainer
+    Objects *nullArray*
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 0.0
+    PartIndex 4294967295
+    CanSupportOtherParts True
+HealthStateData 027C9388-DA66-42C0-868A-7822D55A1A91
+    $::DataContainer
+    Objects *nullArray*
+    LoosePartPhysics *nullArray*
+    SpawnedBangerBlueprint *nullGuid*
+    CopyDamageToBanger True
+    SpawnedBangerImpulseParams *nullGuid*
+    PhysicsEnabled True
+    Health 50.0
+    PartIndex 1
+    CanSupportOtherParts True
+InterfaceDescriptorData 3697E648-70B8-4A25-B8F1-D9F12FA5C59E
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id 1630515206
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ObjectBlueprint DF8B545A-4206-4442-85C2-1DFCD5F0FF99 #primary instance
+    $::Blueprint
+        $::EntityBusData
+            $::DataBusData
+                $::Asset
+                    $::DataContainer
+                    Name Props/StreetProps/WallLamp_01/WallLamp_01_Destruction
+                PropertyConnections *nullArray*
+                LinkConnections *nullArray*
+            EventConnections::array
+                member(0)::EventConnection
+                    Source A3DA8113-7F6E-453D-867D-BC2C46CF3CE7
+                    Target 3697E648-70B8-4A25-B8F1-D9F12FA5C59E
+                    SourceEvent::EventSpec
+                        Id -2120949218
+                    TargetEvent::EventSpec
+                        Id 1630515206
+                    TargetType EventConnectionTargetType_ClientAndServer
+            Descriptor 3697E648-70B8-4A25-B8F1-D9F12FA5C59E
+            NeedNetworkId False
+            InterfaceHasConnections True
+            AlwaysCreateEntityBusClient False
+            AlwaysCreateEntityBusServer False
+    Object 7E409DEA-3CCE-4690-9789-485553910AED
+PartComponentData A3DA8113-7F6E-453D-867D-BC2C46CF3CE7
+    $::ComponentData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.0
+                z 0.0
+        Components *nullArray*
+        Excluded False
+    HealthStates::array
+        member(0) 899D9619-68BA-441F-8226-DE760B3270AF
+        member(1) 027C9388-DA66-42C0-868A-7822D55A1A91
+        member(2) 6FF2EB09-224A-4252-9D59-64ED99C2FA4C
+    PartLinks *nullArray*
+    IsSupported False
+    IsFragile False
+    IsNetworkable True
+    IsWindow False
+    AnimatePhysics False
+PhysicsEntityData EB660871-B76F-43FD-95FF-A3C816E82237
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 65535
+    Asset *nullGuid*
+    ScaledAssets::array
+        member(0) 035D7B31-F2A8-F306-80DD-C7F3FC95DE8F
+    RigidBodies::array
+        member(0) CBE547FF-1BED-4699-9D82-631BE960DB6D
+    EncapsulatePartsInLists False
+    FloatPhysics *nullGuid*
+    Mass 1000010.0
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    Friction 1000010.0
+    Restitution 1000010.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    Proximity *nullGuid*
+    Constraints *nullArray*
+    MovableParts False
+RigidBodyData CBE547FF-1BED-4699-9D82-631BE960DB6D
+    $::DataContainer
+    RigidBodyType RBTypeCollision
+    Mass 0.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Fixed
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+StaticModelEntityData 7E409DEA-3CCE-4690-9789-485553910AED
+    $::GamePhysicsEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 2
+                        IsPropertyConnectionTarget 2
+                        IndexInBlueprint 0
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components::array
+                member(0) A3DA8113-7F6E-453D-867D-BC2C46CF3CE7
+            RuntimeComponentCount 1
+        PhysicsData EB660871-B76F-43FD-95FF-A3C816E82237
+    PartLinks *nullArray*
+    Mesh props/streetprops/walllamp_01/walllamp_01_destruction_Mesh/B95DE1E4-A8F0-41B9-8E3D-E66A07966FA5
+    BoneCount 0
+    BasePoseTransforms *nullArray*
+    ExcludeFromNearbyObjectDestruction False
+    PhysicsPartInfos::array
+        member(0)::PhysicsPartInfo
+            PartComponentIndex 0
+            HealthStateIndex 0
+        member(1)::PhysicsPartInfo
+            PartComponentIndex 0
+            HealthStateIndex 1
+        member(2)::PhysicsPartInfo
+            PartComponentIndex 4294967295
+            HealthStateIndex 4294967295
+    NetworkInfo::StaticModelNetworkInfo
+        PartNetworkIdRanges::array
+            member(0)::IndexRange
+                First 0
+                Last 1
+        NetworkIdCount 2
+        ChildNetworkInfos *nullArray*
+        ChildNetworkIdCount 0
+    AnimatePhysics False
+    Visible True

@@ -1,0 +1,845 @@
+Partition B68837B1-6021-11E0-961E-DEF8495A53E8
+ActionNode EE56B1E6-E086-4BF2-925F-D655482AB544
+    $::UINodeData
+        $::DataContainer
+        Name ShowServerLocations
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    ActionKey 1299318733
+    Params *nullArray*
+    AppendIncomingParams False
+    ActionAsset *nullGuid*
+    In 4F76D7D7-AA25-49DA-8BC7-7B1BF60FBF98
+    DataInputs *nullArray*
+    Out 2A8AE530-9F89-4D16-93D5-CD3CF0B33887
+ComparisonLogicNode D19DDECA-E6F0-44EA-81F5-24F9162616F4
+    $::UINodeData
+        $::DataContainer
+        Name ComparisonLogicNode
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    In 573875B7-98DC-4B79-95ED-E536E138B365
+    Outputs::array
+        member(0) E21C4ACA-7187-421B-9293-7AAF7E1B6EAF
+        member(1) 83BDCC76-3507-4369-98CF-1A4F4806EDAE
+    DataSourceInfo::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    SkipFractionals False
+DataGetNode A5512402-C6FF-41A6-99C2-ED500021AE30
+    $::UINodeData
+        $::DataContainer
+        Name DataGetNode
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    In 49D4A4F5-7B3B-40B9-A395-DAA0D7E516E3
+    Out E39600F1-14DE-4EE7-9A91-96C589248AF5
+    DataSource::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory UI/UIComponents/UIStoreComp/468A6165-DD96-2098-5269-9725FB180EBF
+        DataKey 1280799358
+        UseDirectAccess False
+        UpdateOnInitialize True
+DataSetNode 82466B45-F2F9-4571-A9A7-2B85440FC7A1
+    $::UINodeData
+        $::DataContainer
+        Name SetSelectedRow
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    In D2DA5224-4FCD-4215-BAF9-6B20316DDA7E
+    Out 6547E483-F945-4EF4-A647-0D3D0D168F6D
+    Param *nullString*
+    SetToEmptyString False
+    DataSource::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory UI/UIComponents/UIStoreComp/468A6165-DD96-2098-5269-9725FB180EBF
+        DataKey 1280799358
+        UseDirectAccess False
+        UpdateOnInitialize True
+    ForceUpdate False
+InstanceOutputNode B200EEE6-71CF-4CC6-977B-049366C085A4
+    $::UINodeData
+        $::DataContainer
+        Name ShowServerLocation
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    In CC62421F-DBC8-4C59-BE5E-DF9F0CF3C616
+    Id -481228802
+    DestroyGraph True
+InstanceOutputNode 01843813-EB2F-4EB9-8E08-D3877657B07C
+    $::UINodeData
+        $::DataContainer
+        Name ExtendLease
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    In 5836A07F-E6AF-4414-A065-2274669965EB
+    Id -1407489027
+    DestroyGraph True
+InstanceOutputNode 2ABDB27E-562F-4D1B-8AF0-4C2A748F144F
+    $::UINodeData
+        $::DataContainer
+        Name GoBack
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    In 4A42D35F-150F-4EAF-B640-B3B919E65E26
+    Id -1726781178
+    DestroyGraph True
+UIButtonDataBinding 2AD390D4-CBEE-4AA1-8A73-148DD3FF93D8
+    $::UIDataBinding
+        $::DataContainer
+    ButtonsDatasource::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    DefaultButtonSet::UIButtonSet
+        Buttons::array
+            member(0)::UIButton
+                ButtonLabel ID_M_SELECT
+                ButtonId IDB_Rdown
+                IsPremium False
+            member(1)::UIButton
+                ButtonLabel ID_M_BACK
+                ButtonId IDB_Rright
+                IsPremium False
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    InvertVisible False
+    Visible True
+    InputOnRelease False
+UIDynamicDataBinding D85D76BE-48FB-455C-A754-78485934132D
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName Buttons
+            DataCategory UI/UIComponents/UIPopupComp/379C636D-A987-7477-11D0-458076F632D4
+            DataKey -1192680079
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding 9248B8D1-5C37-4B53-AA58-5BD8BDCEB382
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName Visible
+            DataCategory UI/UIComponents/UIPopupComp/379C636D-A987-7477-11D0-458076F632D4
+            DataKey 1310175943
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding 9A8D8572-B003-416E-BFD9-9966F784EBC1
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName ImageUrl
+            DataCategory UI/UIComponents/UIStoreComp/468A6165-DD96-2098-5269-9725FB180EBF
+            DataKey 529703624
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIListDataBinding 849AF55E-4313-4F7A-A08C-808BDC8E6DA8
+    $::UIDataBinding
+        $::DataContainer
+    ListIndex 0
+    ListQuery::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    StaticItems::array
+        member(0)::StaticListItem
+            ItemName ID_M_POPUP_BUY_CARD_NEW
+            AppendPlatformToSID False
+            DynamicDisable::UIDataSourceInfo
+                DataName *nullString*
+                DataCategory *nullGuid*
+                DataKey 0
+                UseDirectAccess False
+                UpdateOnInitialize True
+            DynamicNewContent::UIDataSourceInfo
+                DataName *nullString*
+                DataCategory *nullGuid*
+                DataKey 0
+                UseDirectAccess False
+                UpdateOnInitialize True
+            ExcludeInRetail False
+        member(1)::StaticListItem
+            ItemName ID_M_POPUP_BUY_CARD_EXTEND
+            AppendPlatformToSID False
+            DynamicDisable::UIDataSourceInfo
+                DataName *nullString*
+                DataCategory *nullGuid*
+                DataKey 0
+                UseDirectAccess False
+                UpdateOnInitialize True
+            DynamicNewContent::UIDataSourceInfo
+                DataName *nullString*
+                DataCategory *nullGuid*
+                DataKey 0
+                UseDirectAccess False
+                UpdateOnInitialize True
+            ExcludeInRetail False
+    SendIndexWithEvent False
+    DefaultHighlightedRow::DefaultSelectionItem
+        DefaultSelectionQuery::UIDataSourceInfo
+            DataName *nullString*
+            DataCategory *nullGuid*
+            DataKey 0
+            UseDirectAccess False
+            UpdateOnInitialize True
+        DefaultSelectionIndex 0
+    RowType basicRow
+    NavigationType loop
+    NavigationTypeSource::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    ClearListAtNavigationEvent False
+    UnFocusMode DeSelect
+    EmptyRowType emptyRowNone
+    RowSpacing 2
+    UseScrollBar False
+    ScreenRotationEnabled False
+    Use3DSelection False
+    FireHighlightOnMouseOut False
+    DataIncludesButtonLayout False
+    Visible True
+    SpinnerEnabled False
+    DisabledRows *nullString*
+    HighLightOnUpdate True
+    KeepScrollOffset False
+UINodeConnection A8F01FDE-6E2D-459B-8BD4-6ECEFC5BC21A
+    $::DataContainer
+    SourceNode D19DDECA-E6F0-44EA-81F5-24F9162616F4
+    TargetNode EE56B1E6-E086-4BF2-925F-D655482AB544
+    SourcePort E21C4ACA-7187-421B-9293-7AAF7E1B6EAF
+    TargetPort 4F76D7D7-AA25-49DA-8BC7-7B1BF60FBF98
+    NumScreensToPop 0
+UINodeConnection F367066B-298A-4FE4-A89D-D44705279E7A
+    $::DataContainer
+    SourceNode EE56B1E6-E086-4BF2-925F-D655482AB544
+    TargetNode B200EEE6-71CF-4CC6-977B-049366C085A4
+    SourcePort 2A8AE530-9F89-4D16-93D5-CD3CF0B33887
+    TargetPort CC62421F-DBC8-4C59-BE5E-DF9F0CF3C616
+    NumScreensToPop 0
+UINodeConnection 7EFD2FDA-3133-4C9F-94D8-59EA66B44572
+    $::DataContainer
+    SourceNode D19DDECA-E6F0-44EA-81F5-24F9162616F4
+    TargetNode 01843813-EB2F-4EB9-8E08-D3877657B07C
+    SourcePort 83BDCC76-3507-4369-98CF-1A4F4806EDAE
+    TargetPort 5836A07F-E6AF-4414-A065-2274669965EB
+    NumScreensToPop 0
+UINodeConnection D3071473-E2D2-4A7B-AFED-D773FE2130EE
+    $::DataContainer
+    SourceNode B840FB61-B9E7-4E59-842A-56EB78ED5876
+    TargetNode 2ABDB27E-562F-4D1B-8AF0-4C2A748F144F
+    SourcePort D19BC465-6280-42D3-A8B7-F88AB13F0D26
+    TargetPort 4A42D35F-150F-4EAF-B640-B3B919E65E26
+    NumScreensToPop 0
+UINodeConnection 936C3A05-FAE9-4BF8-BB28-497581F04332
+    $::DataContainer
+    SourceNode 5FA84BFC-6C84-41EE-BB8B-AD71FECD5F9A
+    TargetNode 82466B45-F2F9-4571-A9A7-2B85440FC7A1
+    SourcePort 65720F9A-6D10-42D5-BA0A-4A2436F054F2
+    TargetPort D2DA5224-4FCD-4215-BAF9-6B20316DDA7E
+    NumScreensToPop 0
+UINodeConnection 33045680-EFD0-4D31-BDCC-1294FD516FD8
+    $::DataContainer
+    SourceNode B840FB61-B9E7-4E59-842A-56EB78ED5876
+    TargetNode A5512402-C6FF-41A6-99C2-ED500021AE30
+    SourcePort B1161BDB-479C-4FC4-A81D-6319466EC8F4
+    TargetPort 49D4A4F5-7B3B-40B9-A395-DAA0D7E516E3
+    NumScreensToPop 0
+UINodeConnection C8BE6B1F-9C53-40C3-A670-10CAB0C2DBF1
+    $::DataContainer
+    SourceNode A5512402-C6FF-41A6-99C2-ED500021AE30
+    TargetNode D19DDECA-E6F0-44EA-81F5-24F9162616F4
+    SourcePort E39600F1-14DE-4EE7-9A91-96C589248AF5
+    TargetPort 573875B7-98DC-4B79-95ED-E536E138B365
+    NumScreensToPop 0
+UINodePort CDFB1351-01D1-47DC-923C-D890AAC57014
+    $::DataContainer
+    Name Show
+    InstanceName TextField_02
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort 004625C0-FB0F-4665-AC8D-83DFFD72CE04
+    $::DataContainer
+    Name Hide
+    InstanceName TextField_02
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort 65720F9A-6D10-42D5-BA0A-4A2436F054F2
+    $::DataContainer
+    Name RowHighlighted
+    InstanceName List_01
+    Query UIWidgetEventID_OnItemHighlighted
+    AllowManualRemove False
+UINodePort B2063EFC-8A0E-4DA6-92A0-23DE27A66671
+    $::DataContainer
+    Name MouseOver
+    InstanceName List_01
+    Query UIWidgetEventID_OnItemOver
+    AllowManualRemove False
+UINodePort 2963C6C7-55D5-4F58-ACD5-BD8FA77C162B
+    $::DataContainer
+    Name Press
+    InstanceName List_01
+    Query UIWidgetEventID_OnItemPressed
+    AllowManualRemove False
+UINodePort BC4A994B-96DD-416B-9715-534B418FE8D9
+    $::DataContainer
+    Name Release
+    InstanceName List_01
+    Query UIWidgetEventID_OnItemReleased
+    AllowManualRemove False
+UINodePort 3A4C530E-4BB8-4552-B418-B45075CDDC2E
+    $::DataContainer
+    Name ReachedTop
+    InstanceName List_01
+    Query UIWidgetEventID_OnReachedTop
+    AllowManualRemove False
+UINodePort BFE6E7B9-70CB-43B3-881E-62C4ED450299
+    $::DataContainer
+    Name ReachedBottom
+    InstanceName List_01
+    Query UIWidgetEventID_OnReachedBottom
+    AllowManualRemove False
+UINodePort 3BA65ADA-0EDE-47FD-A3F0-72E7C516BF34
+    $::DataContainer
+    Name NavigateLeft
+    InstanceName List_01
+    Query UIWidgetEventID_OnNavigateLeft
+    AllowManualRemove False
+UINodePort 2BCB258C-3E03-46D4-9ED9-F7BD0618D767
+    $::DataContainer
+    Name NavigateRight
+    InstanceName List_01
+    Query UIWidgetEventID_OnNavigateRight
+    AllowManualRemove False
+UINodePort DAEC98AE-52B2-4014-BB59-320F804FA3FB
+    $::DataContainer
+    Name SelectorChanged
+    InstanceName List_01
+    Query UIWidgetEventID_OnChanged
+    AllowManualRemove False
+UINodePort AD7AF173-EB36-4CB9-9829-BBDD83BA13DA
+    $::DataContainer
+    Name ChangeButtonBar
+    InstanceName List_01
+    Query UIWidgetEventID_OnButtonBarChanged
+    AllowManualRemove False
+UINodePort E4AB7E4A-F9D3-442A-A2F4-64911E8C936F
+    $::DataContainer
+    Name EnterTop
+    InstanceName List_01
+    Query UIWidgetEventID_EnterTop
+    AllowManualRemove False
+UINodePort B82646B8-DDA7-4717-A73D-63C1AA763503
+    $::DataContainer
+    Name EnterBottom
+    InstanceName List_01
+    Query UIWidgetEventID_EnterBottom
+    AllowManualRemove False
+UINodePort A9746688-CB78-4169-AC15-01EC4BB1BEE4
+    $::DataContainer
+    Name EnterAny
+    InstanceName List_01
+    Query UIWidgetEventID_EnterAny
+    AllowManualRemove False
+UINodePort AFFC8012-1360-4CA4-9813-0B70C44880BC
+    $::DataContainer
+    Name MoveToIndex
+    InstanceName List_01
+    Query UIWidgetEventID_SetIndex
+    AllowManualRemove False
+UINodePort A76BE2F3-6B83-479E-A8A3-72D96F92CDAF
+    $::DataContainer
+    Name MoveToPercentage
+    InstanceName List_01
+    Query UIWidgetEventID_SetPercentage
+    AllowManualRemove False
+UINodePort FD31A47D-E6B3-4DF3-8CAC-CE0DF77DC8F1
+    $::DataContainer
+    Name Show
+    InstanceName List_01
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort 0B1A3B3E-B9A0-46C3-A25D-8854CCD24C75
+    $::DataContainer
+    Name Hide
+    InstanceName List_01
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort CC62421F-DBC8-4C59-BE5E-DF9F0CF3C616
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 573875B7-98DC-4B79-95ED-E536E138B365
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort E21C4ACA-7187-421B-9293-7AAF7E1B6EAF
+    $::DataContainer
+    Name ID_M_POPUP_BUY_CARD_NEW
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 83BDCC76-3507-4369-98CF-1A4F4806EDAE
+    $::DataContainer
+    Name ID_M_POPUP_BUY_CARD_EXTEND
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 0DC566AA-FFE7-49F4-B783-CDBF909E0685
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 8330917A-123A-4317-AD4E-FC18B971F0C1
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 4F76D7D7-AA25-49DA-8BC7-7B1BF60FBF98
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 2A8AE530-9F89-4D16-93D5-CD3CF0B33887
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort D809045C-E4FD-4C56-8CAD-B42BB9F8336D
+    $::DataContainer
+    Name ClearList
+    InstanceName List_01
+    Query UIWidgetEventID_Clear
+    AllowManualRemove False
+UINodePort 5836A07F-E6AF-4414-A065-2274669965EB
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 6BD2BFA0-0C46-46C5-ADD9-7D81DDAEB880
+    $::DataContainer
+    Name ChangeMenuHint
+    InstanceName List_01
+    Query UIWidgetEventID_Update
+    AllowManualRemove False
+UINodePort A0F92908-24B0-4A07-AAC1-C983E87E4319
+    $::DataContainer
+    Name IgnoreKeyNavigation
+    InstanceName List_01
+    Query UIWidgetEventID_OnSmall
+    AllowManualRemove False
+UINodePort 99D524EC-FA12-49AF-BFFF-485AD36B45A8
+    $::DataContainer
+    Name AllowKeyNavigation
+    InstanceName List_01
+    Query UIWidgetEventID_OnLarge
+    AllowManualRemove False
+UINodePort DA8044AD-B55A-4F35-8E11-124196D8920B
+    $::DataContainer
+    Name SelectorChangedKeyValue
+    InstanceName List_01
+    Query UIWidgetEventID_RThumb
+    AllowManualRemove False
+UINodePort B1161BDB-479C-4FC4-A81D-6319466EC8F4
+    $::DataContainer
+    Name Activate
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_OnItemSelected
+    AllowManualRemove False
+UINodePort D19BC465-6280-42D3-A8B7-F88AB13F0D26
+    $::DataContainer
+    Name Deactivate
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_OnItemOut
+    AllowManualRemove False
+UINodePort 92A8E185-EE13-440D-B00D-17D898AA2986
+    $::DataContainer
+    Name Edit
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_SetIndex
+    AllowManualRemove False
+UINodePort 7BFBBAC0-35E1-462D-A169-B4C977BFACCA
+    $::DataContainer
+    Name View
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_OnNavigateLeft
+    AllowManualRemove False
+UINodePort B53ADA84-EB74-4A09-B8A8-9307837AF7A1
+    $::DataContainer
+    Name RThumb
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_RThumb
+    AllowManualRemove False
+UINodePort BEE6D724-F501-40B6-9EB0-459DBC3613EF
+    $::DataContainer
+    Name UpdateData
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_Update
+    AllowManualRemove False
+UINodePort A8A02388-41CF-48EF-A560-70452F1CB37A
+    $::DataContainer
+    Name Show
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort 1ABCD7CB-F04D-4A83-9AA3-B2514D4BA918
+    $::DataContainer
+    Name Hide
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort 4A42D35F-150F-4EAF-B640-B3B919E65E26
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort D2DA5224-4FCD-4215-BAF9-6B20316DDA7E
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 6547E483-F945-4EF4-A647-0D3D0D168F6D
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 49D4A4F5-7B3B-40B9-A395-DAA0D7E516E3
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort E39600F1-14DE-4EE7-9A91-96C589248AF5
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 4A3A0B30-D392-4381-9F76-A5176C2BA6CC
+    $::DataContainer
+    Name ReleaseIndex
+    InstanceName List_01
+    Query UIWidgetEventID_OnToggle
+    AllowManualRemove False
+UINodePort E1F910F1-96A4-4431-B7B1-18DAAB64A367
+    $::DataContainer
+    Name EnterSelected
+    InstanceName List_01
+    Query UIWidgetEventID_OnDescriptionChanged
+    AllowManualRemove False
+UINodePort DBB1A3C4-A7A3-43ED-9509-E248C23AAA2B
+    $::DataContainer
+    Name SelectorStepped
+    InstanceName List_01
+    Query UIWidgetEventID_TextEntered
+    AllowManualRemove False
+UINodePort CE770C1C-DC4C-43C1-8445-B6EA8BA823AA
+    $::DataContainer
+    Name ShowList
+    InstanceName List_01
+    Query UIWidgetEventID_OnShow
+    AllowManualRemove False
+UINodePort 7FB07FF7-50C7-4DCF-BF1D-06722F9172A8
+    $::DataContainer
+    Name HideList
+    InstanceName List_01
+    Query UIWidgetEventID_OnHide
+    AllowManualRemove False
+UINodePort DB231B88-39B0-4045-A636-2815AA756ADC
+    $::DataContainer
+    Name LThumb
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_LThumb
+    AllowManualRemove False
+UINodePort 46A41805-2795-43F6-992D-02917F8CDEA5
+    $::DataContainer
+    Name LTAB
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_LTAB
+    AllowManualRemove False
+UINodePort 75BDE349-1A17-4EA6-A126-1B3E0F825689
+    $::DataContainer
+    Name RTAB
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_RTAB
+    AllowManualRemove False
+UINodePort 30167C94-42E7-444D-B40B-27F82F93E8AF
+    $::DataContainer
+    Name FadeIn
+    InstanceName Dimmer_01
+    Query UIWidgetEventID_Show
+    AllowManualRemove False
+UINodePort 6834FFFB-7420-4AC4-96B8-7272C79BF147
+    $::DataContainer
+    Name FadeOut
+    InstanceName Dimmer_01
+    Query UIWidgetEventID_Hide
+    AllowManualRemove False
+UINodePort F9D6FB4A-F2E6-4414-90B2-0F4C335743C8
+    $::DataContainer
+    Name Menu
+    InstanceName ConsoleButtonBar_01
+    Query UIWidgetEventID_EnterTop
+    AllowManualRemove False
+UINodePort 3030E176-BD4C-4E3D-9025-C77B3EB27B58
+    $::DataContainer
+    Name UpdateImageUrl
+    InstanceName ImageManager_01
+    Query UIWidgetEventID_Update
+    AllowManualRemove False
+UIScreenAsset 61B34675-8085-1581-A10E-6414DBF202CA #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Popups/PopupBuyServerCard
+        Nodes::array
+            member(0) B6F9C874-5EB7-4FD4-8F9D-B6905116BC19
+            member(1) 5FA84BFC-6C84-41EE-BB8B-AD71FECD5F9A
+            member(2) B200EEE6-71CF-4CC6-977B-049366C085A4
+            member(3) D19DDECA-E6F0-44EA-81F5-24F9162616F4
+            member(4) EE56B1E6-E086-4BF2-925F-D655482AB544
+            member(5) 01843813-EB2F-4EB9-8E08-D3877657B07C
+            member(6) B840FB61-B9E7-4E59-842A-56EB78ED5876
+            member(7) 2ABDB27E-562F-4D1B-8AF0-4C2A748F144F
+            member(8) 82466B45-F2F9-4571-A9A7-2B85440FC7A1
+            member(9) A5512402-C6FF-41A6-99C2-ED500021AE30
+            member(10) 60743234-BC09-4BBC-94CC-741FB2E99A34
+            member(11) 1FBDCAA9-D7CD-4120-A4ED-E108A754BA93
+        GlobalNode *nullGuid*
+        Connections::array
+            member(0) A8F01FDE-6E2D-459B-8BD4-6ECEFC5BC21A
+            member(1) F367066B-298A-4FE4-A89D-D44705279E7A
+            member(2) 7EFD2FDA-3133-4C9F-94D8-59EA66B44572
+            member(3) D3071473-E2D2-4A7B-AFED-D773FE2130EE
+            member(4) 936C3A05-FAE9-4BF8-BB28-497581F04332
+            member(5) 33045680-EFD0-4D31-BDCC-1294FD516FD8
+            member(6) C8BE6B1F-9C53-40C3-A670-10CAB0C2DBF1
+        AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41B4640B-1973-8469-A254-B1B23E4E6A04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal True
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+UITextDataBinding C59F1A6E-97EE-4949-AF42-AEC90AE81D25
+    $::UIDataBinding
+        $::DataContainer
+    StaticText ID_M_POPUP_BUY_CARD_HEADER
+    TextData::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey -1951480908
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Refresh True
+    OverrideDirectAccess True
+UITextDataBinding 8DA122DF-E9A3-47C4-BE3B-142F0B8FB1BE
+    $::UIDataBinding
+        $::DataContainer
+    StaticText ID_M_POPUP_BUY_CARD_TEXT
+    TextData::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 201161033
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Visibility::UIDataSourceInfo
+        DataName *nullString*
+        DataCategory *nullGuid*
+        DataKey 0
+        UseDirectAccess False
+        UpdateOnInitialize True
+    Refresh True
+    OverrideDirectAccess True
+WidgetNode B6F9C874-5EB7-4FD4-8F9D-B6905116BC19
+    $::UINodeData
+        $::DataContainer
+        Name TextField
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    WidgetAsset UI/Assets/TextField/992EDE9C-36F6-F31E-2140-5C1EC7FCF345
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 8DA122DF-E9A3-47C4-BE3B-142F0B8FB1BE
+    InstanceName TextField_02
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs::array
+        member(0) CDFB1351-01D1-47DC-923C-D890AAC57014
+        member(1) 004625C0-FB0F-4665-AC8D-83DFFD72CE04
+WidgetNode 5FA84BFC-6C84-41EE-BB8B-AD71FECD5F9A
+    $::UINodeData
+        $::DataContainer
+        Name List
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    WidgetAsset UI/Assets/List/3A5CC810-84FA-1818-6CCA-6A6DCB443AF5
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 849AF55E-4313-4F7A-A08C-808BDC8E6DA8
+    InstanceName List_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member(0) 65720F9A-6D10-42D5-BA0A-4A2436F054F2
+        member(1) B2063EFC-8A0E-4DA6-92A0-23DE27A66671
+        member(2) 2963C6C7-55D5-4F58-ACD5-BD8FA77C162B
+        member(3) BC4A994B-96DD-416B-9715-534B418FE8D9
+        member(4) 3A4C530E-4BB8-4552-B418-B45075CDDC2E
+        member(5) BFE6E7B9-70CB-43B3-881E-62C4ED450299
+        member(6) 3BA65ADA-0EDE-47FD-A3F0-72E7C516BF34
+        member(7) 2BCB258C-3E03-46D4-9ED9-F7BD0618D767
+        member(8) DAEC98AE-52B2-4014-BB59-320F804FA3FB
+        member(9) AD7AF173-EB36-4CB9-9829-BBDD83BA13DA
+        member(10) 6BD2BFA0-0C46-46C5-ADD9-7D81DDAEB880
+        member(11) DA8044AD-B55A-4F35-8E11-124196D8920B
+        member(12) 4A3A0B30-D392-4381-9F76-A5176C2BA6CC
+        member(13) DBB1A3C4-A7A3-43ED-9509-E248C23AAA2B
+        member(14) CE770C1C-DC4C-43C1-8445-B6EA8BA823AA
+        member(15) 7FB07FF7-50C7-4DCF-BF1D-06722F9172A8
+    Inputs::array
+        member(0) E4AB7E4A-F9D3-442A-A2F4-64911E8C936F
+        member(1) B82646B8-DDA7-4717-A73D-63C1AA763503
+        member(2) A9746688-CB78-4169-AC15-01EC4BB1BEE4
+        member(3) AFFC8012-1360-4CA4-9813-0B70C44880BC
+        member(4) A76BE2F3-6B83-479E-A8A3-72D96F92CDAF
+        member(5) FD31A47D-E6B3-4DF3-8CAC-CE0DF77DC8F1
+        member(6) 0B1A3B3E-B9A0-46C3-A25D-8854CCD24C75
+        member(7) D809045C-E4FD-4C56-8CAD-B42BB9F8336D
+        member(8) A0F92908-24B0-4A07-AAC1-C983E87E4319
+        member(9) 99D524EC-FA12-49AF-BFFF-485AD36B45A8
+        member(10) E1F910F1-96A4-4431-B7B1-18DAAB64A367
+WidgetNode B840FB61-B9E7-4E59-842A-56EB78ED5876
+    $::UINodeData
+        $::DataContainer
+        Name ConsoleButtonBar
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    WidgetAsset UI/Assets/ConsoleButtonBar/CF4722C5-D921-BA35-DD71-B479E63568AC
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 2AD390D4-CBEE-4AA1-8A73-148DD3FF93D8
+    InstanceName ConsoleButtonBar_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member(0) B1161BDB-479C-4FC4-A81D-6319466EC8F4
+        member(1) D19BC465-6280-42D3-A8B7-F88AB13F0D26
+        member(2) 92A8E185-EE13-440D-B00D-17D898AA2986
+        member(3) 7BFBBAC0-35E1-462D-A169-B4C977BFACCA
+        member(4) B53ADA84-EB74-4A09-B8A8-9307837AF7A1
+        member(5) DB231B88-39B0-4045-A636-2815AA756ADC
+        member(6) 46A41805-2795-43F6-992D-02917F8CDEA5
+        member(7) 75BDE349-1A17-4EA6-A126-1B3E0F825689
+        member(8) F9D6FB4A-F2E6-4414-90B2-0F4C335743C8
+    Inputs::array
+        member(0) BEE6D724-F501-40B6-9EB0-459DBC3613EF
+        member(1) A8A02388-41CF-48EF-A560-70452F1CB37A
+        member(2) 1ABCD7CB-F04D-4A83-9AA3-B2514D4BA918
+WidgetNode 60743234-BC09-4BBC-94CC-741FB2E99A34
+    $::UINodeData
+        $::DataContainer
+        Name Dimmer
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    WidgetAsset UI/Assets/Dimmer/28D9BB5C-24B6-7760-E726-8BE53524BA15
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 9248B8D1-5C37-4B53-AA58-5BD8BDCEB382
+    InstanceName Dimmer_01
+    WidgetProperties::array
+        member(0)::UIWidgetProperty
+            Name DimFromStart
+            Value true
+        member(1)::UIWidgetProperty
+            Name InstantDim
+            Value true
+    Outputs *nullArray*
+    Inputs::array
+        member(0) 30167C94-42E7-444D-B40B-27F82F93E8AF
+        member(1) 6834FFFB-7420-4AC4-96B8-7272C79BF147
+WidgetNode 1FBDCAA9-D7CD-4120-A4ED-E108A754BA93
+    $::UINodeData
+        $::DataContainer
+        Name ImageManager
+        IsRootNode False
+        ParentGraph 61B34675-8085-1581-A10E-6414DBF202CA
+        ParentIsScreen True
+    WidgetAsset UI/Assets/ImageManager/8D31E081-2C86-1E20-91C2-82D999B54C95
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 9A8D8572-B003-416E-BFD9-9966F784EBC1
+    InstanceName ImageManager_01
+    WidgetProperties::array
+        member(0)::UIWidgetProperty
+            Name StaticUrl
+            Value *nullString*
+        member(1)::UIWidgetProperty
+            Name ResizeToTarget
+            Value false
+    Outputs *nullArray*
+    Inputs::array
+        member(0) 3030E176-BD4C-4E3D-9025-C77B3EB27B58

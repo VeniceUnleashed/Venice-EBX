@@ -1,0 +1,112 @@
+Partition 032E2CFF-893F-11E0-A16B-8336E8A59469
+EffectReferenceObjectData 9E4E6390-CB49-49FA-9AD9-6E20D8B6F012
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x -0.0106120109558
+                y 0.0
+                z -0.0373239517212
+        Blueprint FX/Ambient/LevelSpecific/SP_Tank/Enemy_Tracers/FX_Amb_Sp_Tank_EnemyTracers/40C2E07E-3DA9-4912-946E-923B1C929F90
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+InterfaceDescriptorData 9FC70E39-8269-42D0-9252-62CF794968C2
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id 2088671869
+        member(1)::DynamicEvent
+            Id 2089401213
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+SequenceEntityData 9D789FD3-5795-4A0C-AF24-1908C1458F6B
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Events::array
+        member(0)::SequenceEventData
+            Event::EventSpec
+                Id 613578040
+            Time 0
+    SequenceStartTime 0
+    SequenceLength 2000
+    Looping True
+    AutoStart False
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_ClientAndServer
+    PropertyTracks *nullArray*
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint 192CB7BE-5503-CB0E-4DF9-98E235B02C1C #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Tank/Prefabs/TracerFire_01
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 9D789FD3-5795-4A0C-AF24-1908C1458F6B
+                        Target 9E4E6390-CB49-49FA-9AD9-6E20D8B6F012
+                        SourceEvent::EventSpec
+                            Id 613578040
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source 9FC70E39-8269-42D0-9252-62CF794968C2
+                        Target 9D789FD3-5795-4A0C-AF24-1908C1458F6B
+                        SourceEvent::EventSpec
+                            Id 2088671869
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member(2)::EventConnection
+                        Source 9FC70E39-8269-42D0-9252-62CF794968C2
+                        Target 9D789FD3-5795-4A0C-AF24-1908C1458F6B
+                        SourceEvent::EventSpec
+                            Id 2089401213
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 9FC70E39-8269-42D0-9252-62CF794968C2
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 9E4E6390-CB49-49FA-9AD9-6E20D8B6F012
+            member(1) 9D789FD3-5795-4A0C-AF24-1908C1458F6B

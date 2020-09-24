@@ -1,0 +1,155 @@
+Partition B2C86082-43E1-11E0-B096-F92C7CB3A569
+StateNode 4A85F0D2-A409-4AE1-96F1-87681767ADA5
+    $::UINodeData
+        $::DataContainer
+        Name DefaultTankScreen
+        IsRootNode True
+        ParentGraph E3675752-C6C0-EBE8-3D9B-CC822178ADD5
+        ParentIsScreen False
+    Screen UI/Flow/Screen/Vehicle/DefaultTankScreen/87D15AFD-35FF-6126-693E-B7D603F7C651
+    In 80872B05-0232-4C68-AF88-5CC4063ABB5E
+    Show 7198DCB5-CFED-4F48-8A06-4443CE555FFE
+    Hide 268481AA-D852-4A49-A90B-7543DBC167E7
+    Inputs *nullArray*
+    Outputs::array
+        member(0) E6369E37-4F9B-479D-B26E-1ACDF4B06A96
+    RenderToTexture True
+StateNode ED2A8442-BA14-4D45-BBC1-E8E83BF7438E
+    $::UINodeData
+        $::DataContainer
+        Name TrackingAndLocking
+        IsRootNode False
+        ParentGraph E3675752-C6C0-EBE8-3D9B-CC822178ADD5
+        ParentIsScreen False
+    Screen UI/Flow/Screen/Vehicle/DefaultTrackingScreen/396B6235-FB5D-82D4-9367-595E7214EF39
+    In B0CA8C09-2E06-4471-9F67-8E2922856C9C
+    Show B0F28A71-AE93-4595-AA25-D531ED7E08A3
+    Hide 1C280205-52D3-4CCF-B58F-0F6F98BABC97
+    Inputs *nullArray*
+    Outputs::array
+        member(0) 7EAA9A6B-060D-4FF6-84C8-4A77482DEBE7
+    RenderToTexture False
+StateNode 3389940B-1F07-4FF6-A0E6-D118C3789F8A
+    $::UINodeData
+        $::DataContainer
+        Name DebugScreen
+        IsRootNode False
+        ParentGraph E3675752-C6C0-EBE8-3D9B-CC822178ADD5
+        ParentIsScreen False
+    Screen UI/Flow/Screen/Vehicle/DebugScreen/2FA4CCDC-3642-FDAB-67AD-DEBE81C56408
+    In 80D324DA-06CF-4014-8EF2-181C726EEFE7
+    Show 7B0FD7A7-873D-41DB-934B-6DA6288FA7E5
+    Hide 0EED6B40-DF2A-4D33-83E8-CB9532515EC5
+    Inputs *nullArray*
+    Outputs *nullArray*
+    RenderToTexture False
+UIGraphAsset E3675752-C6C0-EBE8-3D9B-CC822178ADD5 #primary instance
+    $::Asset
+        $::DataContainer
+        Name UI/Flow/Graph/Vehicle/DefaultTankGraph
+    Nodes::array
+        member(0) 4A85F0D2-A409-4AE1-96F1-87681767ADA5
+        member(1) ED2A8442-BA14-4D45-BBC1-E8E83BF7438E
+        member(2) 3389940B-1F07-4FF6-A0E6-D118C3789F8A
+    GlobalNode *nullGuid*
+    Connections::array
+        member(0) 6E196394-3064-4117-A46D-1CEECE045DEE
+    AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultMaping/85731393-00A9-B3E1-1001-2EAD21F6CF0E
+    BundleAssetName *nullString*
+    ProtectScreens True
+    Modal False
+    EventList *nullArray*
+    IsWin32UIGraphAsset True
+    IsXenonUIGraphAsset True
+    IsPs3UIGraphAsset True
+UINodeConnection 6E196394-3064-4117-A46D-1CEECE045DEE
+    $::DataContainer
+    SourceNode 4A85F0D2-A409-4AE1-96F1-87681767ADA5
+    TargetNode ED2A8442-BA14-4D45-BBC1-E8E83BF7438E
+    SourcePort E6369E37-4F9B-479D-B26E-1ACDF4B06A96
+    TargetPort B0CA8C09-2E06-4471-9F67-8E2922856C9C
+    NumScreensToPop 0
+UINodePort 80872B05-0232-4C68-AF88-5CC4063ABB5E
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort B0CA8C09-2E06-4471-9F67-8E2922856C9C
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort E6369E37-4F9B-479D-B26E-1ACDF4B06A96
+    $::DataContainer
+    Name Initialized [Screen]
+    InstanceName Initialized
+    Query UIWidgetEventID_None
+    AllowManualRemove True
+UINodePort 80D324DA-06CF-4014-8EF2-181C726EEFE7
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 7EAA9A6B-060D-4FF6-84C8-4A77482DEBE7
+    $::DataContainer
+    Name Initialized [Screen]
+    InstanceName Initialized
+    Query UIWidgetEventID_None
+    AllowManualRemove True
+UINodePort 69D8EB10-9E14-465E-B0F7-900C425FAF2D
+    $::DataContainer
+    Name InstanceInputNode
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 57A1DD86-75C8-4AF2-BD42-768D87BFCED0
+    $::DataContainer
+    Name ZoomState
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 8AD3EF1D-4A95-4E10-AEE4-CE142F98A916
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 7198DCB5-CFED-4F48-8A06-4443CE555FFE
+    $::DataContainer
+    Name Show
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 268481AA-D852-4A49-A90B-7543DBC167E7
+    $::DataContainer
+    Name Hide
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort B0F28A71-AE93-4595-AA25-D531ED7E08A3
+    $::DataContainer
+    Name Show
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 1C280205-52D3-4CCF-B58F-0F6F98BABC97
+    $::DataContainer
+    Name Hide
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 7B0FD7A7-873D-41DB-934B-6DA6288FA7E5
+    $::DataContainer
+    Name Show
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UINodePort 0EED6B40-DF2A-4D33-83E8-CB9532515EC5
+    $::DataContainer
+    Name Hide
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False

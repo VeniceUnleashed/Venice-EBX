@@ -1,0 +1,306 @@
+Partition 16C1EC21-4049-11E1-8705-E3C8ED8C7B19
+HavokAsset 8FD17B7C-6A80-0FBF-3C24-4E5B07D1678B
+    $::Asset
+        $::DataContainer
+        Name Vehicles/XP3/STAR_1466/Rocket_Projectile_Physics_0_Win32
+    Scale 1.0
+    ExternalAssets *nullArray*
+MissileEntityData 16C1EC22-4049-11E1-8705-E3C8ED8C7B19
+    $::MeshProjectileEntityData
+        $::ProjectileEntityData
+            $::GamePhysicsEntityData
+                $::GameEntityData
+                    $::SpatialEntityData
+                        $::EntityData
+                            $::GameObjectData
+                                $::GameDataContainer
+                                    $::DataContainer
+                                IsEventConnectionTarget 2
+                                IsPropertyConnectionTarget 2
+                                IndexInBlueprint 0
+                        Transform::LinearTransform
+                            right::Vec3
+                                x 1.0
+                                y 0.0
+                                z 0.0
+                            up::Vec3
+                                x 0.0
+                                y 1.0
+                                z 0.0
+                            forward::Vec3
+                                x 0.0
+                                y 0.0
+                                z 1.0
+                            trans::Vec3
+                                x 0.0
+                                y 0.0
+                                z 0.0
+                    Enabled True
+                    Components *nullArray*
+                    RuntimeComponentCount 0
+                PhysicsData C34D9DD1-F5B8-A9FB-E9E8-EB1592AD443C
+            InitialSpeed 350.0
+            TimeToLive 15.0
+            MaxCount 0
+            InitMeshHideTime 0.0
+            VisualConvergeDistance 30.0
+            DetonateOnTimeout False
+            ServerProjectileDisabled False
+            Explosion 06D3C982-3F75-4E9F-B3A0-CBDA015711A2
+            SuppressionData 1D6FA778-81BD-4076-91BF-C016681F31BD
+            AmmunitionType *nullString*
+            MaterialPair Materials/MaterialContainer/58CCCF46-EAFE-478E-98EB-7898DD469680
+            HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+            SuppressOwnerVehicleDamage False
+        Mesh vehicles/xp3/star_1466/rocket_projectile_Mesh/EE35D276-F086-4127-EFF1-B605B1E1673F
+        TrailEffect FX/DLC/XP3/Vehicles/MuzzleFlashes/HIMARS/FX_DLC_XP3_Vehicles_HIMARS_Rockets_Trail/789EA9A9-808A-4596-8B9F-FC6EBF58D593
+        IsAttachable False
+        MaxAttachableInclination 45.0
+        ExtraDamping False
+        InitialAngularVelocity::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    EngineEffect *nullGuid*
+    DudExplosion 0D134413-E787-4D4B-9D65-9E6F0DB450CE
+    FlyBySound *nullGuid*
+    EngineStrength 50.0
+    MaxSpeed 90.0
+    EngineTimeToIgnition 0.20000000298
+    EngineTimeToLive 40.0
+    TimeToActivateGuidingSystem 0.0
+    TimeToArm 0.5
+    MaxTurnAngle 90.0
+    Drag 0.0
+    Gravity -25.0
+    ApplyGravityWhenGuided True
+    FlyBySoundRadius 5.0
+    FlyBySoundSpeed 10.0
+    ImpactImpulse 500.0
+    Damage 300.0
+    DefaultTeam TeamNeutral
+    WarnTarget wtWarnNone
+    WarnOnPointingMissile False
+    LockingController *nullGuid*
+    LockableInfo::MissileLockableInfoData
+        HeatSignature 0.0
+        RadarSignature 0.0
+    UnguidedData::MissileUnguidedData
+        UseStaticPosition False
+        StaticPosition::Vec2
+            x 0.0
+            y 0.0
+        UseTargetPosition False
+        TargetPositionOffset::Vec2
+            x 0.0
+            y 0.0
+    NearTargetDetonation::NearTargetDetonationData
+        DetonateNearTarget False
+        DetonationRadius 10.0
+        MaxDetonationDelay 3.0
+        MinDetonationDelay 0.0
+PhysicsEntityData C34D9DD1-F5B8-A9FB-E9E8-EB1592AD443C
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 65535
+    Asset *nullGuid*
+    ScaledAssets::array
+        member(0) 8FD17B7C-6A80-0FBF-3C24-4E5B07D1678B
+    RigidBodies::array
+        member(0) C1A28DD7-8284-DCD8-D168-4A2A6958C1E2
+        member(1) FEBFAC7F-8B96-63CC-595B-ECABFEDD82B5
+    EncapsulatePartsInLists False
+    FloatPhysics *nullGuid*
+    Mass 1000010.0
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    Friction 1000010.0
+    Restitution 1000010.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    Proximity *nullGuid*
+    Constraints *nullArray*
+    MovableParts False
+ProjectileBlueprint 498B6608-7949-5536-3D39-CA9690367D22 #primary instance
+    $::ObjectBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Vehicles/XP3/STAR_1466/Rocket_Projectile
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections *nullArray*
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Object 16C1EC22-4049-11E1-8705-E3C8ED8C7B19
+RigidBodyData C1A28DD7-8284-DCD8-D168-4A2A6958C1E2
+    $::DataContainer
+    RigidBodyType RBTypeCollision
+    Mass 0.268723189831
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Fixed
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+RigidBodyData FEBFAC7F-8B96-63CC-595B-ECABFEDD82B5
+    $::DataContainer
+    RigidBodyType RBTypeRaycast
+    Mass 0.0
+    Friction 0.5
+    Restitution 0.40000000596
+    InertiaModifier::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    AngularVelocityDamping -1.0
+    LinearVelocityDamping -1.0
+    InteractionToolkitCollisionVolumeId 0
+    MotionType RigidBodyMotionType_Fixed
+    QualityType RigidBodyQualityType_Invalid
+    CollisionLayer RigidBodyCollisionLayer_Invalid
+    FloatPhysics *nullGuid*
+    Constraints *nullArray*
+VeniceExplosionEntityData 06D3C982-3F75-4E9F-B3A0-CBDA015711A2
+    $::ExplosionEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 3
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint 65535
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        DetonationEffect FX/DLC/XP3/Vehicles/MissleExplosions/FX_DLC_XP3_Vehicles_HIMARS_Missile_Explosion/3512EF46-84EC-4AF2-BB90-57643E0B82A0
+        UseEntityTransformForDetonationEffect False
+        MaskVolume *nullGuid*
+        DestructionMaskVolume *nullGuid*
+        MaterialPair Materials/MaterialContainer/60983765-04DE-44A0-A7A1-9E20FF585BD4
+        DamageIndicationType DamageIndicationType_ExplosionCenter
+        EmpTime 0.0
+        MaxOcclusionRaycastRadius 0.5
+        InnerBlastRadius 5.0
+        BlastDamage 200.0
+        BlastRadius 8.0
+        BlastImpulse 500.0
+        HasStunEffect False
+        ShockwaveDamage 1.0
+        ShockwaveRadius 10.0
+        ShockwaveImpulse 100.0
+        ShockwaveTime 0.5
+        DisableOcclusion False
+        DisableStaticEntityOcclusion True
+        CameraShockwaveRadius 0.0
+        SpawnDelay 0.0
+        TriggerImpairedHearing True
+        DetonateOnce True
+        ShowOnMinimap True
+    IsCausingSuppression True
+    UnspotsOnExplode False
+    SpotsOnExplode False
+    UnspottableTime 1.0
+VeniceExplosionEntityData 0D134413-E787-4D4B-9D65-9E6F0DB450CE
+    $::ExplosionEntityData
+        $::GameEntityData
+            $::SpatialEntityData
+                $::EntityData
+                    $::GameObjectData
+                        $::GameDataContainer
+                            $::DataContainer
+                        IsEventConnectionTarget 3
+                        IsPropertyConnectionTarget 3
+                        IndexInBlueprint 65535
+                Transform::LinearTransform
+                    right::Vec3
+                        x 1.0
+                        y 0.0
+                        z 0.0
+                    up::Vec3
+                        x 0.0
+                        y 1.0
+                        z 0.0
+                    forward::Vec3
+                        x 0.0
+                        y 0.0
+                        z 1.0
+                    trans::Vec3
+                        x 0.0
+                        y 0.0
+                        z 0.0
+            Enabled True
+            Components *nullArray*
+            RuntimeComponentCount 0
+        DetonationEffect Sound/Explosions/ModularModel/SFX_Explosion_Mortar/8A22047C-7825-2681-D71A-D159D9E5FFA2
+        UseEntityTransformForDetonationEffect False
+        MaskVolume *nullGuid*
+        DestructionMaskVolume *nullGuid*
+        MaterialPair Materials/MaterialContainer/60983765-04DE-44A0-A7A1-9E20FF585BD4
+        DamageIndicationType DamageIndicationType_ExplosionCenter
+        EmpTime 0.0
+        MaxOcclusionRaycastRadius 0.5
+        InnerBlastRadius 0.600000023842
+        BlastDamage 20.0
+        BlastRadius 5.0
+        BlastImpulse 500.0
+        HasStunEffect False
+        ShockwaveDamage 1.0
+        ShockwaveRadius 7.0
+        ShockwaveImpulse 300.0
+        ShockwaveTime 0.25
+        DisableOcclusion False
+        DisableStaticEntityOcclusion True
+        CameraShockwaveRadius 0.0
+        SpawnDelay 0.0
+        TriggerImpairedHearing True
+        DetonateOnce True
+        ShowOnMinimap False
+    IsCausingSuppression True
+    UnspotsOnExplode False
+    SpotsOnExplode False
+    UnspottableTime 1.0
+WeaponSuppressionData 1D6FA778-81BD-4076-91BF-C016681F31BD
+    $::DataContainer
+    MaxMultiplier 50.0
+    MinMultiplier 50.0
+    MinDistance 3.0
+    MaxDistance 500.0

@@ -1,0 +1,163 @@
+Partition D65E29B0-05B4-41FE-81BE-51DDE5732638
+InterfaceDescriptorData 0407CD97-65D6-4609-83BE-B85403F79BD1
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -1799726556
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks::array
+        member(0)::DynamicLink
+            Id -289498203
+        member(1)::DynamicLink
+            Id 212464853
+        member(2)::DynamicLink
+            Id -1659198741
+        member(3)::DynamicLink
+            Id 670509211
+        member(4)::DynamicLink
+            Id 839207877
+        member(5)::DynamicLink
+            Id -603039563
+LogicPrefabBlueprint 20E549CE-D201-45DD-B843-0FD2D1E42535 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Earthquake/Prefabs/TeleportSquad3
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source BC1CE5C6-777A-4619-B901-6F3B98699873
+                            Target 0407CD97-65D6-4609-83BE-B85403F79BD1
+                            SourceFieldId -1481696500
+                            TargetFieldId -289498203
+                        member(1)::LinkConnection
+                            Source BC1CE5C6-777A-4619-B901-6F3B98699873
+                            Target 0407CD97-65D6-4609-83BE-B85403F79BD1
+                            SourceFieldId -616190660
+                            TargetFieldId 212464853
+                        member(2)::LinkConnection
+                            Source 58113270-C292-4800-A615-4A768324E712
+                            Target 0407CD97-65D6-4609-83BE-B85403F79BD1
+                            SourceFieldId -616190660
+                            TargetFieldId -1659198741
+                        member(3)::LinkConnection
+                            Source 58113270-C292-4800-A615-4A768324E712
+                            Target 0407CD97-65D6-4609-83BE-B85403F79BD1
+                            SourceFieldId -1481696500
+                            TargetFieldId 670509211
+                        member(4)::LinkConnection
+                            Source 5BE85052-830C-42D7-A10F-33B6B07A5DC4
+                            Target 0407CD97-65D6-4609-83BE-B85403F79BD1
+                            SourceFieldId -616190660
+                            TargetFieldId 839207877
+                        member(5)::LinkConnection
+                            Source 5BE85052-830C-42D7-A10F-33B6B07A5DC4
+                            Target 0407CD97-65D6-4609-83BE-B85403F79BD1
+                            SourceFieldId -1481696500
+                            TargetFieldId -603039563
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 0407CD97-65D6-4609-83BE-B85403F79BD1
+                        Target BC1CE5C6-777A-4619-B901-6F3B98699873
+                        SourceEvent::EventSpec
+                            Id -1799726556
+                        TargetEvent::EventSpec
+                            Id -496109072
+                        TargetType EventConnectionTargetType_Server
+                    member(1)::EventConnection
+                        Source 0407CD97-65D6-4609-83BE-B85403F79BD1
+                        Target 58113270-C292-4800-A615-4A768324E712
+                        SourceEvent::EventSpec
+                            Id -1799726556
+                        TargetEvent::EventSpec
+                            Id -496109072
+                        TargetType EventConnectionTargetType_Server
+                    member(2)::EventConnection
+                        Source 0407CD97-65D6-4609-83BE-B85403F79BD1
+                        Target 5BE85052-830C-42D7-A10F-33B6B07A5DC4
+                        SourceEvent::EventSpec
+                            Id -1799726556
+                        TargetEvent::EventSpec
+                            Id -496109072
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 0407CD97-65D6-4609-83BE-B85403F79BD1
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) BC1CE5C6-777A-4619-B901-6F3B98699873
+            member(1) 58113270-C292-4800-A615-4A768324E712
+            member(2) 5BE85052-830C-42D7-A10F-33B6B07A5DC4
+PatrolOrderEntityData BC1CE5C6-777A-4619-B901-6F3B98699873
+    $::BFOrderEntityData
+        $::OrderEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 1
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 0
+            DebugName PatrolOrder BC1CE5C6-777A-4619-B901-6F3B98699873
+            IssueOrderDelay 0.0
+            OnCompleteTimeOut 0.0
+            OnFailedTimeOut 0.0
+            Enabled True
+            ReadinessOnStart RLNone
+        ForbiddenToFire False
+    TypeOfRoute RouteStop
+    UsePathFinding False
+    CombatMode CombatPatrolMode_MustStayOnPath
+    StartAtGeometricallyClosestWaypoint False
+    StartingWaypoint *nullGuid*
+PatrolOrderEntityData 58113270-C292-4800-A615-4A768324E712
+    $::BFOrderEntityData
+        $::OrderEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 1
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 1
+            DebugName PatrolOrder 58113270-C292-4800-A615-4A768324E712
+            IssueOrderDelay 0.0
+            OnCompleteTimeOut 0.0
+            OnFailedTimeOut 0.0
+            Enabled True
+            ReadinessOnStart RLNone
+        ForbiddenToFire False
+    TypeOfRoute RouteStop
+    UsePathFinding False
+    CombatMode CombatPatrolMode_MustStayOnPath
+    StartAtGeometricallyClosestWaypoint False
+    StartingWaypoint *nullGuid*
+PatrolOrderEntityData 5BE85052-830C-42D7-A10F-33B6B07A5DC4
+    $::BFOrderEntityData
+        $::OrderEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 1
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 2
+            DebugName PatrolOrder 5BE85052-830C-42D7-A10F-33B6B07A5DC4
+            IssueOrderDelay 0.0
+            OnCompleteTimeOut 0.0
+            OnFailedTimeOut 0.0
+            Enabled True
+            ReadinessOnStart RLNone
+        ForbiddenToFire False
+    TypeOfRoute RouteStop
+    UsePathFinding False
+    CombatMode CombatPatrolMode_MustStayOnPath
+    StartAtGeometricallyClosestWaypoint False
+    StartingWaypoint *nullGuid*

@@ -1,0 +1,36 @@
+Partition DD7EE431-AED4-4C0B-A381-48CE8A8BE131
+CustomizeSoldierData BAE5C912-3FEB-4CAD-8BBE-A0001B291FD0 #primary instance
+    $::CustomizeCharacterData
+        $::Asset
+            $::DataContainer
+            Name Characters/Soldiers/Customizations/PLR_Extremist_SHG_CoOp
+        RestoreToOriginalVisualState False
+        ClearVisualState True
+        VisualGroups::array
+            member(0)::CustomizeVisual
+                Visual::array
+                    member(0) Persistence/Unlocks/Soldiers/Visual/ME/Head/ME_EnemySoldier_Head02/FC536E25-08CF-4250-99FB-66CBCE0850DB
+            member(1)::CustomizeVisual
+                Visual::array
+                    member(0) Persistence/Unlocks/Soldiers/Visual/ME/Upperbody/ME_EnemySoldier_Upperbody04/4EB30DA7-897A-4A0E-9942-14A1DC09AB3E
+            member(2)::CustomizeVisual
+                Visual::array
+                    member(0) Persistence/Unlocks/Soldiers/Visual/ME/Lowerbody/ME_EnemySoldier_Lowerbody02/E9DCC793-7220-49BB-89BA-160DAAF2A418
+        Unlocks *nullArray*
+        OverrideMaxHealth -1.0
+        OverrideCriticalHealthThreshold -1.0
+    Weapons::array
+        member(0)::UnlockWeaponAndSlot
+            Weapon Weapons/Knife/U_Knife/8963F500-E71D-41FC-4B24-AE17D18D8C73
+            Slot WeaponSlot_1
+            UnlockAssets *nullArray*
+        member(1)::UnlockWeaponAndSlot
+            Weapon Weapons/Remington870/U_870/07A4C87A-D325-4A73-8C5A-C001ACD13334
+            Slot WeaponSlot_0
+            UnlockAssets::array
+                member(0) Weapons/Common/AI_Unlock/849C7CE1-EFBA-4757-AC3E-0555298198E5
+                member(1) Weapons/Common/NoOptics/A1AD1762-C856-F5D7-66B5-5E485460D3DF
+    ActiveSlot WeaponSlot_0
+    RemoveAllExistingWeapons True
+    DeathPickup AI/Pickups/DefaultAIDynamicPickup/21482B3A-A10E-1E93-3613-476F1E3C071B
+    DisableDeathPickup False

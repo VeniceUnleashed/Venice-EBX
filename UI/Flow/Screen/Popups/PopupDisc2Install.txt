@@ -1,0 +1,115 @@
+Partition 66B76E85-AD5D-11E0-9A37-A2F520206A19
+InstanceOutputNode FDE89760-6617-4627-BC47-6251834D87FD
+    $::UINodeData
+        $::DataContainer
+        Name PopupButtonReleased
+        IsRootNode False
+        ParentGraph 95069E48-0093-E3B6-A9A5-07D83AEEC466
+        ParentIsScreen True
+    In 471772AE-96E4-41F5-89A6-44B015FBD075
+    Id 1352178388
+    DestroyGraph True
+UIDynamicDataBinding 16066748-7281-4BB7-946F-DE26D7C53528
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName Title
+            DataCategory UI/UIComponents/UIPopupComp/379C636D-A987-7477-11D0-458076F632D4
+            DataKey -1951480908
+            UseDirectAccess False
+            UpdateOnInitialize True
+        member(1)::UIDataSourceInfo
+            DataName Text
+            DataCategory UI/UIComponents/UIInstallHDContentComp/2C161716-AF2D-6BB4-E726-02B879E497F0
+            DataKey -1947303584
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UIDynamicDataBinding 75FE17DC-07A0-42B2-9DDF-857A52E69D69
+    $::UIDataBinding
+        $::DataContainer
+    Bindings::array
+        member(0)::UIDataSourceInfo
+            DataName Buttons
+            DataCategory UI/UIComponents/UIPopupComp/379C636D-A987-7477-11D0-458076F632D4
+            DataKey -1192680079
+            UseDirectAccess False
+            UpdateOnInitialize True
+    Refresh True
+UINodeConnection ED52E083-1977-465F-9EAD-C3EBA3A08F9D
+    $::DataContainer
+    SourceNode B901C4C8-4028-4F0A-8073-DF202F85CA95
+    TargetNode FDE89760-6617-4627-BC47-6251834D87FD
+    SourcePort 992F967A-9F37-4761-B7BF-4CB5858B052E
+    TargetPort 471772AE-96E4-41F5-89A6-44B015FBD075
+    NumScreensToPop 0
+UINodePort 992F967A-9F37-4761-B7BF-4CB5858B052E
+    $::DataContainer
+    Name ButtonReleased
+    InstanceName PopupButtonsManager_01
+    Query UIWidgetEventID_OnItemReleased
+    AllowManualRemove False
+UINodePort 471772AE-96E4-41F5-89A6-44B015FBD075
+    $::DataContainer
+    Name *nullString*
+    InstanceName *nullString*
+    Query UIWidgetEventID_None
+    AllowManualRemove False
+UIScreenAsset 95069E48-0093-E3B6-A9A5-07D83AEEC466 #primary instance
+    $::UIGraphAsset
+        $::Asset
+            $::DataContainer
+            Name UI/Flow/Screen/Popups/PopupDisc2Install
+        Nodes::array
+            member(0) 89F52EBD-BC1B-4036-8E01-6E8D459F0E1A
+            member(1) B901C4C8-4028-4F0A-8073-DF202F85CA95
+            member(2) FDE89760-6617-4627-BC47-6251834D87FD
+        GlobalNode *nullGuid*
+        Connections::array
+            member(0) ED52E083-1977-465F-9EAD-C3EBA3A08F9D
+        AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41B4640B-1973-8469-A254-B1B23E4E6A04
+        BundleAssetName *nullString*
+        ProtectScreens False
+        Modal False
+        EventList *nullArray*
+        IsWin32UIGraphAsset True
+        IsXenonUIGraphAsset True
+        IsPs3UIGraphAsset True
+WidgetNode 89F52EBD-BC1B-4036-8E01-6E8D459F0E1A
+    $::UINodeData
+        $::DataContainer
+        Name PopupGenericWidget
+        IsRootNode False
+        ParentGraph 95069E48-0093-E3B6-A9A5-07D83AEEC466
+        ParentIsScreen True
+    WidgetAsset UI/Assets/PopupGenericWidget/9184822E-7681-4E63-AC89-A7406D549B32
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 16066748-7281-4BB7-946F-DE26D7C53528
+    InstanceName PopupGenericWidget_01
+    WidgetProperties *nullArray*
+    Outputs *nullArray*
+    Inputs *nullArray*
+WidgetNode B901C4C8-4028-4F0A-8073-DF202F85CA95
+    $::UINodeData
+        $::DataContainer
+        Name PopupButtonsManager
+        IsRootNode False
+        ParentGraph 95069E48-0093-E3B6-A9A5-07D83AEEC466
+        ParentIsScreen True
+    WidgetAsset UI/Assets/PopupButtonsManager/7EA7EB85-04E6-E2D6-93EB-6F89C0E20BB9
+    FocusIndex 0
+    AlwaysInFocus False
+    VerticalAlign WVA_Center
+    HorisontalAlign WHA_Center
+    ZDepthLevel 0
+    DataBinding 75FE17DC-07A0-42B2-9DDF-857A52E69D69
+    InstanceName PopupButtonsManager_01
+    WidgetProperties *nullArray*
+    Outputs::array
+        member(0) 992F967A-9F37-4761-B7BF-4CB5858B052E
+    Inputs *nullArray*

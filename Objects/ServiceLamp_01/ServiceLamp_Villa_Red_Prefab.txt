@@ -1,0 +1,220 @@
+Partition FF378FF1-B2B6-11E0-9963-D668F3C75B62
+DelayEntityData B16F6B1B-833C-4EBA-AA93-2D8E3016C22B
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 5
+    Delay 0.0
+    Realm Realm_Server
+    AutoStart True
+    RunOnce False
+    RemoveDuplicateEvents True
+EventSplitterEntityData 31D81405-1D72-47B2-9400-1D7A04E0818E
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    RunOnce False
+    Realm Realm_Server
+EventSplitterEntityData 796CA475-2EDF-4415-B1BA-F410EFF168B7
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    RunOnce False
+    Realm Realm_Server
+InterfaceDescriptorData 1A4BD8C0-640F-4D29-91FA-62656B6DB3E6
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -1093023431
+        member(1)::DynamicEvent
+            Id -1710035145
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ObjectVariationSwitchEntityData CDD639B1-CA4A-4A44-B513-63C90B1A42C4
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Variation1 *nullGuid*
+    Variation2 Objects/ServiceLamp_01/ServiceLamp_Villa_Off/8EE3E243-51B6-103C-7DE9-12F6F370596C
+PointLightEntityData 098770CA-8D34-4487-8D9A-257EEBC393C2
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 0
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.0
+                    y 2.80355238914
+                    z 0.0
+        Color::Vec3
+            x 0.231000006199
+            y 0.00300000002608
+            z 0.0
+        Radius 10.0
+        Intensity 5.0
+        AttenuationOffset 0.20000000298
+        Visible True
+        SpecularEnable True
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable False
+        EnlightenColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+        ParticleColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+    Width 0.0
+    TranslucencyAmbient 0.0
+    TranslucencyScale 0.0
+    TranslucencyPower 8
+    TranslucencyDistortion 0.10000000149
+ReferenceObjectData D67231D7-B6FD-4B88-A5B8-DA7EAB1A44E3
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 0
+        IndexInBlueprint 4
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y -1.65249320248e-23
+            z -1.10411206349e-22
+        up::Vec3
+            x 1.65249320248e-23
+            y 1.0
+            z -1.40129846432e-45
+        forward::Vec3
+            x 1.10411206349e-22
+            y -1.40129846432e-45
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Objects/ServiceLamp_01/ServiceLamp_Villa/5A08C1C7-0D31-4B70-AF14-A1EFD4470E14
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 90C82F58-477D-ACA4-CB64-47072A5A816C #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Objects/ServiceLamp_01/ServiceLamp_Villa_Red_Prefab
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source CDD639B1-CA4A-4A44-B513-63C90B1A42C4
+                            Target D67231D7-B6FD-4B88-A5B8-DA7EAB1A44E3
+                            SourceFieldId 1564494525
+                            TargetFieldId -670630719
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 1A4BD8C0-640F-4D29-91FA-62656B6DB3E6
+                        Target 31D81405-1D72-47B2-9400-1D7A04E0818E
+                        SourceEvent::EventSpec
+                            Id -1093023431
+                        TargetEvent::EventSpec
+                            Id 1723395486
+                        TargetType EventConnectionTargetType_Server
+                    member(1)::EventConnection
+                        Source 31D81405-1D72-47B2-9400-1D7A04E0818E
+                        Target 098770CA-8D34-4487-8D9A-257EEBC393C2
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member(2)::EventConnection
+                        Source 31D81405-1D72-47B2-9400-1D7A04E0818E
+                        Target CDD639B1-CA4A-4A44-B513-63C90B1A42C4
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id 1489724583
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member(3)::EventConnection
+                        Source 796CA475-2EDF-4415-B1BA-F410EFF168B7
+                        Target CDD639B1-CA4A-4A44-B513-63C90B1A42C4
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id 1489724580
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member(4)::EventConnection
+                        Source 796CA475-2EDF-4415-B1BA-F410EFF168B7
+                        Target 098770CA-8D34-4487-8D9A-257EEBC393C2
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member(5)::EventConnection
+                        Source 1A4BD8C0-640F-4D29-91FA-62656B6DB3E6
+                        Target 796CA475-2EDF-4415-B1BA-F410EFF168B7
+                        SourceEvent::EventSpec
+                            Id -1710035145
+                        TargetEvent::EventSpec
+                            Id 1723395486
+                        TargetType EventConnectionTargetType_Server
+                    member(6)::EventConnection
+                        Source B16F6B1B-833C-4EBA-AA93-2D8E3016C22B
+                        Target 796CA475-2EDF-4415-B1BA-F410EFF168B7
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 1723395486
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 1A4BD8C0-640F-4D29-91FA-62656B6DB3E6
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member(0) 098770CA-8D34-4487-8D9A-257EEBC393C2
+            member(1) 31D81405-1D72-47B2-9400-1D7A04E0818E
+            member(2) CDD639B1-CA4A-4A44-B513-63C90B1A42C4
+            member(3) 796CA475-2EDF-4415-B1BA-F410EFF168B7
+            member(4) D67231D7-B6FD-4B88-A5B8-DA7EAB1A44E3
+            member(5) B16F6B1B-833C-4EBA-AA93-2D8E3016C22B

@@ -1,0 +1,63 @@
+Partition 8247BB2A-7162-41F9-9F3D-61EB7148FAF5
+DataContainerAsset E14963BB-869F-48FA-841D-6FE4FC601011 #primary instance
+    $::Asset
+        $::DataContainer
+        Name Vehicles/common/WeaponData/Jet_LaserGuidedMissile_Locking
+    Data 53132DCC-66A2-41C0-B9E0-DBC0740E81BC
+LockingControllerData 11E4AA2C-0595-4902-9885-067914592C53
+    $::DataContainer
+    ZoomLevelLock::array
+        member(0)::ZoomLevelLockData
+            OutlineTaggedDistance 0.0
+            LockType LockOnLaserPainted
+    LockTime 1.0
+    ReleaseTime 1.0
+    ReleaseOnNewTargetTime 1.5
+    SampleRate 0.0599999986589
+    HoldStillThreshold 10.0
+    RayLength 900.0
+    LockOnVisibleTargetsOnly False
+    PositionOnly False
+    LockOnWorldSpacePos False
+    AcceptanceAngle 3.0
+    AngleConstant 5.0
+    DistanceConstant 0.10000000149
+    Sensitivity 0.0
+    MinimumLockTime 0.0
+    LockOnEmptyVehicles True
+    IgnoreHeigthLockDistance False
+LockingControllerData B68C839D-F7C2-4F30-931E-14B7ABB1DDBE
+    $::DataContainer
+    ZoomLevelLock::array
+        member(0)::ZoomLevelLockData
+            OutlineTaggedDistance 0.0
+            LockType LockOnRadar
+    LockTime 1.75
+    ReleaseTime 1.0
+    ReleaseOnNewTargetTime 1.5
+    SampleRate 0.0599999986589
+    HoldStillThreshold 10.0
+    RayLength 900.0
+    LockOnVisibleTargetsOnly True
+    PositionOnly False
+    LockOnWorldSpacePos False
+    AcceptanceAngle 3.0
+    AngleConstant 5.0
+    DistanceConstant 0.10000000149
+    Sensitivity 8.0
+    MinimumLockTime 0.0
+    LockOnEmptyVehicles True
+    IgnoreHeigthLockDistance False
+LockingWeaponData 53132DCC-66A2-41C0-B9E0-DBC0740E81BC
+    $::WeaponData
+        $::ToolData
+            $::DataContainer
+            IsAlwaysActive False
+        ShowLaserPaintedVehicles False
+    LockingController 11E4AA2C-0595-4902-9885-067914592C53
+    SecondaryLockingController B68C839D-F7C2-4F30-931E-14B7ABB1DDBE
+    IsHoming True
+    IsGuided False
+    IsGuidedWhenZoomed False
+    FireOnlyWhenLockedOn True
+    WarnLock wtWarnVehicle

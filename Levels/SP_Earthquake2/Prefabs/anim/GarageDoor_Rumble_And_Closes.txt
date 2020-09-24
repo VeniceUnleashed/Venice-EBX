@@ -1,0 +1,146 @@
+Partition 70CB1D7C-AED8-11E0-B124-A5D626B5D490
+BoolEntityData 9584AC50-22C3-40CF-996E-24912EBAE4D8
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_ClientAndServer
+    DefaultValue True
+InterfaceDescriptorData 2DC3A54B-4651-418C-905E-5DDC66AADE41
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member(0)::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 1188203099
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -1728850522
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ModelAnimationEntityData 6E45536C-9389-459E-B505-938D259975DA
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 1
+    Realm Realm_ClientAndServer
+    AutoStart False
+    Looping False
+    ResetAfterStop False
+    PlayFirstFrame True
+    DefaultAnimation ME_StorefrontsProps_GarageDoor_Rumble_And_Close
+    AnimationIndex 2
+    AnimationSet Animations/Characters/SP/SP_Bank/House_OpenGarageDoor/ME_StorefrontsProps_GarageDoor_AnimSet/40D5EB82-4C86-EDD9-3582-388F27B7F4EA
+    ExternalTime -1.0
+    InstanceSeed 0
+    AnimationEntitySpace::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    AnimationEntitySpaceActive False
+    BoneToPlace GameplayBones_RootBone
+    DisableCulling True
+    TrajectoryBoneName AITrajectory
+    ConnectBoneName connect
+    RootMeshBoneName Base
+    EnableJointWorldTransformOutput False
+    ModelAnimationTransformType ModelAnimationTransformType_World
+    JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
+    ShowDebugTransforms False
+    ApplyRotationCompensation True
+    ApplyPreTransformation False
+    JointOutputPropertyIds *nullArray*
+ReferenceObjectData 5B924177-25BE-488A-8786-B161803B2DD6
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Animations/Characters/SP/SP_Bank/House_OpenGarageDoor/ME_StorefrontsProps_GarageDoor_Model/EEED7B12-484B-7066-E0D0-9F2CFCB59646
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 86F4876F-D0BC-496D-6998-CC84C672B6F9 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/SP_Earthquake2/Prefabs/anim/GarageDoor_Rumble_And_Closes
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 9584AC50-22C3-40CF-996E-24912EBAE4D8
+                            Target 5B924177-25BE-488A-8786-B161803B2DD6
+                            SourceFieldId 225375086
+                            TargetFieldId 443997333
+                        member(1)::PropertyConnection
+                            Source 2DC3A54B-4651-418C-905E-5DDC66AADE41
+                            Target 6E45536C-9389-459E-B505-938D259975DA
+                            SourceFieldId 1188203099
+                            TargetFieldId 1188203099
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source 6E45536C-9389-459E-B505-938D259975DA
+                            Target 5B924177-25BE-488A-8786-B161803B2DD6
+                            SourceFieldId 453968090
+                            TargetFieldId 0
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 2DC3A54B-4651-418C-905E-5DDC66AADE41
+                        Target 6E45536C-9389-459E-B505-938D259975DA
+                        SourceEvent::EventSpec
+                            Id -1728850522
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 2DC3A54B-4651-418C-905E-5DDC66AADE41
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 5B924177-25BE-488A-8786-B161803B2DD6
+            member(1) 6E45536C-9389-459E-B505-938D259975DA
+            member(2) 9584AC50-22C3-40CF-996E-24912EBAE4D8

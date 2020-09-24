@@ -1,0 +1,97 @@
+Partition 2849C7CB-1B0A-40C4-BEC7-52D2577E1771
+InterfaceDescriptorData A2C0CF5C-0365-4B3D-AB0E-79670C53EFB8
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -1952177180
+        member(1)::DynamicEvent
+            Id -117303631
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LogicPrefabBlueprint C14EE33F-5CEE-4103-B519-AC0612B2B13D #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name FX/VisualEnviroments/NightVision/IR_ThroughSmoke
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 6C4A382A-A136-41C7-82C5-1F3A85D93279
+                        Target 3E7A25BA-7C8C-4CDC-B4FF-2F3A076972C1
+                        SourceEvent::EventSpec
+                            Id -1864525248
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source 8DD8FF90-C8F9-4929-A1D2-FD04C031925C
+                        Target 3E7A25BA-7C8C-4CDC-B4FF-2F3A076972C1
+                        SourceEvent::EventSpec
+                            Id -1864525248
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_Client
+                    member(2)::EventConnection
+                        Source A2C0CF5C-0365-4B3D-AB0E-79670C53EFB8
+                        Target 8DD8FF90-C8F9-4929-A1D2-FD04C031925C
+                        SourceEvent::EventSpec
+                            Id -1952177180
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Client
+                    member(3)::EventConnection
+                        Source A2C0CF5C-0365-4B3D-AB0E-79670C53EFB8
+                        Target 6C4A382A-A136-41C7-82C5-1F3A85D93279
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Client
+                Descriptor A2C0CF5C-0365-4B3D-AB0E-79670C53EFB8
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) 3E7A25BA-7C8C-4CDC-B4FF-2F3A076972C1
+            member(1) 8DD8FF90-C8F9-4929-A1D2-FD04C031925C
+            member(2) 6C4A382A-A136-41C7-82C5-1F3A85D93279
+LogicVisualEnvironmentEntityData 3E7A25BA-7C8C-4CDC-B4FF-2F3A076972C1
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+    VisualEnvironment FX/VisualEnviroments/NightVision/IR_Enhanched_NightVision2/F4F6815E-43E1-4FA4-A1DF-617308ED63F4
+    Visibility 1.0
+PlayerFilterEntityData 8DD8FF90-C8F9-4929-A1D2-FD04C031925C
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Realm Realm_Client
+    InvertFilter False
+    ForwardToSpectators False
+PlayerFilterEntityData 6C4A382A-A136-41C7-82C5-1F3A85D93279
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_Client
+    InvertFilter False
+    ForwardToSpectators False

@@ -1,0 +1,54 @@
+Partition EFF90DD4-5121-5FBD-BB9D-A3F11EFFC3C1
+MeshMaterial D75C28A0-F51D-472D-A639-85BE2ABEA3CE
+    $::DataContainer
+    ShaderInstance *nullGuid*
+    Shader::SurfaceShaderInstanceDataStruct
+        Shader Objects/Shaders/PropPreset_DiffuseOnly/C9B06FAB-2334-86FD-9435-1CE8F508D0C0
+        BoolParameters *nullArray*
+        VectorParameters *nullArray*
+        VectorArrayParameters *nullArray*
+        TextureParameters *nullArray*
+MeshMaterial 93F45672-AD04-C270-EE9D-15EE0EBDCBE8
+    $::DataContainer
+    ShaderInstance *nullGuid*
+    Shader::SurfaceShaderInstanceDataStruct
+        Shader Vehicles/Shaders/VehiclePreset_Mud/FA58EF71-AD00-427B-8AA1-3B8FAD051EEF
+        BoolParameters *nullArray*
+        VectorParameters::array
+            member(0)::VectorShaderParameter
+                ParameterName WearAmount
+                ParameterType ShaderParameterType_Scalar
+                Value::Vec4
+                    x 10.0
+                    y 0.0
+                    z 0.0
+                    w 0.0
+        VectorArrayParameters *nullArray*
+        TextureParameters *nullArray*
+MeshMaterial 6FF57F2D-90C1-4170-BD92-4CD8E37F203A
+    $::DataContainer
+    ShaderInstance *nullGuid*
+    Shader::SurfaceShaderInstanceDataStruct
+        Shader Vehicles/Shaders/VehiclePreset_Wreckage_LOD/0D83DB4F-132A-493E-A4D7-92641B6FBAA4
+        BoolParameters *nullArray*
+        VectorParameters *nullArray*
+        VectorArrayParameters *nullArray*
+        TextureParameters *nullArray*
+RigidMeshAsset C21ED83E-71C8-4173-9354-88021F642B5F #primary instance
+    $::MeshAsset
+        $::Asset
+            $::DataContainer
+            Name objects/star1466-truck_01/star1466-wreck_01_nofx_Mesh
+        LodGroup lodgroups/World/6F61313B-C996-C1CB-CE6F-34392F6CC1E1
+        LodScale 1.0
+        CullScale 1.0
+        StreamingEnable True
+        OccluderMeshEnable False
+        OccluderHighPriority False
+        DestructionMaterialEnable False
+        EnlightenType EnlightenType_Dynamic
+        Materials::array
+            member(0) D75C28A0-F51D-472D-A639-85BE2ABEA3CE
+            member(1) 93F45672-AD04-C270-EE9D-15EE0EBDCBE8
+            member(2) 6FF57F2D-90C1-4170-BD92-4CD8E37F203A
+        NameHash 3548116700

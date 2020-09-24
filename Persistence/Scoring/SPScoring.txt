@@ -1,0 +1,164 @@
+Partition 0224F4A3-32CA-11E0-8B26-E2DEFE866D0F
+DamageScoringHandlerData 71BE0BBA-DC4C-4EFD-8819-65CEDAE8FED3
+    $::ScoringHandlerData
+        $::DataContainer
+    RepairVehicleLimit 0.00999999977648
+    DamageTeamVehicleLimit 0.5
+    TeamHealingLimit 0.5
+    TeamDamageLimit 0.5
+    KillAssistLimit 0.5
+    KillAssistTimeout 10.0
+    VehicleDestroyAssistLimit 0.5
+    SaviorKillTimeout 2.0
+    SaviorDamageLimit 0.5
+    HotVehicleTimeout 10.0
+ScoringBucketData F9F2D7B3-3614-4076-9932-317D21645262
+    $::DataContainer
+    DestinationBucket ScoringBucket_SinglePlayer
+    BucketType ScoringBucketType_Normal
+    Name sc_sp
+    RoundScore True
+    GlobalScore True
+    AddToEntry False
+    Unlocks *nullArray*
+    ConnectedCategories *nullArray*
+    TeamTotalBucket *nullGuid*
+ScoringData A9F71656-B4AA-6251-0374-009BDC1D70A1 #primary instance
+    $::Asset
+        $::DataContainer
+        Name Persistence/Scoring/SPScoring
+    ScoringTypes::array
+        member(0) A82A580F-0984-4B10-A849-ED14272E9FA8
+        member(1) 020EF32D-9DF4-4E75-8FF4-136B0F778FBE
+        member(2) F219A418-F710-47C4-A1A7-3F01AD8F45C6
+        member(3) 4340A2E5-48C2-484A-A133-33CC0C762700
+        member(4) 394EF145-F837-4499-8335-62945BCB8593
+        member(5) F2A0A2D3-8914-46FD-9D9A-F4B78AB16DB7
+        member(6) 8F0E9A4B-35D5-406F-A9C1-1052A1927CF6
+        member(7) 2B358487-C3D0-448D-B78B-E2F0D6265871
+        member(8) 8A45262F-3403-4E5E-9E83-EC3E0583AAFC
+        member(9) 53F284E4-3BD4-456A-8CCF-09712C4D79D7
+    ScoringHandlers::array
+        member(0) 71BE0BBA-DC4C-4EFD-8819-65CEDAE8FED3
+    Buckets::array
+        member(0) F9F2D7B3-3614-4076-9932-317D21645262
+ScoringTypeData A82A580F-0984-4B10-A849-ED14272E9FA8
+    $::DataContainer
+    Measuring StatEvent_Kill
+    ParamX *nullGuid*
+    ParamY *nullGuid*
+    Limit 0.0
+    DescriptionSid ENEMY DOWN
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 100.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False
+ScoringTypeData 020EF32D-9DF4-4E75-8FF4-136B0F778FBE
+    $::DataContainer
+    Measuring StatEvent_Headshot_X_With_Y
+    ParamX *nullGuid*
+    ParamY *nullGuid*
+    Limit 10.0
+    DescriptionSid HEADSHOT BONUS
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 50.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False
+ScoringTypeData F219A418-F710-47C4-A1A7-3F01AD8F45C6
+    $::DataContainer
+    Measuring StatEvent_Destroy_X
+    ParamX *nullGuid*
+    ParamY *nullGuid*
+    Limit 0.0
+    DescriptionSid VEHICLE DESTROYED
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 100.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False
+ScoringTypeData 4340A2E5-48C2-484A-A133-33CC0C762700
+    $::DataContainer
+    Measuring StatEvent_DoubleKill
+    ParamX *nullGuid*
+    ParamY *nullGuid*
+    Limit 0.0
+    DescriptionSid DOUBLE KILL
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 20.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False
+ScoringTypeData 394EF145-F837-4499-8335-62945BCB8593
+    $::DataContainer
+    Measuring StatEvent_TripleKill
+    ParamX *nullGuid*
+    ParamY *nullGuid*
+    Limit 0.0
+    DescriptionSid TRIPLE KILL
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 30.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False
+ScoringTypeData F2A0A2D3-8914-46FD-9D9A-F4B78AB16DB7
+    $::DataContainer
+    Measuring StatEvent_MultiKill
+    ParamX *nullGuid*
+    ParamY *nullGuid*
+    Limit 0.0
+    DescriptionSid MULTIPLE KILLS
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 50.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False
+ScoringTypeData 8F0E9A4B-35D5-406F-A9C1-1052A1927CF6
+    $::DataContainer
+    Measuring StatEvent_Level_X_Completed_Y_Difficulty
+    ParamX *nullGuid*
+    ParamY Persistence/StatCategories/DifficultyCategories/7324EE5D-0E58-408D-A9DE-6C2FFB6E9B19
+    Limit 0.0
+    DescriptionSid MISSION COMPLETE (EASY)
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 1000.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False
+ScoringTypeData 2B358487-C3D0-448D-B78B-E2F0D6265871
+    $::DataContainer
+    Measuring StatEvent_Level_X_Completed_Y_Difficulty
+    ParamX *nullGuid*
+    ParamY Persistence/StatCategories/DifficultyCategories/7F0FBFA8-2CC0-4D6C-914C-C47DE7FD3D18
+    Limit 0.0
+    DescriptionSid MISSION COMPLETE (MEDIUM)
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 2500.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False
+ScoringTypeData 8A45262F-3403-4E5E-9E83-EC3E0583AAFC
+    $::DataContainer
+    Measuring StatEvent_Level_X_Completed_Y_Difficulty
+    ParamX *nullGuid*
+    ParamY Persistence/StatCategories/DifficultyCategories/70ABD276-09BC-4245-8374-D1BDD1D98972
+    Limit 0.0
+    DescriptionSid MISSION COMPLETE (HARD)
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 5000.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False
+ScoringTypeData 53F284E4-3BD4-456A-8CCF-09712C4D79D7
+    $::DataContainer
+    Measuring StatEvent_KillAssist
+    ParamX *nullGuid*
+    ParamY *nullGuid*
+    Limit 0.0
+    DescriptionSid ACCURACY KILLS
+    VisibilityType ScoringVisibilityType_Major
+    Bucket ScoringBucket_SinglePlayer
+    Score 200.0
+    AdditionalValueMultiplier 0.0
+    ShowForTeam False

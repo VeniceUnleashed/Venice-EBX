@@ -1,0 +1,227 @@
+Partition 810BFE77-79AF-4CEF-B533-D245F89F0E81
+FloatPropertyTrackData E7F8E40B-DEF8-4850-9BFF-19F92468FAC9
+    $::SimplePropertyTrackData
+        $::PropertyTrackData
+            $::DataContainer
+            Id 1904985561
+            Times::array
+                member(0) 0
+                member(1) 150
+                member(2) 169
+                member(3) 194
+                member(4) 514
+                member(5) 689
+                member(6) 1003
+                member(7) 1046
+                member(8) 1089
+                member(9) 1330
+                member(10) 1615
+                member(11) 1645
+                member(12) 1694
+                member(13) 1966
+                member(14) 2267
+                member(15) 2280
+                member(16) 2311
+                member(17) 2902
+                member(18) 2933
+                member(19) 2964
+                member(20) 3073
+                member(21) 3182
+                member(22) 3230
+                member(23) 3635
+                member(24) 3731
+                member(25) 3865
+                member(26) 4416
+                member(27) 4445
+                member(28) 4476
+                member(29) 5135
+        InterpolationType InterpolationType_Linear
+    Values::array
+        member(0) 5.0
+        member(1) 5.0
+        member(2) 0.0
+        member(3) 5.0
+        member(4) 5.0
+        member(5) 5.0
+        member(6) 5.0
+        member(7) 4.0
+        member(8) 5.0
+        member(9) 5.0
+        member(10) 5.0
+        member(11) 0.0
+        member(12) 5.0
+        member(13) 5.0
+        member(14) 5.0
+        member(15) 2.0
+        member(16) 5.0
+        member(17) 5.0
+        member(18) 0.0
+        member(19) 5.0
+        member(20) 5.0
+        member(21) 0.20000000298
+        member(22) 5.0
+        member(23) 5.0
+        member(24) 5.0
+        member(25) 5.0
+        member(26) 5.0
+        member(27) 1.0
+        member(28) 5.0
+        member(29) 5.0
+InterfaceDescriptorData A5A8519D-88E9-4C40-AB77-4291FF2997C8
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id 331135192
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 6DD74A8C-9B88-4149-ABCB-E33DE669926A
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x -0.0318602956831
+            y 0.0039017512463
+            z 0.599140822887
+        up::Vec3
+            x -0.000179669703357
+            y -0.599987328053
+            z 0.00389770977199
+        forward::Vec3
+            x 0.599153518677
+            y 2.7567077268e-05
+            z 0.0318607725203
+        trans::Vec3
+            x -0.122741699219
+            y 0.154117584229
+            z -0.0127773284912
+    Blueprint Objects/ServiceLamp_01/ServiceLamp_01/F10F6567-7E82-3E9C-08CA-E3E93F1E4E43
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SequenceEntityData 3E9DDE88-DAAA-4DE0-8AA8-00E1B046508B
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Events *nullArray*
+    SequenceStartTime 0
+    SequenceLength 6000
+    Looping True
+    AutoStart True
+    AutoPlayFirstFrame False
+    PlayInReverse False
+    Realm Realm_ClientAndServer
+    PropertyTracks::array
+        member(0) E7F8E40B-DEF8-4850-9BFF-19F92468FAC9
+    CustomSequenceTracks *nullArray*
+    ClientUpdatePass UpdatePass_PostFrame
+    ServerUpdatePass UpdatePass_PreSim
+    ExternalTime 0.0
+SpatialPrefabBlueprint DD5A52A9-94E8-40BD-8408-B5E62ED21089 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/COOP_003/Props/ServiceLamp_Destroyable/ServiceLamp_Destroyable_Cold_01_Flicker
+                    PropertyConnections::array
+                        member(0)::PropertyConnection
+                            Source 3E9DDE88-DAAA-4DE0-8AA8-00E1B046508B
+                            Target BC30422A-5E4C-4B70-9D40-BD802DF746E5
+                            SourceFieldId 1904985561
+                            TargetFieldId -458572566
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source 6DD74A8C-9B88-4149-ABCB-E33DE669926A
+                        Target BC30422A-5E4C-4B70-9D40-BD802DF746E5
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member(1)::EventConnection
+                        Source 6DD74A8C-9B88-4149-ABCB-E33DE669926A
+                        Target A5A8519D-88E9-4C40-AB77-4291FF2997C8
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 331135192
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor A5A8519D-88E9-4C40-AB77-4291FF2997C8
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) BC30422A-5E4C-4B70-9D40-BD802DF746E5
+            member(1) 6DD74A8C-9B88-4149-ABCB-E33DE669926A
+            member(2) 3E9DDE88-DAAA-4DE0-8AA8-00E1B046508B
+SpotLightEntityData BC30422A-5E4C-4B70-9D40-BD802DF746E5
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 2
+                    IndexInBlueprint 0
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x -2.62023924761e-15
+                    y -0.000778718735091
+                    z -0.999999701977
+                forward::Vec3
+                    x 2.0301084061e-19
+                    y 0.999999701977
+                    z -0.000778718735091
+                trans::Vec3
+                    x -0.109971717
+                    y 0.0
+                    z 0.0
+        Color::Vec3
+            x 0.105999998748
+            y 0.465999990702
+            z 1.0
+        Radius 7.0
+        Intensity 5.0
+        AttenuationOffset 0.00999999977648
+        Visible True
+        SpecularEnable True
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable False
+        EnlightenColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+        ParticleColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+    Shape SpotLightShape_Cone
+    ConeInnerAngle 0.0
+    ConeOuterAngle 148.050003052
+    FrustumFov 40.0
+    FrustumAspect 1.0
+    OrthoWidth 5.0
+    OrthoHeight 5.0
+    Texture *nullGuid*
+    CastShadowsEnable False
+    CastShadowsMinLevel QualityLevel_Low

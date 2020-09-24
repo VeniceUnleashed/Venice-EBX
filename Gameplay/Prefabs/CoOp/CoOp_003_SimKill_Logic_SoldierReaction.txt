@@ -1,0 +1,159 @@
+Partition 4D8DEB59-B768-4F37-A607-634CB27531F2
+AnimationSignalEntityData 75AA06E7-DBAE-4E2B-B151-50613E2F3D9C
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Realm Realm_Client
+    Signal::AntRef
+        AssetId 357072917
+    IntGameState::AntRef
+        AssetId -1
+    FloatGameState::AntRef
+        AssetId -1
+    ValueInt 0
+    ValueFloat 0.0
+    Reset False
+    Continuous False
+EventSplitterEntityData 5A8D532A-D4AD-4333-81B5-B1A2FB6A8CE9
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    RunOnce True
+    Realm Realm_Server
+InterfaceDescriptorData F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id 1851906734
+        member(1)::DynamicEvent
+            Id 764201467
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id 1762125924
+        member(1)::DynamicEvent
+            Id 1189488771
+        member(2)::DynamicEvent
+            Id 946447544
+    InputLinks *nullArray*
+    OutputLinks::array
+        member(0)::DynamicLink
+            Id -1086273423
+        member(1)::DynamicLink
+            Id 966302209
+        member(2)::DynamicLink
+            Id 1122649000
+LogicPrefabBlueprint 80F4C7C2-3BB8-4B60-87EA-D2103458D684 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Prefabs/CoOp/CoOp_003_SimKill_Logic_SoldierReaction
+                    PropertyConnections *nullArray*
+                    LinkConnections::array
+                        member(0)::LinkConnection
+                            Source 75AA06E7-DBAE-4E2B-B151-50613E2F3D9C
+                            Target F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+                            SourceFieldId -1086273423
+                            TargetFieldId -1086273423
+                        member(1)::LinkConnection
+                            Source DAE32C22-1053-413D-AC11-B307E7FA4DDC
+                            Target F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+                            SourceFieldId -1481696500
+                            TargetFieldId 966302209
+                        member(2)::LinkConnection
+                            Source DAE32C22-1053-413D-AC11-B307E7FA4DDC
+                            Target F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+                            SourceFieldId -616190660
+                            TargetFieldId 1122649000
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source DAE32C22-1053-413D-AC11-B307E7FA4DDC
+                        Target F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+                        SourceEvent::EventSpec
+                            Id 1762125924
+                        TargetEvent::EventSpec
+                            Id 1762125924
+                        TargetType EventConnectionTargetType_Server
+                    member(1)::EventConnection
+                        Source 5A8D532A-D4AD-4333-81B5-B1A2FB6A8CE9
+                        Target DAE32C22-1053-413D-AC11-B307E7FA4DDC
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id -770075886
+                        TargetType EventConnectionTargetType_Server
+                    member(2)::EventConnection
+                        Source 5A8D532A-D4AD-4333-81B5-B1A2FB6A8CE9
+                        Target F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id 1189488771
+                        TargetType EventConnectionTargetType_Server
+                    member(3)::EventConnection
+                        Source F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+                        Target 5A8D532A-D4AD-4333-81B5-B1A2FB6A8CE9
+                        SourceEvent::EventSpec
+                            Id 1851906734
+                        TargetEvent::EventSpec
+                            Id 1723395486
+                        TargetType EventConnectionTargetType_Server
+                    member(4)::EventConnection
+                        Source 5A8D532A-D4AD-4333-81B5-B1A2FB6A8CE9
+                        Target F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+                        SourceEvent::EventSpec
+                            Id -137490305
+                        TargetEvent::EventSpec
+                            Id 946447544
+                        TargetType EventConnectionTargetType_Server
+                    member(5)::EventConnection
+                        Source F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+                        Target 75AA06E7-DBAE-4E2B-B151-50613E2F3D9C
+                        SourceEvent::EventSpec
+                            Id 764201467
+                        TargetEvent::EventSpec
+                            Id 434301581
+                        TargetType EventConnectionTargetType_Client
+                Descriptor F69F2EDC-3E39-4D53-A28C-E56D0F0C828A
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member(0) DAE32C22-1053-413D-AC11-B307E7FA4DDC
+            member(1) 75AA06E7-DBAE-4E2B-B151-50613E2F3D9C
+            member(2) 5A8D532A-D4AD-4333-81B5-B1A2FB6A8CE9
+PatrolOrderEntityData DAE32C22-1053-413D-AC11-B307E7FA4DDC
+    $::BFOrderEntityData
+        $::OrderEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 1
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 0
+            DebugName PatrolOrder DAE32C22-1053-413D-AC11-B307E7FA4DDC
+            IssueOrderDelay 0.0
+            OnCompleteTimeOut 0.0
+            OnFailedTimeOut 0.0
+            Enabled True
+            ReadinessOnStart RLCombat
+        ForbiddenToFire False
+    TypeOfRoute RouteStop
+    UsePathFinding True
+    CombatMode CombatPatrolMode_FreeToFight
+    StartAtGeometricallyClosestWaypoint False
+    StartingWaypoint *nullGuid*

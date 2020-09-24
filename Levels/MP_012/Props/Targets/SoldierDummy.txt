@@ -1,0 +1,135 @@
+Partition 9A6CFA20-3436-11E0-8769-A8021E2E8C9B
+EventGateEntityData C3BF53DA-AB27-4DBD-B32E-1274BE16A5E4
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Default False
+    Realm Realm_Server
+InterfaceDescriptorData BA36F829-E404-4F0F-8644-1E00F14BFEA6
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id -117303631
+        member(1)::DynamicEvent
+            Id -1952177180
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id 193458192
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 0610F8EF-D78A-4DA2-BF67-8C8D623E38A3
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint Levels/MP_012/Props/Targets/Dummy_01/6474A117-1095-A50D-A296-14A8187BFF65
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 44B056DD-1617-4902-B8ED-DD692F20550A
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 0.999963402748
+            z 0.00855530053377
+        forward::Vec3
+            x 0.0
+            y -0.00855530053377
+            z 0.999963402748
+        trans::Vec3
+            x -0.00471931695938
+            y 0.149521112442
+            z 0.0394172519445
+    Blueprint Characters/Headgear/US_Helmet01/US_Helmet01/64103B81-3DCE-A7F5-15C8-99A1C952DDEC
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 4E891858-F595-5189-DE70-E800A6CA2899 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/MP_012/Props/Targets/SoldierDummy
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source C3BF53DA-AB27-4DBD-B32E-1274BE16A5E4
+                        Target BA36F829-E404-4F0F-8644-1E00F14BFEA6
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 193458192
+                        TargetType EventConnectionTargetType_NetworkedClientAndServer
+                    member(1)::EventConnection
+                        Source 0610F8EF-D78A-4DA2-BF67-8C8D623E38A3
+                        Target C3BF53DA-AB27-4DBD-B32E-1274BE16A5E4
+                        SourceEvent::EventSpec
+                            Id -847278421
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Server
+                    member(2)::EventConnection
+                        Source BA36F829-E404-4F0F-8644-1E00F14BFEA6
+                        Target C3BF53DA-AB27-4DBD-B32E-1274BE16A5E4
+                        SourceEvent::EventSpec
+                            Id -1952177180
+                        TargetEvent::EventSpec
+                            Id 2089008817
+                        TargetType EventConnectionTargetType_Server
+                    member(3)::EventConnection
+                        Source BA36F829-E404-4F0F-8644-1E00F14BFEA6
+                        Target C3BF53DA-AB27-4DBD-B32E-1274BE16A5E4
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id 212633683
+                        TargetType EventConnectionTargetType_Server
+                Descriptor BA36F829-E404-4F0F-8644-1E00F14BFEA6
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member(0) 0610F8EF-D78A-4DA2-BF67-8C8D623E38A3
+            member(1) 44B056DD-1617-4902-B8ED-DD692F20550A
+            member(2) C3BF53DA-AB27-4DBD-B32E-1274BE16A5E4

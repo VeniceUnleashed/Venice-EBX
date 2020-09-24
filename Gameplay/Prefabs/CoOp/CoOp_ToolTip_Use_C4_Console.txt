@@ -1,0 +1,84 @@
+Partition 70709779-61A8-4BDB-BF6A-5A002A857688
+EventSyncEntityData B4A62063-FFA5-459A-91BA-95EE53E09C89
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+InterfaceDescriptorData A2A595FD-B61D-4BEA-8074-2747986F62A9
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member(0)::DynamicEvent
+            Id 1037321618
+    OutputEvents::array
+        member(0)::DynamicEvent
+            Id -757604857
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LogicPrefabBlueprint FCAFF38F-E706-465D-8984-CC466A8F3612 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Gameplay/Prefabs/CoOp/CoOp_ToolTip_Use_C4_Console
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member(0)::EventConnection
+                        Source B4A62063-FFA5-459A-91BA-95EE53E09C89
+                        Target A2A595FD-B61D-4BEA-8074-2747986F62A9
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -757604857
+                        TargetType EventConnectionTargetType_Server
+                    member(1)::EventConnection
+                        Source A2A595FD-B61D-4BEA-8074-2747986F62A9
+                        Target 1E0ED3B1-F6F3-46AF-9E11-D2BB28881649
+                        SourceEvent::EventSpec
+                            Id 1037321618
+                        TargetEvent::EventSpec
+                            Id 1037321618
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member(2)::EventConnection
+                        Source 1E0ED3B1-F6F3-46AF-9E11-D2BB28881649
+                        Target B4A62063-FFA5-459A-91BA-95EE53E09C89
+                        SourceEvent::EventSpec
+                            Id -757604857
+                        TargetEvent::EventSpec
+                            Id -1573253508
+                        TargetType EventConnectionTargetType_Client
+                Descriptor A2A595FD-B61D-4BEA-8074-2747986F62A9
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member(0) B4A62063-FFA5-459A-91BA-95EE53E09C89
+            member(1) 1E0ED3B1-F6F3-46AF-9E11-D2BB28881649
+MessageEntityData 1E0ED3B1-F6F3-46AF-9E11-D2BB28881649
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    MessageSid ID_P_INAME_C4
+    AdditionalMessages::array
+        member(0)::MessageLineData
+            MessageSid ID_H_MES_FLOW_THROW
+            EntryInputAction EIAZoom
+        member(1)::MessageLineData
+            MessageSid ID_H_MES_FLOW_DETONATE
+            EntryInputAction EIAFire
+    MessageType UIMessageEntityType_Tooltip
+    DisplayTime 2.0
+    EntryInputAction EIADynamicGadget2
+    Enabled True
