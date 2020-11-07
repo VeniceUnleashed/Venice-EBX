@@ -688,81 +688,81 @@ VehicleBlueprint 364DD209-1F04-4015-9E4B-BB8338906F84 #primary instance
                         member(0)::PropertyConnection
                             Source 4C11F1B8-31D6-45BB-9319-9037DB724813
                             Target 310F45E1-871F-495B-BD37-4F72139A00ED
-                            SourceFieldId -709588
-                            TargetFieldId -1429643463
+                            SourceFieldId -709588 (ActiveForLocalPlayer)
+                            TargetFieldId -1429643463 (UseFirstPersonSounds)
                         member(1)::PropertyConnection
                             Source BB5B865C-7176-4CB0-9282-FB918A015821
                             Target 333E3AC4-A238-4C36-8DD7-C9CF83D0C7B8
-                            SourceFieldId -2140343023
-                            TargetFieldId -2140343023
+                            SourceFieldId -2140343023 (CurrentHealthNormalized)
+                            TargetFieldId -2140343023 (CurrentHealthNormalized)
                         member(2)::PropertyConnection
                             Source BB5B865C-7176-4CB0-9282-FB918A015821
                             Target 333E3AC4-A238-4C36-8DD7-C9CF83D0C7B8
-                            SourceFieldId 319954778
-                            TargetFieldId 319954778
+                            SourceFieldId 319954778 (CurrentVelocityNormalized)
+                            TargetFieldId 319954778 (CurrentVelocityNormalized)
                         member(3)::PropertyConnection
                             Source 4C11F1B8-31D6-45BB-9319-9037DB724813
                             Target 89E2E653-C1D1-49B4-80E8-9C01D10A3083
-                            SourceFieldId -709588
+                            SourceFieldId -709588 (ActiveForLocalPlayer)
                             TargetFieldId 1921607888
                         member(4)::PropertyConnection
                             Source CB8EDB9A-2522-44DC-AFF0-D6BE0A08C90B
                             Target 440AD8D8-E04B-4399-9D31-C19FA5CCFACF
                             SourceFieldId -472264492
-                            TargetFieldId 208768368
+                            TargetFieldId 208768368 (Delay)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 24C14B91-D4AD-4751-A0A6-3874DFA5E72A
                             Target F9A28FD9-6A36-4CDB-9988-66BFC5C6B6C1
-                            SourceFieldId -773028713
-                            TargetFieldId 2089387576
+                            SourceFieldId -773028713 (InputModifiers)
+                            TargetFieldId 2089387576 (Roll)
                         member(1)::LinkConnection
                             Source 24C14B91-D4AD-4751-A0A6-3874DFA5E72A
                             Target F9A28FD9-6A36-4CDB-9988-66BFC5C6B6C1
-                            SourceFieldId -773028713
-                            TargetFieldId -1585193683
+                            SourceFieldId -773028713 (InputModifiers)
+                            TargetFieldId -1585193683 (Throttle)
                         member(2)::LinkConnection
                             Source 24C14B91-D4AD-4751-A0A6-3874DFA5E72A
                             Target F9A28FD9-6A36-4CDB-9988-66BFC5C6B6C1
-                            SourceFieldId -773028713
-                            TargetFieldId 193468618
+                            SourceFieldId -773028713 (InputModifiers)
+                            TargetFieldId 193468618 (Yaw)
                         member(3)::LinkConnection
                             Source 24C14B91-D4AD-4751-A0A6-3874DFA5E72A
                             Target F9A28FD9-6A36-4CDB-9988-66BFC5C6B6C1
-                            SourceFieldId -773028713
-                            TargetFieldId 211741658
+                            SourceFieldId -773028713 (InputModifiers)
+                            TargetFieldId 211741658 (Brake)
                 EventConnections::array
                     member(0)::EventConnection
                         Source BB5B865C-7176-4CB0-9282-FB918A015821
                         Target F277ACBC-410A-40CE-9FD2-364729E1E739
                         SourceEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source BB5B865C-7176-4CB0-9282-FB918A015821
                         Target F277ACBC-410A-40CE-9FD2-364729E1E739
                         SourceEvent::EventSpec
-                            Id 707417003
+                            Id 707417003 (OnFullHealth)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source BB5B865C-7176-4CB0-9282-FB918A015821
                         Target F9A28FD9-6A36-4CDB-9988-66BFC5C6B6C1
                         SourceEvent::EventSpec
-                            Id 1594562913
+                            Id 1594562913 (OnHealthy)
                         TargetEvent::EventSpec
-                            Id 707417003
+                            Id 707417003 (OnFullHealth)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(3)::EventConnection
                         Source BB5B865C-7176-4CB0-9282-FB918A015821
                         Target F9A28FD9-6A36-4CDB-9988-66BFC5C6B6C1
                         SourceEvent::EventSpec
-                            Id 942943263
+                            Id 942943263 (OnDisabledDamage)
                         TargetEvent::EventSpec
-                            Id -62145612
+                            Id -62145612 (OnDisabled)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                 Descriptor CB8EDB9A-2522-44DC-AFF0-D6BE0A08C90B
                 NeedNetworkId True

@@ -39,11 +39,11 @@ InterfaceDescriptorData E136BF93-8449-447C-8E79-8A94631CBD09
         member(1)::DynamicEvent
             Id -1584155022
         member(2)::DynamicEvent
-            Id 2081081773
+            Id 2081081773 (EnableImmortality)
         member(3)::DynamicEvent
-            Id 1006532248
+            Id 1006532248 (DisableImmortality)
         member(4)::DynamicEvent
-            Id 28110977
+            Id 28110977 (Playing)
         member(5)::DynamicEvent
             Id -1653881760
         member(6)::DynamicEvent
@@ -69,30 +69,30 @@ SpatialPrefabBlueprint 61B748C5-9D1D-E706-8DFB-3316189DEF2B #primary instance
                         member(0)::PropertyConnection
                             Source B29B5273-6333-4B9A-9DDA-9D3818068DFA
                             Target E136BF93-8449-447C-8E79-8A94631CBD09
-                            SourceFieldId 225375086
-                            TargetFieldId 495955022
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 495955022 (IsTarget)
                         member(1)::PropertyConnection
                             Source 24A0FEF2-FCD2-4862-80E0-62B4F5C536FD
                             Target E136BF93-8449-447C-8E79-8A94631CBD09
-                            SourceFieldId 225375086
-                            TargetFieldId 922982664
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 922982664 (Immortal)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source E136BF93-8449-447C-8E79-8A94631CBD09
                         Target 24A0FEF2-FCD2-4862-80E0-62B4F5C536FD
                         SourceEvent::EventSpec
-                            Id 2081081773
+                            Id 2081081773 (EnableImmortality)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(1)::EventConnection
                         Source E136BF93-8449-447C-8E79-8A94631CBD09
                         Target 24A0FEF2-FCD2-4862-80E0-62B4F5C536FD
                         SourceEvent::EventSpec
-                            Id 1006532248
+                            Id 1006532248 (DisableImmortality)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(2)::EventConnection
                         Source E136BF93-8449-447C-8E79-8A94631CBD09
@@ -100,7 +100,7 @@ SpatialPrefabBlueprint 61B748C5-9D1D-E706-8DFB-3316189DEF2B #primary instance
                         SourceEvent::EventSpec
                             Id 1077549735
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(3)::EventConnection
                         Source E136BF93-8449-447C-8E79-8A94631CBD09
@@ -108,13 +108,13 @@ SpatialPrefabBlueprint 61B748C5-9D1D-E706-8DFB-3316189DEF2B #primary instance
                         SourceEvent::EventSpec
                             Id -1584155022
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(4)::EventConnection
                         Source E136BF93-8449-447C-8E79-8A94631CBD09
                         Target E136BF93-8449-447C-8E79-8A94631CBD09
                         SourceEvent::EventSpec
-                            Id 28110977
+                            Id 28110977 (Playing)
                         TargetEvent::EventSpec
                             Id 606402872
                         TargetType EventConnectionTargetType_Server

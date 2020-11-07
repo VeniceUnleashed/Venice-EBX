@@ -20,14 +20,14 @@ InterfaceDescriptorData 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id 1037701496
+            Id 1037701496 (ForceStart)
     OutputEvents::array
         member(0)::DynamicEvent
             Id 566563073
         member(1)::DynamicEvent
             Id -1466684583
         member(2)::DynamicEvent
-            Id 1499404377
+            Id 1499404377 (ScenarioFinished)
         member(3)::DynamicEvent
             Id -4493857
         member(4)::DynamicEvent
@@ -35,7 +35,7 @@ InterfaceDescriptorData 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
         member(5)::DynamicEvent
             Id 1595571272
         member(6)::DynamicEvent
-            Id -721579565
+            Id -721579565 (TriggerProps)
     InputLinks::array
         member(0)::DynamicLink
             Id -1424701589
@@ -136,18 +136,18 @@ SpatialPrefabBlueprint A4EBB36A-FED3-4451-899D-282D67ECE8CF #primary instance
                         member(0)::PropertyConnection
                             Source 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                             Target A18763F9-F1A3-4C57-BF80-AD8B621CF363
-                            SourceFieldId -2132289043
-                            TargetFieldId -2132289043
+                            SourceFieldId -2132289043 (ExternalTime)
+                            TargetFieldId -2132289043 (ExternalTime)
                         member(1)::PropertyConnection
                             Source 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                             Target A18763F9-F1A3-4C57-BF80-AD8B621CF363
-                            SourceFieldId -1392905554
-                            TargetFieldId -1392905554
+                            SourceFieldId -1392905554 (UseExternalTime)
+                            TargetFieldId -1392905554 (UseExternalTime)
                         member(2)::PropertyConnection
                             Source A18763F9-F1A3-4C57-BF80-AD8B621CF363
                             Target 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
-                            SourceFieldId -1409450479
-                            TargetFieldId -1409450479
+                            SourceFieldId -1409450479 (Origin)
+                            TargetFieldId -1409450479 (Origin)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
@@ -159,15 +159,15 @@ SpatialPrefabBlueprint A4EBB36A-FED3-4451-899D-282D67ECE8CF #primary instance
                         Source 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                         Target A18763F9-F1A3-4C57-BF80-AD8B621CF363
                         SourceEvent::EventSpec
-                            Id 1037701496
+                            Id 1037701496 (ForceStart)
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id 1037701496 (ForceStart)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source A18763F9-F1A3-4C57-BF80-AD8B621CF363
                         Target 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id -1694482841 (TriggerActor1)
                         TargetEvent::EventSpec
                             Id 566563073
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -175,15 +175,15 @@ SpatialPrefabBlueprint A4EBB36A-FED3-4451-899D-282D67ECE8CF #primary instance
                         Source A18763F9-F1A3-4C57-BF80-AD8B621CF363
                         Target 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source A18763F9-F1A3-4C57-BF80-AD8B621CF363
                         Target 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                         SourceEvent::EventSpec
-                            Id -1694482844
+                            Id -1694482844 (TriggerActor2)
                         TargetEvent::EventSpec
                             Id -1466684583
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -191,7 +191,7 @@ SpatialPrefabBlueprint A4EBB36A-FED3-4451-899D-282D67ECE8CF #primary instance
                         Source A18763F9-F1A3-4C57-BF80-AD8B621CF363
                         Target 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                         SourceEvent::EventSpec
-                            Id -1694482843
+                            Id -1694482843 (TriggerActor3)
                         TargetEvent::EventSpec
                             Id -4493857
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -199,7 +199,7 @@ SpatialPrefabBlueprint A4EBB36A-FED3-4451-899D-282D67ECE8CF #primary instance
                         Source A18763F9-F1A3-4C57-BF80-AD8B621CF363
                         Target 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                         SourceEvent::EventSpec
-                            Id -1694482846
+                            Id -1694482846 (TriggerActor4)
                         TargetEvent::EventSpec
                             Id 1595571275
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -207,7 +207,7 @@ SpatialPrefabBlueprint A4EBB36A-FED3-4451-899D-282D67ECE8CF #primary instance
                         Source A18763F9-F1A3-4C57-BF80-AD8B621CF363
                         Target 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                         SourceEvent::EventSpec
-                            Id -1694482845
+                            Id -1694482845 (TriggerActor5)
                         TargetEvent::EventSpec
                             Id 1595571272
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -215,9 +215,9 @@ SpatialPrefabBlueprint A4EBB36A-FED3-4451-899D-282D67ECE8CF #primary instance
                         Source A18763F9-F1A3-4C57-BF80-AD8B621CF363
                         Target 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                         SourceEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 0B01CDBA-2A89-4352-9D7E-CAC660A16FD6
                 NeedNetworkId False

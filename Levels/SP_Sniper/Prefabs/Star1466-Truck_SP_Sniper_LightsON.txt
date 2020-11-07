@@ -728,13 +728,13 @@ InterfaceDescriptorData 56915055-0516-4683-B6F8-A192D8421FDF
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id -1875444151
+            Id -1875444151 (LightsOn)
         member(1)::DynamicEvent
-            Id -1760115193
+            Id -1760115193 (LightsOff)
     OutputEvents *nullArray*
     InputLinks::array
         member(0)::DynamicLink
-            Id -1316984818
+            Id -1316984818 (PathFollower)
     OutputLinks *nullArray*
 LensFlareComponentData 297BF09C-E0A1-4C68-B09A-44259D619B59
     $::ComponentData
@@ -2067,110 +2067,110 @@ VehicleBlueprint EAD9C7DE-0347-4FE5-8269-33C1406E1B9F #primary instance
                         member(0)::PropertyConnection
                             Source 7B15F9E2-F15F-42AD-AD51-41D8DE2BB5EB
                             Target 22C4FD40-F987-4EA6-B8B5-E5E7C36C28F1
-                            SourceFieldId 225375086
-                            TargetFieldId 2662400
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 2662400 (Enabled)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 56915055-0516-4683-B6F8-A192D8421FDF
                             Target 896E389E-2C00-4540-80D2-34DBB6799DEA
-                            SourceFieldId -1316984818
+                            SourceFieldId -1316984818 (PathFollower)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 56915055-0516-4683-B6F8-A192D8421FDF
                         Target 6E7E4D70-FF24-4FA5-B8DE-325FF2D13808
                         SourceEvent::EventSpec
-                            Id -1875444151
+                            Id -1875444151 (LightsOn)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 56915055-0516-4683-B6F8-A192D8421FDF
                         Target BB49C3EB-CB29-4EEA-82DA-38A9370D2395
                         SourceEvent::EventSpec
-                            Id -1875444151
+                            Id -1875444151 (LightsOn)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 56915055-0516-4683-B6F8-A192D8421FDF
                         Target 477A4685-76A8-444A-8BFB-A9E7476C7878
                         SourceEvent::EventSpec
-                            Id -1760115193
+                            Id -1760115193 (LightsOff)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 56915055-0516-4683-B6F8-A192D8421FDF
                         Target AFD7356C-78A2-4387-97C5-5B40C1C99F6A
                         SourceEvent::EventSpec
-                            Id -1760115193
+                            Id -1760115193 (LightsOff)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 6E7E4D70-FF24-4FA5-B8DE-325FF2D13808
                         Target 3157D179-CB04-46EB-A1A4-97FE7F36EDBC
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(5)::EventConnection
                         Source 6E7E4D70-FF24-4FA5-B8DE-325FF2D13808
                         Target CC06DCCA-5891-4029-B1D2-B8CE22C3AF44
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(6)::EventConnection
                         Source BB49C3EB-CB29-4EEA-82DA-38A9370D2395
                         Target A9CB9CCF-09A5-482A-A4E1-01FE29E01C6D
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(7)::EventConnection
                         Source BB49C3EB-CB29-4EEA-82DA-38A9370D2395
                         Target FBA28949-08ED-4C56-A1CC-5170E07A6DDB
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(8)::EventConnection
                         Source 477A4685-76A8-444A-8BFB-A9E7476C7878
                         Target CC06DCCA-5891-4029-B1D2-B8CE22C3AF44
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(9)::EventConnection
                         Source 477A4685-76A8-444A-8BFB-A9E7476C7878
                         Target 3157D179-CB04-46EB-A1A4-97FE7F36EDBC
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(10)::EventConnection
                         Source AFD7356C-78A2-4387-97C5-5B40C1C99F6A
                         Target A9CB9CCF-09A5-482A-A4E1-01FE29E01C6D
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(11)::EventConnection
                         Source AFD7356C-78A2-4387-97C5-5B40C1C99F6A
                         Target FBA28949-08ED-4C56-A1CC-5170E07A6DDB
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_NetworkedClient
                 Descriptor 56915055-0516-4683-B6F8-A192D8421FDF
                 NeedNetworkId True

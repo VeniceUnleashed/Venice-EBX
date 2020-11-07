@@ -33,10 +33,10 @@ InterfaceDescriptorData 706A187D-D94A-4A76-959F-2465F6FAC3DB
     InputEvents *nullArray*
     OutputEvents::array
         member(0)::DynamicEvent
-            Id -1452333337
+            Id -1452333337 (OnDestroyed)
     InputLinks::array
         member(0)::DynamicLink
-            Id 124880329
+            Id 124880329 (SoundShape)
     OutputLinks *nullArray*
 IrReverbEntityData 0B282D23-4778-43BC-969E-59B15C824155
     $::EntityData
@@ -154,60 +154,60 @@ SpatialPrefabBlueprint E4AE0E73-35CE-48C0-8A4E-19649EA71B7B #primary instance
                         member(0)::PropertyConnection
                             Source F89167F3-6658-4029-AADB-4FE3B9E0E807
                             Target 0B282D23-4778-43BC-969E-59B15C824155
-                            SourceFieldId 258157264
-                            TargetFieldId -1136955571
+                            SourceFieldId 258157264 (Proximity)
+                            TargetFieldId -1136955571 (Volume)
                         member(1)::PropertyConnection
                             Source F89167F3-6658-4029-AADB-4FE3B9E0E807
                             Target 706A187D-D94A-4A76-959F-2465F6FAC3DB
-                            SourceFieldId 258157264
-                            TargetFieldId 258157264
+                            SourceFieldId 258157264 (Proximity)
+                            TargetFieldId 258157264 (Proximity)
                         member(2)::PropertyConnection
                             Source 6D8908E8-341F-4D68-9D23-9F8EEBFD1514
                             Target 803BF210-4BD9-4643-9ED8-EADEA936CBD1
-                            SourceFieldId 225375086
-                            TargetFieldId 193450867
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 193450867 (In1)
                         member(3)::PropertyConnection
                             Source 8F97AE09-5DF9-4C0F-B521-6338B12AFDEF
                             Target 803BF210-4BD9-4643-9ED8-EADEA936CBD1
-                            SourceFieldId 225375086
-                            TargetFieldId 193450866
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 193450866 (In0)
                         member(4)::PropertyConnection
                             Source 803BF210-4BD9-4643-9ED8-EADEA936CBD1
                             Target F89167F3-6658-4029-AADB-4FE3B9E0E807
-                            SourceFieldId 193453899
-                            TargetFieldId 1947336347
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 1947336347 (ProximityMultiplier)
                         member(5)::PropertyConnection
                             Source F89167F3-6658-4029-AADB-4FE3B9E0E807
                             Target EE430915-5C2A-495D-B0AA-459897A933D8
-                            SourceFieldId 258157264
+                            SourceFieldId 258157264 (Proximity)
                             TargetFieldId -1774245558
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 706A187D-D94A-4A76-959F-2465F6FAC3DB
                             Target 44C31F88-C615-45E7-9AB8-D95574F52F4F
-                            SourceFieldId 124880329
+                            SourceFieldId 124880329 (SoundShape)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source F89167F3-6658-4029-AADB-4FE3B9E0E807
                             Target 44C31F88-C615-45E7-9AB8-D95574F52F4F
-                            SourceFieldId 838548383
+                            SourceFieldId 838548383 (Geometry)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 2811D260-C909-4D45-9762-7E7997BF1A43
                         Target 706A187D-D94A-4A76-959F-2465F6FAC3DB
                         SourceEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(1)::EventConnection
                         Source 2811D260-C909-4D45-9762-7E7997BF1A43
                         Target 6D8908E8-341F-4D68-9D23-9F8EEBFD1514
                         SourceEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetEvent::EventSpec
-                            Id -395651742
+                            Id -395651742 (Decrement)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 2811D260-C909-4D45-9762-7E7997BF1A43
@@ -215,7 +215,7 @@ SpatialPrefabBlueprint E4AE0E73-35CE-48C0-8A4E-19649EA71B7B #primary instance
                         SourceEvent::EventSpec
                             Id -577761976
                         TargetEvent::EventSpec
-                            Id -274579609
+                            Id -274579609 (Destroy)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 2811D260-C909-4D45-9762-7E7997BF1A43
@@ -223,7 +223,7 @@ SpatialPrefabBlueprint E4AE0E73-35CE-48C0-8A4E-19649EA71B7B #primary instance
                         SourceEvent::EventSpec
                             Id -577761976
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor 706A187D-D94A-4A76-959F-2465F6FAC3DB
                 NeedNetworkId True

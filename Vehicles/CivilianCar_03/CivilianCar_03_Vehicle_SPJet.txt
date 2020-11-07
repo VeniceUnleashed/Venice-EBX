@@ -840,15 +840,15 @@ InterfaceDescriptorData FCC126E8-14F4-45E8-9EC2-5E03983393CA
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id -274579609
+            Id -274579609 (Destroy)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id -1036968738
+            Id -1036968738 (OnSpawned)
         member(1)::DynamicEvent
-            Id -1452333337
+            Id -1452333337 (OnDestroyed)
     InputLinks::array
         member(0)::DynamicLink
-            Id -1316984818
+            Id -1316984818 (PathFollower)
     OutputLinks *nullArray*
 MotionDampingData 06C1CF21-A662-4F7C-892B-B2B8C11FAA96
     $::DataContainer
@@ -2271,32 +2271,32 @@ VehicleBlueprint A128EA58-4EED-4157-9BE2-3A5D49E70069 #primary instance
                         member(0)::LinkConnection
                             Source FCC126E8-14F4-45E8-9EC2-5E03983393CA
                             Target 92B1D46C-7714-4621-BF18-F04BDC2989E3
-                            SourceFieldId -1316984818
+                            SourceFieldId -1316984818 (PathFollower)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source EB3B4261-51F2-4E79-BFF8-05B9CDBA6D8C
                         Target FCC126E8-14F4-45E8-9EC2-5E03983393CA
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source EB3B4261-51F2-4E79-BFF8-05B9CDBA6D8C
                         Target FCC126E8-14F4-45E8-9EC2-5E03983393CA
                         SourceEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source FCC126E8-14F4-45E8-9EC2-5E03983393CA
                         Target EB3B4261-51F2-4E79-BFF8-05B9CDBA6D8C
                         SourceEvent::EventSpec
-                            Id -274579609
+                            Id -274579609 (Destroy)
                         TargetEvent::EventSpec
-                            Id -274579609
+                            Id -274579609 (Destroy)
                         TargetType EventConnectionTargetType_Server
                 Descriptor FCC126E8-14F4-45E8-9EC2-5E03983393CA
                 NeedNetworkId True

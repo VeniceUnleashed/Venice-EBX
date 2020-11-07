@@ -282,13 +282,13 @@ InterfaceDescriptorData B8A00063-819E-4323-A01C-EFC27818E37F
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id -567950349
+            Id -567950349 (StartDust)
         member(1)::DynamicEvent
-            Id -639346773
+            Id -639346773 (StopDust)
     OutputEvents *nullArray*
     InputLinks::array
         member(0)::DynamicLink
-            Id -510838215
+            Id -510838215 (PathFollowing)
     OutputLinks *nullArray*
 ObjectBlueprint 8EE83D86-9AE4-9E44-E81A-6EBDE0B65515 #primary instance
     $::Blueprint
@@ -301,56 +301,56 @@ ObjectBlueprint 8EE83D86-9AE4-9E44-E81A-6EBDE0B65515 #primary instance
                     member(0)::PropertyConnection
                         Source 7ABC08E9-DEAC-405B-9CAF-9E9F0028E0CE
                         Target BAC46D42-DF9E-4D07-AA55-FD9E8CF105ED
-                        SourceFieldId -1174111641
-                        TargetFieldId 5862146
+                        SourceFieldId -1174111641 (OutTransform)
+                        TargetFieldId 5862146 (In)
                     member(1)::PropertyConnection
                         Source BAC46D42-DF9E-4D07-AA55-FD9E8CF105ED
                         Target B8A00063-819E-4323-A01C-EFC27818E37F
-                        SourceFieldId 193453899
-                        TargetFieldId -1174111641
+                        SourceFieldId 193453899 (Out)
+                        TargetFieldId -1174111641 (OutTransform)
                 LinkConnections::array
                     member(0)::LinkConnection
                         Source B8A00063-819E-4323-A01C-EFC27818E37F
                         Target 9328A7F8-87C8-4516-A1A5-0A44CAA8A25E
-                        SourceFieldId -510838215
+                        SourceFieldId -510838215 (PathFollowing)
                         TargetFieldId 0
                     member(1)::LinkConnection
                         Source 7ABC08E9-DEAC-405B-9CAF-9E9F0028E0CE
                         Target 97AB8870-AA2C-11E0-8A95-B244C732FD7D
-                        SourceFieldId -900749990
+                        SourceFieldId -900749990 (ExcludedEntities)
                         TargetFieldId 0
             EventConnections::array
                 member(0)::EventConnection
                     Source B8A00063-819E-4323-A01C-EFC27818E37F
                     Target 7FCFE43C-E96D-483C-8507-156E3D2D134B
                     SourceEvent::EventSpec
-                        Id -567950349
+                        Id -567950349 (StartDust)
                     TargetEvent::EventSpec
-                        Id 230748069
+                        Id 230748069 (Start)
                     TargetType EventConnectionTargetType_Client
                 member(1)::EventConnection
                     Source B8A00063-819E-4323-A01C-EFC27818E37F
                     Target D0C8213A-C5BC-48C5-B822-396C90C07EA1
                     SourceEvent::EventSpec
-                        Id -567950349
+                        Id -567950349 (StartDust)
                     TargetEvent::EventSpec
-                        Id 230748069
+                        Id 230748069 (Start)
                     TargetType EventConnectionTargetType_Client
                 member(2)::EventConnection
                     Source B8A00063-819E-4323-A01C-EFC27818E37F
                     Target 7FCFE43C-E96D-483C-8507-156E3D2D134B
                     SourceEvent::EventSpec
-                        Id -639346773
+                        Id -639346773 (StopDust)
                     TargetEvent::EventSpec
-                        Id 2089401213
+                        Id 2089401213 (Stop)
                     TargetType EventConnectionTargetType_Client
                 member(3)::EventConnection
                     Source B8A00063-819E-4323-A01C-EFC27818E37F
                     Target D0C8213A-C5BC-48C5-B822-396C90C07EA1
                     SourceEvent::EventSpec
-                        Id -639346773
+                        Id -639346773 (StopDust)
                     TargetEvent::EventSpec
-                        Id 2089401213
+                        Id 2089401213 (Stop)
                     TargetType EventConnectionTargetType_Client
             Descriptor B8A00063-819E-4323-A01C-EFC27818E37F
             NeedNetworkId True

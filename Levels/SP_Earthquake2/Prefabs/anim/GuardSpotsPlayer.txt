@@ -10,11 +10,11 @@ InterfaceDescriptorData 007D69CD-96C9-40B0-8B70-5C1AAF44908F
             Id -1317064331
     OutputEvents::array
         member(0)::DynamicEvent
-            Id -1502549446
+            Id -1502549446 (GuardSitting)
         member(1)::DynamicEvent
-            Id 1170872876
+            Id 1170872876 (GuardStanding)
         member(2)::DynamicEvent
-            Id 1499404377
+            Id 1499404377 (ScenarioFinished)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 MultipleActorScenarioEntityData 6AFA4602-70B4-42DD-AECB-F7FB11FC5E18
@@ -118,7 +118,7 @@ SpatialPrefabBlueprint 9D35FF28-45D7-702F-70DF-2C1E4C0BEFE3 #primary instance
                         SourceEvent::EventSpec
                             Id 1196674614
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id 1037701496 (ForceStart)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 007D69CD-96C9-40B0-8B70-5C1AAF44908F
@@ -126,31 +126,31 @@ SpatialPrefabBlueprint 9D35FF28-45D7-702F-70DF-2C1E4C0BEFE3 #primary instance
                         SourceEvent::EventSpec
                             Id -1317064331
                         TargetEvent::EventSpec
-                            Id 343579199
+                            Id 343579199 (Advance)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 6AFA4602-70B4-42DD-AECB-F7FB11FC5E18
                         Target 007D69CD-96C9-40B0-8B70-5C1AAF44908F
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id -1694482841 (TriggerActor1)
                         TargetEvent::EventSpec
-                            Id -1502549446
+                            Id -1502549446 (GuardSitting)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(3)::EventConnection
                         Source 6AFA4602-70B4-42DD-AECB-F7FB11FC5E18
                         Target 007D69CD-96C9-40B0-8B70-5C1AAF44908F
                         SourceEvent::EventSpec
-                            Id -1694482844
+                            Id -1694482844 (TriggerActor2)
                         TargetEvent::EventSpec
-                            Id 1170872876
+                            Id 1170872876 (GuardStanding)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(4)::EventConnection
                         Source 6AFA4602-70B4-42DD-AECB-F7FB11FC5E18
                         Target 007D69CD-96C9-40B0-8B70-5C1AAF44908F
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 007D69CD-96C9-40B0-8B70-5C1AAF44908F
                 NeedNetworkId False

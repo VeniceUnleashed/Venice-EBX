@@ -40,7 +40,7 @@ InterfaceDescriptorData C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id 1037701496
+            Id 1037701496 (ForceStart)
     OutputEvents::array
         member(0)::DynamicEvent
             Id 566563073
@@ -49,9 +49,9 @@ InterfaceDescriptorData C58EC5FF-61B6-4356-AF34-4C70082F9ED7
         member(2)::DynamicEvent
             Id -1466684583
         member(3)::DynamicEvent
-            Id 1499404377
+            Id 1499404377 (ScenarioFinished)
         member(4)::DynamicEvent
-            Id -721579565
+            Id -721579565 (TriggerProps)
     InputLinks::array
         member(0)::DynamicLink
             Id -1424701589
@@ -152,38 +152,38 @@ SpatialPrefabBlueprint 0AAA37C3-C2FD-43DE-9E55-D8A191D83AD3 #primary instance
                         member(0)::PropertyConnection
                             Source C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                             Target 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
-                            SourceFieldId -319900646
-                            TargetFieldId -319900646
+                            SourceFieldId -319900646 (Actor1Prepared)
+                            TargetFieldId -319900646 (Actor1Prepared)
                         member(1)::PropertyConnection
                             Source C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                             Target 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
-                            SourceFieldId -1416777191
-                            TargetFieldId -1416777191
+                            SourceFieldId -1416777191 (Actor2Prepared)
+                            TargetFieldId -1416777191 (Actor2Prepared)
                         member(2)::PropertyConnection
                             Source C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                             Target 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
-                            SourceFieldId 770618392
-                            TargetFieldId 770618392
+                            SourceFieldId 770618392 (Actor3Prepared)
+                            TargetFieldId 770618392 (Actor3Prepared)
                         member(3)::PropertyConnection
                             Source 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
                             Target C58EC5FF-61B6-4356-AF34-4C70082F9ED7
-                            SourceFieldId -1409450479
-                            TargetFieldId -1409450479
+                            SourceFieldId -1409450479 (Origin)
+                            TargetFieldId -1409450479 (Origin)
                         member(4)::PropertyConnection
                             Source C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                             Target 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
-                            SourceFieldId -2132289043
-                            TargetFieldId -2132289043
+                            SourceFieldId -2132289043 (ExternalTime)
+                            TargetFieldId -2132289043 (ExternalTime)
                         member(5)::PropertyConnection
                             Source 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
                             Target C58EC5FF-61B6-4356-AF34-4C70082F9ED7
-                            SourceFieldId -1044693893
-                            TargetFieldId -1044693893
+                            SourceFieldId -1044693893 (ActorTime)
+                            TargetFieldId -1044693893 (ActorTime)
                         member(6)::PropertyConnection
                             Source C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                             Target 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
-                            SourceFieldId -1392905554
-                            TargetFieldId -1392905554
+                            SourceFieldId -1392905554 (UseExternalTime)
+                            TargetFieldId -1392905554 (UseExternalTime)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source C58EC5FF-61B6-4356-AF34-4C70082F9ED7
@@ -195,15 +195,15 @@ SpatialPrefabBlueprint 0AAA37C3-C2FD-43DE-9E55-D8A191D83AD3 #primary instance
                         Source C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                         Target 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
                         SourceEvent::EventSpec
-                            Id 1037701496
+                            Id 1037701496 (ForceStart)
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id 1037701496 (ForceStart)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
                         Target C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id -1694482841 (TriggerActor1)
                         TargetEvent::EventSpec
                             Id 566563073
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -211,7 +211,7 @@ SpatialPrefabBlueprint 0AAA37C3-C2FD-43DE-9E55-D8A191D83AD3 #primary instance
                         Source 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
                         Target C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                         SourceEvent::EventSpec
-                            Id -1694482844
+                            Id -1694482844 (TriggerActor2)
                         TargetEvent::EventSpec
                             Id 567059231
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -219,7 +219,7 @@ SpatialPrefabBlueprint 0AAA37C3-C2FD-43DE-9E55-D8A191D83AD3 #primary instance
                         Source 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
                         Target C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                         SourceEvent::EventSpec
-                            Id -1694482843
+                            Id -1694482843 (TriggerActor3)
                         TargetEvent::EventSpec
                             Id -1466684583
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -227,17 +227,17 @@ SpatialPrefabBlueprint 0AAA37C3-C2FD-43DE-9E55-D8A191D83AD3 #primary instance
                         Source 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
                         Target C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source 5CB6C442-B8ED-4714-B92A-E5BBC24700FD
                         Target C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                         SourceEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetType EventConnectionTargetType_Client
                 Descriptor C58EC5FF-61B6-4356-AF34-4C70082F9ED7
                 NeedNetworkId False

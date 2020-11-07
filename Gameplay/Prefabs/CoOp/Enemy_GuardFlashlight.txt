@@ -163,31 +163,31 @@ InterfaceDescriptorData 0F990949-B103-43F4-9E45-C5FE0CD207BA
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id 425551065
+            Id 425551065 (EnableSenses)
         member(1)::DynamicEvent
-            Id 851843788
+            Id 851843788 (DisableSenses)
         member(2)::DynamicEvent
-            Id 1883421003
+            Id 1883421003 (StartScenario)
         member(3)::DynamicEvent
             Id 1360999381
         member(4)::DynamicEvent
             Id 1963306779
         member(5)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
         member(6)::DynamicEvent
-            Id 2089125447
+            Id 2089125447 (Kill)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 2008897511
+            Id 2008897511 (OnKilled)
         member(1)::DynamicEvent
-            Id -1036968738
+            Id -1036968738 (OnSpawned)
         member(2)::DynamicEvent
-            Id -1586944329
+            Id -1586944329 (OnBulletHit)
     InputLinks::array
         member(0)::DynamicLink
-            Id -1450328209
+            Id -1450328209 (Soldier)
         member(1)::DynamicLink
-            Id -1086273423
+            Id -1086273423 (Animatable)
     OutputLinks *nullArray*
 SpatialPrefabBlueprint 11813ACC-CEA5-4A98-B34D-80222CAF9097 #primary instance
     $::PrefabBlueprint
@@ -201,111 +201,111 @@ SpatialPrefabBlueprint 11813ACC-CEA5-4A98-B34D-80222CAF9097 #primary instance
                         member(0)::PropertyConnection
                             Source FA220369-F367-4BC1-A481-3C159028ED64
                             Target 62C68299-BEF9-4437-8A69-1D0334F6C54F
-                            SourceFieldId 20098859
-                            TargetFieldId 193450864
+                            SourceFieldId 20098859 (WeaponTransform)
+                            TargetFieldId 193450864 (In2)
                         member(1)::PropertyConnection
                             Source FA220369-F367-4BC1-A481-3C159028ED64
                             Target 7EED311C-6FF7-4217-9BDB-6816E3D006F9
-                            SourceFieldId 20098859
-                            TargetFieldId 193450864
+                            SourceFieldId 20098859 (WeaponTransform)
+                            TargetFieldId 193450864 (In2)
                         member(2)::PropertyConnection
                             Source FA220369-F367-4BC1-A481-3C159028ED64
                             Target 73064D9B-C630-4CA0-9044-A37DCD56F762
-                            SourceFieldId 20098859
-                            TargetFieldId 193450864
+                            SourceFieldId 20098859 (WeaponTransform)
+                            TargetFieldId 193450864 (In2)
                         member(3)::PropertyConnection
                             Source FA220369-F367-4BC1-A481-3C159028ED64
                             Target 0F990949-B103-43F4-9E45-C5FE0CD207BA
-                            SourceFieldId -369312607
-                            TargetFieldId -369312607
+                            SourceFieldId -369312607 (HeadTransform)
+                            TargetFieldId -369312607 (HeadTransform)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
                             Target FA220369-F367-4BC1-A481-3C159028ED64
-                            SourceFieldId -1450328209
+                            SourceFieldId -1450328209 (Soldier)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
                             Target FA220369-F367-4BC1-A481-3C159028ED64
-                            SourceFieldId -1086273423
-                            TargetFieldId -1086273423
+                            SourceFieldId -1086273423 (Animatable)
+                            TargetFieldId -1086273423 (Animatable)
                         member(2)::LinkConnection
                             Source FA220369-F367-4BC1-A481-3C159028ED64
                             Target 469792E8-B747-BF34-C76D-FE44A2E893AB
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id 851843788
+                            Id 851843788 (DisableSenses)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id 425551065
+                            Id 425551065 (EnableSenses)
                         TargetEvent::EventSpec
-                            Id 425551065
+                            Id 425551065 (EnableSenses)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id 851843788
+                            Id 851843788 (DisableSenses)
                         TargetEvent::EventSpec
-                            Id 851843788
+                            Id 851843788 (DisableSenses)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(4)::EventConnection
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(5)::EventConnection
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id 1883421003
+                            Id 1883421003 (StartScenario)
                         TargetEvent::EventSpec
-                            Id 1883421003
+                            Id 1883421003 (StartScenario)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(6)::EventConnection
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         SourceEvent::EventSpec
-                            Id -1586944329
+                            Id -1586944329 (OnBulletHit)
                         TargetEvent::EventSpec
-                            Id -1586944329
+                            Id -1586944329 (OnBulletHit)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(7)::EventConnection
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(8)::EventConnection
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 1360982724
+                            Id 1360982724 (FlashlightOff)
                         TargetType EventConnectionTargetType_Server
                     member(9)::EventConnection
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
@@ -313,7 +313,7 @@ SpatialPrefabBlueprint 11813ACC-CEA5-4A98-B34D-80222CAF9097 #primary instance
                         SourceEvent::EventSpec
                             Id 1963306779
                         TargetEvent::EventSpec
-                            Id 1360982724
+                            Id 1360982724 (FlashlightOff)
                         TargetType EventConnectionTargetType_Server
                     member(10)::EventConnection
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
@@ -321,15 +321,15 @@ SpatialPrefabBlueprint 11813ACC-CEA5-4A98-B34D-80222CAF9097 #primary instance
                         SourceEvent::EventSpec
                             Id 1360999381
                         TargetEvent::EventSpec
-                            Id -1780865430
+                            Id -1780865430 (FlashlightOn)
                         TargetType EventConnectionTargetType_Server
                     member(11)::EventConnection
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 0F990949-B103-43F4-9E45-C5FE0CD207BA
                 NeedNetworkId True

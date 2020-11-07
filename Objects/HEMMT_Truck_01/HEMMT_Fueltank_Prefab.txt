@@ -10,13 +10,13 @@ InterfaceDescriptorData DE8F1C88-7CD5-4608-867E-BA4B4192FF47
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id -567950349
+            Id -567950349 (StartDust)
         member(1)::DynamicEvent
-            Id -639346773
+            Id -639346773 (StopDust)
     OutputEvents *nullArray*
     InputLinks::array
         member(0)::DynamicLink
-            Id -510838215
+            Id -510838215 (PathFollowing)
     OutputLinks *nullArray*
 ReferenceObjectData 52F94FA7-EBAC-4974-9628-37221194B0D1
     $::GameObjectData
@@ -88,30 +88,30 @@ SpatialPrefabBlueprint E894B52E-30E8-566B-2A57-9079F2271A21 #primary instance
                         member(0)::PropertyConnection
                             Source 52F94FA7-EBAC-4974-9628-37221194B0D1
                             Target DE8F1C88-7CD5-4608-867E-BA4B4192FF47
-                            SourceFieldId -1174111641
-                            TargetFieldId -1174111641
+                            SourceFieldId -1174111641 (OutTransform)
+                            TargetFieldId -1174111641 (OutTransform)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source DE8F1C88-7CD5-4608-867E-BA4B4192FF47
                             Target 52F94FA7-EBAC-4974-9628-37221194B0D1
-                            SourceFieldId -510838215
-                            TargetFieldId -510838215
+                            SourceFieldId -510838215 (PathFollowing)
+                            TargetFieldId -510838215 (PathFollowing)
                 EventConnections::array
                     member(0)::EventConnection
                         Source DE8F1C88-7CD5-4608-867E-BA4B4192FF47
                         Target 52F94FA7-EBAC-4974-9628-37221194B0D1
                         SourceEvent::EventSpec
-                            Id -567950349
+                            Id -567950349 (StartDust)
                         TargetEvent::EventSpec
-                            Id -567950349
+                            Id -567950349 (StartDust)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source DE8F1C88-7CD5-4608-867E-BA4B4192FF47
                         Target 52F94FA7-EBAC-4974-9628-37221194B0D1
                         SourceEvent::EventSpec
-                            Id -639346773
+                            Id -639346773 (StopDust)
                         TargetEvent::EventSpec
-                            Id -639346773
+                            Id -639346773 (StopDust)
                         TargetType EventConnectionTargetType_Client
                 Descriptor DE8F1C88-7CD5-4608-867E-BA4B4192FF47
                 NeedNetworkId True

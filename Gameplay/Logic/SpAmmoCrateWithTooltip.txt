@@ -88,7 +88,7 @@ InterfaceDescriptorData 32BEE4B8-335B-4C60-86AF-9986B8FFE607
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id 1757192101
+            Id 1757192101 (AutoRetrigger)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -209,13 +209,13 @@ SpatialPrefabBlueprint 022C4D44-1DF1-4D86-BDF2-99E8852BFC47 #primary instance
                         member(0)::PropertyConnection
                             Source 32BEE4B8-335B-4C60-86AF-9986B8FFE607
                             Target BD6404B3-E124-4000-BD42-C8B478CAD13F
-                            SourceFieldId -1370036449
-                            TargetFieldId 2662400
+                            SourceFieldId -1370036449 (HintEnable)
+                            TargetFieldId 2662400 (Enabled)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source BD6404B3-E124-4000-BD42-C8B478CAD13F
                             Target 39D5DEAE-05E2-42C8-AD4C-93B37A0FE3C0
-                            SourceFieldId 838548383
+                            SourceFieldId 838548383 (Geometry)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
@@ -224,39 +224,39 @@ SpatialPrefabBlueprint 022C4D44-1DF1-4D86-BDF2-99E8852BFC47 #primary instance
                         SourceEvent::EventSpec
                             Id -80368276
                         TargetEvent::EventSpec
-                            Id 1037321618
+                            Id 1037321618 (SendMessage)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(1)::EventConnection
                         Source 98F29C7E-B50E-4FA6-9EC7-173A25B759B1
                         Target BD6404B3-E124-4000-BD42-C8B478CAD13F
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 98AB4E74-2A59-43ED-8D67-EB2F76F3448E
                         Target AD860E37-CBDD-4D89-ADF9-6C43D5579C7B
                         SourceEvent::EventSpec
-                            Id -757604857
+                            Id -757604857 (OnDisplayMessageFinished)
                         TargetEvent::EventSpec
-                            Id -1573253508
+                            Id -1573253508 (Client)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source AD860E37-CBDD-4D89-ADF9-6C43D5579C7B
                         Target 98F29C7E-B50E-4FA6-9EC7-173A25B759B1
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 32BEE4B8-335B-4C60-86AF-9986B8FFE607
                         Target 98F29C7E-B50E-4FA6-9EC7-173A25B759B1
                         SourceEvent::EventSpec
-                            Id 1757192101
+                            Id 1757192101 (AutoRetrigger)
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 32BEE4B8-335B-4C60-86AF-9986B8FFE607
                 NeedNetworkId True

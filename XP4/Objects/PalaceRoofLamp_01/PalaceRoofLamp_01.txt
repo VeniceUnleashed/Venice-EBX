@@ -50,9 +50,9 @@ InterfaceDescriptorData 38787943-58A9-4E10-8B66-CD693281C080
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id 1846480770
+            Id 1846480770 (EnableSpotlight)
         member(1)::DynamicEvent
-            Id -1099953353
+            Id -1099953353 (DisableSpotlight)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -67,30 +67,30 @@ ObjectBlueprint 0D472651-C810-45A1-9656-51B1D3C5DE44 #primary instance
                     member(0)::PropertyConnection
                         Source 38787943-58A9-4E10-8B66-CD693281C080
                         Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
-                        SourceFieldId -448529818
-                        TargetFieldId -327958220
+                        SourceFieldId -448529818 (CastShadow)
+                        TargetFieldId -327958220 (CastShadowsEnable)
                     member(1)::PropertyConnection
                         Source 38787943-58A9-4E10-8B66-CD693281C080
                         Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
-                        SourceFieldId -458572566
-                        TargetFieldId -458572566
+                        SourceFieldId -458572566 (Intensity)
+                        TargetFieldId -458572566 (Intensity)
                 LinkConnections *nullArray*
             EventConnections::array
                 member(0)::EventConnection
                     Source 38787943-58A9-4E10-8B66-CD693281C080
                     Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
                     SourceEvent::EventSpec
-                        Id 1846480770
+                        Id 1846480770 (EnableSpotlight)
                     TargetEvent::EventSpec
-                        Id -1952177180
+                        Id -1952177180 (Enable)
                     TargetType EventConnectionTargetType_Client
                 member(1)::EventConnection
                     Source 38787943-58A9-4E10-8B66-CD693281C080
                     Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
                     SourceEvent::EventSpec
-                        Id -1099953353
+                        Id -1099953353 (DisableSpotlight)
                     TargetEvent::EventSpec
-                        Id -117303631
+                        Id -117303631 (Disable)
                     TargetType EventConnectionTargetType_Client
             Descriptor 38787943-58A9-4E10-8B66-CD693281C080
             NeedNetworkId False

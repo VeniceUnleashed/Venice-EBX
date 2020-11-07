@@ -16,10 +16,10 @@ InterfaceDescriptorData 31D900F9-B475-427A-BC3F-9F40DBEB97A7
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 1223765815
+            Id 1223765815 (Finished)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 LocatorEntityData A61C6148-AAE1-4D32-95AD-C6E175DBA1A7
@@ -89,55 +89,55 @@ SpatialPrefabBlueprint 71CD0CC0-A7D2-91EC-5987-73F752816488 #primary instance
                             Source D5C137D4-F964-4D1E-B5A7-6CF540BB9D34
                             Target B4E6D620-028F-4016-8814-8DB8179FC1E1
                             SourceFieldId 222646435
-                            TargetFieldId 193450867
+                            TargetFieldId 193450867 (In1)
                         member(1)::PropertyConnection
                             Source A61C6148-AAE1-4D32-95AD-C6E175DBA1A7
                             Target B4E6D620-028F-4016-8814-8DB8179FC1E1
-                            SourceFieldId 1925266716
-                            TargetFieldId 193450864
+                            SourceFieldId 1925266716 (DynamicTransform)
+                            TargetFieldId 193450864 (In2)
                         member(2)::PropertyConnection
                             Source B4E6D620-028F-4016-8814-8DB8179FC1E1
                             Target 1D5867E5-FE85-49BE-BDD5-D2B316CB2C4B
-                            SourceFieldId 193453899
-                            TargetFieldId 2085022312
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 2085022312 (ControllableTransform)
                         member(3)::PropertyConnection
                             Source 0133C71F-FEB4-48BF-86EB-5D8DECF12747
                             Target 1D5867E5-FE85-49BE-BDD5-D2B316CB2C4B
-                            SourceFieldId 225375086
-                            TargetFieldId -1585193683
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId -1585193683 (Throttle)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source 31D900F9-B475-427A-BC3F-9F40DBEB97A7
                         Target 1D5867E5-FE85-49BE-BDD5-D2B316CB2C4B
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 1D5867E5-FE85-49BE-BDD5-D2B316CB2C4B
                         Target D5C137D4-F964-4D1E-B5A7-6CF540BB9D34
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 1D5867E5-FE85-49BE-BDD5-D2B316CB2C4B
                         Target 1D5867E5-FE85-49BE-BDD5-D2B316CB2C4B
                         SourceEvent::EventSpec
-                            Id 1666281711
+                            Id 1666281711 (OnDamage)
                         TargetEvent::EventSpec
-                            Id -274579609
+                            Id -274579609 (Destroy)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 1D5867E5-FE85-49BE-BDD5-D2B316CB2C4B
                         Target 31D900F9-B475-427A-BC3F-9F40DBEB97A7
                         SourceEvent::EventSpec
-                            Id 1666281711
+                            Id 1666281711 (OnDamage)
                         TargetEvent::EventSpec
-                            Id 1223765815
+                            Id 1223765815 (Finished)
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor 31D900F9-B475-427A-BC3F-9F40DBEB97A7
                 NeedNetworkId True

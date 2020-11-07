@@ -35,16 +35,16 @@ InterfaceDescriptorData 7F33819F-6B89-44F5-9735-3EC1A5893AD2
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 2089008817
+            Id 2089008817 (Open)
         member(1)::DynamicEvent
-            Id 212633683
+            Id 212633683 (Close)
         member(2)::DynamicEvent
             Id -184106137
     OutputEvents::array
         member(0)::DynamicEvent
-            Id -1402066096
+            Id -1402066096 (Opened)
         member(1)::DynamicEvent
-            Id -1573023017
+            Id -1573023017 (Closed)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 ReferenceObjectData 4EA91A0C-8242-4B3E-9B39-2102D30E803E
@@ -197,149 +197,149 @@ SpatialPrefabBlueprint 8C3FDB4F-E4D6-4584-ACEB-A995D8950760 #primary instance
                         member(0)::PropertyConnection
                             Source 7C2BFFE7-E506-4287-B6D9-527BDF041A52
                             Target 9ECE14FA-9097-46BD-AA07-BE61B06874E8
-                            SourceFieldId 217814160
-                            TargetFieldId 193450867
+                            SourceFieldId 217814160 (OpenA)
+                            TargetFieldId 193450867 (In1)
                         member(1)::PropertyConnection
                             Source F41DE6C8-07E8-4949-805B-2892F5082C6D
                             Target 9ECE14FA-9097-46BD-AA07-BE61B06874E8
-                            SourceFieldId -1573022990
-                            TargetFieldId 193450864
+                            SourceFieldId -1573022990 (CloseA)
+                            TargetFieldId 193450864 (In2)
                         member(2)::PropertyConnection
                             Source 9ECE14FA-9097-46BD-AA07-BE61B06874E8
                             Target 4EA91A0C-8242-4B3E-9B39-2102D30E803E
-                            SourceFieldId 193453899
-                            TargetFieldId -409930682
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId -409930682 (BlueprintTransform)
                         member(3)::PropertyConnection
                             Source 95C9761B-366F-4D0E-9E67-8BA5607611C2
                             Target 4EA91A0C-8242-4B3E-9B39-2102D30E803E
-                            SourceFieldId 225375086
-                            TargetFieldId 443997333
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 443997333 (AnimatePhysics)
                         member(4)::PropertyConnection
                             Source 58C1F34E-EF50-4206-8477-6C04FD110BF9
                             Target 9ECE14FA-9097-46BD-AA07-BE61B06874E8
-                            SourceFieldId 217814160
-                            TargetFieldId 193450865
+                            SourceFieldId 217814160 (OpenA)
+                            TargetFieldId 193450865 (In3)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source 7F33819F-6B89-44F5-9735-3EC1A5893AD2
                         Target 95336CAC-1D3D-4DAD-9B56-FF41B4118597
                         SourceEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 7F33819F-6B89-44F5-9735-3EC1A5893AD2
                         Target B7541365-0269-4B17-AAD5-2BE9951CFD21
                         SourceEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 95336CAC-1D3D-4DAD-9B56-FF41B4118597
                         Target F41DE6C8-07E8-4949-805B-2892F5082C6D
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(3)::EventConnection
                         Source F41DE6C8-07E8-4949-805B-2892F5082C6D
                         Target 95336CAC-1D3D-4DAD-9B56-FF41B4118597
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source F41DE6C8-07E8-4949-805B-2892F5082C6D
                         Target B7541365-0269-4B17-AAD5-2BE9951CFD21
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetType EventConnectionTargetType_Server
                     member(5)::EventConnection
                         Source F41DE6C8-07E8-4949-805B-2892F5082C6D
                         Target 7F33819F-6B89-44F5-9735-3EC1A5893AD2
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id -1573023017
+                            Id -1573023017 (Closed)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(6)::EventConnection
                         Source 7C2BFFE7-E506-4287-B6D9-527BDF041A52
                         Target 95336CAC-1D3D-4DAD-9B56-FF41B4118597
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetType EventConnectionTargetType_Server
                     member(7)::EventConnection
                         Source B7541365-0269-4B17-AAD5-2BE9951CFD21
                         Target 7C2BFFE7-E506-4287-B6D9-527BDF041A52
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(8)::EventConnection
                         Source 7C2BFFE7-E506-4287-B6D9-527BDF041A52
                         Target B7541365-0269-4B17-AAD5-2BE9951CFD21
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetType EventConnectionTargetType_Server
                     member(9)::EventConnection
                         Source 7C2BFFE7-E506-4287-B6D9-527BDF041A52
                         Target 7F33819F-6B89-44F5-9735-3EC1A5893AD2
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id -1402066096
+                            Id -1402066096 (Opened)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(10)::EventConnection
                         Source 7C2BFFE7-E506-4287-B6D9-527BDF041A52
                         Target 792C0BD4-C6B5-4140-9A6F-31677721F111
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Client
                     member(11)::EventConnection
                         Source 7C2BFFE7-E506-4287-B6D9-527BDF041A52
                         Target 95C9761B-366F-4D0E-9E67-8BA5607611C2
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(12)::EventConnection
                         Source F41DE6C8-07E8-4949-805B-2892F5082C6D
                         Target 95C9761B-366F-4D0E-9E67-8BA5607611C2
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(13)::EventConnection
                         Source F41DE6C8-07E8-4949-805B-2892F5082C6D
                         Target 95C9761B-366F-4D0E-9E67-8BA5607611C2
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(14)::EventConnection
                         Source 7C2BFFE7-E506-4287-B6D9-527BDF041A52
                         Target 95C9761B-366F-4D0E-9E67-8BA5607611C2
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(15)::EventConnection
                         Source 7F33819F-6B89-44F5-9735-3EC1A5893AD2
@@ -347,39 +347,39 @@ SpatialPrefabBlueprint 8C3FDB4F-E4D6-4584-ACEB-A995D8950760 #primary instance
                         SourceEvent::EventSpec
                             Id -184106137
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(16)::EventConnection
                         Source 58C1F34E-EF50-4206-8477-6C04FD110BF9
                         Target 95C9761B-366F-4D0E-9E67-8BA5607611C2
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(17)::EventConnection
                         Source 58C1F34E-EF50-4206-8477-6C04FD110BF9
                         Target 95C9761B-366F-4D0E-9E67-8BA5607611C2
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(18)::EventConnection
                         Source 58C1F34E-EF50-4206-8477-6C04FD110BF9
                         Target 7F33819F-6B89-44F5-9735-3EC1A5893AD2
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id -1402066096
+                            Id -1402066096 (Opened)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(19)::EventConnection
                         Source 58C1F34E-EF50-4206-8477-6C04FD110BF9
                         Target 95336CAC-1D3D-4DAD-9B56-FF41B4118597
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 7F33819F-6B89-44F5-9735-3EC1A5893AD2
                 NeedNetworkId True

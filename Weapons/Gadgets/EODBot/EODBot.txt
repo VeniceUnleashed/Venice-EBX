@@ -3104,23 +3104,23 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         member(0)::PropertyConnection
                             Source A2F7EC6F-2230-491A-BC0F-91050CA270EA
                             Target E3A97566-366A-49A4-9479-31E07EFECCC9
-                            SourceFieldId -709588
-                            TargetFieldId -1429643463
+                            SourceFieldId -709588 (ActiveForLocalPlayer)
+                            TargetFieldId -1429643463 (UseFirstPersonSounds)
                         member(1)::PropertyConnection
                             Source A2F7EC6F-2230-491A-BC0F-91050CA270EA
                             Target 0A0AFB63-D768-414E-92DA-D0577B42017E
-                            SourceFieldId -709588
+                            SourceFieldId -709588 (ActiveForLocalPlayer)
                             TargetFieldId 835959175
                         member(2)::PropertyConnection
                             Source 563E0333-426F-19B5-D1D4-4795FEA0C78C
                             Target 561C500C-BDF4-45A3-A047-BF788F8C2544
-                            SourceFieldId 319954778
-                            TargetFieldId 319954778
+                            SourceFieldId 319954778 (CurrentVelocityNormalized)
+                            TargetFieldId 319954778 (CurrentVelocityNormalized)
                         member(3)::PropertyConnection
                             Source 563E0333-426F-19B5-D1D4-4795FEA0C78C
                             Target 561C500C-BDF4-45A3-A047-BF788F8C2544
-                            SourceFieldId -2140343023
-                            TargetFieldId -2140343023
+                            SourceFieldId -2140343023 (CurrentHealthNormalized)
+                            TargetFieldId -2140343023 (CurrentHealthNormalized)
                         member(4)::PropertyConnection
                             Source AAA384CE-C3F7-444F-9E71-CB8DAE9BC2A3
                             Target 561C500C-BDF4-45A3-A047-BF788F8C2544
@@ -3129,13 +3129,13 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         member(5)::PropertyConnection
                             Source A2F7EC6F-2230-491A-BC0F-91050CA270EA
                             Target A458A861-977E-4724-9929-FC3A71C41DDF
-                            SourceFieldId -709588
-                            TargetFieldId -1886708048
+                            SourceFieldId -709588 (ActiveForLocalPlayer)
+                            TargetFieldId -1886708048 (CameraActive)
                         member(6)::PropertyConnection
                             Source A2F7EC6F-2230-491A-BC0F-91050CA270EA
                             Target 201E3050-60E0-4EE3-98E6-E2F9770F1E18
-                            SourceFieldId -709588
-                            TargetFieldId 225375086
+                            SourceFieldId -709588 (ActiveForLocalPlayer)
+                            TargetFieldId 225375086 (Value)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
@@ -3144,7 +3144,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         SourceEvent::EventSpec
                             Id -1968102314
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 561C500C-BDF4-45A3-A047-BF788F8C2544
@@ -3152,61 +3152,61 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         SourceEvent::EventSpec
                             Id 591113486
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 563E0333-426F-19B5-D1D4-4795FEA0C78C
                         Target A458A861-977E-4724-9929-FC3A71C41DDF
                         SourceEvent::EventSpec
-                            Id 1666281711
+                            Id 1666281711 (OnDamage)
                         TargetEvent::EventSpec
-                            Id -1705074962
+                            Id -1705074962 (Damage)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source 563E0333-426F-19B5-D1D4-4795FEA0C78C
                         Target A458A861-977E-4724-9929-FC3A71C41DDF
                         SourceEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetEvent::EventSpec
-                            Id 423947445
+                            Id 423947445 (Disabled)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(4)::EventConnection
                         Source 201E3050-60E0-4EE3-98E6-E2F9770F1E18
                         Target 7C26A1E8-5D0B-2828-3CB6-F22CC4310227
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
-                            Id 2089430886
+                            Id 2089430886 (Show)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source 201E3050-60E0-4EE3-98E6-E2F9770F1E18
                         Target 0A91EBAA-A430-8C75-CFED-7FB9A0A55120
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
-                            Id 2089430886
+                            Id 2089430886 (Show)
                         TargetType EventConnectionTargetType_Client
                     member(6)::EventConnection
                         Source 201E3050-60E0-4EE3-98E6-E2F9770F1E18
                         Target 0A91EBAA-A430-8C75-CFED-7FB9A0A55120
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
-                            Id 2089152613
+                            Id 2089152613 (Hide)
                         TargetType EventConnectionTargetType_Client
                     member(7)::EventConnection
                         Source 201E3050-60E0-4EE3-98E6-E2F9770F1E18
                         Target 7C26A1E8-5D0B-2828-3CB6-F22CC4310227
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
-                            Id 2089152613
+                            Id 2089152613 (Hide)
                         TargetType EventConnectionTargetType_Client
                     member(8)::EventConnection
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 21155957
+                            Id 21155957 (OnRequestHeal)
                         TargetEvent::EventSpec
                             Id 2034570586
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3214,7 +3214,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 803365041
+                            Id 803365041 (OnLetMeHeal)
                         TargetEvent::EventSpec
                             Id 1741249821
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3222,7 +3222,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 20908635
+                            Id 20908635 (OnRequestAmmo)
                         TargetEvent::EventSpec
                             Id -347051402
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3230,7 +3230,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id -268164350
+                            Id -268164350 (OnLetMeGiveAmmo)
                         TargetEvent::EventSpec
                             Id -1664633816
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3238,7 +3238,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 1973872556
+                            Id 1973872556 (OnLetMeRepair)
                         TargetEvent::EventSpec
                             Id 925174855
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3246,7 +3246,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 855296104
+                            Id 855296104 (OnRequestRepair)
                         TargetEvent::EventSpec
                             Id 620124672
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3254,7 +3254,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 20517583
+                            Id 20517583 (OnRequestRide)
                         TargetEvent::EventSpec
                             Id 266537062
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3262,7 +3262,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 1564024588
+                            Id 1564024588 (OnGoGoGo)
                         TargetEvent::EventSpec
                             Id -582083030
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3270,7 +3270,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 2139414557
+                            Id 2139414557 (OnFollowMe)
                         TargetEvent::EventSpec
                             Id 1617313946
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3278,7 +3278,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 1155181383
+                            Id 1155181383 (OnNegative)
                         TargetEvent::EventSpec
                             Id -1573387912
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3286,7 +3286,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id -59303519
+                            Id -59303519 (OnSorry)
                         TargetEvent::EventSpec
                             Id 1917394685
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3294,7 +3294,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id -1911844737
+                            Id -1911844737 (OnThankYou)
                         TargetEvent::EventSpec
                             Id -22205694
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3302,7 +3302,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id -2022343168
+                            Id -2022343168 (OnRogerThat)
                         TargetEvent::EventSpec
                             Id 72578138
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3310,7 +3310,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 1058269472
+                            Id 1058269472 (OnNeedBackup)
                         TargetEvent::EventSpec
                             Id 1789301339
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3318,7 +3318,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id -83064331
+                            Id -83064331 (OnGetIn)
                         TargetEvent::EventSpec
                             Id 1374267181
                         TargetType EventConnectionTargetType_NetworkedClient
@@ -3326,7 +3326,7 @@ VehicleBlueprint 6CA1F97D-5E4F-D411-DDC2-974E1E2133A5 #primary instance
                         Source 45841845-24C6-4E84-B274-D66698C03A33
                         Target 4394198C-545D-4E7E-92C3-2A8B1C4A0BC0
                         SourceEvent::EventSpec
-                            Id 1553841884
+                            Id 1553841884 (OnGetOut)
                         TargetEvent::EventSpec
                             Id -1180081755
                         TargetType EventConnectionTargetType_NetworkedClient

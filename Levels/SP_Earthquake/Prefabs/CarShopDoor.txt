@@ -10,13 +10,13 @@ InterfaceDescriptorData FEDD54ED-11EE-49D9-B157-7718DAE1C551
             Id 632505285
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 1879729041
+            Id 1879729041 (OnOpened)
         member(1)::DynamicEvent
-            Id -1433873616
+            Id -1433873616 (OnOpen)
         member(2)::DynamicEvent
-            Id 1708769942
+            Id 1708769942 (OnClosed)
         member(3)::DynamicEvent
-            Id -78369614
+            Id -78369614 (OnClose)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 ReferenceObjectData E7E33CBF-7538-466D-8834-25408DB7815F
@@ -114,23 +114,23 @@ SpatialPrefabBlueprint 5DD62F05-2951-408E-8417-3096AE1A3D51 #primary instance
                         member(0)::PropertyConnection
                             Source E3FD1EEC-1EBA-4A78-AD8C-F78AE2B91C72
                             Target 4FE959B6-14FF-4290-BB2F-E397B3409DDD
-                            SourceFieldId 193453899
-                            TargetFieldId 5862146
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 5862146 (In)
                         member(1)::PropertyConnection
                             Source 4FE959B6-14FF-4290-BB2F-E397B3409DDD
                             Target E7E33CBF-7538-466D-8834-25408DB7815F
-                            SourceFieldId 193453899
-                            TargetFieldId -409930682
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId -409930682 (BlueprintTransform)
                         member(2)::PropertyConnection
                             Source EFE65A8A-BFB0-4269-B6C3-52C9F79DCD1F
                             Target E3FD1EEC-1EBA-4A78-AD8C-F78AE2B91C72
                             SourceFieldId 2088749075
-                            TargetFieldId 193450867
+                            TargetFieldId 193450867 (In1)
                         member(3)::PropertyConnection
                             Source 625EEADB-0BCC-4814-AE19-AB40D108FAE9
                             Target E3FD1EEC-1EBA-4A78-AD8C-F78AE2B91C72
                             SourceFieldId 2088749075
-                            TargetFieldId 193450864
+                            TargetFieldId 193450864 (In2)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
@@ -139,23 +139,23 @@ SpatialPrefabBlueprint 5DD62F05-2951-408E-8417-3096AE1A3D51 #primary instance
                         SourceEvent::EventSpec
                             Id -2137689625
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source EFE65A8A-BFB0-4269-B6C3-52C9F79DCD1F
                         Target FEDD54ED-11EE-49D9-B157-7718DAE1C551
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 1879729041
+                            Id 1879729041 (OnOpened)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(2)::EventConnection
                         Source EFE65A8A-BFB0-4269-B6C3-52C9F79DCD1F
                         Target FEDD54ED-11EE-49D9-B157-7718DAE1C551
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id -1433873616
+                            Id -1433873616 (OnOpen)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(3)::EventConnection
                         Source FEDD54ED-11EE-49D9-B157-7718DAE1C551
@@ -163,23 +163,23 @@ SpatialPrefabBlueprint 5DD62F05-2951-408E-8417-3096AE1A3D51 #primary instance
                         SourceEvent::EventSpec
                             Id 632505285
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 625EEADB-0BCC-4814-AE19-AB40D108FAE9
                         Target FEDD54ED-11EE-49D9-B157-7718DAE1C551
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 1708769942
+                            Id 1708769942 (OnClosed)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(5)::EventConnection
                         Source 625EEADB-0BCC-4814-AE19-AB40D108FAE9
                         Target FEDD54ED-11EE-49D9-B157-7718DAE1C551
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id -78369614
+                            Id -78369614 (OnClose)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                 Descriptor FEDD54ED-11EE-49D9-B157-7718DAE1C551
                 NeedNetworkId True

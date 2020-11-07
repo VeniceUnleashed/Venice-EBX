@@ -10,13 +10,13 @@ InterfaceDescriptorData 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id -721416017
+            Id -721416017 (DisableLight)
         member(1)::DynamicEvent
             Id -953956057
         member(2)::DynamicEvent
             Id -657632873
         member(3)::DynamicEvent
-            Id 643343130
+            Id 643343130 (EnableLight)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -98,7 +98,7 @@ SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
                         Source CA455E92-02DB-4C10-A39A-A615B4051521
                         Target A4F13132-4153-459B-BD1E-726DD3FBD964
                         SourceEvent::EventSpec
-                            Id -1176973715
+                            Id -1176973715 (OnStopped)
                         TargetEvent::EventSpec
                             Id -1759102997
                         TargetType EventConnectionTargetType_Client
@@ -122,25 +122,25 @@ SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
                         Source 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
                         Target A4F13132-4153-459B-BD1E-726DD3FBD964
                         SourceEvent::EventSpec
-                            Id -721416017
+                            Id -721416017 (DisableLight)
                         TargetEvent::EventSpec
-                            Id -721416017
+                            Id -721416017 (DisableLight)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(4)::EventConnection
                         Source 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
                         Target CA455E92-02DB-4C10-A39A-A615B4051521
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
                         Target CA455E92-02DB-4C10-A39A-A615B4051521
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetType EventConnectionTargetType_Client
                     member(6)::EventConnection
                         Source 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
@@ -148,7 +148,7 @@ SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
                         SourceEvent::EventSpec
                             Id -953956057
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Server
                     member(7)::EventConnection
                         Source 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
@@ -156,15 +156,15 @@ SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
                         SourceEvent::EventSpec
                             Id -657632873
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Server
                     member(8)::EventConnection
                         Source 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
                         Target A4F13132-4153-459B-BD1E-726DD3FBD964
                         SourceEvent::EventSpec
-                            Id 643343130
+                            Id 643343130 (EnableLight)
                         TargetEvent::EventSpec
-                            Id 643343130
+                            Id 643343130 (EnableLight)
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor 4F09CED0-8353-48BA-A1E8-A15DE25E8CC1
                 NeedNetworkId True

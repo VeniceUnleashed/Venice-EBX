@@ -195,12 +195,12 @@ InterfaceDescriptorData 04DA5390-0AEF-40FC-9C25-A05B561DD557
         member(1)::DynamicEvent
             Id 1925843400
         member(2)::DynamicEvent
-            Id 1928776733
+            Id 1928776733 (Deactivate)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id 345364432
+            Id 345364432 (1pAnimatable)
         member(1)::DynamicLink
             Id -1371800174
 LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
@@ -215,62 +215,62 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         member(0)::PropertyConnection
                             Source 760DCA3F-F5C7-461C-9622-1ADCD42C8C54
                             Target 01FBE92B-8CA6-4F38-A8EC-7E3A9D087E04
-                            SourceFieldId 193453899
-                            TargetFieldId -2024647575
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId -2024647575 (Transform)
                         member(1)::PropertyConnection
                             Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
                             Target 760DCA3F-F5C7-461C-9622-1ADCD42C8C54
-                            SourceFieldId 1025692456
-                            TargetFieldId 193450867
+                            SourceFieldId 1025692456 (1pTransform)
+                            TargetFieldId 193450867 (In1)
                         member(2)::PropertyConnection
                             Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
                             Target 760DCA3F-F5C7-461C-9622-1ADCD42C8C54
-                            SourceFieldId -1534403542
-                            TargetFieldId 193450864
+                            SourceFieldId -1534403542 (3pTransform)
+                            TargetFieldId 193450864 (In2)
                         member(3)::PropertyConnection
                             Source 27410DCC-6975-4ACC-9AAF-74449A4D85EA
                             Target 760DCA3F-F5C7-461C-9622-1ADCD42C8C54
-                            SourceFieldId 936870923
-                            TargetFieldId -773156995
+                            SourceFieldId 936870923 (CastToFloat)
+                            TargetFieldId -773156995 (BlendValue2)
                         member(4)::PropertyConnection
                             Source 2ACB84E6-5553-41CF-A961-D05EF98F8634
                             Target 760DCA3F-F5C7-461C-9622-1ADCD42C8C54
-                            SourceFieldId 936870923
-                            TargetFieldId 236872047
+                            SourceFieldId 936870923 (CastToFloat)
+                            TargetFieldId 236872047 (BlendValue)
                         member(5)::PropertyConnection
                             Source 20A7AC7E-D293-4AC5-A18A-D78A54B22C93
                             Target 1CE54E4C-BFC1-4166-974B-8ED0E235C117
-                            SourceFieldId 225375086
-                            TargetFieldId 5862146
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 5862146 (In)
                         member(6)::PropertyConnection
                             Source 1CE54E4C-BFC1-4166-974B-8ED0E235C117
                             Target 2ACB84E6-5553-41CF-A961-D05EF98F8634
-                            SourceFieldId 193453899
-                            TargetFieldId 176040160
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 176040160 (BoolValue)
                         member(7)::PropertyConnection
                             Source 20A7AC7E-D293-4AC5-A18A-D78A54B22C93
                             Target 27410DCC-6975-4ACC-9AAF-74449A4D85EA
-                            SourceFieldId 225375086
-                            TargetFieldId 176040160
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 176040160 (BoolValue)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source AE7D93E8-9167-447E-995B-6187D6580BA5
                             Target 04DA5390-0AEF-40FC-9C25-A05B561DD557
-                            SourceFieldId -1530232091
-                            TargetFieldId 345364432
+                            SourceFieldId -1530232091 (AntAnimatableComponent)
+                            TargetFieldId 345364432 (1pAnimatable)
                         member(1)::LinkConnection
                             Source 40220BB3-2F33-41E5-B346-79827FED2EB5
                             Target 04DA5390-0AEF-40FC-9C25-A05B561DD557
-                            SourceFieldId -1530232091
+                            SourceFieldId -1530232091 (AntAnimatableComponent)
                             TargetFieldId -1371800174
                 EventConnections::array
                     member(0)::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
                         Target AE7D93E8-9167-447E-995B-6187D6580BA5
                         SourceEvent::EventSpec
-                            Id 1928776733
+                            Id 1928776733 (Deactivate)
                         TargetEvent::EventSpec
-                            Id 1928776733
+                            Id 1928776733 (Deactivate)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
@@ -278,7 +278,7 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         SourceEvent::EventSpec
                             Id 1454090506
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
@@ -286,7 +286,7 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         SourceEvent::EventSpec
                             Id 1925843400
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
@@ -294,7 +294,7 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         SourceEvent::EventSpec
                             Id 1925843400
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id -559281700 (Activate)
                         TargetType EventConnectionTargetType_Client
                     member(4)::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
@@ -302,15 +302,15 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         SourceEvent::EventSpec
                             Id 1454090506
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id -559281700 (Activate)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
                         Target 40220BB3-2F33-41E5-B346-79827FED2EB5
                         SourceEvent::EventSpec
-                            Id 1928776733
+                            Id 1928776733 (Deactivate)
                         TargetEvent::EventSpec
-                            Id 1928776733
+                            Id 1928776733 (Deactivate)
                         TargetType EventConnectionTargetType_Client
                     member(6)::EventConnection
                         Source AE7D93E8-9167-447E-995B-6187D6580BA5

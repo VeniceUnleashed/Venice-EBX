@@ -86,15 +86,15 @@ InterfaceDescriptorData 48E0B579-8BFD-4C56-A26F-EA948E9A105C
         member(0)::DynamicEvent
             Id -1725852147
         member(1)::DynamicEvent
-            Id -223835941
+            Id -223835941 (ShowCustomization)
         member(2)::DynamicEvent
-            Id -1189016840
+            Id -1189016840 (HideCustomization)
         member(3)::DynamicEvent
-            Id 114657104
+            Id 114657104 (ActivateKillerCamera)
         member(4)::DynamicEvent
-            Id -1120322543
+            Id -1120322543 (DeactivateKillerCamera)
         member(5)::DynamicEvent
-            Id -1778993948
+            Id -1778993948 (FadeIn)
         member(6)::DynamicEvent
             Id 881043905
         member(7)::DynamicEvent
@@ -298,7 +298,7 @@ SpatialPrefabBlueprint A7FF3DA4-ED7C-CCA9-E410-E52AB5104030 #primary instance
                             Source 48E0B579-8BFD-4C56-A26F-EA948E9A105C
                             Target 0EF06698-B9EA-4557-AFE0-78CA4575E726
                             SourceFieldId -83712257
-                            TargetFieldId -409930682
+                            TargetFieldId -409930682 (BlueprintTransform)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
@@ -313,47 +313,47 @@ SpatialPrefabBlueprint A7FF3DA4-ED7C-CCA9-E410-E52AB5104030 #primary instance
                         Source 48E0B579-8BFD-4C56-A26F-EA948E9A105C
                         Target 0EF06698-B9EA-4557-AFE0-78CA4575E726
                         SourceEvent::EventSpec
-                            Id -223835941
+                            Id -223835941 (ShowCustomization)
                         TargetEvent::EventSpec
-                            Id -223835941
+                            Id -223835941 (ShowCustomization)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 48E0B579-8BFD-4C56-A26F-EA948E9A105C
                         Target 0EF06698-B9EA-4557-AFE0-78CA4575E726
                         SourceEvent::EventSpec
-                            Id -1189016840
+                            Id -1189016840 (HideCustomization)
                         TargetEvent::EventSpec
-                            Id -1189016840
+                            Id -1189016840 (HideCustomization)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source 48E0B579-8BFD-4C56-A26F-EA948E9A105C
                         Target DC3A15D4-7887-4B43-B326-500F49753CE4
                         SourceEvent::EventSpec
-                            Id 114657104
+                            Id 114657104 (ActivateKillerCamera)
                         TargetEvent::EventSpec
-                            Id 777187609
+                            Id 777187609 (TakeControl)
                         TargetType EventConnectionTargetType_Client
                     member(4)::EventConnection
                         Source 48E0B579-8BFD-4C56-A26F-EA948E9A105C
                         Target DC3A15D4-7887-4B43-B326-500F49753CE4
                         SourceEvent::EventSpec
-                            Id -1120322543
+                            Id -1120322543 (DeactivateKillerCamera)
                         TargetEvent::EventSpec
-                            Id 229754955
+                            Id 229754955 (ReleaseControl)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source 2E555A7F-827D-48B3-8FB9-138CC4C346D8
                         Target C5A15ED5-9540-488C-9173-34D6D99EB1B0
                         SourceEvent::EventSpec
-                            Id -1312822644
+                            Id -1312822644 (OnClientSpectatorEnter)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(6)::EventConnection
                         Source 2E555A7F-827D-48B3-8FB9-138CC4C346D8
                         Target 48E0B579-8BFD-4C56-A26F-EA948E9A105C
                         SourceEvent::EventSpec
-                            Id -1312822644
+                            Id -1312822644 (OnClientSpectatorEnter)
                         TargetEvent::EventSpec
                             Id -1425414170
                         TargetType EventConnectionTargetType_Client
@@ -363,7 +363,7 @@ SpatialPrefabBlueprint A7FF3DA4-ED7C-CCA9-E410-E52AB5104030 #primary instance
                         SourceEvent::EventSpec
                             Id 881043905
                         TargetEvent::EventSpec
-                            Id 777187609
+                            Id 777187609 (TakeControl)
                         TargetType EventConnectionTargetType_Client
                     member(8)::EventConnection
                         Source 48E0B579-8BFD-4C56-A26F-EA948E9A105C
@@ -371,79 +371,79 @@ SpatialPrefabBlueprint A7FF3DA4-ED7C-CCA9-E410-E52AB5104030 #primary instance
                         SourceEvent::EventSpec
                             Id -1575544128
                         TargetEvent::EventSpec
-                            Id 229754955
+                            Id 229754955 (ReleaseControl)
                         TargetType EventConnectionTargetType_Client
                     member(9)::EventConnection
                         Source B3E83182-483B-4E97-BC90-AB7E2813552A
                         Target 2F6AA75F-25D8-44FA-BBE0-1A7A6A239FA2
                         SourceEvent::EventSpec
-                            Id -1434059356
+                            Id -1434059356 (OnDone)
                         TargetEvent::EventSpec
-                            Id -1778993948
+                            Id -1778993948 (FadeIn)
                         TargetType EventConnectionTargetType_Client
                     member(10)::EventConnection
                         Source B075B3D3-0BB7-43CA-8F5D-92A28438688D
                         Target C5A15ED5-9540-488C-9173-34D6D99EB1B0
                         SourceEvent::EventSpec
-                            Id -2068939912
+                            Id -2068939912 (OnTakeControl)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(11)::EventConnection
                         Source 48E0B579-8BFD-4C56-A26F-EA948E9A105C
                         Target C5A15ED5-9540-488C-9173-34D6D99EB1B0
                         SourceEvent::EventSpec
-                            Id -1778993948
+                            Id -1778993948 (FadeIn)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(12)::EventConnection
                         Source C5A15ED5-9540-488C-9173-34D6D99EB1B0
                         Target 7F6A8E45-B074-4467-AD05-AE68D2ABDC1D
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -1778993948
+                            Id -1778993948 (FadeIn)
                         TargetType EventConnectionTargetType_Client
                     member(13)::EventConnection
                         Source 7F6A8E45-B074-4467-AD05-AE68D2ABDC1D
                         Target C5A15ED5-9540-488C-9173-34D6D99EB1B0
                         SourceEvent::EventSpec
-                            Id -1434059356
+                            Id -1434059356 (OnDone)
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetType EventConnectionTargetType_Client
                     member(14)::EventConnection
                         Source B075B3D3-0BB7-43CA-8F5D-92A28438688D
                         Target B3E83182-483B-4E97-BC90-AB7E2813552A
                         SourceEvent::EventSpec
-                            Id -2068939912
+                            Id -2068939912 (OnTakeControl)
                         TargetEvent::EventSpec
-                            Id 1422740397
+                            Id 1422740397 (FadeOut)
                         TargetType EventConnectionTargetType_Client
                     member(15)::EventConnection
                         Source 9E1F0389-8EBD-4A81-8E71-96D1D8A7D6D7
                         Target B3E83182-483B-4E97-BC90-AB7E2813552A
                         SourceEvent::EventSpec
-                            Id -2068939912
+                            Id -2068939912 (OnTakeControl)
                         TargetEvent::EventSpec
-                            Id 1422740397
+                            Id 1422740397 (FadeOut)
                         TargetType EventConnectionTargetType_Client
                     member(16)::EventConnection
                         Source DC3A15D4-7887-4B43-B326-500F49753CE4
                         Target B3E83182-483B-4E97-BC90-AB7E2813552A
                         SourceEvent::EventSpec
-                            Id -2068939912
+                            Id -2068939912 (OnTakeControl)
                         TargetEvent::EventSpec
-                            Id 1422740397
+                            Id 1422740397 (FadeOut)
                         TargetType EventConnectionTargetType_Client
                     member(17)::EventConnection
                         Source 48E0B579-8BFD-4C56-A26F-EA948E9A105C
                         Target B3E83182-483B-4E97-BC90-AB7E2813552A
                         SourceEvent::EventSpec
-                            Id -1778993948
+                            Id -1778993948 (FadeIn)
                         TargetEvent::EventSpec
-                            Id 1422740397
+                            Id 1422740397 (FadeOut)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 48E0B579-8BFD-4C56-A26F-EA948E9A105C
                 NeedNetworkId True

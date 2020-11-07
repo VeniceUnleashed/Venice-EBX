@@ -73,29 +73,29 @@ InterfaceDescriptorData 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
         member(1)::DynamicEvent
-            Id 28110977
+            Id 28110977 (Playing)
         member(2)::DynamicEvent
-            Id -1852665503
+            Id -1852665503 (EndOfRound)
         member(3)::DynamicEvent
-            Id -1778890842
+            Id -1778890842 (Failed)
         member(4)::DynamicEvent
-            Id -1926029893
+            Id -1926029893 (ShowPlayingHud)
         member(5)::DynamicEvent
-            Id -1104461594
+            Id -1104461594 (BasicHud)
         member(6)::DynamicEvent
-            Id 1849195004
+            Id 1849195004 (HideHud)
         member(7)::DynamicEvent
-            Id 2088739017
+            Id 2088739017 (Died)
         member(8)::DynamicEvent
-            Id 2062440974
+            Id 2062440974 (Waiting)
         member(9)::DynamicEvent
             Id -1620916498
         member(10)::DynamicEvent
-            Id 1031102016
+            Id 1031102016 (ShowNametags)
         member(11)::DynamicEvent
-            Id -1828444029
+            Id -1828444029 (HideNametags)
         member(12)::DynamicEvent
             Id -28208664
         member(13)::DynamicEvent
@@ -105,9 +105,9 @@ InterfaceDescriptorData 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
         member(15)::DynamicEvent
             Id 2132416273
         member(16)::DynamicEvent
-            Id 856533193
+            Id 856533193 (HideCrosshair)
         member(17)::DynamicEvent
-            Id -705175674
+            Id -705175674 (RoundStarted)
     OutputEvents::array
         member(0)::DynamicEvent
             Id -1906956103
@@ -134,47 +134,47 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target A49008AA-EF70-4A7E-B37F-AC69CB46658E
                         SourceEvent::EventSpec
-                            Id 28110977
+                            Id 28110977 (Playing)
                         TargetEvent::EventSpec
-                            Id -1541508057
+                            Id -1541508057 (StartRound)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 4AC46898-2726-4DD6-BDD1-67DE27C11EE4
                         SourceEvent::EventSpec
-                            Id 28110977
+                            Id 28110977 (Playing)
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         SourceEvent::EventSpec
-                            Id 28110977
+                            Id 28110977 (Playing)
                         TargetEvent::EventSpec
-                            Id 28110977
+                            Id 28110977 (Playing)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(4)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 4AC46898-2726-4DD6-BDD1-67DE27C11EE4
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id -33493418
+                            Id -33493418 (EnterSpawn)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         Target 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         SourceEvent::EventSpec
-                            Id -1187648289
+                            Id -1187648289 (IngameMenu)
                         TargetEvent::EventSpec
                             Id -1906956103
                         TargetType EventConnectionTargetType_Client
@@ -182,7 +182,7 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         Source 46259C2B-738E-4ED9-BF6D-887D993ED7E5
                         Target 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id 2088518501 (Exit)
                         TargetEvent::EventSpec
                             Id 244564204
                         TargetType EventConnectionTargetType_Client
@@ -190,57 +190,57 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         Source 46259C2B-738E-4ED9-BF6D-887D993ED7E5
                         Target E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id 2088518501 (Exit)
                         TargetEvent::EventSpec
-                            Id 28110977
+                            Id 28110977 (Playing)
                         TargetType EventConnectionTargetType_Client
                     member(8)::EventConnection
                         Source E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         Target 46259C2B-738E-4ED9-BF6D-887D993ED7E5
                         SourceEvent::EventSpec
-                            Id -1187648289
+                            Id -1187648289 (IngameMenu)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_Client
                     member(9)::EventConnection
                         Source E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         Target 74D84130-537E-418C-BE1B-64BD8A1EFC57
                         SourceEvent::EventSpec
-                            Id -1187648289
+                            Id -1187648289 (IngameMenu)
                         TargetEvent::EventSpec
-                            Id 201149837
+                            Id 201149837 (Enter)
                         TargetType EventConnectionTargetType_Client
                     member(10)::EventConnection
                         Source 46259C2B-738E-4ED9-BF6D-887D993ED7E5
                         Target 74D84130-537E-418C-BE1B-64BD8A1EFC57
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id 2088518501 (Exit)
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id 2088518501 (Exit)
                         TargetType EventConnectionTargetType_Client
                     member(11)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         SourceEvent::EventSpec
-                            Id -1852665503
+                            Id -1852665503 (EndOfRound)
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(12)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 46259C2B-738E-4ED9-BF6D-887D993ED7E5
                         SourceEvent::EventSpec
-                            Id -1852665503
+                            Id -1852665503 (EndOfRound)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_Client
                     member(13)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 63A84193-2918-4400-9F6A-FBAB35F13EED
                         SourceEvent::EventSpec
-                            Id -1852665503
+                            Id -1852665503 (EndOfRound)
                         TargetEvent::EventSpec
-                            Id 1661502273
+                            Id 1661502273 (StartEndOfRound)
                         TargetType EventConnectionTargetType_Client
                     member(14)::EventConnection
                         Source 63A84193-2918-4400-9F6A-FBAB35F13EED
@@ -254,129 +254,129 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 86313E8E-AFE8-42F6-A707-B48D3EEA4DBB
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id -569252259
+                            Id -569252259 (EnterUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(16)::EventConnection
                         Source 69D0CD7B-C551-471D-AD7A-6CBD2CF6FE20
                         Target E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(17)::EventConnection
                         Source 69D0CD7B-C551-471D-AD7A-6CBD2CF6FE20
                         Target 9A715FE6-1C62-4464-9082-D4A7D57CED66
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 2088739017
+                            Id 2088739017 (Died)
                         TargetType EventConnectionTargetType_Client
                     member(18)::EventConnection
                         Source 4382CF0B-0712-42BE-916F-FEEFD3AB4006
                         Target 9A715FE6-1C62-4464-9082-D4A7D57CED66
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(19)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 4382CF0B-0712-42BE-916F-FEEFD3AB4006
                         SourceEvent::EventSpec
-                            Id -1778890842
+                            Id -1778890842 (Failed)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(20)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 69D0CD7B-C551-471D-AD7A-6CBD2CF6FE20
                         SourceEvent::EventSpec
-                            Id 2088739017
+                            Id 2088739017 (Died)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(21)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         SourceEvent::EventSpec
-                            Id -1104461594
+                            Id -1104461594 (BasicHud)
                         TargetEvent::EventSpec
-                            Id -1104461594
+                            Id -1104461594 (BasicHud)
                         TargetType EventConnectionTargetType_Client
                     member(22)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         SourceEvent::EventSpec
-                            Id 1849195004
+                            Id 1849195004 (HideHud)
                         TargetEvent::EventSpec
-                            Id 215840861
+                            Id 215840861 (NoHud)
                         TargetType EventConnectionTargetType_Client
                     member(23)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         SourceEvent::EventSpec
-                            Id -1926029893
+                            Id -1926029893 (ShowPlayingHud)
                         TargetEvent::EventSpec
-                            Id -1926029893
+                            Id -1926029893 (ShowPlayingHud)
                         TargetType EventConnectionTargetType_Client
                     member(24)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 4382CF0B-0712-42BE-916F-FEEFD3AB4006
                         SourceEvent::EventSpec
-                            Id 2088739017
+                            Id 2088739017 (Died)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(25)::EventConnection
                         Source 4382CF0B-0712-42BE-916F-FEEFD3AB4006
                         Target 63A84193-2918-4400-9F6A-FBAB35F13EED
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 1661502273
+                            Id 1661502273 (StartEndOfRound)
                         TargetType EventConnectionTargetType_Client
                     member(26)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 96AFF683-A581-449B-A04C-1122B81127CE
                         SourceEvent::EventSpec
-                            Id -1778890842
+                            Id -1778890842 (Failed)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(27)::EventConnection
                         Source 96AFF683-A581-449B-A04C-1122B81127CE
                         Target E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(28)::EventConnection
                         Source 96AFF683-A581-449B-A04C-1122B81127CE
                         Target 9A715FE6-1C62-4464-9082-D4A7D57CED66
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -1778890842
+                            Id -1778890842 (Failed)
                         TargetType EventConnectionTargetType_Client
                     member(29)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 9E41B1B6-A3A2-4C1B-A8C8-0EAD3590876D
                         SourceEvent::EventSpec
-                            Id -1778890842
+                            Id -1778890842 (Failed)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(30)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 9E41B1B6-A3A2-4C1B-A8C8-0EAD3590876D
                         SourceEvent::EventSpec
-                            Id 2088739017
+                            Id 2088739017 (Died)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(31)::EventConnection
                         Source 63A84193-2918-4400-9F6A-FBAB35F13EED
@@ -392,7 +392,7 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         SourceEvent::EventSpec
                             Id -747912499
                         TargetEvent::EventSpec
-                            Id 201149837
+                            Id 201149837 (Enter)
                         TargetType EventConnectionTargetType_Client
                     member(33)::EventConnection
                         Source 63A84193-2918-4400-9F6A-FBAB35F13EED
@@ -400,23 +400,23 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         SourceEvent::EventSpec
                             Id -2009666040
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id 2088518501 (Exit)
                         TargetType EventConnectionTargetType_Client
                     member(34)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 46259C2B-738E-4ED9-BF6D-887D993ED7E5
                         SourceEvent::EventSpec
-                            Id 28110977
+                            Id 28110977 (Playing)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_Client
                     member(35)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 74D84130-537E-418C-BE1B-64BD8A1EFC57
                         SourceEvent::EventSpec
-                            Id 28110977
+                            Id 28110977 (Playing)
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id 2088518501 (Exit)
                         TargetType EventConnectionTargetType_Client
                     member(36)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
@@ -424,7 +424,7 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         SourceEvent::EventSpec
                             Id -1620916498
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(37)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
@@ -432,47 +432,47 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         SourceEvent::EventSpec
                             Id -1620916498
                         TargetEvent::EventSpec
-                            Id 1422740397
+                            Id 1422740397 (FadeOut)
                         TargetType EventConnectionTargetType_Client
                     member(38)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 6CCC72FE-54B8-49AB-83CF-3D0EAF212E5A
                         SourceEvent::EventSpec
-                            Id 2062440974
+                            Id 2062440974 (Waiting)
                         TargetEvent::EventSpec
-                            Id 2062440974
+                            Id 2062440974 (Waiting)
                         TargetType EventConnectionTargetType_Client
                     member(39)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target C7FF4AFB-06EE-484B-9E71-7452B374BA13
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id -591628589
+                            Id -591628589 (NametagsDisabled)
                         TargetType EventConnectionTargetType_Client
                     member(40)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target C7FF4AFB-06EE-484B-9E71-7452B374BA13
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id 1032288797
+                            Id 1032288797 (NamtagActorsDisabled)
                         TargetType EventConnectionTargetType_Client
                     member(41)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target C7FF4AFB-06EE-484B-9E71-7452B374BA13
                         SourceEvent::EventSpec
-                            Id 1031102016
+                            Id 1031102016 (ShowNametags)
                         TargetEvent::EventSpec
-                            Id -114810842
+                            Id -114810842 (NametagsEnabled)
                         TargetType EventConnectionTargetType_Client
                     member(42)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target C7FF4AFB-06EE-484B-9E71-7452B374BA13
                         SourceEvent::EventSpec
-                            Id -1828444029
+                            Id -1828444029 (HideNametags)
                         TargetEvent::EventSpec
-                            Id -591628589
+                            Id -591628589 (NametagsDisabled)
                         TargetType EventConnectionTargetType_Client
                     member(43)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
@@ -480,7 +480,7 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         SourceEvent::EventSpec
                             Id -28208664
                         TargetEvent::EventSpec
-                            Id 1032288797
+                            Id 1032288797 (NamtagActorsDisabled)
                         TargetType EventConnectionTargetType_Client
                     member(44)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
@@ -488,7 +488,7 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         SourceEvent::EventSpec
                             Id 1063427979
                         TargetEvent::EventSpec
-                            Id 1049909672
+                            Id 1049909672 (NamtagActorsEnabled)
                         TargetType EventConnectionTargetType_Client
                     member(45)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
@@ -496,7 +496,7 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         SourceEvent::EventSpec
                             Id 2004293394
                         TargetEvent::EventSpec
-                            Id 70553425
+                            Id 70553425 (NametagEnemyActorDisabled)
                         TargetType EventConnectionTargetType_Client
                     member(46)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
@@ -504,31 +504,31 @@ LogicPrefabBlueprint E3D49A50-1CDE-4927-8B67-9200BC1E0EB2 #primary instance
                         SourceEvent::EventSpec
                             Id 2132416273
                         TargetEvent::EventSpec
-                            Id 144048612
+                            Id 144048612 (NametagEnemyActorEnabled)
                         TargetType EventConnectionTargetType_Client
                     member(47)::EventConnection
                         Source 7F6983A4-F9F4-4C63-832C-01E4E2D2B1CD
                         Target DB8AD661-6B2F-4340-946D-F58855561B16
                         SourceEvent::EventSpec
-                            Id 209526997
+                            Id 209526997 (UIGraph)
                         TargetEvent::EventSpec
-                            Id 1486593166
+                            Id 1486593166 (Message)
                         TargetType EventConnectionTargetType_Client
                     member(48)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target A49008AA-EF70-4A7E-B37F-AC69CB46658E
                         SourceEvent::EventSpec
-                            Id 856533193
+                            Id 856533193 (HideCrosshair)
                         TargetEvent::EventSpec
-                            Id 856533193
+                            Id 856533193 (HideCrosshair)
                         TargetType EventConnectionTargetType_Client
                     member(49)::EventConnection
                         Source 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                         Target 46259C2B-738E-4ED9-BF6D-887D993ED7E5
                         SourceEvent::EventSpec
-                            Id -705175674
+                            Id -705175674 (RoundStarted)
                         TargetEvent::EventSpec
-                            Id -705175674
+                            Id -705175674 (RoundStarted)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 9259EE32-7B29-41E6-9B3C-86A0A2C852EA
                 NeedNetworkId True
@@ -644,7 +644,7 @@ UIGraphEntityData 4AC46898-2726-4DD6-BDD1-67DE27C11EE4
             IndexInBlueprint 0
     Events::array
         member(0)::EventSpec
-            Id -451060930
+            Id -451060930 (ExitSpawn)
     GraphAsset UI/Flow/Graph/Spawn/SpawnGraph/C3AE836C-60DE-2BB8-1ACC-8A7A05E708E7
     GraphPriority UIGraphPriority_Normal
     PopPreviousGraph False
@@ -659,7 +659,7 @@ UIGraphEntityData E1965A9B-ADB5-4E70-9873-6E530DF5BC3F
             IndexInBlueprint 1
     Events::array
         member(0)::EventSpec
-            Id -33493418
+            Id -33493418 (EnterSpawn)
     GraphAsset UI/Flow/Graph/Ingame/Coop/PlayingCoopGraph/2ABFB188-5BCA-4F96-8CBB-84BD0267E951
     GraphPriority UIGraphPriority_Normal
     PopPreviousGraph True

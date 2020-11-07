@@ -93,9 +93,9 @@ InterfaceDescriptorData F8F7366B-4C6F-4D42-A62C-941394A3B044
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id -62145612
+            Id -62145612 (OnDisabled)
         member(1)::DynamicEvent
-            Id 1594562913
+            Id 1594562913 (OnHealthy)
     OutputEvents::array
         member(0)::DynamicEvent
             Id 2117264948
@@ -105,15 +105,15 @@ InterfaceDescriptorData F8F7366B-4C6F-4D42-A62C-941394A3B044
             Id 1521082512
     InputLinks::array
         member(0)::DynamicLink
-            Id -970110393
+            Id -970110393 (Sprint)
         member(1)::DynamicLink
-            Id 1401886948
+            Id 1401886948 (LowSteering)
         member(2)::DynamicLink
             Id 436165488
         member(3)::DynamicLink
-            Id 211741658
+            Id 211741658 (Brake)
         member(4)::DynamicLink
-            Id 1087240867
+            Id 1087240867 (HighThrottle)
     OutputLinks *nullArray*
 LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
     $::PrefabBlueprint
@@ -127,43 +127,43 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         member(0)::PropertyConnection
                             Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                             Target 688CA04D-724B-4633-966A-71AFDE1A3A3E
-                            SourceFieldId 193453899
-                            TargetFieldId 2662400
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 2662400 (Enabled)
                         member(1)::PropertyConnection
                             Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                             Target 8CDE4B44-7B96-45E1-B746-AA3B6B4CD5E2
-                            SourceFieldId 193453899
-                            TargetFieldId 2662400
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 2662400 (Enabled)
                         member(2)::PropertyConnection
                             Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                             Target EE15FFF5-CE40-472C-92EA-1E9192CD7975
-                            SourceFieldId -1651030824
-                            TargetFieldId 177636
+                            SourceFieldId -1651030824 (HealthNormalized)
+                            TargetFieldId 177636 (A)
                         member(3)::PropertyConnection
                             Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                             Target 0B300B33-6590-46BD-8A03-1ED629EBE281
-                            SourceFieldId 193453899
-                            TargetFieldId 2662400
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 2662400 (Enabled)
                         member(4)::PropertyConnection
                             Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                             Target EE15FFF5-CE40-472C-92EA-1E9192CD7975
                             SourceFieldId -1567368314
-                            TargetFieldId 177639
+                            TargetFieldId 177639 (B)
                         member(5)::PropertyConnection
                             Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                             Target F8F7366B-4C6F-4D42-A62C-941394A3B044
-                            SourceFieldId 193453899
+                            SourceFieldId 193453899 (Out)
                             TargetFieldId 1925892777
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                             Target 8CDE4B44-7B96-45E1-B746-AA3B6B4CD5E2
-                            SourceFieldId -970110393
+                            SourceFieldId -970110393 (Sprint)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                             Target 0B300B33-6590-46BD-8A03-1ED629EBE281
-                            SourceFieldId 1401886948
+                            SourceFieldId 1401886948 (LowSteering)
                             TargetFieldId 0
                         member(2)::LinkConnection
                             Source F8F7366B-4C6F-4D42-A62C-941394A3B044
@@ -173,19 +173,19 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         member(3)::LinkConnection
                             Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                             Target 565A8438-6009-4850-BB04-BF9EEB7DC530
-                            SourceFieldId 1087240867
+                            SourceFieldId 1087240867 (HighThrottle)
                             TargetFieldId 0
                         member(4)::LinkConnection
                             Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                             Target 783C492E-0279-49BD-BA6A-8A37CBB49891
-                            SourceFieldId 211741658
+                            SourceFieldId 211741658 (Brake)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                         Target F8F7366B-4C6F-4D42-A62C-941394A3B044
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
                             Id 2117264948
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -193,7 +193,7 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                         Target F8F7366B-4C6F-4D42-A62C-941394A3B044
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
                             Id 1150266842
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -201,23 +201,23 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                         Target AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                         SourceEvent::EventSpec
-                            Id -62145612
+                            Id -62145612 (OnDisabled)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                         Target AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                         SourceEvent::EventSpec
-                            Id 1594562913
+                            Id 1594562913 (OnHealthy)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source EE15FFF5-CE40-472C-92EA-1E9192CD7975
                         Target F8F7366B-4C6F-4D42-A62C-941394A3B044
                         SourceEvent::EventSpec
-                            Id 2088725063
+                            Id 2088725063 (A<=B)
                         TargetEvent::EventSpec
                             Id 1521082512
                         TargetType EventConnectionTargetType_ClientAndServer

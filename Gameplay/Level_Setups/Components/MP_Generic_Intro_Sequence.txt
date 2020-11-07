@@ -90,7 +90,7 @@ InterfaceDescriptorData F50FD381-A5C7-4A1C-84A9-955F8784936C
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id -1548084853
+            Id -1548084853 (StartIntro)
         member(1)::DynamicEvent
             Id 310987683
         member(2)::DynamicEvent
@@ -101,7 +101,7 @@ InterfaceDescriptorData F50FD381-A5C7-4A1C-84A9-955F8784936C
             Id -1721719695
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 1795603289
+            Id 1795603289 (IntroFinished)
         member(1)::DynamicEvent
             Id -1391807283
         member(2)::DynamicEvent
@@ -122,8 +122,8 @@ LogicPrefabBlueprint 745836BB-E2DB-0790-10C3-404641A694D0 #primary instance
                         member(0)::PropertyConnection
                             Source AF0E2B92-1AEA-4FDC-9B13-34A82772B667
                             Target F50FD381-A5C7-4A1C-84A9-955F8784936C
-                            SourceFieldId 225375086
-                            TargetFieldId -115752053
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId -115752053 (IntroExists)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
@@ -132,7 +132,7 @@ LogicPrefabBlueprint 745836BB-E2DB-0790-10C3-404641A694D0 #primary instance
                         SourceEvent::EventSpec
                             Id 310987683
                         TargetEvent::EventSpec
-                            Id -155654884
+                            Id -155654884 (FireMemory)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source F50FD381-A5C7-4A1C-84A9-955F8784936C
@@ -140,7 +140,7 @@ LogicPrefabBlueprint 745836BB-E2DB-0790-10C3-404641A694D0 #primary instance
                         SourceEvent::EventSpec
                             Id 310987683
                         TargetEvent::EventSpec
-                            Id 1928776733
+                            Id 1928776733 (Deactivate)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source F50FD381-A5C7-4A1C-84A9-955F8784936C
@@ -156,7 +156,7 @@ LogicPrefabBlueprint 745836BB-E2DB-0790-10C3-404641A694D0 #primary instance
                         SourceEvent::EventSpec
                             Id 310987683
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetType EventConnectionTargetType_Client
                     member(4)::EventConnection
                         Source F50FD381-A5C7-4A1C-84A9-955F8784936C
@@ -178,23 +178,23 @@ LogicPrefabBlueprint 745836BB-E2DB-0790-10C3-404641A694D0 #primary instance
                         Source F50FD381-A5C7-4A1C-84A9-955F8784936C
                         Target B2AC9C8F-330E-45A9-859A-F001FD2D788C
                         SourceEvent::EventSpec
-                            Id -1548084853
+                            Id -1548084853 (StartIntro)
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id -559281700 (Activate)
                         TargetType EventConnectionTargetType_Client
                     member(7)::EventConnection
                         Source F50FD381-A5C7-4A1C-84A9-955F8784936C
                         Target EC9D0D4D-AC00-45D4-82A4-37D9E8B7C473
                         SourceEvent::EventSpec
-                            Id -1548084853
+                            Id -1548084853 (StartIntro)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(8)::EventConnection
                         Source BEF32BE7-FDC8-4A82-8676-561155CF45EE
                         Target F50FD381-A5C7-4A1C-84A9-955F8784936C
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
                             Id -1391807283
                         TargetType EventConnectionTargetType_Client
@@ -202,55 +202,55 @@ LogicPrefabBlueprint 745836BB-E2DB-0790-10C3-404641A694D0 #primary instance
                         Source BEF32BE7-FDC8-4A82-8676-561155CF45EE
                         Target 8D2A69D0-D39F-4601-9B42-89944BACC50E
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 1360923351
+                            Id 1360923351 (DroneStart)
                         TargetType EventConnectionTargetType_Client
                     member(10)::EventConnection
                         Source BEF32BE7-FDC8-4A82-8676-561155CF45EE
                         Target F9B8A596-DB79-4E29-A094-3471A9D5822A
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -1778993948
+                            Id -1778993948 (FadeIn)
                         TargetType EventConnectionTargetType_Client
                     member(11)::EventConnection
                         Source BEF32BE7-FDC8-4A82-8676-561155CF45EE
                         Target 0DC43B0D-8A48-4F20-8F82-ABFB6CA81EED
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 714915618
+                            Id 714915618 (LoadMemory)
                         TargetType EventConnectionTargetType_Client
                     member(12)::EventConnection
                         Source EC9D0D4D-AC00-45D4-82A4-37D9E8B7C473
                         Target BEF32BE7-FDC8-4A82-8676-561155CF45EE
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Client
                     member(13)::EventConnection
                         Source C9A286A5-C13E-4BD4-B426-B05D94725334
                         Target C9A286A5-C13E-4BD4-B426-B05D94725334
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_Client
                     member(14)::EventConnection
                         Source C9A286A5-C13E-4BD4-B426-B05D94725334
                         Target B2AC9C8F-330E-45A9-859A-F001FD2D788C
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
-                            Id 1928776733
+                            Id 1928776733 (Deactivate)
                         TargetType EventConnectionTargetType_Client
                     member(15)::EventConnection
                         Source C9A286A5-C13E-4BD4-B426-B05D94725334
                         Target F50FD381-A5C7-4A1C-84A9-955F8784936C
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
                             Id 634774383
                         TargetType EventConnectionTargetType_Client
@@ -258,49 +258,49 @@ LogicPrefabBlueprint 745836BB-E2DB-0790-10C3-404641A694D0 #primary instance
                         Source C9A286A5-C13E-4BD4-B426-B05D94725334
                         Target 0DC43B0D-8A48-4F20-8F82-ABFB6CA81EED
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
-                            Id -155654884
+                            Id -155654884 (FireMemory)
                         TargetType EventConnectionTargetType_Client
                     member(17)::EventConnection
                         Source BEF32BE7-FDC8-4A82-8676-561155CF45EE
                         Target C9A286A5-C13E-4BD4-B426-B05D94725334
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_Client
                     member(18)::EventConnection
                         Source 60D113EE-B671-4B7C-9B55-3000BB7A366A
                         Target F50FD381-A5C7-4A1C-84A9-955F8784936C
                         SourceEvent::EventSpec
-                            Id -1864525248
+                            Id -1864525248 (OnTriggerOnlyForPlayer)
                         TargetEvent::EventSpec
-                            Id 1795603289
+                            Id 1795603289 (IntroFinished)
                         TargetType EventConnectionTargetType_Client
                     member(19)::EventConnection
                         Source 60D113EE-B671-4B7C-9B55-3000BB7A366A
                         Target 8D2A69D0-D39F-4601-9B42-89944BACC50E
                         SourceEvent::EventSpec
-                            Id -1864525248
+                            Id -1864525248 (OnTriggerOnlyForPlayer)
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetType EventConnectionTargetType_Client
                     member(20)::EventConnection
                         Source 60D113EE-B671-4B7C-9B55-3000BB7A366A
                         Target EBE5801B-E754-4C8B-8AB3-F8082EB29073
                         SourceEvent::EventSpec
-                            Id -1864525248
+                            Id -1864525248 (OnTriggerOnlyForPlayer)
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(21)::EventConnection
                         Source 0DC43B0D-8A48-4F20-8F82-ABFB6CA81EED
                         Target 60D113EE-B671-4B7C-9B55-3000BB7A366A
                         SourceEvent::EventSpec
-                            Id -2015345591
+                            Id -2015345591 (OnMemoryEvent)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                 Descriptor F50FD381-A5C7-4A1C-84A9-955F8784936C
                 NeedNetworkId False

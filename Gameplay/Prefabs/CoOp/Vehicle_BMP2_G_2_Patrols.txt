@@ -417,9 +417,9 @@ InterfaceDescriptorData 034AE46C-296C-479C-A152-09B516B78D82
         member(1)::DynamicEvent
             Id 730261211
         member(2)::DynamicEvent
-            Id 1762125924
+            Id 1762125924 (OnDestinationReached)
         member(3)::DynamicEvent
-            Id -1452333337
+            Id -1452333337 (OnDestroyed)
         member(4)::DynamicEvent
             Id 571359417
     InputLinks::array
@@ -427,13 +427,13 @@ InterfaceDescriptorData 034AE46C-296C-479C-A152-09B516B78D82
             Id -118422484
     OutputLinks::array
         member(0)::DynamicLink
-            Id 1635609973
+            Id 1635609973 (Waypoints)
         member(1)::DynamicLink
-            Id -843288149
+            Id -843288149 (PointTargets)
         member(2)::DynamicLink
-            Id -123437329
+            Id -123437329 (VolumeTargets)
         member(3)::DynamicLink
-            Id -871999844
+            Id -871999844 (SpawnTargets)
         member(4)::DynamicLink
             Id 1201404579
 RandomDelayEntityData 021BCA7B-71A8-417D-9E20-AF93E036E9E0
@@ -485,39 +485,39 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         member(0)::PropertyConnection
                             Source 4087C5DA-C4CA-451B-B060-50B943923AC6
                             Target AE4747D4-EBE6-4C75-917D-D4AB1EE5449F
-                            SourceFieldId 225375086
-                            TargetFieldId -296862265
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId -296862265 (ActiveStance)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 8902A6A6-25EB-4C2B-841C-CEDFC2739F9A
                             Target AE4747D4-EBE6-4C75-917D-D4AB1EE5449F
-                            SourceFieldId 772552445
+                            SourceFieldId 772552445 (Vehicle)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source EDC7564B-7E60-454B-AF8B-4FD91CBEBF67
                             Target 034AE46C-296C-479C-A152-09B516B78D82
-                            SourceFieldId 1635609973
-                            TargetFieldId 1635609973
+                            SourceFieldId 1635609973 (Waypoints)
+                            TargetFieldId 1635609973 (Waypoints)
                         member(2)::LinkConnection
                             Source EBE62CC7-2B25-4261-BBB5-4413A89EC622
                             Target 8902A6A6-25EB-4C2B-841C-CEDFC2739F9A
-                            SourceFieldId -616190660
+                            SourceFieldId -616190660 (Soldiers)
                             TargetFieldId 0
                         member(3)::LinkConnection
                             Source EBE62CC7-2B25-4261-BBB5-4413A89EC622
                             Target 034AE46C-296C-479C-A152-09B516B78D82
-                            SourceFieldId -843288149
-                            TargetFieldId -843288149
+                            SourceFieldId -843288149 (PointTargets)
+                            TargetFieldId -843288149 (PointTargets)
                         member(4)::LinkConnection
                             Source EBE62CC7-2B25-4261-BBB5-4413A89EC622
                             Target 034AE46C-296C-479C-A152-09B516B78D82
-                            SourceFieldId -123437329
-                            TargetFieldId -123437329
+                            SourceFieldId -123437329 (VolumeTargets)
+                            TargetFieldId -123437329 (VolumeTargets)
                         member(5)::LinkConnection
                             Source EBE62CC7-2B25-4261-BBB5-4413A89EC622
                             Target 034AE46C-296C-479C-A152-09B516B78D82
-                            SourceFieldId -871999844
-                            TargetFieldId -871999844
+                            SourceFieldId -871999844 (SpawnTargets)
+                            TargetFieldId -871999844 (SpawnTargets)
                         member(6)::LinkConnection
                             Source 034AE46C-296C-479C-A152-09B516B78D82
                             Target AE4747D4-EBE6-4C75-917D-D4AB1EE5449F
@@ -526,57 +526,57 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         member(7)::LinkConnection
                             Source 6E6E4AD4-C359-4702-896A-F4D7284CAB14
                             Target 8902A6A6-25EB-4C2B-841C-CEDFC2739F9A
-                            SourceFieldId -616190660
+                            SourceFieldId -616190660 (Soldiers)
                             TargetFieldId 0
                         member(8)::LinkConnection
                             Source ACB8EE78-CBBB-42EC-B2E5-D026B68750D7
                             Target 034AE46C-296C-479C-A152-09B516B78D82
-                            SourceFieldId 1635609973
+                            SourceFieldId 1635609973 (Waypoints)
                             TargetFieldId 1201404579
                         member(9)::LinkConnection
                             Source EDC7564B-7E60-454B-AF8B-4FD91CBEBF67
                             Target AE4747D4-EBE6-4C75-917D-D4AB1EE5449F
-                            SourceFieldId -160166365
-                            TargetFieldId -510838215
+                            SourceFieldId -160166365 (Follower)
+                            TargetFieldId -510838215 (PathFollowing)
                         member(10)::LinkConnection
                             Source ACB8EE78-CBBB-42EC-B2E5-D026B68750D7
                             Target AE4747D4-EBE6-4C75-917D-D4AB1EE5449F
-                            SourceFieldId -160166365
-                            TargetFieldId -510838215
+                            SourceFieldId -160166365 (Follower)
+                            TargetFieldId -510838215 (PathFollowing)
                         member(11)::LinkConnection
                             Source F54D1145-D7A4-431A-8FB4-F9446F3BB9E9
                             Target AE4747D4-EBE6-4C75-917D-D4AB1EE5449F
-                            SourceFieldId 772552445
+                            SourceFieldId 772552445 (Vehicle)
                             TargetFieldId 0
                         member(12)::LinkConnection
                             Source 8902A6A6-25EB-4C2B-841C-CEDFC2739F9A
                             Target 50B292EC-8BB3-4F08-7BD4-C39561E70800
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                         member(13)::LinkConnection
                             Source AE4747D4-EBE6-4C75-917D-D4AB1EE5449F
                             Target 224B12D4-923E-2B2C-E267-267A5B839F80
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                         member(14)::LinkConnection
                             Source F54D1145-D7A4-431A-8FB4-F9446F3BB9E9
                             Target C8D27E94-E8F0-DED0-5BB6-F1EB5D0338E1
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 021BCA7B-71A8-417D-9E20-AF93E036E9E0
                         Target EDC7564B-7E60-454B-AF8B-4FD91CBEBF67
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source EBE62CC7-2B25-4261-BBB5-4413A89EC622
                         Target 034AE46C-296C-479C-A152-09B516B78D82
                         SourceEvent::EventSpec
-                            Id 632363373
+                            Id 632363373 (OnComplete)
                         TargetEvent::EventSpec
                             Id -727689385
                         TargetType EventConnectionTargetType_Server
@@ -586,13 +586,13 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id -1790858072
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 8902A6A6-25EB-4C2B-841C-CEDFC2739F9A
                         Target 034AE46C-296C-479C-A152-09B516B78D82
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
                             Id 730261211
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -602,7 +602,7 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id -334868039
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(5)::EventConnection
                         Source 034AE46C-296C-479C-A152-09B516B78D82
@@ -610,7 +610,7 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id -567856952
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source 034AE46C-296C-479C-A152-09B516B78D82
@@ -618,7 +618,7 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id -567856952
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(7)::EventConnection
                         Source 034AE46C-296C-479C-A152-09B516B78D82
@@ -626,23 +626,23 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id -567856952
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(8)::EventConnection
                         Source EDC7564B-7E60-454B-AF8B-4FD91CBEBF67
                         Target 034AE46C-296C-479C-A152-09B516B78D82
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetType EventConnectionTargetType_Server
                     member(9)::EventConnection
                         Source AE4747D4-EBE6-4C75-917D-D4AB1EE5449F
                         Target 034AE46C-296C-479C-A152-09B516B78D82
                         SourceEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetType EventConnectionTargetType_Server
                     member(10)::EventConnection
                         Source 034AE46C-296C-479C-A152-09B516B78D82
@@ -650,13 +650,13 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id -878661564
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Server
                     member(11)::EventConnection
                         Source ACB8EE78-CBBB-42EC-B2E5-D026B68750D7
                         Target 034AE46C-296C-479C-A152-09B516B78D82
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetEvent::EventSpec
                             Id 571359417
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -666,7 +666,7 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id 1809380839
                         TargetEvent::EventSpec
-                            Id -274579609
+                            Id -274579609 (Destroy)
                         TargetType EventConnectionTargetType_Server
                     member(13)::EventConnection
                         Source 034AE46C-296C-479C-A152-09B516B78D82
@@ -674,7 +674,7 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id 2002156768
                         TargetEvent::EventSpec
-                            Id 1736970756
+                            Id 1736970756 (Increment)
                         TargetType EventConnectionTargetType_Server
                     member(14)::EventConnection
                         Source 034AE46C-296C-479C-A152-09B516B78D82
@@ -682,7 +682,7 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id 78853364
                         TargetEvent::EventSpec
-                            Id -395651742
+                            Id -395651742 (Decrement)
                         TargetType EventConnectionTargetType_Server
                     member(15)::EventConnection
                         Source 034AE46C-296C-479C-A152-09B516B78D82
@@ -720,7 +720,7 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         Source F54D1145-D7A4-431A-8FB4-F9446F3BB9E9
                         Target 034AE46C-296C-479C-A152-09B516B78D82
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
                             Id 730261211
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -730,7 +730,7 @@ SpatialPrefabBlueprint 6687CD74-902A-40BB-9198-F2DBA1788A96 #primary instance
                         SourceEvent::EventSpec
                             Id -567856952
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 034AE46C-296C-479C-A152-09B516B78D82
                 NeedNetworkId True

@@ -197,9 +197,9 @@ InterfaceDescriptorData 147DCFC7-4B59-425E-AD5F-3230019532FD
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230748069
+            Id 230748069 (Start)
         member(1)::DynamicEvent
-            Id -834116283
+            Id -834116283 (Unspawn)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -216,53 +216,53 @@ SpatialPrefabBlueprint A3855F26-AC1A-4663-AFAB-F8A78C3585D1 #primary instance
                         member(0)::LinkConnection
                             Source 9794D533-AA37-4011-BCA9-0789AC705163
                             Target 70BDB7D8-73AD-4282-AD84-FCB783402A40
-                            SourceFieldId 846801780
+                            SourceFieldId 846801780 (SoldierSpawn)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source 70BDB7D8-73AD-4282-AD84-FCB783402A40
                             Target DFA6047D-76EC-F671-6EBE-D245E2B59F28
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 147DCFC7-4B59-425E-AD5F-3230019532FD
                         Target 70BDB7D8-73AD-4282-AD84-FCB783402A40
                         SourceEvent::EventSpec
-                            Id -834116283
+                            Id -834116283 (Unspawn)
                         TargetEvent::EventSpec
-                            Id -834116283
+                            Id -834116283 (Unspawn)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 147DCFC7-4B59-425E-AD5F-3230019532FD
                         Target 70BDB7D8-73AD-4282-AD84-FCB783402A40
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 70BDB7D8-73AD-4282-AD84-FCB783402A40
                         Target 9794D533-AA37-4011-BCA9-0789AC705163
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(3)::EventConnection
                         Source EF7CFA9C-EDA4-48D4-A384-0AA6AC5679AF
                         Target 9794D533-AA37-4011-BCA9-0789AC705163
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(4)::EventConnection
                         Source 9794D533-AA37-4011-BCA9-0789AC705163
                         Target EF7CFA9C-EDA4-48D4-A384-0AA6AC5679AF
                         SourceEvent::EventSpec
-                            Id 1601842967
+                            Id 1601842967 (OnFinish)
                         TargetEvent::EventSpec
-                            Id -1573253508
+                            Id -1573253508 (Client)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 147DCFC7-4B59-425E-AD5F-3230019532FD
                 NeedNetworkId True

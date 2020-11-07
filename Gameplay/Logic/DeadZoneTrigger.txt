@@ -154,13 +154,13 @@ InterfaceDescriptorData 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
         member(0)::DynamicEvent
             Id -80368276
         member(1)::DynamicEvent
-            Id -70038721
+            Id -70038721 (OnLeave)
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id 231534181
+            Id 231534181 (InnerZone)
         member(1)::DynamicLink
-            Id 909988034
+            Id 909988034 (OuterZone)
 LogicPrefabBlueprint E3811F66-2DAB-7465-BA04-E9D2EE3E61A8 #primary instance
     $::PrefabBlueprint
         $::Blueprint
@@ -173,29 +173,29 @@ LogicPrefabBlueprint E3811F66-2DAB-7465-BA04-E9D2EE3E61A8 #primary instance
                         member(0)::PropertyConnection
                             Source 5B575AE1-5BAF-4211-A63E-BD6FA04F1E73
                             Target 5DE2F7AE-6444-46CE-BB4C-768DE60053A5
-                            SourceFieldId 225375086
-                            TargetFieldId 225375086
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 225375086 (Value)
                         member(1)::PropertyConnection
                             Source 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
                             Target 54C879AE-9B43-4D64-8699-155B320D1F34
-                            SourceFieldId 2662400
-                            TargetFieldId 2662400
+                            SourceFieldId 2662400 (Enabled)
+                            TargetFieldId 2662400 (Enabled)
                         member(2)::PropertyConnection
                             Source 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
                             Target 7B257AA1-E800-4DF2-AE42-D52D2BCE1862
-                            SourceFieldId 2662400
-                            TargetFieldId 2662400
+                            SourceFieldId 2662400 (Enabled)
+                            TargetFieldId 2662400 (Enabled)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 54C879AE-9B43-4D64-8699-155B320D1F34
                             Target 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
-                            SourceFieldId 838548383
-                            TargetFieldId 231534181
+                            SourceFieldId 838548383 (Geometry)
+                            TargetFieldId 231534181 (InnerZone)
                         member(1)::LinkConnection
                             Source 7B257AA1-E800-4DF2-AE42-D52D2BCE1862
                             Target 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
-                            SourceFieldId 838548383
-                            TargetFieldId 909988034
+                            SourceFieldId 838548383 (Geometry)
+                            TargetFieldId 909988034 (OuterZone)
                 EventConnections::array
                     member(0)::EventConnection
                         Source 54C879AE-9B43-4D64-8699-155B320D1F34
@@ -203,13 +203,13 @@ LogicPrefabBlueprint E3811F66-2DAB-7465-BA04-E9D2EE3E61A8 #primary instance
                         SourceEvent::EventSpec
                             Id -80368276
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 5DE2F7AE-6444-46CE-BB4C-768DE60053A5
                         Target 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
                             Id -80368276
                         TargetType EventConnectionTargetType_Server
@@ -217,17 +217,17 @@ LogicPrefabBlueprint E3811F66-2DAB-7465-BA04-E9D2EE3E61A8 #primary instance
                         Source 5DE2F7AE-6444-46CE-BB4C-768DE60053A5
                         Target 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
-                            Id -70038721
+                            Id -70038721 (OnLeave)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 7B257AA1-E800-4DF2-AE42-D52D2BCE1862
                         Target 5B575AE1-5BAF-4211-A63E-BD6FA04F1E73
                         SourceEvent::EventSpec
-                            Id -70038721
+                            Id -70038721 (OnLeave)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
                 NeedNetworkId False

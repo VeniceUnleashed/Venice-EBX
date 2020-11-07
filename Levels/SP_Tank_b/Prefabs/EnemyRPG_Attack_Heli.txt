@@ -189,25 +189,25 @@ InterfaceDescriptorData EDD38870-244C-4831-8053-143E72345775
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id -834116283
+            Id -834116283 (Unspawn)
         member(1)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
         member(2)::DynamicEvent
-            Id 2089125447
+            Id 2089125447 (Kill)
         member(3)::DynamicEvent
-            Id 851843788
+            Id 851843788 (DisableSenses)
         member(4)::DynamicEvent
-            Id 425551065
+            Id 425551065 (EnableSenses)
     OutputEvents::array
         member(0)::DynamicEvent
             Id 484574605
         member(1)::DynamicEvent
-            Id 2008897511
+            Id 2008897511 (OnKilled)
         member(2)::DynamicEvent
-            Id -1036968738
+            Id -1036968738 (OnSpawned)
     InputLinks::array
         member(0)::DynamicLink
-            Id -1450328209
+            Id -1450328209 (Soldier)
     OutputLinks *nullArray*
 SpatialPrefabBlueprint DA8C4487-9CC3-485A-8F6F-2817FD2ADFA2 #primary instance
     $::PrefabBlueprint
@@ -221,62 +221,62 @@ SpatialPrefabBlueprint DA8C4487-9CC3-485A-8F6F-2817FD2ADFA2 #primary instance
                         member(0)::PropertyConnection
                             Source EDD38870-244C-4831-8053-143E72345775
                             Target 9AF8CF22-955C-4F8D-A747-A2E2468F3CF3
-                            SourceFieldId 1561682359
-                            TargetFieldId 225375086
+                            SourceFieldId 1561682359 (StitchErrain)
+                            TargetFieldId 225375086 (Value)
                         member(1)::PropertyConnection
                             Source ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                             Target EDD38870-244C-4831-8053-143E72345775
-                            SourceFieldId 191418609
-                            TargetFieldId 191418609
+                            SourceFieldId 191418609 (ClientControllableTransform)
+                            TargetFieldId 191418609 (ClientControllableTransform)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source EDD38870-244C-4831-8053-143E72345775
                             Target ED7007E8-F525-4D29-8761-72E1FBAD9CC9
-                            SourceFieldId -1450328209
+                            SourceFieldId -1450328209 (Soldier)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                             Target C43D79C7-4A54-A2B1-F346-6C927FD228BF
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source EDD38870-244C-4831-8053-143E72345775
                         Target ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         SourceEvent::EventSpec
-                            Id -834116283
+                            Id -834116283 (Unspawn)
                         TargetEvent::EventSpec
-                            Id -834116283
+                            Id -834116283 (Unspawn)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source EDD38870-244C-4831-8053-143E72345775
                         Target ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         SourceEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source EDD38870-244C-4831-8053-143E72345775
                         Target ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         Target EDD38870-244C-4831-8053-143E72345775
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(4)::EventConnection
                         Source 69995F0C-BB51-469C-80E3-841E3FF556DA
                         Target EDD38870-244C-4831-8053-143E72345775
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
                             Id 484574605
                         TargetType EventConnectionTargetType_Server
@@ -284,65 +284,65 @@ SpatialPrefabBlueprint DA8C4487-9CC3-485A-8F6F-2817FD2ADFA2 #primary instance
                         Source ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         Target 69995F0C-BB51-469C-80E3-841E3FF556DA
                         SourceEvent::EventSpec
-                            Id -1434128132
+                            Id -1434128132 (OnFire)
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         Target 69995F0C-BB51-469C-80E3-841E3FF556DA
                         SourceEvent::EventSpec
-                            Id 533406004
+                            Id 533406004 (OnReloaded)
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetType EventConnectionTargetType_Server
                     member(7)::EventConnection
                         Source ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         Target 69995F0C-BB51-469C-80E3-841E3FF556DA
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(8)::EventConnection
                         Source ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         Target EDD38870-244C-4831-8053-143E72345775
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(9)::EventConnection
                         Source 9AF8CF22-955C-4F8D-A747-A2E2468F3CF3
                         Target ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
-                            Id 851843788
+                            Id 851843788 (DisableSenses)
                         TargetType EventConnectionTargetType_Server
                     member(10)::EventConnection
                         Source 9AF8CF22-955C-4F8D-A747-A2E2468F3CF3
                         Target ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
-                            Id 425551065
+                            Id 425551065 (EnableSenses)
                         TargetType EventConnectionTargetType_Server
                     member(11)::EventConnection
                         Source EDD38870-244C-4831-8053-143E72345775
                         Target ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         SourceEvent::EventSpec
-                            Id 851843788
+                            Id 851843788 (DisableSenses)
                         TargetEvent::EventSpec
-                            Id 851843788
+                            Id 851843788 (DisableSenses)
                         TargetType EventConnectionTargetType_Server
                     member(12)::EventConnection
                         Source EDD38870-244C-4831-8053-143E72345775
                         Target ED7007E8-F525-4D29-8761-72E1FBAD9CC9
                         SourceEvent::EventSpec
-                            Id 425551065
+                            Id 425551065 (EnableSenses)
                         TargetEvent::EventSpec
-                            Id 425551065
+                            Id 425551065 (EnableSenses)
                         TargetType EventConnectionTargetType_Server
                 Descriptor EDD38870-244C-4831-8053-143E72345775
                 NeedNetworkId True

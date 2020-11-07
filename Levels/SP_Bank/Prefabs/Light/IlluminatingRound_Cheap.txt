@@ -52,7 +52,7 @@ InterfaceDescriptorData 59EA312D-D686-40F8-A287-8A1AEDA472AC
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230748069
+            Id 230748069 (Start)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -560,7 +560,7 @@ SequenceEntityData 5D15F463-43F5-4410-92DC-C759557443A8
     Events::array
         member(0)::SequenceEventData
             Event::EventSpec
-                Id 2088671869
+                Id 2088671869 (Fire)
             Time 13500
     SequenceStartTime 0
     SequenceLength 14000
@@ -675,122 +675,122 @@ SpatialPrefabBlueprint A90B5C10-E22B-458A-81E4-55302E589203 #primary instance
                         member(0)::PropertyConnection
                             Source 5D15F463-43F5-4410-92DC-C759557443A8
                             Target 94AAE591-C27C-4186-8D5F-05AD45C69077
-                            SourceFieldId 1609263334
-                            TargetFieldId -409930682
+                            SourceFieldId 1609263334 (Movement)
+                            TargetFieldId -409930682 (BlueprintTransform)
                         member(1)::PropertyConnection
                             Source 5D15F463-43F5-4410-92DC-C759557443A8
                             Target 6BDE4C0E-7E51-4D36-A81A-3FAA74BE91F7
-                            SourceFieldId 1609263334
-                            TargetFieldId -2024647575
+                            SourceFieldId 1609263334 (Movement)
+                            TargetFieldId -2024647575 (Transform)
                         member(2)::PropertyConnection
                             Source 5D15F463-43F5-4410-92DC-C759557443A8
                             Target 5E96A58A-5C39-4A6A-B263-2369D4E2618E
-                            SourceFieldId -458572566
-                            TargetFieldId -458572566
+                            SourceFieldId -458572566 (Intensity)
+                            TargetFieldId -458572566 (Intensity)
                         member(3)::PropertyConnection
                             Source 5F8EE47E-E555-43FB-A8CA-874277569DFC
                             Target BAF2676D-9B28-460D-BC7C-FFB30DEEB98E
                             SourceFieldId 2088772948
-                            TargetFieldId 193450867
+                            TargetFieldId 193450867 (In1)
                         member(4)::PropertyConnection
                             Source 2C8D398F-DFE9-4CA0-AE76-93B4C7394443
                             Target 5E96A58A-5C39-4A6A-B263-2369D4E2618E
                             SourceFieldId 2088772948
-                            TargetFieldId -2024647575
+                            TargetFieldId -2024647575 (Transform)
                         member(5)::PropertyConnection
                             Source BAF2676D-9B28-460D-BC7C-FFB30DEEB98E
                             Target 15679071-3C55-45E5-9D10-CF8DA2F67F79
-                            SourceFieldId 193453899
-                            TargetFieldId -2024647575
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId -2024647575 (Transform)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source 59EA312D-D686-40F8-A287-8A1AEDA472AC
                         Target 5D15F463-43F5-4410-92DC-C759557443A8
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(1)::EventConnection
                         Source 5D15F463-43F5-4410-92DC-C759557443A8
                         Target 94AAE591-C27C-4186-8D5F-05AD45C69077
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 5D15F463-43F5-4410-92DC-C759557443A8
                         Target 94AAE591-C27C-4186-8D5F-05AD45C69077
                         SourceEvent::EventSpec
-                            Id 2088671869
+                            Id 2088671869 (Fire)
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source 5D15F463-43F5-4410-92DC-C759557443A8
                         Target 5D15F463-43F5-4410-92DC-C759557443A8
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 229946160
+                            Id 229946160 (Reset)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(4)::EventConnection
                         Source 5D15F463-43F5-4410-92DC-C759557443A8
                         Target 6BDE4C0E-7E51-4D36-A81A-3FAA74BE91F7
                         SourceEvent::EventSpec
-                            Id 2088671869
+                            Id 2088671869 (Fire)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source 5D15F463-43F5-4410-92DC-C759557443A8
                         Target 5E96A58A-5C39-4A6A-B263-2369D4E2618E
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_Client
                     member(6)::EventConnection
                         Source 5D15F463-43F5-4410-92DC-C759557443A8
                         Target 5E96A58A-5C39-4A6A-B263-2369D4E2618E
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_Client
                     member(7)::EventConnection
                         Source 5D15F463-43F5-4410-92DC-C759557443A8
                         Target 6BDE4C0E-7E51-4D36-A81A-3FAA74BE91F7
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_Client
                     member(8)::EventConnection
                         Source 59EA312D-D686-40F8-A287-8A1AEDA472AC
                         Target 5F8EE47E-E555-43FB-A8CA-874277569DFC
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(9)::EventConnection
                         Source 59EA312D-D686-40F8-A287-8A1AEDA472AC
                         Target 2C8D398F-DFE9-4CA0-AE76-93B4C7394443
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(10)::EventConnection
                         Source 59EA312D-D686-40F8-A287-8A1AEDA472AC
                         Target 15679071-3C55-45E5-9D10-CF8DA2F67F79
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 59EA312D-D686-40F8-A287-8A1AEDA472AC
                 NeedNetworkId False

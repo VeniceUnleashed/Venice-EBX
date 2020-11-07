@@ -169,14 +169,14 @@ InterfaceDescriptorData 3299A703-DC98-42FC-A5CF-399DFD9F0AFB
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230748069
+            Id 230748069 (Start)
         member(1)::DynamicEvent
-            Id 2089125447
+            Id 2089125447 (Kill)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id 1635609973
+            Id 1635609973 (Waypoints)
 SpatialPrefabBlueprint EF1039A4-4F6C-89B5-098C-8DB04BFDB750 #primary instance
     $::PrefabBlueprint
         $::Blueprint
@@ -190,42 +190,42 @@ SpatialPrefabBlueprint EF1039A4-4F6C-89B5-098C-8DB04BFDB750 #primary instance
                         member(0)::LinkConnection
                             Source E07A71D6-5EA2-4F96-9245-5851B69C4BE1
                             Target 3299A703-DC98-42FC-A5CF-399DFD9F0AFB
-                            SourceFieldId 1635609973
-                            TargetFieldId 1635609973
+                            SourceFieldId 1635609973 (Waypoints)
+                            TargetFieldId 1635609973 (Waypoints)
                         member(1)::LinkConnection
                             Source E07A71D6-5EA2-4F96-9245-5851B69C4BE1
                             Target 7E425E02-79C2-420C-B626-E55BE2137310
-                            SourceFieldId -160166365
-                            TargetFieldId -1316984818
+                            SourceFieldId -160166365 (Follower)
+                            TargetFieldId -1316984818 (PathFollower)
                         member(2)::LinkConnection
                             Source 7E425E02-79C2-420C-B626-E55BE2137310
                             Target 10B597A2-862C-067C-84BB-B4C34974DA6D
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 3299A703-DC98-42FC-A5CF-399DFD9F0AFB
                         Target 7E425E02-79C2-420C-B626-E55BE2137310
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 7E425E02-79C2-420C-B626-E55BE2137310
                         Target E07A71D6-5EA2-4F96-9245-5851B69C4BE1
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 3299A703-DC98-42FC-A5CF-399DFD9F0AFB
                         Target 7E425E02-79C2-420C-B626-E55BE2137310
                         SourceEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 3299A703-DC98-42FC-A5CF-399DFD9F0AFB
                 NeedNetworkId True

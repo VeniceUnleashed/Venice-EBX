@@ -15,27 +15,27 @@ InterfaceDescriptorData 0D40D7A9-81A8-4176-9C36-0F6A9680C379
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 161211542
+            Id 161211542 (ConvertToPlayerEvent)
         member(1)::DynamicEvent
             Id -1626010600
         member(2)::DynamicEvent
             Id -1981452720
         member(3)::DynamicEvent
-            Id -1104461594
+            Id -1104461594 (BasicHud)
         member(4)::DynamicEvent
-            Id 1849195004
+            Id 1849195004 (HideHud)
         member(5)::DynamicEvent
-            Id 28110977
+            Id 28110977 (Playing)
         member(6)::DynamicEvent
-            Id -1778890842
+            Id -1778890842 (Failed)
         member(7)::DynamicEvent
-            Id 893628235
+            Id 893628235 (HideAmmo)
         member(8)::DynamicEvent
-            Id 191008392
+            Id 191008392 (ShowAmmo)
         member(9)::DynamicEvent
-            Id -722484490
+            Id -722484490 (ShowCompass)
         member(10)::DynamicEvent
-            Id -80900395
+            Id -80900395 (HideCompass)
         member(11)::DynamicEvent
             Id -465710663
         member(12)::DynamicEvent
@@ -51,7 +51,7 @@ InterfaceDescriptorData 0D40D7A9-81A8-4176-9C36-0F6A9680C379
         member(17)::DynamicEvent
             Id -210710098
         member(18)::DynamicEvent
-            Id -2089459682
+            Id -2089459682 (ActivatingFiltersBButton)
         member(19)::DynamicEvent
             Id -796539709
         member(20)::DynamicEvent
@@ -72,9 +72,9 @@ InterfaceDescriptorData 0D40D7A9-81A8-4176-9C36-0F6A9680C379
         member(0)::DynamicEvent
             Id -620149160
         member(1)::DynamicEvent
-            Id 1577401599
+            Id 1577401599 (OnPlayerEnter)
         member(2)::DynamicEvent
-            Id -1990198249
+            Id -1990198249 (OnConvertToPlayerEvent)
         member(3)::DynamicEvent
             Id 51650088
         member(4)::DynamicEvent
@@ -140,7 +140,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id 161211542
+                            Id 161211542 (ConvertToPlayerEvent)
                         TargetEvent::EventSpec
                             Id -620149160
                         TargetType EventConnectionTargetType_Server
@@ -150,7 +150,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         SourceEvent::EventSpec
                             Id -1626010600
                         TargetEvent::EventSpec
-                            Id 1577401599
+                            Id 1577401599 (OnPlayerEnter)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
@@ -158,13 +158,13 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         SourceEvent::EventSpec
                             Id -1981452720
                         TargetEvent::EventSpec
-                            Id -1990198249
+                            Id -1990198249 (OnConvertToPlayerEvent)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id -1104461594
+                            Id -1104461594 (BasicHud)
                         TargetEvent::EventSpec
                             Id 51650088
                         TargetType EventConnectionTargetType_Server
@@ -172,7 +172,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id 1849195004
+                            Id 1849195004 (HideHud)
                         TargetEvent::EventSpec
                             Id 1207142514
                         TargetType EventConnectionTargetType_Server
@@ -180,7 +180,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id 28110977
+                            Id 28110977 (Playing)
                         TargetEvent::EventSpec
                             Id 1931002255
                         TargetType EventConnectionTargetType_Server
@@ -188,7 +188,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id -1778890842
+                            Id -1778890842 (Failed)
                         TargetEvent::EventSpec
                             Id 1220674280
                         TargetType EventConnectionTargetType_Client
@@ -196,7 +196,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id 191008392
+                            Id 191008392 (ShowAmmo)
                         TargetEvent::EventSpec
                             Id -1095426746
                         TargetType EventConnectionTargetType_Server
@@ -204,7 +204,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id 893628235
+                            Id 893628235 (HideAmmo)
                         TargetEvent::EventSpec
                             Id 1181290501
                         TargetType EventConnectionTargetType_Server
@@ -212,7 +212,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id -722484490
+                            Id -722484490 (ShowCompass)
                         TargetEvent::EventSpec
                             Id -1037487880
                         TargetType EventConnectionTargetType_Server
@@ -220,7 +220,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id -80900395
+                            Id -80900395 (HideCompass)
                         TargetEvent::EventSpec
                             Id 1813176411
                         TargetType EventConnectionTargetType_Server
@@ -284,7 +284,7 @@ SpatialPrefabBlueprint 631FDB33-3F7C-C7D7-3BD6-85C24B84507B #primary instance
                         Source 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         Target 0D40D7A9-81A8-4176-9C36-0F6A9680C379
                         SourceEvent::EventSpec
-                            Id -2089459682
+                            Id -2089459682 (ActivatingFiltersBButton)
                         TargetEvent::EventSpec
                             Id 1757585488
                         TargetType EventConnectionTargetType_Client

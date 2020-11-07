@@ -181,14 +181,14 @@ InterfaceDescriptorData 336E6085-6B75-4F92-95CE-484A455F1562
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
         member(1)::DynamicEvent
-            Id 1149984791
+            Id 1149984791 (CancelAutoSpawn)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id 1635609973
+            Id 1635609973 (Waypoints)
 RandomDelayEntityData 28D76871-5A3B-416E-8011-4211F400B462
     $::EntityData
         $::GameObjectData
@@ -237,63 +237,63 @@ SpatialPrefabBlueprint 2529CB6D-169A-43F1-87EC-E04F4DEA3731 #primary instance
                             Source 9BB34375-03D3-4ED5-873D-C26E32CE2CBD
                             Target 9DEE5BF2-EFA9-48D3-B755-C0F7CA30BF3D
                             SourceFieldId -99924085
-                            TargetFieldId -821768885
+                            TargetFieldId -821768885 (SpawnDelay)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 6C1F08CA-E538-431A-AE51-FB77E8CBC780
                             Target 9DEE5BF2-EFA9-48D3-B755-C0F7CA30BF3D
-                            SourceFieldId -160166365
-                            TargetFieldId -1316984818
+                            SourceFieldId -160166365 (Follower)
+                            TargetFieldId -1316984818 (PathFollower)
                         member(1)::LinkConnection
                             Source 6C1F08CA-E538-431A-AE51-FB77E8CBC780
                             Target 336E6085-6B75-4F92-95CE-484A455F1562
-                            SourceFieldId 1635609973
-                            TargetFieldId 1635609973
+                            SourceFieldId 1635609973 (Waypoints)
+                            TargetFieldId 1635609973 (Waypoints)
                         member(2)::LinkConnection
                             Source 9DEE5BF2-EFA9-48D3-B755-C0F7CA30BF3D
                             Target 11E81B96-5017-C4A0-F8A9-DCDA95B5616D
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 9DEE5BF2-EFA9-48D3-B755-C0F7CA30BF3D
                         Target 6C1F08CA-E538-431A-AE51-FB77E8CBC780
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 336E6085-6B75-4F92-95CE-484A455F1562
                         Target 28D76871-5A3B-416E-8011-4211F400B462
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 28D76871-5A3B-416E-8011-4211F400B462
                         Target 9BB34375-03D3-4ED5-873D-C26E32CE2CBD
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 28D76871-5A3B-416E-8011-4211F400B462
                         Target 9DEE5BF2-EFA9-48D3-B755-C0F7CA30BF3D
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 336E6085-6B75-4F92-95CE-484A455F1562
                         Target 9DEE5BF2-EFA9-48D3-B755-C0F7CA30BF3D
                         SourceEvent::EventSpec
-                            Id 1149984791
+                            Id 1149984791 (CancelAutoSpawn)
                         TargetEvent::EventSpec
-                            Id 1149984791
+                            Id 1149984791 (CancelAutoSpawn)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 336E6085-6B75-4F92-95CE-484A455F1562
                 NeedNetworkId True

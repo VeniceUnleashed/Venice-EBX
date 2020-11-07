@@ -1997,32 +1997,32 @@ VehicleBlueprint C645317B-45BB-E082-7E5C-918388C22D59 #primary instance
                         member(0)::PropertyConnection
                             Source 2DDCEB46-A79D-47C3-8720-B328B975B20A
                             Target 2D1ECAE2-7324-4886-8EFD-E6527B76919F
-                            SourceFieldId -709588
-                            TargetFieldId -1429643463
+                            SourceFieldId -709588 (ActiveForLocalPlayer)
+                            TargetFieldId -1429643463 (UseFirstPersonSounds)
                         member(1)::PropertyConnection
                             Source 5FD21F36-281F-46DD-AC41-C96B90C4C46D
                             Target 007D17B2-77BE-CC8A-4747-F60CA829C14E
                             SourceFieldId -989888068
-                            TargetFieldId -2024647575
+                            TargetFieldId -2024647575 (Transform)
                         member(2)::PropertyConnection
                             Source 2DDCEB46-A79D-47C3-8720-B328B975B20A
                             Target AAC57411-FE4D-4AA0-B561-7B070D61A820
-                            SourceFieldId -709588
-                            TargetFieldId -1886708048
+                            SourceFieldId -709588 (ActiveForLocalPlayer)
+                            TargetFieldId -1886708048 (CameraActive)
                         member(3)::PropertyConnection
                             Source 2DDCEB46-A79D-47C3-8720-B328B975B20A
                             Target AAC57411-FE4D-4AA0-B561-7B070D61A820
-                            SourceFieldId -907946637
+                            SourceFieldId -907946637 (AlternateViewEnabledOut)
                             TargetFieldId -288794722
                         member(4)::PropertyConnection
                             Source 2DDCEB46-A79D-47C3-8720-B328B975B20A
                             Target 6503AB54-5D09-43E9-A600-A62BC979141A
-                            SourceFieldId -907946637
-                            TargetFieldId 2089658322
+                            SourceFieldId -907946637 (AlternateViewEnabledOut)
+                            TargetFieldId 2089658322 (Zoom)
                         member(5)::PropertyConnection
                             Source 2DDCEB46-A79D-47C3-8720-B328B975B20A
                             Target 6503AB54-5D09-43E9-A600-A62BC979141A
-                            SourceFieldId -709588
+                            SourceFieldId -709588 (ActiveForLocalPlayer)
                             TargetFieldId -1033317261
                     LinkConnections *nullArray*
                 EventConnections::array
@@ -2030,41 +2030,41 @@ VehicleBlueprint C645317B-45BB-E082-7E5C-918388C22D59 #primary instance
                         Source DD31DBE9-B573-4C0E-991B-F997A6CFD3AC
                         Target 5FD21F36-281F-46DD-AC41-C96B90C4C46D
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(1)::EventConnection
                         Source 5FD21F36-281F-46DD-AC41-C96B90C4C46D
                         Target DD31DBE9-B573-4C0E-991B-F997A6CFD3AC
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(2)::EventConnection
                         Source C50BF89D-7AD6-4A46-87B6-95A1307D221F
                         Target DD31DBE9-B573-4C0E-991B-F997A6CFD3AC
                         SourceEvent::EventSpec
-                            Id 1577401599
+                            Id 1577401599 (OnPlayerEnter)
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(3)::EventConnection
                         Source C50BF89D-7AD6-4A46-87B6-95A1307D221F
                         Target DD31DBE9-B573-4C0E-991B-F997A6CFD3AC
                         SourceEvent::EventSpec
-                            Id 47785047
+                            Id 47785047 (OnPlayerExit)
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(4)::EventConnection
                         Source C50BF89D-7AD6-4A46-87B6-95A1307D221F
                         Target 5FD21F36-281F-46DD-AC41-C96B90C4C46D
                         SourceEvent::EventSpec
-                            Id 1577401599
+                            Id 1577401599 (OnPlayerEnter)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor *nullGuid*
                 NeedNetworkId True

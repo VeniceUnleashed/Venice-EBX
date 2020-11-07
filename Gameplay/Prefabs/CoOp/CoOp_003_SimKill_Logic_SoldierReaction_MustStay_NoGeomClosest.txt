@@ -39,7 +39,7 @@ InterfaceDescriptorData 01813B07-7246-46B5-ADC7-136D3C44F21F
             Id 764201467
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 1762125924
+            Id 1762125924 (OnDestinationReached)
         member(1)::DynamicEvent
             Id 1189488771
         member(2)::DynamicEvent
@@ -47,7 +47,7 @@ InterfaceDescriptorData 01813B07-7246-46B5-ADC7-136D3C44F21F
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id -1086273423
+            Id -1086273423 (Animatable)
         member(1)::DynamicLink
             Id 966302209
         member(2)::DynamicLink
@@ -65,32 +65,32 @@ LogicPrefabBlueprint 89BC53AF-D14F-45A9-8B8D-CC562A59A7FA #primary instance
                         member(0)::LinkConnection
                             Source 7CC81D5F-D1FC-4600-AC0A-FD604D7EF79B
                             Target 01813B07-7246-46B5-ADC7-136D3C44F21F
-                            SourceFieldId -1086273423
-                            TargetFieldId -1086273423
+                            SourceFieldId -1086273423 (Animatable)
+                            TargetFieldId -1086273423 (Animatable)
                         member(1)::LinkConnection
                             Source 8DB74D2D-5CFB-4F60-BBEE-B1B43D30B650
                             Target 01813B07-7246-46B5-ADC7-136D3C44F21F
-                            SourceFieldId -1481696500
+                            SourceFieldId -1481696500 (RouteWaypoints)
                             TargetFieldId 966302209
                         member(2)::LinkConnection
                             Source 8DB74D2D-5CFB-4F60-BBEE-B1B43D30B650
                             Target 01813B07-7246-46B5-ADC7-136D3C44F21F
-                            SourceFieldId -616190660
+                            SourceFieldId -616190660 (Soldiers)
                             TargetFieldId 1122649000
                 EventConnections::array
                     member(0)::EventConnection
                         Source 8DB74D2D-5CFB-4F60-BBEE-B1B43D30B650
                         Target 01813B07-7246-46B5-ADC7-136D3C44F21F
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source A939689C-CA21-4E94-ABEF-89F7987BE148
                         Target 01813B07-7246-46B5-ADC7-136D3C44F21F
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
                             Id 1189488771
                         TargetType EventConnectionTargetType_Server
@@ -100,13 +100,13 @@ LogicPrefabBlueprint 89BC53AF-D14F-45A9-8B8D-CC562A59A7FA #primary instance
                         SourceEvent::EventSpec
                             Id 1851906734
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source A939689C-CA21-4E94-ABEF-89F7987BE148
                         Target 01813B07-7246-46B5-ADC7-136D3C44F21F
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
                             Id 946447544
                         TargetType EventConnectionTargetType_Server
@@ -114,9 +114,9 @@ LogicPrefabBlueprint 89BC53AF-D14F-45A9-8B8D-CC562A59A7FA #primary instance
                         Source A939689C-CA21-4E94-ABEF-89F7987BE148
                         Target 8DB74D2D-5CFB-4F60-BBEE-B1B43D30B650
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(5)::EventConnection
                         Source 01813B07-7246-46B5-ADC7-136D3C44F21F
@@ -124,7 +124,7 @@ LogicPrefabBlueprint 89BC53AF-D14F-45A9-8B8D-CC562A59A7FA #primary instance
                         SourceEvent::EventSpec
                             Id 764201467
                         TargetEvent::EventSpec
-                            Id 434301581
+                            Id 434301581 (SignalTrue)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 01813B07-7246-46B5-ADC7-136D3C44F21F
                 NeedNetworkId False

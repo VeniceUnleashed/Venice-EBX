@@ -67,7 +67,7 @@ InterfaceDescriptorData 606DE694-2EA0-4D45-A2F7-0D3A0FF87E86
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id -910201930
+            Id -910201930 (Player)
 LogicPrefabBlueprint E234940A-BBA5-55A5-090D-2BF1E339DD3F #primary instance
     $::PrefabBlueprint
         $::Blueprint
@@ -81,22 +81,22 @@ LogicPrefabBlueprint E234940A-BBA5-55A5-090D-2BF1E339DD3F #primary instance
                         member(0)::LinkConnection
                             Source B7290470-DB19-48EB-A0B0-CC3CDEABF9A5
                             Target 606DE694-2EA0-4D45-A2F7-0D3A0FF87E86
-                            SourceFieldId -202711221
-                            TargetFieldId -910201930
+                            SourceFieldId -202711221 (PlayerToCheck)
+                            TargetFieldId -910201930 (Player)
                 EventConnections::array
                     member(0)::EventConnection
                         Source 74A46398-0CEC-4087-B21B-F4004A9FCBA5
                         Target B7290470-DB19-48EB-A0B0-CC3CDEABF9A5
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
-                            Id -912718115
+                            Id -912718115 (CheckPlayerHoldingRightWeapon)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source B7290470-DB19-48EB-A0B0-CC3CDEABF9A5
                         Target 606DE694-2EA0-4D45-A2F7-0D3A0FF87E86
                         SourceEvent::EventSpec
-                            Id 231995001
+                            Id 231995001 (OnPlayerHoldingWrongWeapon)
                         TargetEvent::EventSpec
                             Id -1622059917
                         TargetType EventConnectionTargetType_Server
@@ -106,7 +106,7 @@ LogicPrefabBlueprint E234940A-BBA5-55A5-090D-2BF1E339DD3F #primary instance
                         SourceEvent::EventSpec
                             Id 931428496
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(3)::EventConnection
                         Source 606DE694-2EA0-4D45-A2F7-0D3A0FF87E86
@@ -114,13 +114,13 @@ LogicPrefabBlueprint E234940A-BBA5-55A5-090D-2BF1E339DD3F #primary instance
                         SourceEvent::EventSpec
                             Id -1328321720
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(4)::EventConnection
                         Source B7290470-DB19-48EB-A0B0-CC3CDEABF9A5
                         Target 606DE694-2EA0-4D45-A2F7-0D3A0FF87E86
                         SourceEvent::EventSpec
-                            Id 595121690
+                            Id 595121690 (OnPlayerHoldingRightWeapon)
                         TargetEvent::EventSpec
                             Id 502743113
                         TargetType EventConnectionTargetType_Server
@@ -130,7 +130,7 @@ LogicPrefabBlueprint E234940A-BBA5-55A5-090D-2BF1E339DD3F #primary instance
                         SourceEvent::EventSpec
                             Id -1328321720
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(6)::EventConnection
                         Source 606DE694-2EA0-4D45-A2F7-0D3A0FF87E86
@@ -138,13 +138,13 @@ LogicPrefabBlueprint E234940A-BBA5-55A5-090D-2BF1E339DD3F #primary instance
                         SourceEvent::EventSpec
                             Id 931428496
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(7)::EventConnection
                         Source FEAED1C4-538A-4E41-96FC-59327A51B131
                         Target 606DE694-2EA0-4D45-A2F7-0D3A0FF87E86
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
                             Id 502743113
                         TargetType EventConnectionTargetType_Server

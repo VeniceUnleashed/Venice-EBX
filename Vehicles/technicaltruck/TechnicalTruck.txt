@@ -1036,13 +1036,13 @@ InterfaceDescriptorData 082D7C75-82C5-4426-8216-93AACC9DB547
         member(1)::DynamicEvent
             Id -836550305
         member(2)::DynamicEvent
-            Id -244513239
+            Id -244513239 (EnableLights)
         member(3)::DynamicEvent
-            Id 1963075324
+            Id 1963075324 (DisableLights)
     OutputEvents *nullArray*
     InputLinks::array
         member(0)::DynamicLink
-            Id -510838215
+            Id -510838215 (PathFollowing)
     OutputLinks *nullArray*
 LogicReferenceObjectData 82E1629B-4BB5-444F-BE82-E6E3DF0110EF
     $::ReferenceObjectData
@@ -2007,40 +2007,40 @@ VehicleBlueprint E26020C8-9368-709C-0C31-96BFB25CC0AC #primary instance
                         member(0)::PropertyConnection
                             Source 9C55CA99-018F-4FD3-B26B-F9DB980B70FC
                             Target FD27B9DA-93E2-40BC-97F5-68D1CD3C54B7
-                            SourceFieldId 225375086
-                            TargetFieldId 2662400
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 2662400 (Enabled)
                         member(1)::PropertyConnection
                             Source 082D7C75-82C5-4426-8216-93AACC9DB547
                             Target 6FE95FC0-006A-A02F-C706-E21168F3940D
                             SourceFieldId 907311105
-                            TargetFieldId -2024647575
+                            TargetFieldId -2024647575 (Transform)
                         member(2)::PropertyConnection
                             Source B783B06A-46E0-705F-B36C-2BCACFC17507
                             Target AB6CF4A5-015B-4EA7-8B6B-4FD23D2DDFEB
-                            SourceFieldId -383934866
-                            TargetFieldId 674191935
+                            SourceFieldId -383934866 (RelativeWheelTransform)
+                            TargetFieldId 674191935 (InputTransform)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 082D7C75-82C5-4426-8216-93AACC9DB547
                             Target F7423B2C-C685-4A0D-9A7A-F6A82804CA16
-                            SourceFieldId -510838215
+                            SourceFieldId -510838215 (PathFollowing)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 0BF918D1-92B8-4EC6-BCB2-878CDD159C47
                         Target 82E1629B-4BB5-444F-BE82-E6E3DF0110EF
                         SourceEvent::EventSpec
-                            Id 1577401599
+                            Id 1577401599 (OnPlayerEnter)
                         TargetEvent::EventSpec
-                            Id 201149837
+                            Id 201149837 (Enter)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 0BF918D1-92B8-4EC6-BCB2-878CDD159C47
                         Target 82E1629B-4BB5-444F-BE82-E6E3DF0110EF
                         SourceEvent::EventSpec
-                            Id 47785047
+                            Id 47785047 (OnPlayerExit)
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id 2088518501 (Exit)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 082D7C75-82C5-4426-8216-93AACC9DB547
@@ -2048,7 +2048,7 @@ VehicleBlueprint E26020C8-9368-709C-0C31-96BFB25CC0AC #primary instance
                         SourceEvent::EventSpec
                             Id 1485311850
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 082D7C75-82C5-4426-8216-93AACC9DB547
@@ -2056,23 +2056,23 @@ VehicleBlueprint E26020C8-9368-709C-0C31-96BFB25CC0AC #primary instance
                         SourceEvent::EventSpec
                             Id -836550305
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 0C903523-A5FB-4FBF-8CEC-B7F67C5F976A
                         Target AB6CF4A5-015B-4EA7-8B6B-4FD23D2DDFEB
                         SourceEvent::EventSpec
-                            Id 1577401599
+                            Id 1577401599 (OnPlayerEnter)
                         TargetEvent::EventSpec
-                            Id 1577401599
+                            Id 1577401599 (OnPlayerEnter)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source 0C903523-A5FB-4FBF-8CEC-B7F67C5F976A
                         Target AB6CF4A5-015B-4EA7-8B6B-4FD23D2DDFEB
                         SourceEvent::EventSpec
-                            Id 47785047
+                            Id 47785047 (OnPlayerExit)
                         TargetEvent::EventSpec
-                            Id 47785047
+                            Id 47785047 (OnPlayerExit)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 082D7C75-82C5-4426-8216-93AACC9DB547
                 NeedNetworkId True

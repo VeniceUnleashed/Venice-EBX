@@ -784,13 +784,13 @@ InterfaceDescriptorData EC936486-BB69-4BED-B862-F44A97F57458
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id -1089957609
+            Id -1089957609 (ActivateSensing)
         member(1)::DynamicEvent
-            Id -58427146
+            Id -58427146 (DeactivateSensing)
     OutputEvents *nullArray*
     InputLinks::array
         member(0)::DynamicLink
-            Id -510838215
+            Id -510838215 (PathFollowing)
     OutputLinks *nullArray*
 MotionDampingData 5C2D66B2-0829-41F3-8D5D-089F3A245590
     $::DataContainer
@@ -1930,50 +1930,50 @@ VehicleBlueprint 544C278A-4687-47D1-914D-EFF71B5D3C0F #primary instance
                             Source EC936486-BB69-4BED-B862-F44A97F57458
                             Target 37E557DB-9D72-46AE-85DB-89015ECAFEC4
                             SourceFieldId -1872233281
-                            TargetFieldId -2024647575
+                            TargetFieldId -2024647575 (Transform)
                         member(1)::PropertyConnection
                             Source EC936486-BB69-4BED-B862-F44A97F57458
                             Target 2B7B3D3A-1601-4A7A-BEA2-1384828364A5
                             SourceFieldId 1529502628
-                            TargetFieldId -2024647575
+                            TargetFieldId -2024647575 (Transform)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source EC936486-BB69-4BED-B862-F44A97F57458
                             Target 884359C4-E74B-4674-91DE-DA42B175B582
-                            SourceFieldId -510838215
+                            SourceFieldId -510838215 (PathFollowing)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source EC936486-BB69-4BED-B862-F44A97F57458
                         Target 446B5DB0-6D46-4C04-BC26-6E15F4989174
                         SourceEvent::EventSpec
-                            Id -1089957609
+                            Id -1089957609 (ActivateSensing)
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id -559281700 (Activate)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source EC936486-BB69-4BED-B862-F44A97F57458
                         Target 446B5DB0-6D46-4C04-BC26-6E15F4989174
                         SourceEvent::EventSpec
-                            Id -58427146
+                            Id -58427146 (DeactivateSensing)
                         TargetEvent::EventSpec
-                            Id 1928776733
+                            Id 1928776733 (Deactivate)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source BA382302-F7CB-4D56-ADD0-9FA527FAA086
                         Target A39E9509-AD20-41CA-843C-E54C80B492F4
                         SourceEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetEvent::EventSpec
-                            Id -3142077
+                            Id -3142077 (MoveToNextHealthState)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 42669EB2-AAB8-49C2-8A3D-53405E4DD692
                         Target BB9B6478-2299-4372-ABC8-C2FA0BD0973F
                         SourceEvent::EventSpec
-                            Id -1452333337
+                            Id -1452333337 (OnDestroyed)
                         TargetEvent::EventSpec
-                            Id -3142077
+                            Id -3142077 (MoveToNextHealthState)
                         TargetType EventConnectionTargetType_Server
                 Descriptor EC936486-BB69-4BED-B862-F44A97F57458
                 NeedNetworkId True

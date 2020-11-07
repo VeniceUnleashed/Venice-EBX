@@ -57,9 +57,9 @@ InterfaceDescriptorData 9F617FC6-72F8-47B3-B6D0-C57203396B1D
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id 2099208964
+            Id 2099208964 (OnCaptured)
         member(1)::DynamicEvent
-            Id -1433788352
+            Id -1433788352 (OnLost)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -75,47 +75,47 @@ LogicPrefabBlueprint 27A3FDE0-4B4C-4E9C-A18A-1D0C00113521 #primary instance
                         member(0)::PropertyConnection
                             Source 06732471-80E8-449D-ABBC-42DDCFFEB292
                             Target 88E79C86-756E-4237-943E-4505D83F57D1
-                            SourceFieldId 193453899
-                            TargetFieldId 193450864
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 193450864 (In2)
                         member(1)::PropertyConnection
                             Source B83A45CB-7785-4B70-A3EE-717C07C22769
                             Target E07D038D-1A39-45D2-8987-C1C7693AD4E4
-                            SourceFieldId 193453899
-                            TargetFieldId 193450867
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 193450867 (In1)
                         member(2)::PropertyConnection
                             Source DD8175A3-DF26-4DBB-A4F8-140591DE8CE3
                             Target 88E79C86-756E-4237-943E-4505D83F57D1
-                            SourceFieldId 193453899
-                            TargetFieldId 193450867
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 193450867 (In1)
                         member(3)::PropertyConnection
                             Source 9F617FC6-72F8-47B3-B6D0-C57203396B1D
                             Target B83A45CB-7785-4B70-A3EE-717C07C22769
                             SourceFieldId 1838033231
-                            TargetFieldId 5862146
+                            TargetFieldId 5862146 (In)
                         member(4)::PropertyConnection
                             Source 9F617FC6-72F8-47B3-B6D0-C57203396B1D
                             Target DD8175A3-DF26-4DBB-A4F8-140591DE8CE3
                             SourceFieldId 1838033228
-                            TargetFieldId 5862146
+                            TargetFieldId 5862146 (In)
                         member(5)::PropertyConnection
                             Source C4CC8D51-297A-417E-90A4-2209E8C07526
                             Target 06732471-80E8-449D-ABBC-42DDCFFEB292
-                            SourceFieldId 225375086
-                            TargetFieldId 5862146
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 5862146 (In)
                         member(6)::PropertyConnection
                             Source C4CC8D51-297A-417E-90A4-2209E8C07526
                             Target E07D038D-1A39-45D2-8987-C1C7693AD4E4
-                            SourceFieldId 225375086
-                            TargetFieldId 193450864
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 193450864 (In2)
                         member(7)::PropertyConnection
                             Source 88E79C86-756E-4237-943E-4505D83F57D1
                             Target 9F617FC6-72F8-47B3-B6D0-C57203396B1D
-                            SourceFieldId 193453899
+                            SourceFieldId 193453899 (Out)
                             TargetFieldId 1305241068
                         member(8)::PropertyConnection
                             Source E07D038D-1A39-45D2-8987-C1C7693AD4E4
                             Target 9F617FC6-72F8-47B3-B6D0-C57203396B1D
-                            SourceFieldId 193453899
+                            SourceFieldId 193453899 (Out)
                             TargetFieldId -816217137
                     LinkConnections *nullArray*
                 EventConnections::array
@@ -123,33 +123,33 @@ LogicPrefabBlueprint 27A3FDE0-4B4C-4E9C-A18A-1D0C00113521 #primary instance
                         Source 94199A71-E676-4023-942A-A54FFF6A06CD
                         Target C4CC8D51-297A-417E-90A4-2209E8C07526
                         SourceEvent::EventSpec
-                            Id -699931768
+                            Id -699931768 (OnTriggeredByMatchingTeam)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 43BA9331-33D2-46C5-B7EA-125F482AEFAB
                         Target C4CC8D51-297A-417E-90A4-2209E8C07526
                         SourceEvent::EventSpec
-                            Id -699931768
+                            Id -699931768 (OnTriggeredByMatchingTeam)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 9F617FC6-72F8-47B3-B6D0-C57203396B1D
                         Target 43BA9331-33D2-46C5-B7EA-125F482AEFAB
                         SourceEvent::EventSpec
-                            Id 2099208964
+                            Id 2099208964 (OnCaptured)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 9F617FC6-72F8-47B3-B6D0-C57203396B1D
                         Target 94199A71-E676-4023-942A-A54FFF6A06CD
                         SourceEvent::EventSpec
-                            Id 2099208964
+                            Id 2099208964 (OnCaptured)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 9F617FC6-72F8-47B3-B6D0-C57203396B1D
                 NeedNetworkId False

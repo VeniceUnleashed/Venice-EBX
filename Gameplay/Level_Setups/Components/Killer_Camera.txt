@@ -43,18 +43,18 @@ InterfaceDescriptorData 1EAECE94-11F7-46B8-8758-BE94538A7736
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id 1864586301
+            Id 1864586301 (DisableKillerCamera)
         member(1)::DynamicEvent
-            Id 1836723432
+            Id 1836723432 (EnableKillerCamera)
         member(2)::DynamicEvent
             Id 307532887
         member(3)::DynamicEvent
-            Id 1142835204
+            Id 1142835204 (DeactiveKillerCamera)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 114657104
+            Id 114657104 (ActivateKillerCamera)
         member(1)::DynamicEvent
-            Id -1120322543
+            Id -1120322543 (DeactivateKillerCamera)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 LogicPrefabBlueprint DE7D2AA7-6F41-99A6-8236-0FDFFCAE320F #primary instance
@@ -69,54 +69,54 @@ LogicPrefabBlueprint DE7D2AA7-6F41-99A6-8236-0FDFFCAE320F #primary instance
                         member(0)::PropertyConnection
                             Source 1EAECE94-11F7-46B8-8758-BE94538A7736
                             Target 73C933C3-8EC2-4FBC-A84B-1BEBDE3405BF
-                            SourceFieldId 463473966
-                            TargetFieldId 208768368
+                            SourceFieldId 463473966 (KillerCameraTimer)
+                            TargetFieldId 208768368 (Delay)
                         member(1)::PropertyConnection
                             Source 1838E087-12F7-459F-A3B0-F8673786BE8D
                             Target C1DB1392-C028-47FE-A6CD-C7F5EF20048F
-                            SourceFieldId 2014001821
-                            TargetFieldId 5862146
+                            SourceFieldId 2014001821 (BoolSetting)
+                            TargetFieldId 5862146 (In)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source 73C933C3-8EC2-4FBC-A84B-1BEBDE3405BF
                         Target 1C235286-37BF-4031-BC3B-2EA8B15548B5
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 1C235286-37BF-4031-BC3B-2EA8B15548B5
                         Target 1EAECE94-11F7-46B8-8758-BE94538A7736
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 114657104
+                            Id 114657104 (ActivateKillerCamera)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 1EAECE94-11F7-46B8-8758-BE94538A7736
                         Target 1C235286-37BF-4031-BC3B-2EA8B15548B5
                         SourceEvent::EventSpec
-                            Id 1864586301
+                            Id 1864586301 (DisableKillerCamera)
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source 1EAECE94-11F7-46B8-8758-BE94538A7736
                         Target 1C235286-37BF-4031-BC3B-2EA8B15548B5
                         SourceEvent::EventSpec
-                            Id 1836723432
+                            Id 1836723432 (EnableKillerCamera)
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetType EventConnectionTargetType_Client
                     member(4)::EventConnection
                         Source E8D29BAC-D3B9-47B8-81BC-6D9C7DA1571F
                         Target 73C933C3-8EC2-4FBC-A84B-1BEBDE3405BF
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source 1EAECE94-11F7-46B8-8758-BE94538A7736
@@ -124,39 +124,39 @@ LogicPrefabBlueprint DE7D2AA7-6F41-99A6-8236-0FDFFCAE320F #primary instance
                         SourceEvent::EventSpec
                             Id 307532887
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(6)::EventConnection
                         Source 1EAECE94-11F7-46B8-8758-BE94538A7736
                         Target 1EAECE94-11F7-46B8-8758-BE94538A7736
                         SourceEvent::EventSpec
-                            Id 1142835204
+                            Id 1142835204 (DeactiveKillerCamera)
                         TargetEvent::EventSpec
-                            Id -1120322543
+                            Id -1120322543 (DeactivateKillerCamera)
                         TargetType EventConnectionTargetType_Client
                     member(7)::EventConnection
                         Source C1DB1392-C028-47FE-A6CD-C7F5EF20048F
                         Target E8D29BAC-D3B9-47B8-81BC-6D9C7DA1571F
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetType EventConnectionTargetType_Client
                     member(8)::EventConnection
                         Source C1DB1392-C028-47FE-A6CD-C7F5EF20048F
                         Target E8D29BAC-D3B9-47B8-81BC-6D9C7DA1571F
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetType EventConnectionTargetType_Client
                     member(9)::EventConnection
                         Source 1EAECE94-11F7-46B8-8758-BE94538A7736
                         Target 1EAECE94-11F7-46B8-8758-BE94538A7736
                         SourceEvent::EventSpec
-                            Id 1864586301
+                            Id 1864586301 (DisableKillerCamera)
                         TargetEvent::EventSpec
-                            Id -1120322543
+                            Id -1120322543 (DeactivateKillerCamera)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 1EAECE94-11F7-46B8-8758-BE94538A7736
                 NeedNetworkId True

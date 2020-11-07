@@ -99,19 +99,19 @@ InterfaceDescriptorData 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id -274579609
+            Id -274579609 (Destroy)
         member(1)::DynamicEvent
             Id -2133114444
     OutputEvents::array
         member(0)::DynamicEvent
-            Id -910201930
+            Id -910201930 (Player)
         member(1)::DynamicEvent
-            Id 1499404377
+            Id 1499404377 (ScenarioFinished)
         member(2)::DynamicEvent
             Id -1042848550
     InputLinks::array
         member(0)::DynamicLink
-            Id 772552445
+            Id 772552445 (Vehicle)
     OutputLinks *nullArray*
 LocatorEntityData 10BD3BF5-42E8-4E7D-9E38-8759419900C8
     $::SpatialEntityData
@@ -230,52 +230,52 @@ SpatialPrefabBlueprint C40B24DC-A518-6902-D958-AD1633385E4F #primary instance
                         member(0)::PropertyConnection
                             Source 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
                             Target FED7ACFA-623B-401F-9266-5FDECACD9C84
-                            SourceFieldId 2085022312
-                            TargetFieldId 2085022312
+                            SourceFieldId 2085022312 (ControllableTransform)
+                            TargetFieldId 2085022312 (ControllableTransform)
                         member(1)::PropertyConnection
                             Source 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
                             Target FED7ACFA-623B-401F-9266-5FDECACD9C84
-                            SourceFieldId 922982664
-                            TargetFieldId 922982664
+                            SourceFieldId 922982664 (Immortal)
+                            TargetFieldId 922982664 (Immortal)
                         member(2)::PropertyConnection
                             Source FED7ACFA-623B-401F-9266-5FDECACD9C84
                             Target 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
-                            SourceFieldId 191418609
-                            TargetFieldId 191418609
+                            SourceFieldId 191418609 (ClientControllableTransform)
+                            TargetFieldId 191418609 (ClientControllableTransform)
                         member(3)::PropertyConnection
                             Source 973E20AA-0847-4753-ADEB-4EED4B4537F0
                             Target FED7ACFA-623B-401F-9266-5FDECACD9C84
-                            SourceFieldId 2088806864
+                            SourceFieldId 2088806864 (Base)
                             TargetFieldId -1824643787
                         member(4)::PropertyConnection
                             Source 10BD3BF5-42E8-4E7D-9E38-8759419900C8
                             Target 973E20AA-0847-4753-ADEB-4EED4B4537F0
-                            SourceFieldId 1925266716
-                            TargetFieldId -458317300
+                            SourceFieldId 1925266716 (DynamicTransform)
+                            TargetFieldId -458317300 (AnimationEntitySpace)
                         member(5)::PropertyConnection
                             Source 8D785F7D-D2D5-4710-9058-6D44BF98A4BD
                             Target FED7ACFA-623B-401F-9266-5FDECACD9C84
-                            SourceFieldId 48673745
+                            SourceFieldId 48673745 (Rotation)
                             TargetFieldId 2069872220
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
                             Target FED7ACFA-623B-401F-9266-5FDECACD9C84
-                            SourceFieldId 772552445
+                            SourceFieldId 772552445 (Vehicle)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source FED7ACFA-623B-401F-9266-5FDECACD9C84
                             Target 155CFD5A-30EC-42F6-3457-787CE9288D9F
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
                         Target FED7ACFA-623B-401F-9266-5FDECACD9C84
                         SourceEvent::EventSpec
-                            Id -274579609
+                            Id -274579609 (Destroy)
                         TargetEvent::EventSpec
-                            Id -274579609
+                            Id -274579609 (Destroy)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
@@ -283,7 +283,7 @@ SpatialPrefabBlueprint C40B24DC-A518-6902-D958-AD1633385E4F #primary instance
                         SourceEvent::EventSpec
                             Id -2133114444
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(2)::EventConnection
                         Source 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
@@ -291,7 +291,7 @@ SpatialPrefabBlueprint C40B24DC-A518-6902-D958-AD1633385E4F #primary instance
                         SourceEvent::EventSpec
                             Id -2133114444
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source FED7ACFA-623B-401F-9266-5FDECACD9C84
@@ -307,23 +307,23 @@ SpatialPrefabBlueprint C40B24DC-A518-6902-D958-AD1633385E4F #primary instance
                         SourceEvent::EventSpec
                             Id -2133114444
                         TargetEvent::EventSpec
-                            Id -560359853
+                            Id -560359853 (TriggerScenario)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(5)::EventConnection
                         Source DEC410C3-FB02-4589-8BC3-A01C5A3C43CD
                         Target 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetType EventConnectionTargetType_Client
                     member(6)::EventConnection
                         Source 9387E7A3-D9FA-45A3-9753-A3DEF4F3ABA2
                         Target 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
                         SourceEvent::EventSpec
-                            Id -702100586
+                            Id -702100586 (TriggerActor)
                         TargetEvent::EventSpec
-                            Id -910201930
+                            Id -910201930 (Player)
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor 2F2C4E2B-95F3-4944-8C1D-5DF694BCF79D
                 NeedNetworkId True

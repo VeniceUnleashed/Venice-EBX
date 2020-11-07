@@ -10,10 +10,10 @@ InterfaceDescriptorData 4D5E41E7-59CF-45FF-9441-E2FCFF7BEE08
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id 2084504595
+            Id 2084504595 (StartAnimation)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 712501883
+            Id 712501883 (OnAnimationStopped)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 ModelAnimationEntityData F85CFE2A-437D-4821-A4AC-76F67A17B866
@@ -105,30 +105,30 @@ SpatialPrefabBlueprint 286BFEB9-28C9-DDA4-DC87-296984A12EEC #primary instance
                         member(0)::PropertyConnection
                             Source 4D5E41E7-59CF-45FF-9441-E2FCFF7BEE08
                             Target F85CFE2A-437D-4821-A4AC-76F67A17B866
-                            SourceFieldId -2132289043
-                            TargetFieldId -2132289043
+                            SourceFieldId -2132289043 (ExternalTime)
+                            TargetFieldId -2132289043 (ExternalTime)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source F85CFE2A-437D-4821-A4AC-76F67A17B866
                             Target 2C543205-C671-4FCD-9D99-71ABB0E687D6
-                            SourceFieldId 453968090
+                            SourceFieldId 453968090 (SkinnedModel)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source F85CFE2A-437D-4821-A4AC-76F67A17B866
                         Target 4D5E41E7-59CF-45FF-9441-E2FCFF7BEE08
                         SourceEvent::EventSpec
-                            Id -1176973715
+                            Id -1176973715 (OnStopped)
                         TargetEvent::EventSpec
-                            Id 712501883
+                            Id 712501883 (OnAnimationStopped)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 4D5E41E7-59CF-45FF-9441-E2FCFF7BEE08
                         Target F85CFE2A-437D-4821-A4AC-76F67A17B866
                         SourceEvent::EventSpec
-                            Id 2084504595
+                            Id 2084504595 (StartAnimation)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 4D5E41E7-59CF-45FF-9441-E2FCFF7BEE08
                 NeedNetworkId False

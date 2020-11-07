@@ -158,18 +158,18 @@ InterfaceDescriptorData ED6D77C5-0448-4A88-96E0-F429D5C38EFA
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
         member(1)::DynamicEvent
-            Id 2089125447
+            Id 2089125447 (Kill)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 2008897511
+            Id 2008897511 (OnKilled)
         member(1)::DynamicEvent
-            Id -1036968738
+            Id -1036968738 (OnSpawned)
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id -1481696500
+            Id -1481696500 (RouteWaypoints)
 PatrolOrderEntityData C184CE02-8565-408A-B2D8-5C7E1AD9825F
     $::BFOrderEntityData
         $::OrderEntityData
@@ -205,66 +205,66 @@ SpatialPrefabBlueprint 5F3970C2-9D67-E99A-6C92-5E4DAFE22D00 #primary instance
                         member(0)::LinkConnection
                             Source C184CE02-8565-408A-B2D8-5C7E1AD9825F
                             Target E9781DCD-D1BA-4346-A2CF-22E45661D565
-                            SourceFieldId -616190660
+                            SourceFieldId -616190660 (Soldiers)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source C184CE02-8565-408A-B2D8-5C7E1AD9825F
                             Target ED6D77C5-0448-4A88-96E0-F429D5C38EFA
-                            SourceFieldId -1481696500
-                            TargetFieldId -1481696500
+                            SourceFieldId -1481696500 (RouteWaypoints)
+                            TargetFieldId -1481696500 (RouteWaypoints)
                         member(2)::LinkConnection
                             Source E9781DCD-D1BA-4346-A2CF-22E45661D565
                             Target 29883741-5782-773F-6F9F-48B9DA9AFD00
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source ED6D77C5-0448-4A88-96E0-F429D5C38EFA
                         Target E9781DCD-D1BA-4346-A2CF-22E45661D565
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source E9781DCD-D1BA-4346-A2CF-22E45661D565
                         Target ED6D77C5-0448-4A88-96E0-F429D5C38EFA
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(2)::EventConnection
                         Source E9781DCD-D1BA-4346-A2CF-22E45661D565
                         Target E9781DCD-D1BA-4346-A2CF-22E45661D565
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 1360982724
+                            Id 1360982724 (FlashlightOff)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source E9781DCD-D1BA-4346-A2CF-22E45661D565
                         Target C184CE02-8565-408A-B2D8-5C7E1AD9825F
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source ED6D77C5-0448-4A88-96E0-F429D5C38EFA
                         Target E9781DCD-D1BA-4346-A2CF-22E45661D565
                         SourceEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetType EventConnectionTargetType_Server
                     member(5)::EventConnection
                         Source E9781DCD-D1BA-4346-A2CF-22E45661D565
                         Target ED6D77C5-0448-4A88-96E0-F429D5C38EFA
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor ED6D77C5-0448-4A88-96E0-F429D5C38EFA
                 NeedNetworkId True

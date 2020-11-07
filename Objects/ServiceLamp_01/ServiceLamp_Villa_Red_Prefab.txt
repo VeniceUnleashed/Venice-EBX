@@ -38,9 +38,9 @@ InterfaceDescriptorData 1A4BD8C0-640F-4D29-91FA-62656B6DB3E6
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id -1093023431
+            Id -1093023431 (TurnOn)
         member(1)::DynamicEvent
-            Id -1710035145
+            Id -1710035145 (TurnOff)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -146,65 +146,65 @@ SpatialPrefabBlueprint 90C82F58-477D-ACA4-CB64-47072A5A816C #primary instance
                         member(0)::PropertyConnection
                             Source CDD639B1-CA4A-4A44-B513-63C90B1A42C4
                             Target D67231D7-B6FD-4B88-A5B8-DA7EAB1A44E3
-                            SourceFieldId 1564494525
-                            TargetFieldId -670630719
+                            SourceFieldId 1564494525 (CurrentVariation)
+                            TargetFieldId -670630719 (ObjectVariation)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source 1A4BD8C0-640F-4D29-91FA-62656B6DB3E6
                         Target 31D81405-1D72-47B2-9400-1D7A04E0818E
                         SourceEvent::EventSpec
-                            Id -1093023431
+                            Id -1093023431 (TurnOn)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 31D81405-1D72-47B2-9400-1D7A04E0818E
                         Target 098770CA-8D34-4487-8D9A-257EEBC393C2
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(2)::EventConnection
                         Source 31D81405-1D72-47B2-9400-1D7A04E0818E
                         Target CDD639B1-CA4A-4A44-B513-63C90B1A42C4
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 1489724583
+                            Id 1489724583 (SetVariation1)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(3)::EventConnection
                         Source 796CA475-2EDF-4415-B1BA-F410EFF168B7
                         Target CDD639B1-CA4A-4A44-B513-63C90B1A42C4
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 1489724580
+                            Id 1489724580 (SetVariation2)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(4)::EventConnection
                         Source 796CA475-2EDF-4415-B1BA-F410EFF168B7
                         Target 098770CA-8D34-4487-8D9A-257EEBC393C2
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(5)::EventConnection
                         Source 1A4BD8C0-640F-4D29-91FA-62656B6DB3E6
                         Target 796CA475-2EDF-4415-B1BA-F410EFF168B7
                         SourceEvent::EventSpec
-                            Id -1710035145
+                            Id -1710035145 (TurnOff)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source B16F6B1B-833C-4EBA-AA93-2D8E3016C22B
                         Target 796CA475-2EDF-4415-B1BA-F410EFF168B7
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 1A4BD8C0-640F-4D29-91FA-62656B6DB3E6
                 NeedNetworkId True

@@ -158,20 +158,20 @@ InterfaceDescriptorData 461F8085-B69A-44C5-BABF-C4F7E83B40F8
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
         member(1)::DynamicEvent
-            Id 2089125447
+            Id 2089125447 (Kill)
         member(2)::DynamicEvent
-            Id 1149984791
+            Id 1149984791 (CancelAutoSpawn)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 2008897511
+            Id 2008897511 (OnKilled)
         member(1)::DynamicEvent
-            Id -1036968738
+            Id -1036968738 (OnSpawned)
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id -1481696500
+            Id -1481696500 (RouteWaypoints)
 PatrolOrderEntityData CC95F8B9-6EFE-409F-9D93-947B053DBBCA
     $::BFOrderEntityData
         $::OrderEntityData
@@ -207,74 +207,74 @@ SpatialPrefabBlueprint 22C7ACC1-4C5A-459D-B200-AD210CC2A18B #primary instance
                         member(0)::LinkConnection
                             Source CC95F8B9-6EFE-409F-9D93-947B053DBBCA
                             Target 8BFA744C-A119-4F42-B30D-39F66CD0FC65
-                            SourceFieldId -616190660
+                            SourceFieldId -616190660 (Soldiers)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source CC95F8B9-6EFE-409F-9D93-947B053DBBCA
                             Target 461F8085-B69A-44C5-BABF-C4F7E83B40F8
-                            SourceFieldId -1481696500
-                            TargetFieldId -1481696500
+                            SourceFieldId -1481696500 (RouteWaypoints)
+                            TargetFieldId -1481696500 (RouteWaypoints)
                         member(2)::LinkConnection
                             Source 8BFA744C-A119-4F42-B30D-39F66CD0FC65
                             Target 8537401E-6D10-E02A-6AAF-A951C579FE47
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 461F8085-B69A-44C5-BABF-C4F7E83B40F8
                         Target 8BFA744C-A119-4F42-B30D-39F66CD0FC65
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 8BFA744C-A119-4F42-B30D-39F66CD0FC65
                         Target 461F8085-B69A-44C5-BABF-C4F7E83B40F8
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(2)::EventConnection
                         Source 8BFA744C-A119-4F42-B30D-39F66CD0FC65
                         Target 8BFA744C-A119-4F42-B30D-39F66CD0FC65
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 1360982724
+                            Id 1360982724 (FlashlightOff)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 8BFA744C-A119-4F42-B30D-39F66CD0FC65
                         Target CC95F8B9-6EFE-409F-9D93-947B053DBBCA
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 461F8085-B69A-44C5-BABF-C4F7E83B40F8
                         Target 8BFA744C-A119-4F42-B30D-39F66CD0FC65
                         SourceEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetType EventConnectionTargetType_Server
                     member(5)::EventConnection
                         Source 8BFA744C-A119-4F42-B30D-39F66CD0FC65
                         Target 461F8085-B69A-44C5-BABF-C4F7E83B40F8
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(6)::EventConnection
                         Source 461F8085-B69A-44C5-BABF-C4F7E83B40F8
                         Target 8BFA744C-A119-4F42-B30D-39F66CD0FC65
                         SourceEvent::EventSpec
-                            Id 1149984791
+                            Id 1149984791 (CancelAutoSpawn)
                         TargetEvent::EventSpec
-                            Id 1149984791
+                            Id 1149984791 (CancelAutoSpawn)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 461F8085-B69A-44C5-BABF-C4F7E83B40F8
                 NeedNetworkId True

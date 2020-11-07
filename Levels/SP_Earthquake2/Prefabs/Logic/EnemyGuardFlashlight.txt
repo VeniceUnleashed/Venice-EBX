@@ -228,30 +228,30 @@ InterfaceDescriptorData FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
         member(1)::DynamicEvent
-            Id 568246089
+            Id 568246089 (DisableTrigger)
         member(2)::DynamicEvent
-            Id -2073791108
+            Id -2073791108 (EnableTrigger)
         member(3)::DynamicEvent
-            Id 1883421003
+            Id 1883421003 (StartScenario)
         member(4)::DynamicEvent
-            Id -1780865430
+            Id -1780865430 (FlashlightOn)
         member(5)::DynamicEvent
-            Id 1360982724
+            Id 1360982724 (FlashlightOff)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 1762125924
+            Id 1762125924 (OnDestinationReached)
         member(1)::DynamicEvent
             Id -1615313360
         member(2)::DynamicEvent
-            Id 2008897511
+            Id 2008897511 (OnKilled)
     InputLinks::array
         member(0)::DynamicLink
-            Id -1450328209
+            Id -1450328209 (Soldier)
     OutputLinks::array
         member(0)::DynamicLink
-            Id -1481696500
+            Id -1481696500 (RouteWaypoints)
 OBBData 54CF29AE-0BD6-408A-9F84-7250D841EBA4
     $::BaseShapeData
         $::GameObjectData
@@ -328,55 +328,55 @@ SpatialPrefabBlueprint E48F0C88-5BCA-4DB1-D3C5-C41D80CFB04D #primary instance
                         member(0)::PropertyConnection
                             Source 0586B31D-4EA0-4AF7-BC5E-B9F589B970B0
                             Target 673841C2-A866-4AAF-B236-FEF93BDEB081
-                            SourceFieldId 193453899
-                            TargetFieldId -2104655949
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId -2104655949 (GeometryTransform)
                         member(1)::PropertyConnection
                             Source E98A1FBB-4B6B-4E85-9583-07B0695E397A
                             Target 0586B31D-4EA0-4AF7-BC5E-B9F589B970B0
-                            SourceFieldId 20098859
-                            TargetFieldId 193450864
+                            SourceFieldId 20098859 (WeaponTransform)
+                            TargetFieldId 193450864 (In2)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source F073EA1E-B780-4BE0-A893-7C0E15391C36
                             Target E98A1FBB-4B6B-4E85-9583-07B0695E397A
-                            SourceFieldId -616190660
+                            SourceFieldId -616190660 (Soldiers)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source F073EA1E-B780-4BE0-A893-7C0E15391C36
                             Target FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
-                            SourceFieldId -1481696500
-                            TargetFieldId -1481696500
+                            SourceFieldId -1481696500 (RouteWaypoints)
+                            TargetFieldId -1481696500 (RouteWaypoints)
                         member(2)::LinkConnection
                             Source FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                             Target E98A1FBB-4B6B-4E85-9583-07B0695E397A
-                            SourceFieldId -1450328209
+                            SourceFieldId -1450328209 (Soldier)
                             TargetFieldId 0
                         member(3)::LinkConnection
                             Source 673841C2-A866-4AAF-B236-FEF93BDEB081
                             Target 54CF29AE-0BD6-408A-9F84-7250D841EBA4
-                            SourceFieldId 838548383
+                            SourceFieldId 838548383 (Geometry)
                             TargetFieldId 0
                         member(4)::LinkConnection
                             Source E98A1FBB-4B6B-4E85-9583-07B0695E397A
                             Target 80241E2A-F12E-1C64-A878-D1537017BEE3
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source F073EA1E-B780-4BE0-A893-7C0E15391C36
                         Target E98A1FBB-4B6B-4E85-9583-07B0695E397A
                         SourceEvent::EventSpec
-                            Id -65989091
+                            Id -65989091 (OnIssue)
                         TargetEvent::EventSpec
-                            Id 851843788
+                            Id 851843788 (DisableSenses)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                         Target F073EA1E-B780-4BE0-A893-7C0E15391C36
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 673841C2-A866-4AAF-B236-FEF93BDEB081
@@ -384,15 +384,15 @@ SpatialPrefabBlueprint E48F0C88-5BCA-4DB1-D3C5-C41D80CFB04D #primary instance
                         SourceEvent::EventSpec
                             Id -80368276
                         TargetEvent::EventSpec
-                            Id 425551065
+                            Id 425551065 (EnableSenses)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source F073EA1E-B780-4BE0-A893-7C0E15391C36
                         Target FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 673841C2-A866-4AAF-B236-FEF93BDEB081
@@ -406,25 +406,25 @@ SpatialPrefabBlueprint E48F0C88-5BCA-4DB1-D3C5-C41D80CFB04D #primary instance
                         Source B4605CCF-B925-4E92-8BFC-1B591B80A9E1
                         Target E98A1FBB-4B6B-4E85-9583-07B0695E397A
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 777187609
+                            Id 777187609 (TakeControl)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source 6D0DF0A6-715A-4A1E-8EFF-28CEE7825560
                         Target E98A1FBB-4B6B-4E85-9583-07B0695E397A
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 1559635997
+                            Id 1559635997 (FireStart)
                         TargetType EventConnectionTargetType_Server
                     member(7)::EventConnection
                         Source B4605CCF-B925-4E92-8BFC-1B591B80A9E1
                         Target 6D0DF0A6-715A-4A1E-8EFF-28CEE7825560
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(8)::EventConnection
                         Source 673841C2-A866-4AAF-B236-FEF93BDEB081
@@ -432,63 +432,63 @@ SpatialPrefabBlueprint E48F0C88-5BCA-4DB1-D3C5-C41D80CFB04D #primary instance
                         SourceEvent::EventSpec
                             Id -80368276
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(9)::EventConnection
                         Source FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                         Target 673841C2-A866-4AAF-B236-FEF93BDEB081
                         SourceEvent::EventSpec
-                            Id 568246089
+                            Id 568246089 (DisableTrigger)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_Server
                     member(10)::EventConnection
                         Source FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                         Target 673841C2-A866-4AAF-B236-FEF93BDEB081
                         SourceEvent::EventSpec
-                            Id -2073791108
+                            Id -2073791108 (EnableTrigger)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_Server
                     member(11)::EventConnection
                         Source FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                         Target E98A1FBB-4B6B-4E85-9583-07B0695E397A
                         SourceEvent::EventSpec
-                            Id 1883421003
+                            Id 1883421003 (StartScenario)
                         TargetEvent::EventSpec
-                            Id 1883421003
+                            Id 1883421003 (StartScenario)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(12)::EventConnection
                         Source E98A1FBB-4B6B-4E85-9583-07B0695E397A
                         Target FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(13)::EventConnection
                         Source FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                         Target E98A1FBB-4B6B-4E85-9583-07B0695E397A
                         SourceEvent::EventSpec
-                            Id -1780865430
+                            Id -1780865430 (FlashlightOn)
                         TargetEvent::EventSpec
-                            Id -1780865430
+                            Id -1780865430 (FlashlightOn)
                         TargetType EventConnectionTargetType_Server
                     member(14)::EventConnection
                         Source FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                         Target E98A1FBB-4B6B-4E85-9583-07B0695E397A
                         SourceEvent::EventSpec
-                            Id 1360982724
+                            Id 1360982724 (FlashlightOff)
                         TargetEvent::EventSpec
-                            Id 1360982724
+                            Id 1360982724 (FlashlightOff)
                         TargetType EventConnectionTargetType_Server
                     member(15)::EventConnection
                         Source E98A1FBB-4B6B-4E85-9583-07B0695E397A
                         Target E98A1FBB-4B6B-4E85-9583-07B0695E397A
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 1360982724
+                            Id 1360982724 (FlashlightOff)
                         TargetType EventConnectionTargetType_Server
                 Descriptor FB9562EC-ED4E-43B1-83CB-BD6BC60463C7
                 NeedNetworkId True

@@ -34,7 +34,7 @@ InterfaceDescriptorData DC4171EC-3ED0-4664-A1D9-D9B80F01618C
             Id -1734453748
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 1499404377
+            Id 1499404377 (ScenarioFinished)
         member(1)::DynamicEvent
             Id -1565787539
         member(2)::DynamicEvent
@@ -42,7 +42,7 @@ InterfaceDescriptorData DC4171EC-3ED0-4664-A1D9-D9B80F01618C
         member(3)::DynamicEvent
             Id -136322852
         member(4)::DynamicEvent
-            Id -721579565
+            Id -721579565 (TriggerProps)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 MultipleActorScenarioEntityData 4E258982-4E73-4C9C-99AD-784B3A6ACF39
@@ -141,13 +141,13 @@ SpatialPrefabBlueprint 77717D37-25A6-4E7C-AF78-92A3AFDB8F8A #primary instance
                         member(0)::PropertyConnection
                             Source DC4171EC-3ED0-4664-A1D9-D9B80F01618C
                             Target 4E258982-4E73-4C9C-99AD-784B3A6ACF39
-                            SourceFieldId -2132289043
-                            TargetFieldId -2132289043
+                            SourceFieldId -2132289043 (ExternalTime)
+                            TargetFieldId -2132289043 (ExternalTime)
                         member(1)::PropertyConnection
                             Source DC4171EC-3ED0-4664-A1D9-D9B80F01618C
                             Target 4E258982-4E73-4C9C-99AD-784B3A6ACF39
-                            SourceFieldId -1392905554
-                            TargetFieldId -1392905554
+                            SourceFieldId -1392905554 (UseExternalTime)
+                            TargetFieldId -1392905554 (UseExternalTime)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
@@ -156,13 +156,13 @@ SpatialPrefabBlueprint 77717D37-25A6-4E7C-AF78-92A3AFDB8F8A #primary instance
                         SourceEvent::EventSpec
                             Id -1734453748
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id 1037701496 (ForceStart)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 4E258982-4E73-4C9C-99AD-784B3A6ACF39
                         Target DC4171EC-3ED0-4664-A1D9-D9B80F01618C
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id -1694482841 (TriggerActor1)
                         TargetEvent::EventSpec
                             Id -1565787539
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -170,7 +170,7 @@ SpatialPrefabBlueprint 77717D37-25A6-4E7C-AF78-92A3AFDB8F8A #primary instance
                         Source 4E258982-4E73-4C9C-99AD-784B3A6ACF39
                         Target DC4171EC-3ED0-4664-A1D9-D9B80F01618C
                         SourceEvent::EventSpec
-                            Id -1694482844
+                            Id -1694482844 (TriggerActor2)
                         TargetEvent::EventSpec
                             Id -555039772
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -178,7 +178,7 @@ SpatialPrefabBlueprint 77717D37-25A6-4E7C-AF78-92A3AFDB8F8A #primary instance
                         Source 4E258982-4E73-4C9C-99AD-784B3A6ACF39
                         Target DC4171EC-3ED0-4664-A1D9-D9B80F01618C
                         SourceEvent::EventSpec
-                            Id -1694482843
+                            Id -1694482843 (TriggerActor3)
                         TargetEvent::EventSpec
                             Id -136322852
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -186,33 +186,33 @@ SpatialPrefabBlueprint 77717D37-25A6-4E7C-AF78-92A3AFDB8F8A #primary instance
                         Source 4E258982-4E73-4C9C-99AD-784B3A6ACF39
                         Target 4C4A7CCD-1C1A-4359-85C3-5C100D9E2C9E
                         SourceEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetEvent::EventSpec
-                            Id -1573253508
+                            Id -1573253508 (Client)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source 4C4A7CCD-1C1A-4359-85C3-5C100D9E2C9E
                         Target DC4171EC-3ED0-4664-A1D9-D9B80F01618C
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(6)::EventConnection
                         Source 4E258982-4E73-4C9C-99AD-784B3A6ACF39
                         Target 3E90E9EF-CD7A-4FB4-9F2C-E3F0181381AC
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetEvent::EventSpec
-                            Id -1573253508
+                            Id -1573253508 (Client)
                         TargetType EventConnectionTargetType_Client
                     member(7)::EventConnection
                         Source 3E90E9EF-CD7A-4FB4-9F2C-E3F0181381AC
                         Target DC4171EC-3ED0-4664-A1D9-D9B80F01618C
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetType EventConnectionTargetType_Server
                 Descriptor DC4171EC-3ED0-4664-A1D9-D9B80F01618C
                 NeedNetworkId True

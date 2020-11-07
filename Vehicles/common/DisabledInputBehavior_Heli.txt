@@ -53,9 +53,9 @@ InterfaceDescriptorData F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id -62145612
+            Id -62145612 (OnDisabled)
         member(1)::DynamicEvent
-            Id 707417003
+            Id 707417003 (OnFullHealth)
     OutputEvents::array
         member(0)::DynamicEvent
             Id 2117264948
@@ -63,13 +63,13 @@ InterfaceDescriptorData F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
             Id 1150266842
     InputLinks::array
         member(0)::DynamicLink
-            Id -1585193683
+            Id -1585193683 (Throttle)
         member(1)::DynamicLink
-            Id 2089387576
+            Id 2089387576 (Roll)
         member(2)::DynamicLink
-            Id 193468618
+            Id 193468618 (Yaw)
         member(3)::DynamicLink
-            Id 211741658
+            Id 211741658 (Brake)
     OutputLinks *nullArray*
 LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
     $::PrefabBlueprint
@@ -83,50 +83,50 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
                         member(0)::PropertyConnection
                             Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                             Target 4CC3D26C-3618-4B10-BDF2-96E6683D70B2
-                            SourceFieldId 193453899
-                            TargetFieldId 2662400
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 2662400 (Enabled)
                         member(1)::PropertyConnection
                             Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                             Target EE63321A-204A-4714-AF3E-68200005AE5A
-                            SourceFieldId 193453899
-                            TargetFieldId 2662400
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 2662400 (Enabled)
                         member(2)::PropertyConnection
                             Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                             Target FF3C8F28-7F68-4920-B32B-03ED227D4E2E
-                            SourceFieldId 193453899
-                            TargetFieldId 2662400
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 2662400 (Enabled)
                         member(3)::PropertyConnection
                             Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                             Target 933689E2-5A48-4304-8DBA-E53244ACD51E
-                            SourceFieldId 193453899
-                            TargetFieldId 2662400
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 2662400 (Enabled)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                             Target FF3C8F28-7F68-4920-B32B-03ED227D4E2E
-                            SourceFieldId -1585193683
+                            SourceFieldId -1585193683 (Throttle)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                             Target EE63321A-204A-4714-AF3E-68200005AE5A
-                            SourceFieldId 2089387576
+                            SourceFieldId 2089387576 (Roll)
                             TargetFieldId 0
                         member(2)::LinkConnection
                             Source F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                             Target 933689E2-5A48-4304-8DBA-E53244ACD51E
-                            SourceFieldId 211741658
+                            SourceFieldId 211741658 (Brake)
                             TargetFieldId 0
                         member(3)::LinkConnection
                             Source F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                             Target 4CC3D26C-3618-4B10-BDF2-96E6683D70B2
-                            SourceFieldId 193468618
+                            SourceFieldId 193468618 (Yaw)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                         Target F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
                             Id 2117264948
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -134,7 +134,7 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
                         Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                         Target F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
                             Id 1150266842
                         TargetType EventConnectionTargetType_Client
@@ -142,17 +142,17 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
                         Source F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                         Target 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                         SourceEvent::EventSpec
-                            Id -62145612
+                            Id -62145612 (OnDisabled)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                         Target 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                         SourceEvent::EventSpec
-                            Id 707417003
+                            Id 707417003 (OnFullHealth)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Server
                 Descriptor F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                 NeedNetworkId True

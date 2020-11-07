@@ -154,13 +154,13 @@ InterfaceDescriptorData 52818E60-EE6E-4FC8-9DF8-6ABD1F203F3B
         member(0)::DynamicEvent
             Id -80368276
         member(1)::DynamicEvent
-            Id -70038721
+            Id -70038721 (OnLeave)
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id 302073829
+            Id 302073829 (FirstGeometry)
         member(1)::DynamicLink
-            Id -1445659985
+            Id -1445659985 (SecondGeometry)
 LogicPrefabBlueprint 21409D15-CF9D-F59C-D0DA-BFF5F86F81CE #primary instance
     $::PrefabBlueprint
         $::Blueprint
@@ -173,24 +173,24 @@ LogicPrefabBlueprint 21409D15-CF9D-F59C-D0DA-BFF5F86F81CE #primary instance
                         member(0)::PropertyConnection
                             Source E3AC4AAB-88F8-409E-9D21-1A6E5A9E276C
                             Target 90296CD4-6118-4042-96E3-BADD6B393CA6
-                            SourceFieldId 225375086
-                            TargetFieldId 2088812747
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 2088812747 (Bool)
                         member(1)::PropertyConnection
                             Source E3AC4AAB-88F8-409E-9D21-1A6E5A9E276C
                             Target 52818E60-EE6E-4FC8-9DF8-6ABD1F203F3B
-                            SourceFieldId 225375086
-                            TargetFieldId 703611427
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 703611427 (IsInside)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 965FCD89-7E0D-4DFE-95F4-05DD937BB33E
                             Target 52818E60-EE6E-4FC8-9DF8-6ABD1F203F3B
-                            SourceFieldId 838548383
-                            TargetFieldId 302073829
+                            SourceFieldId 838548383 (Geometry)
+                            TargetFieldId 302073829 (FirstGeometry)
                         member(1)::LinkConnection
                             Source DB66A769-D3AE-4213-B5F2-371E38D2EF4E
                             Target 52818E60-EE6E-4FC8-9DF8-6ABD1F203F3B
-                            SourceFieldId 838548383
-                            TargetFieldId -1445659985
+                            SourceFieldId 838548383 (Geometry)
+                            TargetFieldId -1445659985 (SecondGeometry)
                 EventConnections::array
                     member(0)::EventConnection
                         Source DB66A769-D3AE-4213-B5F2-371E38D2EF4E
@@ -198,7 +198,7 @@ LogicPrefabBlueprint 21409D15-CF9D-F59C-D0DA-BFF5F86F81CE #primary instance
                         SourceEvent::EventSpec
                             Id -80368276
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 965FCD89-7E0D-4DFE-95F4-05DD937BB33E
@@ -206,13 +206,13 @@ LogicPrefabBlueprint 21409D15-CF9D-F59C-D0DA-BFF5F86F81CE #primary instance
                         SourceEvent::EventSpec
                             Id -80368276
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 90296CD4-6118-4042-96E3-BADD6B393CA6
                         Target 52818E60-EE6E-4FC8-9DF8-6ABD1F203F3B
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
                             Id -80368276
                         TargetType EventConnectionTargetType_Server
@@ -220,9 +220,9 @@ LogicPrefabBlueprint 21409D15-CF9D-F59C-D0DA-BFF5F86F81CE #primary instance
                         Source 90296CD4-6118-4042-96E3-BADD6B393CA6
                         Target 52818E60-EE6E-4FC8-9DF8-6ABD1F203F3B
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
-                            Id -70038721
+                            Id -70038721 (OnLeave)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 52818E60-EE6E-4FC8-9DF8-6ABD1F203F3B
                 NeedNetworkId False

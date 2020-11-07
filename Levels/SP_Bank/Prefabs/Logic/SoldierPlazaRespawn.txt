@@ -158,14 +158,14 @@ InterfaceDescriptorData 575F07FF-BBB9-4FF6-AE7C-398A50A402FF
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 1773530255
+            Id 1773530255 (StartSoldier)
         member(1)::DynamicEvent
-            Id 1149984791
+            Id 1149984791 (CancelAutoSpawn)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id 1635609973
+            Id 1635609973 (Waypoints)
 PatrolOrderEntityData FDF1FAC8-5B3F-4CF2-A57C-B1A2B597F34B
     $::BFOrderEntityData
         $::OrderEntityData
@@ -201,50 +201,50 @@ SpatialPrefabBlueprint E40ED662-5759-21C6-9296-45BD358341E8 #primary instance
                         member(0)::LinkConnection
                             Source FDF1FAC8-5B3F-4CF2-A57C-B1A2B597F34B
                             Target 3772E772-6197-4CD9-ABD3-C1C82466E44D
-                            SourceFieldId -616190660
+                            SourceFieldId -616190660 (Soldiers)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source FDF1FAC8-5B3F-4CF2-A57C-B1A2B597F34B
                             Target 575F07FF-BBB9-4FF6-AE7C-398A50A402FF
-                            SourceFieldId -1481696500
-                            TargetFieldId 1635609973
+                            SourceFieldId -1481696500 (RouteWaypoints)
+                            TargetFieldId 1635609973 (Waypoints)
                         member(2)::LinkConnection
                             Source 3772E772-6197-4CD9-ABD3-C1C82466E44D
                             Target 8D7039B6-369F-90D3-4888-4584F4B71EED
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 575F07FF-BBB9-4FF6-AE7C-398A50A402FF
                         Target FDF1FAC8-5B3F-4CF2-A57C-B1A2B597F34B
                         SourceEvent::EventSpec
-                            Id 1773530255
+                            Id 1773530255 (StartSoldier)
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 575F07FF-BBB9-4FF6-AE7C-398A50A402FF
                         Target 3772E772-6197-4CD9-ABD3-C1C82466E44D
                         SourceEvent::EventSpec
-                            Id 1149984791
+                            Id 1149984791 (CancelAutoSpawn)
                         TargetEvent::EventSpec
-                            Id 1149984791
+                            Id 1149984791 (CancelAutoSpawn)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 3772E772-6197-4CD9-ABD3-C1C82466E44D
                         Target FDF1FAC8-5B3F-4CF2-A57C-B1A2B597F34B
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 575F07FF-BBB9-4FF6-AE7C-398A50A402FF
                         Target 3772E772-6197-4CD9-ABD3-C1C82466E44D
                         SourceEvent::EventSpec
-                            Id 1149984791
+                            Id 1149984791 (CancelAutoSpawn)
                         TargetEvent::EventSpec
-                            Id -834116283
+                            Id -834116283 (Unspawn)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 575F07FF-BBB9-4FF6-AE7C-398A50A402FF
                 NeedNetworkId True

@@ -202,12 +202,12 @@ InterfaceDescriptorData D38A5051-89FE-4CCF-A0BB-1FCAF92E086F
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id -1036968738
+            Id -1036968738 (OnSpawned)
         member(1)::DynamicEvent
-            Id 2008897511
+            Id 2008897511 (OnKilled)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 LookAtEntityData 0732F6BA-8F6A-4852-8A93-7D3DE27A652A
@@ -281,42 +281,42 @@ SpatialPrefabBlueprint 264BE7C4-6125-49F3-8D51-18ABD300EF65 #primary instance
                             Source D38A5051-89FE-4CCF-A0BB-1FCAF92E086F
                             Target 0732F6BA-8F6A-4852-8A93-7D3DE27A652A
                             SourceFieldId -1156228549
-                            TargetFieldId -2024647575
+                            TargetFieldId -2024647575 (Transform)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 0732F6BA-8F6A-4852-8A93-7D3DE27A652A
                             Target D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
-                            SourceFieldId -616190660
+                            SourceFieldId -616190660 (Soldiers)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                             Target E48F4934-E981-4152-C2B6-1CB333D1CCE2
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         Target D38A5051-89FE-4CCF-A0BB-1FCAF92E086F
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(1)::EventConnection
                         Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         Target D38A5051-89FE-4CCF-A0BB-1FCAF92E086F
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(2)::EventConnection
                         Source D38A5051-89FE-4CCF-A0BB-1FCAF92E086F
                         Target D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 892FD719-7D7F-40AF-95D7-4EC657BE6648
@@ -324,61 +324,61 @@ SpatialPrefabBlueprint 264BE7C4-6125-49F3-8D51-18ABD300EF65 #primary instance
                         SourceEvent::EventSpec
                             Id 201139679
                         TargetEvent::EventSpec
-                            Id 1883421003
+                            Id 1883421003 (StartScenario)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(4)::EventConnection
                         Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         Target D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -25185904
+                            Id -25185904 (DisableImpulseReactions)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(5)::EventConnection
                         Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         Target D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id 777187609
+                            Id 777187609 (TakeControl)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         Target 3E076BF5-ADAE-4EC4-A4A8-CD1F2C65C270
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(7)::EventConnection
                         Source 3E076BF5-ADAE-4EC4-A4A8-CD1F2C65C270
                         Target D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 1559635997
+                            Id 1559635997 (FireStart)
                         TargetType EventConnectionTargetType_Server
                     member(8)::EventConnection
                         Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         Target D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
-                            Id 1999519237
+                            Id 1999519237 (FireStop)
                         TargetType EventConnectionTargetType_Server
                     member(9)::EventConnection
                         Source 3E076BF5-ADAE-4EC4-A4A8-CD1F2C65C270
                         Target 0732F6BA-8F6A-4852-8A93-7D3DE27A652A
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Client
                     member(10)::EventConnection
                         Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         Target 892FD719-7D7F-40AF-95D7-4EC657BE6648
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
                             Id -299312867
                         TargetType EventConnectionTargetType_Client
@@ -386,15 +386,15 @@ SpatialPrefabBlueprint 264BE7C4-6125-49F3-8D51-18ABD300EF65 #primary instance
                         Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         Target AD026D28-1010-4B40-A55C-E67A0ED73D4B
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(12)::EventConnection
                         Source AD026D28-1010-4B40-A55C-E67A0ED73D4B
                         Target 892FD719-7D7F-40AF-95D7-4EC657BE6648
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
                             Id -47565249
                         TargetType EventConnectionTargetType_Client
@@ -402,17 +402,17 @@ SpatialPrefabBlueprint 264BE7C4-6125-49F3-8D51-18ABD300EF65 #primary instance
                         Source D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         Target 50A5FE26-5DBA-4DCD-8504-D0867591FEC7
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(14)::EventConnection
                         Source 50A5FE26-5DBA-4DCD-8504-D0867591FEC7
                         Target D1DDF2DA-2D83-4BD0-86EC-6072B9830FEB
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id 2089125447
+                            Id 2089125447 (Kill)
                         TargetType EventConnectionTargetType_Server
                 Descriptor D38A5051-89FE-4CCF-A0BB-1FCAF92E086F
                 NeedNetworkId True

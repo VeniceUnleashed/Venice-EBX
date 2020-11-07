@@ -47,10 +47,10 @@ InterfaceDescriptorData 7FA3A849-EFBC-4989-8C1E-BDEF62E31E0D
         member(6)::DynamicEvent
             Id 848795828
         member(7)::DynamicEvent
-            Id 351212879
+            Id 351212879 (OnCollapse)
     InputLinks::array
         member(0)::DynamicLink
-            Id 124880329
+            Id 124880329 (SoundShape)
     OutputLinks *nullArray*
 IrReverbEntityData A587994E-7D5E-4244-BED7-986F179F324E
     $::EntityData
@@ -106,57 +106,57 @@ PrefabBlueprint C0BBF776-BE37-C539-BA63-3FCFA360494B #primary instance
                     member(0)::PropertyConnection
                         Source FF372DEA-384D-422C-8662-8980C7DDFD56
                         Target A587994E-7D5E-4244-BED7-986F179F324E
-                        SourceFieldId 258157264
-                        TargetFieldId -1136955571
+                        SourceFieldId 258157264 (Proximity)
+                        TargetFieldId -1136955571 (Volume)
                     member(1)::PropertyConnection
                         Source FF372DEA-384D-422C-8662-8980C7DDFD56
                         Target 7FA3A849-EFBC-4989-8C1E-BDEF62E31E0D
-                        SourceFieldId 258157264
+                        SourceFieldId 258157264 (Proximity)
                         TargetFieldId 1149971644
                     member(2)::PropertyConnection
                         Source FF372DEA-384D-422C-8662-8980C7DDFD56
                         Target 3510CAAB-1E48-4CAE-83A4-3124BDB149B3
-                        SourceFieldId 258157264
+                        SourceFieldId 258157264 (Proximity)
                         TargetFieldId 1579081631
                     member(3)::PropertyConnection
                         Source FF372DEA-384D-422C-8662-8980C7DDFD56
                         Target 4F85C875-F0AB-4727-8BDE-82F48D400F2F
-                        SourceFieldId 258157264
+                        SourceFieldId 258157264 (Proximity)
                         TargetFieldId -2120426542
                     member(4)::PropertyConnection
                         Source F932BDAF-B501-4551-A43A-A190A25B7905
                         Target FA94B064-7C96-43F8-9B9E-C6E688196941
-                        SourceFieldId 225375086
-                        TargetFieldId 193450867
+                        SourceFieldId 225375086 (Value)
+                        TargetFieldId 193450867 (In1)
                     member(5)::PropertyConnection
                         Source 42E226D0-B6FF-4FE5-BC5B-0E104E6E84F9
                         Target FA94B064-7C96-43F8-9B9E-C6E688196941
-                        SourceFieldId 225375086
-                        TargetFieldId 193450866
+                        SourceFieldId 225375086 (Value)
+                        TargetFieldId 193450866 (In0)
                     member(6)::PropertyConnection
                         Source FA94B064-7C96-43F8-9B9E-C6E688196941
                         Target FF372DEA-384D-422C-8662-8980C7DDFD56
-                        SourceFieldId 193453899
-                        TargetFieldId 1947336347
+                        SourceFieldId 193453899 (Out)
+                        TargetFieldId 1947336347 (ProximityMultiplier)
                 LinkConnections::array
                     member(0)::LinkConnection
                         Source 7FA3A849-EFBC-4989-8C1E-BDEF62E31E0D
                         Target F53EA312-778A-4AC9-870C-F66070FB4C6C
-                        SourceFieldId 124880329
+                        SourceFieldId 124880329 (SoundShape)
                         TargetFieldId 0
                     member(1)::LinkConnection
                         Source FF372DEA-384D-422C-8662-8980C7DDFD56
                         Target F53EA312-778A-4AC9-870C-F66070FB4C6C
-                        SourceFieldId 838548383
+                        SourceFieldId 838548383 (Geometry)
                         TargetFieldId 0
             EventConnections::array
                 member(0)::EventConnection
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
                     Target F932BDAF-B501-4551-A43A-A190A25B7905
                     SourceEvent::EventSpec
-                        Id 351212879
+                        Id 351212879 (OnCollapse)
                     TargetEvent::EventSpec
-                        Id -395651742
+                        Id -395651742 (Decrement)
                     TargetType EventConnectionTargetType_Client
                 member(1)::EventConnection
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
@@ -164,7 +164,7 @@ PrefabBlueprint C0BBF776-BE37-C539-BA63-3FCFA360494B #primary instance
                     SourceEvent::EventSpec
                         Id 848795826
                     TargetEvent::EventSpec
-                        Id -395651742
+                        Id -395651742 (Decrement)
                     TargetType EventConnectionTargetType_Client
                 member(2)::EventConnection
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
@@ -172,7 +172,7 @@ PrefabBlueprint C0BBF776-BE37-C539-BA63-3FCFA360494B #primary instance
                     SourceEvent::EventSpec
                         Id 848795827
                     TargetEvent::EventSpec
-                        Id -395651742
+                        Id -395651742 (Decrement)
                     TargetType EventConnectionTargetType_Client
                 member(3)::EventConnection
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
@@ -180,7 +180,7 @@ PrefabBlueprint C0BBF776-BE37-C539-BA63-3FCFA360494B #primary instance
                     SourceEvent::EventSpec
                         Id 848795824
                     TargetEvent::EventSpec
-                        Id -395651742
+                        Id -395651742 (Decrement)
                     TargetType EventConnectionTargetType_Client
                 member(4)::EventConnection
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
@@ -188,7 +188,7 @@ PrefabBlueprint C0BBF776-BE37-C539-BA63-3FCFA360494B #primary instance
                     SourceEvent::EventSpec
                         Id 848795825
                     TargetEvent::EventSpec
-                        Id -395651742
+                        Id -395651742 (Decrement)
                     TargetType EventConnectionTargetType_Client
                 member(5)::EventConnection
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
@@ -196,7 +196,7 @@ PrefabBlueprint C0BBF776-BE37-C539-BA63-3FCFA360494B #primary instance
                     SourceEvent::EventSpec
                         Id 848795830
                     TargetEvent::EventSpec
-                        Id -395651742
+                        Id -395651742 (Decrement)
                     TargetType EventConnectionTargetType_Client
                 member(6)::EventConnection
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
@@ -204,7 +204,7 @@ PrefabBlueprint C0BBF776-BE37-C539-BA63-3FCFA360494B #primary instance
                     SourceEvent::EventSpec
                         Id 848795831
                     TargetEvent::EventSpec
-                        Id -395651742
+                        Id -395651742 (Decrement)
                     TargetType EventConnectionTargetType_Client
                 member(7)::EventConnection
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
@@ -212,7 +212,7 @@ PrefabBlueprint C0BBF776-BE37-C539-BA63-3FCFA360494B #primary instance
                     SourceEvent::EventSpec
                         Id 848795828
                     TargetEvent::EventSpec
-                        Id -395651742
+                        Id -395651742 (Decrement)
                     TargetType EventConnectionTargetType_Client
                 member(8)::EventConnection
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
@@ -274,9 +274,9 @@ PrefabBlueprint C0BBF776-BE37-C539-BA63-3FCFA360494B #primary instance
                     Source 7A25FC65-ACA6-48F2-BD7F-A8E70A4222C8
                     Target 7FA3A849-EFBC-4989-8C1E-BDEF62E31E0D
                     SourceEvent::EventSpec
-                        Id 351212879
+                        Id 351212879 (OnCollapse)
                     TargetEvent::EventSpec
-                        Id 351212879
+                        Id 351212879 (OnCollapse)
                     TargetType EventConnectionTargetType_ClientAndServer
             Descriptor 7FA3A849-EFBC-4989-8C1E-BDEF62E31E0D
             NeedNetworkId False

@@ -44,9 +44,9 @@ InterfaceDescriptorData 1010A386-9EBA-4781-AAE1-449F89BE9ED7
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id -569252259
+            Id -569252259 (EnterUIGraph)
         member(1)::DynamicEvent
-            Id -1684556875
+            Id -1684556875 (ExitUIGraph)
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -63,66 +63,66 @@ LogicPrefabBlueprint 14D5565A-E889-B73B-AFD9-EE2E55C1564C #primary instance
                             Source 1010A386-9EBA-4781-AAE1-449F89BE9ED7
                             Target 1E61A011-33CB-453D-83CD-3288F5ECE3B3
                             SourceFieldId 1921607888
-                            TargetFieldId 193450867
+                            TargetFieldId 193450867 (In1)
                         member(1)::PropertyConnection
                             Source AB267B58-FF5D-49C0-88D9-E51CE545522F
                             Target 1E61A011-33CB-453D-83CD-3288F5ECE3B3
-                            SourceFieldId 225375086
-                            TargetFieldId 193450864
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 193450864 (In2)
                         member(2)::PropertyConnection
                             Source 1E61A011-33CB-453D-83CD-3288F5ECE3B3
                             Target 07F4B669-C545-4161-B091-1F152096450D
-                            SourceFieldId 193453899
-                            TargetFieldId 225375086
+                            SourceFieldId 193453899 (Out)
+                            TargetFieldId 225375086 (Value)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source 07F4B669-C545-4161-B091-1F152096450D
                         Target 9AFF8148-E978-49BC-8F9E-006D04FEA468
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id -81881639 (OnFalse)
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetType EventConnectionTargetType_Client
                     member(1)::EventConnection
                         Source 1010A386-9EBA-4781-AAE1-449F89BE9ED7
                         Target AB267B58-FF5D-49C0-88D9-E51CE545522F
                         SourceEvent::EventSpec
-                            Id -569252259
+                            Id -569252259 (EnterUIGraph)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Client
                     member(2)::EventConnection
                         Source 1010A386-9EBA-4781-AAE1-449F89BE9ED7
                         Target AB267B58-FF5D-49C0-88D9-E51CE545522F
                         SourceEvent::EventSpec
-                            Id -1684556875
+                            Id -1684556875 (ExitUIGraph)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source 07F4B669-C545-4161-B091-1F152096450D
                         Target CB17A371-8854-4B21-8F6A-F4F412106939
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
-                            Id 1303794898
+                            Id 1303794898 (Restart)
                         TargetType EventConnectionTargetType_Client
                     member(4)::EventConnection
                         Source 07F4B669-C545-4161-B091-1F152096450D
                         Target CB17A371-8854-4B21-8F6A-F4F412106939
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id -1433512622 (OnTrue)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Client
                     member(5)::EventConnection
                         Source CB17A371-8854-4B21-8F6A-F4F412106939
                         Target 9AFF8148-E978-49BC-8F9E-006D04FEA468
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -569252259
+                            Id -569252259 (EnterUIGraph)
                         TargetType EventConnectionTargetType_Client
                 Descriptor 1010A386-9EBA-4781-AAE1-449F89BE9ED7
                 NeedNetworkId False

@@ -51,12 +51,12 @@ InterfaceDescriptorData 66302144-3717-4074-884A-0EF1FDC7E4C4
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id 2089125447
+            Id 2089125447 (Kill)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 2008897511
+            Id 2008897511 (OnKilled)
         member(1)::DynamicEvent
-            Id -1036968738
+            Id -1036968738 (OnSpawned)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 PlayerEntryComponentData A9F7ED6F-6475-4420-B4F0-8BB54C7A58E0
@@ -155,38 +155,38 @@ SoldierBlueprint 29714AD3-4B34-41B8-9311-1D3EF8329BDD #primary instance
                             member(0)::PropertyConnection
                                 Source 66302144-3717-4074-884A-0EF1FDC7E4C4
                                 Target A88418C8-9DCD-4F3C-89B9-29A089AF231A
-                                SourceFieldId -1978571616
-                                TargetFieldId 875726273
+                                SourceFieldId -1978571616 (EnableFakeImmortal)
+                                TargetFieldId 875726273 (FakeImmortal)
                             member(1)::PropertyConnection
                                 Source 66302144-3717-4074-884A-0EF1FDC7E4C4
                                 Target A88418C8-9DCD-4F3C-89B9-29A089AF231A
-                                SourceFieldId -920078807
-                                TargetFieldId 922982664
+                                SourceFieldId -920078807 (EnableImmortal)
+                                TargetFieldId 922982664 (Immortal)
                         LinkConnections *nullArray*
                     EventConnections::array
                         member(0)::EventConnection
                             Source A88418C8-9DCD-4F3C-89B9-29A089AF231A
                             Target 66302144-3717-4074-884A-0EF1FDC7E4C4
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id 2008897511 (OnKilled)
                             TargetEvent::EventSpec
-                                Id 2008897511
+                                Id 2008897511 (OnKilled)
                             TargetType EventConnectionTargetType_ClientAndServer
                         member(1)::EventConnection
                             Source 66302144-3717-4074-884A-0EF1FDC7E4C4
                             Target A88418C8-9DCD-4F3C-89B9-29A089AF231A
                             SourceEvent::EventSpec
-                                Id 2089125447
+                                Id 2089125447 (Kill)
                             TargetEvent::EventSpec
-                                Id 2089125447
+                                Id 2089125447 (Kill)
                             TargetType EventConnectionTargetType_Server
                         member(2)::EventConnection
                             Source A88418C8-9DCD-4F3C-89B9-29A089AF231A
                             Target 66302144-3717-4074-884A-0EF1FDC7E4C4
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id -1036968738 (OnSpawned)
                             TargetEvent::EventSpec
-                                Id -1036968738
+                                Id -1036968738 (OnSpawned)
                             TargetType EventConnectionTargetType_ClientAndServer
                     Descriptor 66302144-3717-4074-884A-0EF1FDC7E4C4
                     NeedNetworkId True

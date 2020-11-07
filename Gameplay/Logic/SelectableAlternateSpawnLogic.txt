@@ -92,16 +92,16 @@ InterfaceDescriptorData 1ACD1A80-A2A5-4680-B1EF-B23DA987D7C8
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id -956938643
+            Id -956938643 (Select)
         member(1)::DynamicEvent
             Id 856284376
         member(2)::DynamicEvent
-            Id -1036968738
+            Id -1036968738 (OnSpawned)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 230891742
+            Id 230891742 (Spawn)
         member(1)::DynamicEvent
-            Id -1036968738
+            Id -1036968738 (OnSpawned)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 LogicPrefabBlueprint 7D309E3D-B211-88A9-42EB-621FD0420722 #primary instance
@@ -116,41 +116,41 @@ LogicPrefabBlueprint 7D309E3D-B211-88A9-42EB-621FD0420722 #primary instance
                         member(0)::PropertyConnection
                             Source 951BCF34-11A3-42DD-AA77-6CBDA78BCA8B
                             Target 1ACD1A80-A2A5-4680-B1EF-B23DA987D7C8
-                            SourceFieldId 225375086
-                            TargetFieldId 2662400
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 2662400 (Enabled)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source 50BC9F5A-EAE5-45B7-A722-A9AC12E39BE5
                         Target 951BCF34-11A3-42DD-AA77-6CBDA78BCA8B
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 1ACD1A80-A2A5-4680-B1EF-B23DA987D7C8
                         Target 50BC9F5A-EAE5-45B7-A722-A9AC12E39BE5
                         SourceEvent::EventSpec
-                            Id -956938643
+                            Id -956938643 (Select)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(2)::EventConnection
                         Source 50BC9F5A-EAE5-45B7-A722-A9AC12E39BE5
                         Target 48E488D7-84A4-400D-A45C-CA07D58D8CB7
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 714915618
+                            Id 714915618 (LoadMemory)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 48E488D7-84A4-400D-A45C-CA07D58D8CB7
                         Target 1ACD1A80-A2A5-4680-B1EF-B23DA987D7C8
                         SourceEvent::EventSpec
-                            Id -2015345591
+                            Id -2015345591 (OnMemoryEvent)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 1ACD1A80-A2A5-4680-B1EF-B23DA987D7C8
@@ -158,31 +158,31 @@ LogicPrefabBlueprint 7D309E3D-B211-88A9-42EB-621FD0420722 #primary instance
                         SourceEvent::EventSpec
                             Id 856284376
                         TargetEvent::EventSpec
-                            Id -155654884
+                            Id -155654884 (FireMemory)
                         TargetType EventConnectionTargetType_Server
                     member(5)::EventConnection
                         Source 50BC9F5A-EAE5-45B7-A722-A9AC12E39BE5
                         Target 0F3F3451-8111-44B0-94E2-26B1D9904489
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 714915618
+                            Id 714915618 (LoadMemory)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source 1ACD1A80-A2A5-4680-B1EF-B23DA987D7C8
                         Target 0F3F3451-8111-44B0-94E2-26B1D9904489
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetEvent::EventSpec
-                            Id -155654884
+                            Id -155654884 (FireMemory)
                         TargetType EventConnectionTargetType_Server
                     member(7)::EventConnection
                         Source 0F3F3451-8111-44B0-94E2-26B1D9904489
                         Target 1ACD1A80-A2A5-4680-B1EF-B23DA987D7C8
                         SourceEvent::EventSpec
-                            Id -2015345591
+                            Id -2015345591 (OnMemoryEvent)
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id -1036968738 (OnSpawned)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                 Descriptor 1ACD1A80-A2A5-4680-B1EF-B23DA987D7C8
                 NeedNetworkId True

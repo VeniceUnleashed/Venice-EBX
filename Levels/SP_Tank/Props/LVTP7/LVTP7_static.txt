@@ -122,9 +122,9 @@ InterfaceDescriptorData 15BED370-2898-462C-B4FF-291AAAF7BCEE
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id -567950349
+            Id -567950349 (StartDust)
         member(1)::DynamicEvent
-            Id -639346773
+            Id -639346773 (StopDust)
     OutputEvents *nullArray*
     InputLinks::array
         member(0)::DynamicLink
@@ -141,13 +141,13 @@ ObjectBlueprint 99CA7B96-261F-1CB8-A1AA-F2FA8BC8FABB #primary instance
                     member(0)::PropertyConnection
                         Source E11F55D6-43BF-4245-8EF0-778B92CB0C58
                         Target 07AC2E42-5467-4167-9E10-6F8A9559ED41
-                        SourceFieldId -1174111641
-                        TargetFieldId 5862146
+                        SourceFieldId -1174111641 (OutTransform)
+                        TargetFieldId 5862146 (In)
                     member(1)::PropertyConnection
                         Source 07AC2E42-5467-4167-9E10-6F8A9559ED41
                         Target 15BED370-2898-462C-B4FF-291AAAF7BCEE
-                        SourceFieldId 193453899
-                        TargetFieldId -1174111641
+                        SourceFieldId 193453899 (Out)
+                        TargetFieldId -1174111641 (OutTransform)
                 LinkConnections::array
                     member(0)::LinkConnection
                         Source 15BED370-2898-462C-B4FF-291AAAF7BCEE
@@ -157,40 +157,40 @@ ObjectBlueprint 99CA7B96-261F-1CB8-A1AA-F2FA8BC8FABB #primary instance
                     member(1)::LinkConnection
                         Source E11F55D6-43BF-4245-8EF0-778B92CB0C58
                         Target 86A014BA-DD10-11DF-877D-B9CBF7DCF459
-                        SourceFieldId -900749990
+                        SourceFieldId -900749990 (ExcludedEntities)
                         TargetFieldId 0
             EventConnections::array
                 member(0)::EventConnection
                     Source 15BED370-2898-462C-B4FF-291AAAF7BCEE
                     Target D4924026-7D65-448B-8FD4-E6BFDFF2F368
                     SourceEvent::EventSpec
-                        Id -567950349
+                        Id -567950349 (StartDust)
                     TargetEvent::EventSpec
-                        Id 230748069
+                        Id 230748069 (Start)
                     TargetType EventConnectionTargetType_Client
                 member(1)::EventConnection
                     Source 15BED370-2898-462C-B4FF-291AAAF7BCEE
                     Target D4924026-7D65-448B-8FD4-E6BFDFF2F368
                     SourceEvent::EventSpec
-                        Id -639346773
+                        Id -639346773 (StopDust)
                     TargetEvent::EventSpec
-                        Id 2089401213
+                        Id 2089401213 (Stop)
                     TargetType EventConnectionTargetType_Client
                 member(2)::EventConnection
                     Source 15BED370-2898-462C-B4FF-291AAAF7BCEE
                     Target 19E4A2AF-F9F0-4FE2-81AE-7470B11C7AF2
                     SourceEvent::EventSpec
-                        Id -639346773
+                        Id -639346773 (StopDust)
                     TargetEvent::EventSpec
-                        Id 2089401213
+                        Id 2089401213 (Stop)
                     TargetType EventConnectionTargetType_Client
                 member(3)::EventConnection
                     Source 15BED370-2898-462C-B4FF-291AAAF7BCEE
                     Target 19E4A2AF-F9F0-4FE2-81AE-7470B11C7AF2
                     SourceEvent::EventSpec
-                        Id -567950349
+                        Id -567950349 (StartDust)
                     TargetEvent::EventSpec
-                        Id 230748069
+                        Id 230748069 (Start)
                     TargetType EventConnectionTargetType_Client
             Descriptor 15BED370-2898-462C-B4FF-291AAAF7BCEE
             NeedNetworkId True

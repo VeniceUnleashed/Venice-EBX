@@ -27,7 +27,7 @@ InterfaceDescriptorData 2C10FF63-D479-4D42-BC04-EFA81C6A287D
         member(0)::DynamicEvent
             Id -1218397818
         member(1)::DynamicEvent
-            Id -486672842
+            Id -486672842 (TeleportSquad)
     OutputEvents::array
         member(0)::DynamicEvent
             Id 1375821980
@@ -36,9 +36,9 @@ InterfaceDescriptorData 2C10FF63-D479-4D42-BC04-EFA81C6A287D
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id 1408929797
+            Id 1408929797 (Vladimir)
         member(1)::DynamicLink
-            Id -1274820452
+            Id -1274820452 (Kirill)
         member(2)::DynamicLink
             Id -495826827
         member(3)::DynamicLink
@@ -56,22 +56,22 @@ LogicPrefabBlueprint 0502F493-7B93-2E84-08DA-0E8FAD1921F6 #primary instance
                         member(0)::LinkConnection
                             Source 36F16721-D68C-47E4-BBE6-D03218E69F2E
                             Target 2C10FF63-D479-4D42-BC04-EFA81C6A287D
-                            SourceFieldId -616190660
-                            TargetFieldId 1408929797
+                            SourceFieldId -616190660 (Soldiers)
+                            TargetFieldId 1408929797 (Vladimir)
                         member(1)::LinkConnection
                             Source 0002F663-9E08-4C7C-BF43-542D50DC32FC
                             Target 2C10FF63-D479-4D42-BC04-EFA81C6A287D
-                            SourceFieldId -616190660
-                            TargetFieldId -1274820452
+                            SourceFieldId -616190660 (Soldiers)
+                            TargetFieldId -1274820452 (Kirill)
                         member(2)::LinkConnection
                             Source 36F16721-D68C-47E4-BBE6-D03218E69F2E
                             Target 2C10FF63-D479-4D42-BC04-EFA81C6A287D
-                            SourceFieldId -1481696500
+                            SourceFieldId -1481696500 (RouteWaypoints)
                             TargetFieldId -495826827
                         member(3)::LinkConnection
                             Source 0002F663-9E08-4C7C-BF43-542D50DC32FC
                             Target 2C10FF63-D479-4D42-BC04-EFA81C6A287D
-                            SourceFieldId -1481696500
+                            SourceFieldId -1481696500 (RouteWaypoints)
                             TargetFieldId -941210164
                 EventConnections::array
                     member(0)::EventConnection
@@ -80,53 +80,53 @@ LogicPrefabBlueprint 0502F493-7B93-2E84-08DA-0E8FAD1921F6 #primary instance
                         SourceEvent::EventSpec
                             Id -1218397818
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source E2733201-905E-46DB-A75D-A64BBCAF354D
                         Target 36F16721-D68C-47E4-BBE6-D03218E69F2E
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source E2733201-905E-46DB-A75D-A64BBCAF354D
                         Target 0002F663-9E08-4C7C-BF43-542D50DC32FC
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source E7CA77F5-F75A-4D12-B768-D2470598DD1B
                         Target 36F16721-D68C-47E4-BBE6-D03218E69F2E
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -496109072
+                            Id -496109072 (TeleportToEnd)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source E7CA77F5-F75A-4D12-B768-D2470598DD1B
                         Target 0002F663-9E08-4C7C-BF43-542D50DC32FC
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -496109072
+                            Id -496109072 (TeleportToEnd)
                         TargetType EventConnectionTargetType_Server
                     member(5)::EventConnection
                         Source 2C10FF63-D479-4D42-BC04-EFA81C6A287D
                         Target E7CA77F5-F75A-4D12-B768-D2470598DD1B
                         SourceEvent::EventSpec
-                            Id -486672842
+                            Id -486672842 (TeleportSquad)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source 36F16721-D68C-47E4-BBE6-D03218E69F2E
                         Target 2C10FF63-D479-4D42-BC04-EFA81C6A287D
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetEvent::EventSpec
                             Id 1375821980
                         TargetType EventConnectionTargetType_Server
@@ -134,7 +134,7 @@ LogicPrefabBlueprint 0502F493-7B93-2E84-08DA-0E8FAD1921F6 #primary instance
                         Source 0002F663-9E08-4C7C-BF43-542D50DC32FC
                         Target 2C10FF63-D479-4D42-BC04-EFA81C6A287D
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetEvent::EventSpec
                             Id 270165131
                         TargetType EventConnectionTargetType_Server

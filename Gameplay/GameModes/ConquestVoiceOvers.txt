@@ -25,13 +25,13 @@ InterfaceDescriptorData 8709FC78-85D7-46CB-A153-04DB165B614A
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 2099208964
+            Id 2099208964 (OnCaptured)
         member(1)::DynamicEvent
-            Id -1433788352
+            Id -1433788352 (OnLost)
         member(2)::DynamicEvent
-            Id 444463510
+            Id 444463510 (EndgameWinningTeam1)
         member(3)::DynamicEvent
-            Id 444463509
+            Id 444463509 (EndgameWinningTeam2)
         member(4)::DynamicEvent
             Id -912021666
         member(5)::DynamicEvent
@@ -58,17 +58,17 @@ LogicPrefabBlueprint 72D2813E-6CA5-B979-1381-0C442FD869DF #primary instance
                         Source 8709FC78-85D7-46CB-A153-04DB165B614A
                         Target 256F1E56-9968-4EF9-8432-0EEFFA38681E
                         SourceEvent::EventSpec
-                            Id 2099208964
+                            Id 2099208964 (OnCaptured)
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id -1688613187 (Trigger)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(1)::EventConnection
                         Source 8709FC78-85D7-46CB-A153-04DB165B614A
                         Target B99D1BA2-3E29-4D33-B104-B7849D6624B0
                         SourceEvent::EventSpec
-                            Id -1433788352
+                            Id -1433788352 (OnLost)
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id -1688613187 (Trigger)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(2)::EventConnection
                         Source 8709FC78-85D7-46CB-A153-04DB165B614A
@@ -76,7 +76,7 @@ LogicPrefabBlueprint 72D2813E-6CA5-B979-1381-0C442FD869DF #primary instance
                         SourceEvent::EventSpec
                             Id -912021666
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id -1688613187 (Trigger)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(3)::EventConnection
                         Source 8709FC78-85D7-46CB-A153-04DB165B614A
@@ -84,7 +84,7 @@ LogicPrefabBlueprint 72D2813E-6CA5-B979-1381-0C442FD869DF #primary instance
                         SourceEvent::EventSpec
                             Id -912021667
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id -1688613187 (Trigger)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(4)::EventConnection
                         Source 8709FC78-85D7-46CB-A153-04DB165B614A
@@ -92,23 +92,23 @@ LogicPrefabBlueprint 72D2813E-6CA5-B979-1381-0C442FD869DF #primary instance
                         SourceEvent::EventSpec
                             Id 193454151
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id -1688613187 (Trigger)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(5)::EventConnection
                         Source 8709FC78-85D7-46CB-A153-04DB165B614A
                         Target A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
                         SourceEvent::EventSpec
-                            Id 444463510
+                            Id 444463510 (EndgameWinningTeam1)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
                         Target 5F7171AF-76F2-4526-9D70-22821546465B
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id -1688613187 (Trigger)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(7)::EventConnection
                         Source 8709FC78-85D7-46CB-A153-04DB165B614A
@@ -116,23 +116,23 @@ LogicPrefabBlueprint 72D2813E-6CA5-B979-1381-0C442FD869DF #primary instance
                         SourceEvent::EventSpec
                             Id 777574576
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetType EventConnectionTargetType_Server
                     member(8)::EventConnection
                         Source 8709FC78-85D7-46CB-A153-04DB165B614A
                         Target FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
                         SourceEvent::EventSpec
-                            Id 444463509
+                            Id 444463509 (EndgameWinningTeam2)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(9)::EventConnection
                         Source FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
                         Target BF41DA13-AE1E-4EBF-B583-A2660702FCB7
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id -1688613187 (Trigger)
                         TargetType EventConnectionTargetType_NetworkedClient
                     member(10)::EventConnection
                         Source 8709FC78-85D7-46CB-A153-04DB165B614A
@@ -140,7 +140,7 @@ LogicPrefabBlueprint 72D2813E-6CA5-B979-1381-0C442FD869DF #primary instance
                         SourceEvent::EventSpec
                             Id 777574576
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id 212633683 (Close)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 8709FC78-85D7-46CB-A153-04DB165B614A
                 NeedNetworkId True

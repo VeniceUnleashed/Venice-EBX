@@ -20,18 +20,18 @@ InterfaceDescriptorData 76FDB4B0-138C-4DF0-ACD9-63DBA24F3512
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id 1517623382
+            Id 1517623382 (EnableInteract)
         member(1)::DynamicEvent
-            Id -485274557
+            Id -485274557 (DisableInteract)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 1485011799
+            Id 1485011799 (InteractDone)
         member(1)::DynamicEvent
             Id 1980316182
         member(2)::DynamicEvent
             Id 656997635
         member(3)::DynamicEvent
-            Id -2064892227
+            Id -2064892227 (CustomMessage)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 LocatorEntityData 7C890CF4-3712-43FE-AD98-58E12DBC9E33
@@ -129,71 +129,71 @@ SpatialPrefabBlueprint 54BF31AF-2D33-4B92-9C79-D65856306D95 #primary instance
                         member(0)::PropertyConnection
                             Source 7C890CF4-3712-43FE-AD98-58E12DBC9E33
                             Target 76FDB4B0-138C-4DF0-ACD9-63DBA24F3512
-                            SourceFieldId 1925266716
-                            TargetFieldId -2024647575
+                            SourceFieldId 1925266716 (DynamicTransform)
+                            TargetFieldId -2024647575 (Transform)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source 55697D15-FAB5-48C7-9F8A-F98DD7A2AEBA
                         Target 9881D356-ABF6-4BC1-9663-8AD7A724498F
                         SourceEvent::EventSpec
-                            Id 7943061
+                            Id 7943061 (OnLookAwayTrigger)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(1)::EventConnection
                         Source 55697D15-FAB5-48C7-9F8A-F98DD7A2AEBA
                         Target 9881D356-ABF6-4BC1-9663-8AD7A724498F
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(2)::EventConnection
                         Source 9881D356-ABF6-4BC1-9663-8AD7A724498F
                         Target 3EA499D1-F942-483A-A5A2-39C83173A94D
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id 1723395486 (Impulse)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 3EA499D1-F942-483A-A5A2-39C83173A94D
                         Target 76FDB4B0-138C-4DF0-ACD9-63DBA24F3512
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id 1485011799
+                            Id 1485011799 (InteractDone)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 76FDB4B0-138C-4DF0-ACD9-63DBA24F3512
                         Target 55697D15-FAB5-48C7-9F8A-F98DD7A2AEBA
                         SourceEvent::EventSpec
-                            Id 1517623382
+                            Id 1517623382 (EnableInteract)
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id -1952177180 (Enable)
                         TargetType EventConnectionTargetType_Server
                     member(5)::EventConnection
                         Source 3EA499D1-F942-483A-A5A2-39C83173A94D
                         Target 55697D15-FAB5-48C7-9F8A-F98DD7A2AEBA
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id -137490305 (OnImpulse)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source 76FDB4B0-138C-4DF0-ACD9-63DBA24F3512
                         Target 55697D15-FAB5-48C7-9F8A-F98DD7A2AEBA
                         SourceEvent::EventSpec
-                            Id -485274557
+                            Id -485274557 (DisableInteract)
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id -117303631 (Disable)
                         TargetType EventConnectionTargetType_Server
                     member(7)::EventConnection
                         Source 55697D15-FAB5-48C7-9F8A-F98DD7A2AEBA
                         Target 76FDB4B0-138C-4DF0-ACD9-63DBA24F3512
                         SourceEvent::EventSpec
-                            Id 7943061
+                            Id 7943061 (OnLookAwayTrigger)
                         TargetEvent::EventSpec
                             Id 1980316182
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -201,7 +201,7 @@ SpatialPrefabBlueprint 54BF31AF-2D33-4B92-9C79-D65856306D95 #primary instance
                         Source 55697D15-FAB5-48C7-9F8A-F98DD7A2AEBA
                         Target 76FDB4B0-138C-4DF0-ACD9-63DBA24F3512
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
                             Id 656997635
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -209,9 +209,9 @@ SpatialPrefabBlueprint 54BF31AF-2D33-4B92-9C79-D65856306D95 #primary instance
                         Source 55697D15-FAB5-48C7-9F8A-F98DD7A2AEBA
                         Target 76FDB4B0-138C-4DF0-ACD9-63DBA24F3512
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id 1975570652 (OnTrigger)
                         TargetEvent::EventSpec
-                            Id -2064892227
+                            Id -2064892227 (CustomMessage)
                         TargetType EventConnectionTargetType_Server
                 Descriptor 76FDB4B0-138C-4DF0-ACD9-63DBA24F3512
                 NeedNetworkId True

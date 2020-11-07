@@ -39,9 +39,9 @@ InterfaceDescriptorData 7808A40A-1757-424F-93D7-34D996F968EE
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 853531813
+            Id 853531813 (EnemySpawned)
         member(1)::DynamicEvent
-            Id 67402812
+            Id 67402812 (EnemyKilled)
     OutputEvents::array
         member(0)::DynamicEvent
             Id -1789390694
@@ -59,47 +59,47 @@ LogicPrefabBlueprint 87779AF4-8028-7376-C3D2-E121E0EF5D73 #primary instance
                         member(0)::PropertyConnection
                             Source 07DCF716-FB48-4615-92B0-CC742DF9709E
                             Target 6BF244C2-5286-4C93-ABFE-9AC3888DF075
-                            SourceFieldId 225375086
-                            TargetFieldId 177636
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 177636 (A)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source 7808A40A-1757-424F-93D7-34D996F968EE
                         Target 07DCF716-FB48-4615-92B0-CC742DF9709E
                         SourceEvent::EventSpec
-                            Id 853531813
+                            Id 853531813 (EnemySpawned)
                         TargetEvent::EventSpec
-                            Id 1736970756
+                            Id 1736970756 (Increment)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 7808A40A-1757-424F-93D7-34D996F968EE
                         Target 07DCF716-FB48-4615-92B0-CC742DF9709E
                         SourceEvent::EventSpec
-                            Id 67402812
+                            Id 67402812 (EnemyKilled)
                         TargetEvent::EventSpec
-                            Id -395651742
+                            Id -395651742 (Decrement)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 6BF244C2-5286-4C93-ABFE-9AC3888DF075
                         Target 934F4ABF-7C23-4F64-BDD4-3799F6D64875
                         SourceEvent::EventSpec
-                            Id 193445179
+                            Id 193445179 (A=B)
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id 5862146 (In)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 7808A40A-1757-424F-93D7-34D996F968EE
                         Target 934F4ABF-7C23-4F64-BDD4-3799F6D64875
                         SourceEvent::EventSpec
-                            Id 853531813
+                            Id 853531813 (EnemySpawned)
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id 2089008817 (Open)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 934F4ABF-7C23-4F64-BDD4-3799F6D64875
                         Target 7808A40A-1757-424F-93D7-34D996F968EE
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id 193453899 (Out)
                         TargetEvent::EventSpec
                             Id -1789390694
                         TargetType EventConnectionTargetType_Server

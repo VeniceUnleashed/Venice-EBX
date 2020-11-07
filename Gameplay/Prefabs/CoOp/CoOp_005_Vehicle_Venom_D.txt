@@ -227,20 +227,20 @@ InterfaceDescriptorData 22620BBA-A5A7-4E9F-9654-C943A867B80F
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id -836414064
+            Id -836414064 (SpawnPilot)
         member(1)::DynamicEvent
-            Id -1977311626
+            Id -1977311626 (SpawnHeli)
         member(2)::DynamicEvent
-            Id 1324003345
+            Id 1324003345 (FireCountermeasure)
         member(3)::DynamicEvent
-            Id 777187609
+            Id 777187609 (TakeControl)
         member(4)::DynamicEvent
-            Id -625725267
+            Id -625725267 (UnspawnHeli)
         member(5)::DynamicEvent
-            Id 835812843
+            Id 835812843 (UnspawnPilot)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 1577401599
+            Id 1577401599 (OnPlayerEnter)
         member(1)::DynamicEvent
             Id 739443866
         member(2)::DynamicEvent
@@ -261,43 +261,43 @@ SpatialPrefabBlueprint F400F0DC-3E67-400D-8512-07B32F170DDF #primary instance
                         member(0)::PropertyConnection
                             Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                             Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
-                            SourceFieldId -409930682
-                            TargetFieldId -409930682
+                            SourceFieldId -409930682 (BlueprintTransform)
+                            TargetFieldId -409930682 (BlueprintTransform)
                         member(1)::PropertyConnection
                             Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                             Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
-                            SourceFieldId 2033256658
-                            TargetFieldId 2033256658
+                            SourceFieldId 2033256658 (ControllableInput)
+                            TargetFieldId 2033256658 (ControllableInput)
                         member(2)::PropertyConnection
                             Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                             Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
-                            SourceFieldId 2085022312
-                            TargetFieldId 2085022312
+                            SourceFieldId 2085022312 (ControllableTransform)
+                            TargetFieldId 2085022312 (ControllableTransform)
                         member(3)::PropertyConnection
                             Source 2F150712-0326-44EF-AADC-6816F25D76A1
                             Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
-                            SourceFieldId 225375086
-                            TargetFieldId 922982664
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 922982664 (Immortal)
                         member(4)::PropertyConnection
                             Source 149FF102-50ED-468F-A1DC-1ADFA22881EA
                             Target 22620BBA-A5A7-4E9F-9654-C943A867B80F
-                            SourceFieldId 191418609
-                            TargetFieldId 191418609
+                            SourceFieldId 191418609 (ClientControllableTransform)
+                            TargetFieldId 191418609 (ClientControllableTransform)
                         member(5)::PropertyConnection
                             Source 3CCBD087-0FB3-4AC1-8DA8-CC7F560288CA
                             Target 22620BBA-A5A7-4E9F-9654-C943A867B80F
-                            SourceFieldId -369312607
-                            TargetFieldId -369312607
+                            SourceFieldId -369312607 (HeadTransform)
+                            TargetFieldId -369312607 (HeadTransform)
                         member(6)::PropertyConnection
                             Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                             Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
-                            SourceFieldId 875726273
-                            TargetFieldId 875726273
+                            SourceFieldId 875726273 (FakeImmortal)
+                            TargetFieldId 875726273 (FakeImmortal)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 3CCBD087-0FB3-4AC1-8DA8-CC7F560288CA
                             Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
-                            SourceFieldId 772552445
+                            SourceFieldId 772552445 (Vehicle)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
@@ -307,69 +307,69 @@ SpatialPrefabBlueprint F400F0DC-3E67-400D-8512-07B32F170DDF #primary instance
                         member(2)::LinkConnection
                             Source 3CCBD087-0FB3-4AC1-8DA8-CC7F560288CA
                             Target 6E13C535-8D1D-9AE5-2A8F-6261ABF68750
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                         member(3)::LinkConnection
                             Source 149FF102-50ED-468F-A1DC-1ADFA22881EA
                             Target 4CDF9A01-F147-0212-9397-E6EC521C50A8
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                         Target 3CCBD087-0FB3-4AC1-8DA8-CC7F560288CA
                         SourceEvent::EventSpec
-                            Id -836414064
+                            Id -836414064 (SpawnPilot)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                         Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
                         SourceEvent::EventSpec
-                            Id -1977311626
+                            Id -1977311626 (SpawnHeli)
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id 230891742 (Spawn)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                         Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
                         SourceEvent::EventSpec
-                            Id 1324003345
+                            Id 1324003345 (FireCountermeasure)
                         TargetEvent::EventSpec
-                            Id 1324003345
+                            Id 1324003345 (FireCountermeasure)
                         TargetType EventConnectionTargetType_Server
                     member(3)::EventConnection
                         Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                         Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
                         SourceEvent::EventSpec
-                            Id 777187609
+                            Id 777187609 (TakeControl)
                         TargetEvent::EventSpec
-                            Id 777187609
+                            Id 777187609 (TakeControl)
                         TargetType EventConnectionTargetType_Server
                     member(4)::EventConnection
                         Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                         Target 149FF102-50ED-468F-A1DC-1ADFA22881EA
                         SourceEvent::EventSpec
-                            Id -625725267
+                            Id -625725267 (UnspawnHeli)
                         TargetEvent::EventSpec
-                            Id -834116283
+                            Id -834116283 (Unspawn)
                         TargetType EventConnectionTargetType_Server
                     member(5)::EventConnection
                         Source 22620BBA-A5A7-4E9F-9654-C943A867B80F
                         Target 3CCBD087-0FB3-4AC1-8DA8-CC7F560288CA
                         SourceEvent::EventSpec
-                            Id 835812843
+                            Id 835812843 (UnspawnPilot)
                         TargetEvent::EventSpec
-                            Id -834116283
+                            Id -834116283 (Unspawn)
                         TargetType EventConnectionTargetType_Server
                     member(6)::EventConnection
                         Source 149FF102-50ED-468F-A1DC-1ADFA22881EA
                         Target 22620BBA-A5A7-4E9F-9654-C943A867B80F
                         SourceEvent::EventSpec
-                            Id 1577401599
+                            Id 1577401599 (OnPlayerEnter)
                         TargetEvent::EventSpec
-                            Id 1577401599
+                            Id 1577401599 (OnPlayerEnter)
                         TargetType EventConnectionTargetType_Server
                     member(7)::EventConnection
                         Source 149FF102-50ED-468F-A1DC-1ADFA22881EA

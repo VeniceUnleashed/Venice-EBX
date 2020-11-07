@@ -185,21 +185,21 @@ InterfaceDescriptorData FC51B822-7CB1-405C-A576-2B9995595381
         member(3)::DynamicEvent
             Id -201765119
         member(4)::DynamicEvent
-            Id 1499404377
+            Id 1499404377 (ScenarioFinished)
         member(5)::DynamicEvent
-            Id -629842635
+            Id -629842635 (StartQuicktime)
         member(6)::DynamicEvent
-            Id 836863597
+            Id 836863597 (StopQuicktime)
         member(7)::DynamicEvent
-            Id 1422740397
+            Id 1422740397 (FadeOut)
         member(8)::DynamicEvent
-            Id 1999497757
+            Id 1999497757 (FireShot)
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
             Id 208434304
         member(1)::DynamicLink
-            Id -910201930
+            Id -910201930 (Player)
 ModelAnimationEntityData 497FA680-846B-4C05-8FD0-F0D68D0A6AFF
     $::EntityData
         $::GameObjectData
@@ -347,40 +347,40 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         member(0)::PropertyConnection
                             Source 497FA680-846B-4C05-8FD0-F0D68D0A6AFF
                             Target FC51B822-7CB1-405C-A576-2B9995595381
-                            SourceFieldId 2088806864
+                            SourceFieldId 2088806864 (Base)
                             TargetFieldId 637447679
                         member(1)::PropertyConnection
                             Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                             Target 497FA680-846B-4C05-8FD0-F0D68D0A6AFF
-                            SourceFieldId -1409450479
-                            TargetFieldId -458317300
+                            SourceFieldId -1409450479 (Origin)
+                            TargetFieldId -458317300 (AnimationEntitySpace)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 4650581D-D2F7-428B-A7A5-C730CC53D7ED
                             Target FC51B822-7CB1-405C-A576-2B9995595381
-                            SourceFieldId -1530232091
-                            TargetFieldId -910201930
+                            SourceFieldId -1530232091 (AntAnimatableComponent)
+                            TargetFieldId -910201930 (Player)
                         member(1)::LinkConnection
                             Source D8F24E0D-CD79-465B-A3D6-DDF3F844EDE0
                             Target FC51B822-7CB1-405C-A576-2B9995595381
-                            SourceFieldId -1530232091
-                            TargetFieldId -910201930
+                            SourceFieldId -1530232091 (AntAnimatableComponent)
+                            TargetFieldId -910201930 (Player)
                         member(2)::LinkConnection
                             Source 1F388AE6-005E-4620-BC22-50B01D56A646
                             Target FC51B822-7CB1-405C-A576-2B9995595381
-                            SourceFieldId -1530232091
+                            SourceFieldId -1530232091 (AntAnimatableComponent)
                             TargetFieldId 208434304
                         member(3)::LinkConnection
                             Source 54D91B3B-27FB-4C28-B6AD-4A34E5F80B27
                             Target FC51B822-7CB1-405C-A576-2B9995595381
-                            SourceFieldId -1530232091
-                            TargetFieldId -910201930
+                            SourceFieldId -1530232091 (AntAnimatableComponent)
+                            TargetFieldId -910201930 (Player)
                 EventConnections::array
                     member(0)::EventConnection
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target FC51B822-7CB1-405C-A576-2B9995595381
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id -1694482841 (TriggerActor1)
                         TargetEvent::EventSpec
                             Id 1290700714
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -388,7 +388,7 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target FC51B822-7CB1-405C-A576-2B9995595381
                         SourceEvent::EventSpec
-                            Id -1694482844
+                            Id -1694482844 (TriggerActor2)
                         TargetEvent::EventSpec
                             Id 2008603620
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -398,13 +398,13 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         SourceEvent::EventSpec
                             Id -1128525790
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id 1037701496 (ForceStart)
                         TargetType EventConnectionTargetType_Client
                     member(3)::EventConnection
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target FC51B822-7CB1-405C-A576-2B9995595381
                         SourceEvent::EventSpec
-                            Id -1694482845
+                            Id -1694482845 (TriggerActor5)
                         TargetEvent::EventSpec
                             Id -201765119
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -412,7 +412,7 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target FC51B822-7CB1-405C-A576-2B9995595381
                         SourceEvent::EventSpec
-                            Id -1694482848
+                            Id -1694482848 (TriggerActor6)
                         TargetEvent::EventSpec
                             Id -607777393
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -420,9 +420,9 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target FC51B822-7CB1-405C-A576-2B9995595381
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetType EventConnectionTargetType_Client
                     member(6)::EventConnection
                         Source FC51B822-7CB1-405C-A576-2B9995595381
@@ -430,31 +430,31 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         SourceEvent::EventSpec
                             Id -1128525790
                         TargetEvent::EventSpec
-                            Id -629842635
+                            Id -629842635 (StartQuicktime)
                         TargetType EventConnectionTargetType_Client
                     member(7)::EventConnection
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target FC51B822-7CB1-405C-A576-2B9995595381
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id 1499404377 (ScenarioFinished)
                         TargetEvent::EventSpec
-                            Id 836863597
+                            Id 836863597 (StopQuicktime)
                         TargetType EventConnectionTargetType_Client
                     member(8)::EventConnection
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target D8F24E0D-CD79-465B-A3D6-DDF3F844EDE0
                         SourceEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id -559281700 (Activate)
                         TargetType EventConnectionTargetType_Client
                     member(9)::EventConnection
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target 1F388AE6-005E-4620-BC22-50B01D56A646
                         SourceEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id -559281700 (Activate)
                         TargetType EventConnectionTargetType_Client
                     member(10)::EventConnection
                         Source D8F24E0D-CD79-465B-A3D6-DDF3F844EDE0
@@ -462,7 +462,7 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         SourceEvent::EventSpec
                             Id 1975400222
                         TargetEvent::EventSpec
-                            Id 1422740397
+                            Id 1422740397 (FadeOut)
                         TargetType EventConnectionTargetType_Client
                     member(11)::EventConnection
                         Source 1F388AE6-005E-4620-BC22-50B01D56A646
@@ -470,15 +470,15 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         SourceEvent::EventSpec
                             Id 1962514638
                         TargetEvent::EventSpec
-                            Id 1999497757
+                            Id 1999497757 (FireShot)
                         TargetType EventConnectionTargetType_Client
                     member(12)::EventConnection
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target 4650581D-D2F7-428B-A7A5-C730CC53D7ED
                         SourceEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id -559281700 (Activate)
                         TargetType EventConnectionTargetType_Client
                     member(13)::EventConnection
                         Source 4650581D-D2F7-428B-A7A5-C730CC53D7ED
@@ -486,15 +486,15 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         SourceEvent::EventSpec
                             Id -1618293768
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_Client
                     member(14)::EventConnection
                         Source 8D6100C5-B769-4CF5-B616-3199C05A90FA
                         Target 54D91B3B-27FB-4C28-B6AD-4A34E5F80B27
                         SourceEvent::EventSpec
-                            Id -721579565
+                            Id -721579565 (TriggerProps)
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id -559281700 (Activate)
                         TargetType EventConnectionTargetType_Client
                     member(15)::EventConnection
                         Source 54D91B3B-27FB-4C28-B6AD-4A34E5F80B27
@@ -502,7 +502,7 @@ SpatialPrefabBlueprint 75C6A7CF-3643-44AB-84D9-FB8E06ABCD3D #primary instance
                         SourceEvent::EventSpec
                             Id 1028258555
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetType EventConnectionTargetType_Client
                 Descriptor FC51B822-7CB1-405C-A576-2B9995595381
                 NeedNetworkId False

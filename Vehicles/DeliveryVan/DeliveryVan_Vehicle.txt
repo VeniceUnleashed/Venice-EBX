@@ -652,13 +652,13 @@ InterfaceDescriptorData D52D269B-D10B-4A10-AF73-5B9814392E43
                 AccessType FieldAccessType_Target
     InputEvents::array
         member(0)::DynamicEvent
-            Id -1089957609
+            Id -1089957609 (ActivateSensing)
         member(1)::DynamicEvent
-            Id -58427146
+            Id -58427146 (DeactivateSensing)
     OutputEvents *nullArray*
     InputLinks::array
         member(0)::DynamicLink
-            Id -510838215
+            Id -510838215 (PathFollowing)
     OutputLinks *nullArray*
 MotionDampingData 44AEF6DD-9828-4627-8B5C-CA5881F5D6E7
     $::DataContainer
@@ -1468,34 +1468,34 @@ VehicleBlueprint 74D984EC-29FD-365A-5052-41E81AFB6DEC #primary instance
                             Source D52D269B-D10B-4A10-AF73-5B9814392E43
                             Target CFF8DFC9-FAE6-307B-0D23-AC728C23A911
                             SourceFieldId -1872233281
-                            TargetFieldId -2024647575
+                            TargetFieldId -2024647575 (Transform)
                         member(1)::PropertyConnection
                             Source D52D269B-D10B-4A10-AF73-5B9814392E43
                             Target 32C93B8F-853F-9622-D27B-0D58F08738E0
                             SourceFieldId 1529502628
-                            TargetFieldId -2024647575
+                            TargetFieldId -2024647575 (Transform)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source D52D269B-D10B-4A10-AF73-5B9814392E43
                             Target AFFB1AFE-E372-43BE-9782-6F90DE61207E
-                            SourceFieldId -510838215
+                            SourceFieldId -510838215 (PathFollowing)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source D52D269B-D10B-4A10-AF73-5B9814392E43
                         Target 84DFE562-9496-4D2D-8DCC-10659D5211BA
                         SourceEvent::EventSpec
-                            Id -1089957609
+                            Id -1089957609 (ActivateSensing)
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id -559281700 (Activate)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source D52D269B-D10B-4A10-AF73-5B9814392E43
                         Target 84DFE562-9496-4D2D-8DCC-10659D5211BA
                         SourceEvent::EventSpec
-                            Id -58427146
+                            Id -58427146 (DeactivateSensing)
                         TargetEvent::EventSpec
-                            Id 1928776733
+                            Id 1928776733 (Deactivate)
                         TargetType EventConnectionTargetType_Server
                 Descriptor D52D269B-D10B-4A10-AF73-5B9814392E43
                 NeedNetworkId True

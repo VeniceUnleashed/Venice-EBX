@@ -163,16 +163,16 @@ InterfaceDescriptorData 55F86EAD-35B6-48C2-96F6-8F99104BE6FD
                 AccessType FieldAccessType_Source
     InputEvents::array
         member(0)::DynamicEvent
-            Id -770075886
+            Id -770075886 (IssueOrder)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id 914475960
+            Id 914475960 (OnReached)
         member(1)::DynamicEvent
             Id 2104531228
     InputLinks *nullArray*
     OutputLinks::array
         member(0)::DynamicLink
-            Id -1481696500
+            Id -1481696500 (RouteWaypoints)
 PatrolOrderEntityData 7BAF9F89-8113-4EEF-94A4-1D3688E548DA
     $::BFOrderEntityData
         $::OrderEntityData
@@ -207,46 +207,46 @@ SpatialPrefabBlueprint 23164846-BAFB-488A-ABA8-4FAA6F7627D3 #primary instance
                         member(0)::PropertyConnection
                             Source 535794C3-E1A2-4BE7-ADAB-4D928AEFCB8A
                             Target 55F86EAD-35B6-48C2-96F6-8F99104BE6FD
-                            SourceFieldId -369312607
-                            TargetFieldId -369312607
+                            SourceFieldId -369312607 (HeadTransform)
+                            TargetFieldId -369312607 (HeadTransform)
                     LinkConnections::array
                         member(0)::LinkConnection
                             Source 7BAF9F89-8113-4EEF-94A4-1D3688E548DA
                             Target 535794C3-E1A2-4BE7-ADAB-4D928AEFCB8A
-                            SourceFieldId -616190660
+                            SourceFieldId -616190660 (Soldiers)
                             TargetFieldId 0
                         member(1)::LinkConnection
                             Source 7BAF9F89-8113-4EEF-94A4-1D3688E548DA
                             Target 55F86EAD-35B6-48C2-96F6-8F99104BE6FD
-                            SourceFieldId -1481696500
-                            TargetFieldId -1481696500
+                            SourceFieldId -1481696500 (RouteWaypoints)
+                            TargetFieldId -1481696500 (RouteWaypoints)
                         member(2)::LinkConnection
                             Source 535794C3-E1A2-4BE7-ADAB-4D928AEFCB8A
                             Target 897959A3-9F8C-A4D1-3385-BD4D9E6E8D74
-                            SourceFieldId -2001390482
+                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
                             TargetFieldId 0
                 EventConnections::array
                     member(0)::EventConnection
                         Source 55F86EAD-35B6-48C2-96F6-8F99104BE6FD
                         Target 7BAF9F89-8113-4EEF-94A4-1D3688E548DA
                         SourceEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id -770075886 (IssueOrder)
                         TargetType EventConnectionTargetType_Server
                     member(1)::EventConnection
                         Source 7BAF9F89-8113-4EEF-94A4-1D3688E548DA
                         Target 55F86EAD-35B6-48C2-96F6-8F99104BE6FD
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id 1762125924 (OnDestinationReached)
                         TargetEvent::EventSpec
-                            Id 914475960
+                            Id 914475960 (OnReached)
                         TargetType EventConnectionTargetType_Server
                     member(2)::EventConnection
                         Source 535794C3-E1A2-4BE7-ADAB-4D928AEFCB8A
                         Target 55F86EAD-35B6-48C2-96F6-8F99104BE6FD
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id 2008897511 (OnKilled)
                         TargetEvent::EventSpec
                             Id 2104531228
                         TargetType EventConnectionTargetType_Server

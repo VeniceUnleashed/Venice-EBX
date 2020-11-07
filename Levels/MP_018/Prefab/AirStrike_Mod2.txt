@@ -15,14 +15,14 @@ InterfaceDescriptorData F207E185-6C1A-4621-A81F-462848FAF233
         Fields *nullArray*
     InputEvents::array
         member(0)::DynamicEvent
-            Id 230748069
+            Id 230748069 (Start)
         member(1)::DynamicEvent
-            Id 2089401213
+            Id 2089401213 (Stop)
         member(2)::DynamicEvent
-            Id -1028434113
+            Id -1028434113 (DeactivatedRecompile)
     OutputEvents::array
         member(0)::DynamicEvent
-            Id -1193365339
+            Id -1193365339 (OnStarted)
     InputLinks *nullArray*
     OutputLinks *nullArray*
 ReferenceObjectData BE295B16-6617-42E6-A76C-9E66E0285BCB
@@ -93,36 +93,36 @@ SpatialPrefabBlueprint DE9E8ED6-EB32-48CD-A3D6-E29B384ADD9F #primary instance
                         member(0)::PropertyConnection
                             Source 680AD21C-0D40-401E-9136-E58D9EDED46C
                             Target BE295B16-6617-42E6-A76C-9E66E0285BCB
-                            SourceFieldId 1609263334
-                            TargetFieldId -409930682
+                            SourceFieldId 1609263334 (Movement)
+                            TargetFieldId -409930682 (BlueprintTransform)
                         member(1)::PropertyConnection
                             Source FA0FB50C-45A3-4EBD-AC60-D9D187885405
                             Target BE295B16-6617-42E6-A76C-9E66E0285BCB
-                            SourceFieldId 225375086
-                            TargetFieldId 1708270083
+                            SourceFieldId 225375086 (Value)
+                            TargetFieldId 1708270083 (Visibility)
                     LinkConnections *nullArray*
                 EventConnections::array
                     member(0)::EventConnection
                         Source F207E185-6C1A-4621-A81F-462848FAF233
                         Target 680AD21C-0D40-401E-9136-E58D9EDED46C
                         SourceEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id 2089401213 (Stop)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(1)::EventConnection
                         Source F207E185-6C1A-4621-A81F-462848FAF233
                         Target 680AD21C-0D40-401E-9136-E58D9EDED46C
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member(2)::EventConnection
                         Source 680AD21C-0D40-401E-9136-E58D9EDED46C
                         Target BE295B16-6617-42E6-A76C-9E66E0285BCB
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
                             Id 5862212
                         TargetType EventConnectionTargetType_Server
@@ -130,7 +130,7 @@ SpatialPrefabBlueprint DE9E8ED6-EB32-48CD-A3D6-E29B384ADD9F #primary instance
                         Source 680AD21C-0D40-401E-9136-E58D9EDED46C
                         Target BE295B16-6617-42E6-A76C-9E66E0285BCB
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
                             Id 193453226
                         TargetType EventConnectionTargetType_Server
@@ -138,7 +138,7 @@ SpatialPrefabBlueprint DE9E8ED6-EB32-48CD-A3D6-E29B384ADD9F #primary instance
                         Source 680AD21C-0D40-401E-9136-E58D9EDED46C
                         Target BE295B16-6617-42E6-A76C-9E66E0285BCB
                         SourceEvent::EventSpec
-                            Id -1176973715
+                            Id -1176973715 (OnStopped)
                         TargetEvent::EventSpec
                             Id 193453226
                         TargetType EventConnectionTargetType_Server
@@ -146,41 +146,41 @@ SpatialPrefabBlueprint DE9E8ED6-EB32-48CD-A3D6-E29B384ADD9F #primary instance
                         Source 680AD21C-0D40-401E-9136-E58D9EDED46C
                         Target FA0FB50C-45A3-4EBD-AC60-D9D187885405
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id -1541066415 (SetTrue)
                         TargetType EventConnectionTargetType_Client
                     member(6)::EventConnection
                         Source 680AD21C-0D40-401E-9136-E58D9EDED46C
                         Target FA0FB50C-45A3-4EBD-AC60-D9D187885405
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id 650265526 (OnFinished)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Client
                     member(7)::EventConnection
                         Source 680AD21C-0D40-401E-9136-E58D9EDED46C
                         Target FA0FB50C-45A3-4EBD-AC60-D9D187885405
                         SourceEvent::EventSpec
-                            Id -1176973715
+                            Id -1176973715 (OnStopped)
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id 668205626 (SetFalse)
                         TargetType EventConnectionTargetType_Client
                     member(8)::EventConnection
                         Source F207E185-6C1A-4621-A81F-462848FAF233
                         Target 680AD21C-0D40-401E-9136-E58D9EDED46C
                         SourceEvent::EventSpec
-                            Id -1028434113
+                            Id -1028434113 (DeactivatedRecompile)
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id 230748069 (Start)
                         TargetType EventConnectionTargetType_ClientAndServer
                     member(9)::EventConnection
                         Source 680AD21C-0D40-401E-9136-E58D9EDED46C
                         Target F207E185-6C1A-4621-A81F-462848FAF233
                         SourceEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetEvent::EventSpec
-                            Id -1193365339
+                            Id -1193365339 (OnStarted)
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor F207E185-6C1A-4621-A81F-462848FAF233
                 NeedNetworkId True
