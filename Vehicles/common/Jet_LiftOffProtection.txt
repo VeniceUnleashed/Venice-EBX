@@ -1,118 +1,118 @@
 Partition 618589C4-7714-11E1-BA83-F99ABDA52942
 DelayEntityData E8E70648-AFD7-4E39-AB05-B7A3AEC05582
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-    Delay 8.0
-    Realm Realm_Server
-    AutoStart False
-    RunOnce True
-    RemoveDuplicateEvents True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Delay 8.0
+	Realm Realm_Server
+	AutoStart False
+	RunOnce True
+	RemoveDuplicateEvents True
 DelayEntityData 535C97BE-8FBE-4480-8B62-72E5E7D59877
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    Delay 0.0
-    Realm Realm_Server
-    AutoStart False
-    RunOnce True
-    RemoveDuplicateEvents True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Delay 0.0
+	Realm Realm_Server
+	AutoStart False
+	RunOnce True
+	RemoveDuplicateEvents True
 InterfaceDescriptorData B72FC509-FBB5-4C6E-86AF-1BC69A28E499
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id 922982664
-                AccessType FieldAccessType_Source
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id 1577401599 (OnPlayerEnter)
-        member(1)::DynamicEvent
-            Id 47785047 (OnPlayerExit)
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 922982664 (Immortal)
+				AccessType FieldAccessType_Source
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1577401599 (OnPlayerEnter)
+		member(1)::DynamicEvent
+			Id 47785047 (OnPlayerExit)
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint A17734B9-6AC8-15CA-0C43-4AB909A58A07 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Vehicles/common/Jet_LiftOffProtection
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source B463DC6E-4454-42F8-BB16-F738051E7EC4
-                            Target B72FC509-FBB5-4C6E-86AF-1BC69A28E499
-                            SourceFieldId 193453899 (Out)
-                            TargetFieldId 922982664 (Immortal)
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source E8E70648-AFD7-4E39-AB05-B7A3AEC05582
-                        Target B463DC6E-4454-42F8-BB16-F738051E7EC4
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id 668205626 (SetFalse)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source B72FC509-FBB5-4C6E-86AF-1BC69A28E499
-                        Target 535C97BE-8FBE-4480-8B62-72E5E7D59877
-                        SourceEvent::EventSpec
-                            Id 1577401599 (OnPlayerEnter)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source 535C97BE-8FBE-4480-8B62-72E5E7D59877
-                        Target B463DC6E-4454-42F8-BB16-F738051E7EC4
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id -1541066415 (SetTrue)
-                        TargetType EventConnectionTargetType_Server
-                    member(3)::EventConnection
-                        Source B72FC509-FBB5-4C6E-86AF-1BC69A28E499
-                        Target E8E70648-AFD7-4E39-AB05-B7A3AEC05582
-                        SourceEvent::EventSpec
-                            Id 1577401599 (OnPlayerEnter)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                    member(4)::EventConnection
-                        Source B72FC509-FBB5-4C6E-86AF-1BC69A28E499
-                        Target B463DC6E-4454-42F8-BB16-F738051E7EC4
-                        SourceEvent::EventSpec
-                            Id 47785047 (OnPlayerExit)
-                        TargetEvent::EventSpec
-                            Id 668205626 (SetFalse)
-                        TargetType EventConnectionTargetType_Server
-                Descriptor B72FC509-FBB5-4C6E-86AF-1BC69A28E499
-                NeedNetworkId True
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) B463DC6E-4454-42F8-BB16-F738051E7EC4
-            member(1) E8E70648-AFD7-4E39-AB05-B7A3AEC05582
-            member(2) 535C97BE-8FBE-4480-8B62-72E5E7D59877
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Vehicles/common/Jet_LiftOffProtection
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source B463DC6E-4454-42F8-BB16-F738051E7EC4
+							Target B72FC509-FBB5-4C6E-86AF-1BC69A28E499
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 922982664 (Immortal)
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source E8E70648-AFD7-4E39-AB05-B7A3AEC05582
+						Target B463DC6E-4454-42F8-BB16-F738051E7EC4
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id 668205626 (SetFalse)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source B72FC509-FBB5-4C6E-86AF-1BC69A28E499
+						Target 535C97BE-8FBE-4480-8B62-72E5E7D59877
+						SourceEvent::EventSpec
+							Id 1577401599 (OnPlayerEnter)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source 535C97BE-8FBE-4480-8B62-72E5E7D59877
+						Target B463DC6E-4454-42F8-BB16-F738051E7EC4
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id -1541066415 (SetTrue)
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source B72FC509-FBB5-4C6E-86AF-1BC69A28E499
+						Target E8E70648-AFD7-4E39-AB05-B7A3AEC05582
+						SourceEvent::EventSpec
+							Id 1577401599 (OnPlayerEnter)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source B72FC509-FBB5-4C6E-86AF-1BC69A28E499
+						Target B463DC6E-4454-42F8-BB16-F738051E7EC4
+						SourceEvent::EventSpec
+							Id 47785047 (OnPlayerExit)
+						TargetEvent::EventSpec
+							Id 668205626 (SetFalse)
+						TargetType EventConnectionTargetType_Server
+				Descriptor B72FC509-FBB5-4C6E-86AF-1BC69A28E499
+				NeedNetworkId True
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) B463DC6E-4454-42F8-BB16-F738051E7EC4
+			member(1) E8E70648-AFD7-4E39-AB05-B7A3AEC05582
+			member(2) 535C97BE-8FBE-4480-8B62-72E5E7D59877
 SyncedBoolEntityData B463DC6E-4454-42F8-BB16-F738051E7EC4
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 0
-    In False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	In False

@@ -1,136 +1,136 @@
 Partition BF4FF78F-3F72-4CC1-8F38-603EF6F1099D
 BoolToEventEntityData E8D813B1-E975-49FA-9F44-3913D313E238
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 2
-            IndexInBlueprint 0
-    Realm Realm_Client
-    Value False
-    InitalEvent False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 0
+	Realm Realm_Client
+	Value False
+	InitalEvent False
 DelayEntityData ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    Delay 0.070000000298
-    Realm Realm_Client
-    AutoStart False
-    RunOnce False
-    RemoveDuplicateEvents True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Delay 0.07000000029802322
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
 InterfaceDescriptorData 6CD775E7-A87C-4FFB-AFC7-628702B6903B
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id 1921607888
-                AccessType FieldAccessType_Target
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id -569252259 (EnterUIGraph)
-        member(1)::DynamicEvent
-            Id -1684556875 (ExitUIGraph)
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 1921607888
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -569252259 (EnterUIGraph)
+		member(1)::DynamicEvent
+			Id -1684556875 (ExitUIGraph)
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint 04533CFA-E91D-45C3-ACE1-E141E064136D #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Vehicles/common/DefaultHeliHUD
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source 6CD775E7-A87C-4FFB-AFC7-628702B6903B
-                            Target E8D813B1-E975-49FA-9F44-3913D313E238
-                            SourceFieldId 1921607888
-                            TargetFieldId 225375086 (Value)
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source E8D813B1-E975-49FA-9F44-3913D313E238
-                        Target 581B8280-F6C6-4384-A084-1F9F382CB39E
-                        SourceEvent::EventSpec
-                            Id -81881639 (OnFalse)
-                        TargetEvent::EventSpec
-                            Id -1684556875 (ExitUIGraph)
-                        TargetType EventConnectionTargetType_Client
-                    member(1)::EventConnection
-                        Source 6CD775E7-A87C-4FFB-AFC7-628702B6903B
-                        Target 581B8280-F6C6-4384-A084-1F9F382CB39E
-                        SourceEvent::EventSpec
-                            Id -1684556875 (ExitUIGraph)
-                        TargetEvent::EventSpec
-                            Id -1684556875 (ExitUIGraph)
-                        TargetType EventConnectionTargetType_Client
-                    member(2)::EventConnection
-                        Source E8D813B1-E975-49FA-9F44-3913D313E238
-                        Target ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
-                        SourceEvent::EventSpec
-                            Id -1433512622 (OnTrue)
-                        TargetEvent::EventSpec
-                            Id 1303794898 (Restart)
-                        TargetType EventConnectionTargetType_Client
-                    member(3)::EventConnection
-                        Source 6CD775E7-A87C-4FFB-AFC7-628702B6903B
-                        Target ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
-                        SourceEvent::EventSpec
-                            Id -569252259 (EnterUIGraph)
-                        TargetEvent::EventSpec
-                            Id 1303794898 (Restart)
-                        TargetType EventConnectionTargetType_Client
-                    member(4)::EventConnection
-                        Source E8D813B1-E975-49FA-9F44-3913D313E238
-                        Target ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
-                        SourceEvent::EventSpec
-                            Id -1433512622 (OnTrue)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Client
-                    member(5)::EventConnection
-                        Source 6CD775E7-A87C-4FFB-AFC7-628702B6903B
-                        Target ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
-                        SourceEvent::EventSpec
-                            Id -569252259 (EnterUIGraph)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Client
-                    member(6)::EventConnection
-                        Source ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
-                        Target 581B8280-F6C6-4384-A084-1F9F382CB39E
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id -569252259 (EnterUIGraph)
-                        TargetType EventConnectionTargetType_Client
-                Descriptor 6CD775E7-A87C-4FFB-AFC7-628702B6903B
-                NeedNetworkId False
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) E8D813B1-E975-49FA-9F44-3913D313E238
-            member(1) 581B8280-F6C6-4384-A084-1F9F382CB39E
-            member(2) ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Vehicles/common/DefaultHeliHUD
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 6CD775E7-A87C-4FFB-AFC7-628702B6903B
+							Target E8D813B1-E975-49FA-9F44-3913D313E238
+							SourceFieldId 1921607888
+							TargetFieldId 225375086 (Value)
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source E8D813B1-E975-49FA-9F44-3913D313E238
+						Target 581B8280-F6C6-4384-A084-1F9F382CB39E
+						SourceEvent::EventSpec
+							Id -81881639 (OnFalse)
+						TargetEvent::EventSpec
+							Id -1684556875 (ExitUIGraph)
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 6CD775E7-A87C-4FFB-AFC7-628702B6903B
+						Target 581B8280-F6C6-4384-A084-1F9F382CB39E
+						SourceEvent::EventSpec
+							Id -1684556875 (ExitUIGraph)
+						TargetEvent::EventSpec
+							Id -1684556875 (ExitUIGraph)
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source E8D813B1-E975-49FA-9F44-3913D313E238
+						Target ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
+						SourceEvent::EventSpec
+							Id -1433512622 (OnTrue)
+						TargetEvent::EventSpec
+							Id 1303794898 (Restart)
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 6CD775E7-A87C-4FFB-AFC7-628702B6903B
+						Target ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
+						SourceEvent::EventSpec
+							Id -569252259 (EnterUIGraph)
+						TargetEvent::EventSpec
+							Id 1303794898 (Restart)
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source E8D813B1-E975-49FA-9F44-3913D313E238
+						Target ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
+						SourceEvent::EventSpec
+							Id -1433512622 (OnTrue)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 6CD775E7-A87C-4FFB-AFC7-628702B6903B
+						Target ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
+						SourceEvent::EventSpec
+							Id -569252259 (EnterUIGraph)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
+						Target 581B8280-F6C6-4384-A084-1F9F382CB39E
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id -569252259 (EnterUIGraph)
+						TargetType EventConnectionTargetType_Client
+				Descriptor 6CD775E7-A87C-4FFB-AFC7-628702B6903B
+				NeedNetworkId False
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) E8D813B1-E975-49FA-9F44-3913D313E238
+			member(1) 581B8280-F6C6-4384-A084-1F9F382CB39E
+			member(2) ED7444D8-3108-4AA1-B8FF-0ABBD00BAA37
 UIGraphEntityData 581B8280-F6C6-4384-A084-1F9F382CB39E
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-    Events *nullArray*
-    GraphAsset UI/Flow/Graph/Vehicle/DefaultHelicopterGraph/2B725B6F-0340-D2F5-85C1-74D28E35D32D
-    GraphPriority UIGraphPriority_Low
-    PopPreviousGraph False
-    State UIState_Playing
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Events *nullArray*
+	GraphAsset UI/Flow/Graph/Vehicle/DefaultHelicopterGraph/2B725B6F-0340-D2F5-85C1-74D28E35D32D
+	GraphPriority UIGraphPriority_Low
+	PopPreviousGraph False
+	State UIState_Playing

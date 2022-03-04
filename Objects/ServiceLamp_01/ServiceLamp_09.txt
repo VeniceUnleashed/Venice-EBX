@@ -1,461 +1,461 @@
 Partition 7AE560E9-3F6A-4658-8994-095F7321DE2C
 HavokAsset 3002994B-F3CC-6B4D-5DBB-D17FB532DE36
-    $::Asset
-        $::DataContainer
-        Name Objects/ServiceLamp_01/ServiceLamp_09_Physics_0_Win32
-    Scale 1.0
-    ExternalAssets *nullArray*
+	$::Asset
+		$::DataContainer
+		Name Objects/ServiceLamp_01/ServiceLamp_09_Physics_0_Win32
+	Scale 1.0
+	ExternalAssets *nullArray*
 HealthStateData C6BACA59-5D64-49B6-921A-404605776520
-    $::DataContainer
-    Objects::array
-        member(0) 55CD2FC8-1EC7-47E0-BFF1-5B63B332F940
-    LoosePartPhysics *nullArray*
-    SpawnedBangerBlueprint *nullGuid*
-    CopyDamageToBanger True
-    SpawnedBangerImpulseParams *nullGuid*
-    PhysicsEnabled True
-    Health 20.0
-    PartIndex 0
-    CanSupportOtherParts True
+	$::DataContainer
+	Objects::array
+		member(0) 55CD2FC8-1EC7-47E0-BFF1-5B63B332F940
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	CopyDamageToBanger True
+	SpawnedBangerImpulseParams *nullGuid*
+	PhysicsEnabled True
+	Health 20.0
+	PartIndex 0
+	CanSupportOtherParts True
 HealthStateData 09BB4163-AD1F-4815-B960-394509852994
-    $::DataContainer
-    Objects *nullArray*
-    LoosePartPhysics *nullArray*
-    SpawnedBangerBlueprint *nullGuid*
-    CopyDamageToBanger True
-    SpawnedBangerImpulseParams *nullGuid*
-    PhysicsEnabled True
-    Health 100.0
-    PartIndex 1
-    CanSupportOtherParts True
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	CopyDamageToBanger True
+	SpawnedBangerImpulseParams *nullGuid*
+	PhysicsEnabled True
+	Health 100.0
+	PartIndex 1
+	CanSupportOtherParts True
 HealthStateData 4CB08737-75AF-4726-A100-1C49B9A73F91
-    $::DataContainer
-    Objects::array
-        member(0) 3FAA0DB1-4179-4881-974E-A8DA44D61068
-        member(1) 13536D64-7DDA-42F7-ACEF-B134A328366C
-        member(2) E79CAF90-4393-4822-8021-9E6C0605307C
-    LoosePartPhysics *nullArray*
-    SpawnedBangerBlueprint *nullGuid*
-    CopyDamageToBanger True
-    SpawnedBangerImpulseParams *nullGuid*
-    PhysicsEnabled True
-    Health 0.0
-    PartIndex 4294967295
-    CanSupportOtherParts False
+	$::DataContainer
+	Objects::array
+		member(0) 3FAA0DB1-4179-4881-974E-A8DA44D61068
+		member(1) 13536D64-7DDA-42F7-ACEF-B134A328366C
+		member(2) E79CAF90-4393-4822-8021-9E6C0605307C
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	CopyDamageToBanger True
+	SpawnedBangerImpulseParams *nullGuid*
+	PhysicsEnabled True
+	Health 0.0
+	PartIndex 4294967295
+	CanSupportOtherParts False
 ObjectBlueprint 32F70D43-6106-4596-8D0E-28CCB76DC336 #primary instance
-    $::Blueprint
-        $::EntityBusData
-            $::DataBusData
-                $::Asset
-                    $::DataContainer
-                    Name Objects/ServiceLamp_01/ServiceLamp_09
-                PropertyConnections *nullArray*
-                LinkConnections *nullArray*
-            EventConnections::array
-                member(0)::EventConnection
-                    Source C8F85B47-5371-40CC-8089-85AB9509EDA2
-                    Target 55CD2FC8-1EC7-47E0-BFF1-5B63B332F940
-                    SourceEvent::EventSpec
-                        Id -2120949217 (OnHealthState0)
-                    TargetEvent::EventSpec
-                        Id -1952177180 (Enable)
-                    TargetType EventConnectionTargetType_Client
-                member(1)::EventConnection
-                    Source C8F85B47-5371-40CC-8089-85AB9509EDA2
-                    Target 55CD2FC8-1EC7-47E0-BFF1-5B63B332F940
-                    SourceEvent::EventSpec
-                        Id -2120949218 (OnHealthState1)
-                    TargetEvent::EventSpec
-                        Id -117303631 (Disable)
-                    TargetType EventConnectionTargetType_Client
-                member(2)::EventConnection
-                    Source C8F85B47-5371-40CC-8089-85AB9509EDA2
-                    Target 3FAA0DB1-4179-4881-974E-A8DA44D61068
-                    SourceEvent::EventSpec
-                        Id -2120949218 (OnHealthState1)
-                    TargetEvent::EventSpec
-                        Id -1952177180 (Enable)
-                    TargetType EventConnectionTargetType_Client
-                member(3)::EventConnection
-                    Source C8F85B47-5371-40CC-8089-85AB9509EDA2
-                    Target 55CD2FC8-1EC7-47E0-BFF1-5B63B332F940
-                    SourceEvent::EventSpec
-                        Id -1452333337 (OnDestroyed)
-                    TargetEvent::EventSpec
-                        Id -117303631 (Disable)
-                    TargetType EventConnectionTargetType_Client
-                member(4)::EventConnection
-                    Source C8F85B47-5371-40CC-8089-85AB9509EDA2
-                    Target 3FAA0DB1-4179-4881-974E-A8DA44D61068
-                    SourceEvent::EventSpec
-                        Id -1452333337 (OnDestroyed)
-                    TargetEvent::EventSpec
-                        Id -117303631 (Disable)
-                    TargetType EventConnectionTargetType_Client
-            Descriptor *nullGuid*
-            NeedNetworkId False
-            InterfaceHasConnections False
-            AlwaysCreateEntityBusClient False
-            AlwaysCreateEntityBusServer False
-    Object B5E634B8-082F-4FD3-932C-E6A6122746B0
+	$::Blueprint
+		$::EntityBusData
+			$::DataBusData
+				$::Asset
+					$::DataContainer
+					Name Objects/ServiceLamp_01/ServiceLamp_09
+				PropertyConnections *nullArray*
+				LinkConnections *nullArray*
+			EventConnections::array
+				member(0)::EventConnection
+					Source C8F85B47-5371-40CC-8089-85AB9509EDA2
+					Target 55CD2FC8-1EC7-47E0-BFF1-5B63B332F940
+					SourceEvent::EventSpec
+						Id -2120949217 (OnHealthState0)
+					TargetEvent::EventSpec
+						Id -1952177180 (Enable)
+					TargetType EventConnectionTargetType_Client
+				member(1)::EventConnection
+					Source C8F85B47-5371-40CC-8089-85AB9509EDA2
+					Target 55CD2FC8-1EC7-47E0-BFF1-5B63B332F940
+					SourceEvent::EventSpec
+						Id -2120949218 (OnHealthState1)
+					TargetEvent::EventSpec
+						Id -117303631 (Disable)
+					TargetType EventConnectionTargetType_Client
+				member(2)::EventConnection
+					Source C8F85B47-5371-40CC-8089-85AB9509EDA2
+					Target 3FAA0DB1-4179-4881-974E-A8DA44D61068
+					SourceEvent::EventSpec
+						Id -2120949218 (OnHealthState1)
+					TargetEvent::EventSpec
+						Id -1952177180 (Enable)
+					TargetType EventConnectionTargetType_Client
+				member(3)::EventConnection
+					Source C8F85B47-5371-40CC-8089-85AB9509EDA2
+					Target 55CD2FC8-1EC7-47E0-BFF1-5B63B332F940
+					SourceEvent::EventSpec
+						Id -1452333337 (OnDestroyed)
+					TargetEvent::EventSpec
+						Id -117303631 (Disable)
+					TargetType EventConnectionTargetType_Client
+				member(4)::EventConnection
+					Source C8F85B47-5371-40CC-8089-85AB9509EDA2
+					Target 3FAA0DB1-4179-4881-974E-A8DA44D61068
+					SourceEvent::EventSpec
+						Id -1452333337 (OnDestroyed)
+					TargetEvent::EventSpec
+						Id -117303631 (Disable)
+					TargetType EventConnectionTargetType_Client
+			Descriptor *nullGuid*
+			NeedNetworkId False
+			InterfaceHasConnections False
+			AlwaysCreateEntityBusClient False
+			AlwaysCreateEntityBusServer False
+	Object B5E634B8-082F-4FD3-932C-E6A6122746B0
 PartComponentData C8F85B47-5371-40CC-8089-85AB9509EDA2
-    $::ComponentData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-        Transform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-        Components *nullArray*
-        Excluded False
-    HealthStates::array
-        member(0) C6BACA59-5D64-49B6-921A-404605776520
-        member(1) 4CB08737-75AF-4726-A100-1C49B9A73F91
-    PartLinks *nullArray*
-    IsSupported False
-    IsFragile False
-    IsNetworkable True
-    IsWindow False
-    AnimatePhysics False
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	HealthStates::array
+		member(0) C6BACA59-5D64-49B6-921A-404605776520
+		member(1) 4CB08737-75AF-4726-A100-1C49B9A73F91
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
 PartComponentData C61BCEA6-553A-4191-ADD5-70958E63289F
-    $::ComponentData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-        Transform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-        Components *nullArray*
-        Excluded False
-    HealthStates::array
-        member(0) 09BB4163-AD1F-4815-B960-394509852994
-    PartLinks *nullArray*
-    IsSupported False
-    IsFragile False
-    IsNetworkable True
-    IsWindow False
-    AnimatePhysics False
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	HealthStates::array
+		member(0) 09BB4163-AD1F-4815-B960-394509852994
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
 PhysicsEntityData FA04575D-96E0-4692-8F23-FC62C4A63D6B
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 65535
-    Asset *nullGuid*
-    ScaledAssets::array
-        member(0) 3002994B-F3CC-6B4D-5DBB-D17FB532DE36
-    RigidBodies::array
-        member(0) ABF13C43-DF18-4B14-A1BB-D5C508E0A233
-        member(1) 44CB4AA8-3CB8-40AA-9126-52379FFB9B6E
-    EncapsulatePartsInLists False
-    FloatPhysics *nullGuid*
-    Mass 1000010.0
-    InertiaModifier::Vec3
-        x 1.0
-        y 1.0
-        z 1.0
-    Friction 1000010.0
-    Restitution 1000010.0
-    AngularVelocityDamping -1.0
-    LinearVelocityDamping -1.0
-    Proximity *nullGuid*
-    Constraints *nullArray*
-    MovableParts False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 65535
+	Asset *nullGuid*
+	ScaledAssets::array
+		member(0) 3002994B-F3CC-6B4D-5DBB-D17FB532DE36
+	RigidBodies::array
+		member(0) ABF13C43-DF18-4B14-A1BB-D5C508E0A233
+		member(1) 44CB4AA8-3CB8-40AA-9126-52379FFB9B6E
+	EncapsulatePartsInLists False
+	FloatPhysics *nullGuid*
+	Mass 1000010.0
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Friction 1000010.0
+	Restitution 1000010.0
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	Proximity *nullGuid*
+	Constraints *nullArray*
+	MovableParts False
 PointLightEntityData 3FAA0DB1-4179-4881-974E-A8DA44D61068
-    $::LocalLightEntityData
-        $::SpatialEntityData
-            $::EntityData
-                $::GameObjectData
-                    $::GameDataContainer
-                        $::DataContainer
-                    IsEventConnectionTarget 0
-                    IsPropertyConnectionTarget 3
-                    IndexInBlueprint 65535
-            Transform::LinearTransform
-                right::Vec3
-                    x 0.949162065983
-                    y 0.0
-                    z -0.314787834883
-                up::Vec3
-                    x 0.0
-                    y 1.0
-                    z 0.0
-                forward::Vec3
-                    x 0.314787834883
-                    y 0.0
-                    z 0.949162065983
-                trans::Vec3
-                    x 2.36197550407e-08
-                    y 0.496975958347
-                    z -5.3049689086e-09
-        Color::Vec3
-            x 0.0860000029206
-            y 0.138999998569
-            z 0.201000005007
-        Radius 3.0
-        Intensity 0.5
-        AttenuationOffset 1.0
-        Visible True
-        SpecularEnable False
-        EnlightenColorMode EnlightenColorMode_Multiply
-        EnlightenEnable False
-        EnlightenColorScale::Vec3
-            x 1.0
-            y 1.0
-            z 1.0
-        ParticleColorScale::Vec3
-            x 1.0
-            y 1.0
-            z 1.0
-    Width 0.0
-    TranslucencyAmbient 0.0
-    TranslucencyScale 0.0
-    TranslucencyPower 8
-    TranslucencyDistortion 0.10000000149
+	$::LocalLightEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 0.9491620659828186
+					y 0.0
+					z -0.3147878348827362
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.3147878348827362
+					y 0.0
+					z 0.9491620659828186
+				trans::Vec3
+					x 2.3619755040726886e-08
+					y 0.49697595834732056
+					z -5.304968908603769e-09
+		Color::Vec3
+			x 0.0860000029206276
+			y 0.13899999856948853
+			z 0.20100000500679016
+		Radius 3.0
+		Intensity 0.5
+		AttenuationOffset 1.0
+		Visible True
+		SpecularEnable False
+		EnlightenColorMode EnlightenColorMode_Multiply
+		EnlightenEnable False
+		EnlightenColorScale::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+		ParticleColorScale::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+	Width 0.0
+	TranslucencyAmbient 0.0
+	TranslucencyScale 0.0
+	TranslucencyPower 8
+	TranslucencyDistortion 0.10000000149011612
 PointLightEntityData 55CD2FC8-1EC7-47E0-BFF1-5B63B332F940
-    $::LocalLightEntityData
-        $::SpatialEntityData
-            $::EntityData
-                $::GameObjectData
-                    $::GameDataContainer
-                        $::DataContainer
-                    IsEventConnectionTarget 0
-                    IsPropertyConnectionTarget 3
-                    IndexInBlueprint 65535
-            Transform::LinearTransform
-                right::Vec3
-                    x 1.0
-                    y 0.0
-                    z 0.0
-                up::Vec3
-                    x 0.0
-                    y 1.0
-                    z 0.0
-                forward::Vec3
-                    x 0.0
-                    y 0.0
-                    z 1.0
-                trans::Vec3
-                    x 0.0
-                    y 2.0
-                    z 0.0
-        Color::Vec3
-            x 1.0
-            y 0.0
-            z 0.0
-        Radius 5.0
-        Intensity 50.0
-        AttenuationOffset 1.0
-        Visible True
-        SpecularEnable True
-        EnlightenColorMode EnlightenColorMode_Multiply
-        EnlightenEnable True
-        EnlightenColorScale::Vec3
-            x 1.0
-            y 1.0
-            z 1.0
-        ParticleColorScale::Vec3
-            x 1.0
-            y 1.0
-            z 1.0
-    Width 0.0
-    TranslucencyAmbient 0.0
-    TranslucencyScale 0.0
-    TranslucencyPower 8
-    TranslucencyDistortion 0.10000000149
+	$::LocalLightEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 2.0
+					z 0.0
+		Color::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		Radius 5.0
+		Intensity 50.0
+		AttenuationOffset 1.0
+		Visible True
+		SpecularEnable True
+		EnlightenColorMode EnlightenColorMode_Multiply
+		EnlightenEnable True
+		EnlightenColorScale::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+		ParticleColorScale::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+	Width 0.0
+	TranslucencyAmbient 0.0
+	TranslucencyScale 0.0
+	TranslucencyPower 8
+	TranslucencyDistortion 0.10000000149011612
 ReferenceObjectData 13536D64-7DDA-42F7-ACEF-B134A328366C
-    $::GameObjectData
-        $::GameDataContainer
-            $::DataContainer
-        IsEventConnectionTarget 3
-        IsPropertyConnectionTarget 3
-        IndexInBlueprint 65535
-    BlueprintTransform::LinearTransform
-        right::Vec3
-            x 1.0
-            y 0.0
-            z 0.0
-        up::Vec3
-            x 0.0
-            y 1.0
-            z 0.0
-        forward::Vec3
-            x 0.0
-            y 0.0
-            z 1.0
-        trans::Vec3
-            x 0.0
-            y 0.0
-            z 0.0
-    Blueprint FX/Destruction/Generic/Props/Electric/FX_PropElectric_01_M/4511427C-F760-11DD-9A35-CBAB75C068D1
-    ObjectVariation *nullGuid*
-    StreamRealm StreamRealm_None
-    CastSunShadowEnable True
-    Excluded False
+	$::GameObjectData
+		$::GameDataContainer
+			$::DataContainer
+		IsEventConnectionTarget 3
+		IsPropertyConnectionTarget 3
+		IndexInBlueprint 65535
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Blueprint FX/Destruction/Generic/Props/Electric/FX_PropElectric_01_M/4511427C-F760-11DD-9A35-CBAB75C068D1
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	CastSunShadowEnable True
+	Excluded False
 RigidBodyData ABF13C43-DF18-4B14-A1BB-D5C508E0A233
-    $::DataContainer
-    RigidBodyType RBTypeCollision
-    Mass 0.0
-    Friction 0.5
-    Restitution 0.40000000596
-    InertiaModifier::Vec3
-        x 1.0
-        y 1.0
-        z 1.0
-    AngularVelocityDamping -1.0
-    LinearVelocityDamping -1.0
-    InteractionToolkitCollisionVolumeId 0
-    MotionType RigidBodyMotionType_Fixed
-    QualityType RigidBodyQualityType_Invalid
-    CollisionLayer RigidBodyCollisionLayer_Invalid
-    FloatPhysics *nullGuid*
-    Constraints *nullArray*
+	$::DataContainer
+	RigidBodyType RBTypeCollision
+	Mass 0.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Fixed
+	QualityType RigidBodyQualityType_Invalid
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	FloatPhysics *nullGuid*
+	Constraints *nullArray*
 RigidBodyData 44CB4AA8-3CB8-40AA-9126-52379FFB9B6E
-    $::DataContainer
-    RigidBodyType RBTypeRaycast
-    Mass 0.0
-    Friction 0.5
-    Restitution 0.40000000596
-    InertiaModifier::Vec3
-        x 1.0
-        y 1.0
-        z 1.0
-    AngularVelocityDamping -1.0
-    LinearVelocityDamping -1.0
-    InteractionToolkitCollisionVolumeId 0
-    MotionType RigidBodyMotionType_Fixed
-    QualityType RigidBodyQualityType_Invalid
-    CollisionLayer RigidBodyCollisionLayer_Invalid
-    FloatPhysics *nullGuid*
-    Constraints *nullArray*
+	$::DataContainer
+	RigidBodyType RBTypeRaycast
+	Mass 0.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Fixed
+	QualityType RigidBodyQualityType_Invalid
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	FloatPhysics *nullGuid*
+	Constraints *nullArray*
 SoundEffectEntityData E79CAF90-4393-4822-8021-9E6C0605307C
-    $::EffectEntityData
-        $::SpatialEntityData
-            $::EntityData
-                $::GameObjectData
-                    $::GameDataContainer
-                        $::DataContainer
-                    IsEventConnectionTarget 3
-                    IsPropertyConnectionTarget 3
-                    IndexInBlueprint 65535
-            Transform::LinearTransform
-                right::Vec3
-                    x 1.0
-                    y 0.0
-                    z 0.0
-                up::Vec3
-                    x 0.0
-                    y 1.0
-                    z 0.0
-                forward::Vec3
-                    x 0.0
-                    y 0.0
-                    z 1.0
-                trans::Vec3
-                    x 0.0
-                    y 0.0
-                    z 0.0
-        Components *nullArray*
-        MaxInstanceCount 1
-        CullDistance 0.0
-        StartDelay 0.0
-        ResetInstanceWhenStarted True
-        HighEndPc True
-        MediumPc True
-        LowEndPc True
-    Sound Sound/Destruction/Lights/Destruction_PropLight/8548FA23-8526-406E-87F6-6F8285140B0B
+	$::EffectEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 3
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Components *nullArray*
+		MaxInstanceCount 1
+		CullDistance 0.0
+		StartDelay 0.0
+		ResetInstanceWhenStarted True
+		HighEndPc True
+		MediumPc True
+		LowEndPc True
+	Sound Sound/Destruction/Lights/Destruction_PropLight/8548FA23-8526-406E-87F6-6F8285140B0B
 StaticModelEntityData B5E634B8-082F-4FD3-932C-E6A6122746B0
-    $::GamePhysicsEntityData
-        $::GameEntityData
-            $::SpatialEntityData
-                $::EntityData
-                    $::GameObjectData
-                        $::GameDataContainer
-                            $::DataContainer
-                        IsEventConnectionTarget 2
-                        IsPropertyConnectionTarget 2
-                        IndexInBlueprint 0
-                Transform::LinearTransform
-                    right::Vec3
-                        x 1.0
-                        y 0.0
-                        z 0.0
-                    up::Vec3
-                        x 0.0
-                        y 1.0
-                        z 0.0
-                    forward::Vec3
-                        x 0.0
-                        y 0.0
-                        z 1.0
-                    trans::Vec3
-                        x 0.0
-                        y 0.0
-                        z 0.0
-            Enabled True
-            Components::array
-                member(0) C8F85B47-5371-40CC-8089-85AB9509EDA2
-                member(1) C61BCEA6-553A-4191-ADD5-70958E63289F
-            RuntimeComponentCount 2
-        PhysicsData FA04575D-96E0-4692-8F23-FC62C4A63D6B
-    PartLinks *nullArray*
-    Mesh objects/servicelamp_01/servicelamp_09_Mesh/4773A9BB-8587-453E-BB50-2F281059059C
-    BoneCount 0
-    BasePoseTransforms *nullArray*
-    ExcludeFromNearbyObjectDestruction False
-    PhysicsPartInfos::array
-        member(0)::PhysicsPartInfo
-            PartComponentIndex 0
-            HealthStateIndex 0
-        member(1)::PhysicsPartInfo
-            PartComponentIndex 1
-            HealthStateIndex 0
-    NetworkInfo::StaticModelNetworkInfo
-        PartNetworkIdRanges::array
-            member(0)::IndexRange
-                First 0
-                Last 0
-            member(1)::IndexRange
-                First 4294967295
-                Last 4294967295
-        NetworkIdCount 1
-        ChildNetworkInfos *nullArray*
-        ChildNetworkIdCount 0
-    AnimatePhysics False
-    Visible True
+	$::GamePhysicsEntityData
+		$::GameEntityData
+			$::SpatialEntityData
+				$::EntityData
+					$::GameObjectData
+						$::GameDataContainer
+							$::DataContainer
+						IsEventConnectionTarget 2
+						IsPropertyConnectionTarget 2
+						IndexInBlueprint 0
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+			Enabled True
+			Components::array
+				member(0) C8F85B47-5371-40CC-8089-85AB9509EDA2
+				member(1) C61BCEA6-553A-4191-ADD5-70958E63289F
+			RuntimeComponentCount 2
+		PhysicsData FA04575D-96E0-4692-8F23-FC62C4A63D6B
+	PartLinks *nullArray*
+	Mesh objects/servicelamp_01/servicelamp_09_Mesh/4773A9BB-8587-453E-BB50-2F281059059C
+	BoneCount 0
+	BasePoseTransforms *nullArray*
+	ExcludeFromNearbyObjectDestruction False
+	PhysicsPartInfos::array
+		member(0)::PhysicsPartInfo
+			PartComponentIndex 0
+			HealthStateIndex 0
+		member(1)::PhysicsPartInfo
+			PartComponentIndex 1
+			HealthStateIndex 0
+	NetworkInfo::StaticModelNetworkInfo
+		PartNetworkIdRanges::array
+			member(0)::IndexRange
+				First 0
+				Last 0
+			member(1)::IndexRange
+				First 4294967295
+				Last 4294967295
+		NetworkIdCount 1
+		ChildNetworkInfos *nullArray*
+		ChildNetworkIdCount 0
+	AnimatePhysics False
+	Visible True

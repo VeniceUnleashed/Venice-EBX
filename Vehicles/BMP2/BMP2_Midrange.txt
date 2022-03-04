@@ -1,260 +1,260 @@
 Partition 35011CF4-BDC9-11E0-B102-EBAB140C0DDA
 DriverStaticObjectComponentData 1274D0D1-210E-4C26-80F0-C1F7B6AAB61C
-    $::DriverComponentData
-        $::ComponentData
-            $::GameObjectData
-                $::GameDataContainer
-                    $::DataContainer
-                IsEventConnectionTarget 3
-                IsPropertyConnectionTarget 3
-                IndexInBlueprint 3
-            Transform::LinearTransform
-                right::Vec3
-                    x 1.0
-                    y 0.0
-                    z 0.0
-                up::Vec3
-                    x 0.0
-                    y 1.0
-                    z 0.0
-                forward::Vec3
-                    x 0.0
-                    y 0.0
-                    z 1.0
-                trans::Vec3
-                    x 0.0
-                    y 0.0
-                    z 0.0
-            Components *nullArray*
-            Excluded False
-        WantedSpeed 3.0
-        Settings AI/DriverSettings/Car/12383871-5F36-36C0-137B-16607FAC7BCD
-    Acceleration 3.0
-    Deceleration 2.0
-    TurningRadius 7.0
-    TurnWhileStill False
-    AlignWithGroundNormal False
+	$::DriverComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 3
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 3
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+			Components *nullArray*
+			Excluded False
+		WantedSpeed 3.0
+		Settings AI/DriverSettings/Car/12383871-5F36-36C0-137B-16607FAC7BCD
+	Acceleration 3.0
+	Deceleration 2.0
+	TurningRadius 7.0
+	TurnWhileStill False
+	AlignWithGroundNormal False
 HealthStateData 63B509F7-BCD2-D8BF-0FBE-AF8714944134
-    $::DataContainer
-    Objects *nullArray*
-    LoosePartPhysics *nullArray*
-    SpawnedBangerBlueprint *nullGuid*
-    CopyDamageToBanger True
-    SpawnedBangerImpulseParams *nullGuid*
-    PhysicsEnabled True
-    Health 100000.0
-    PartIndex 1
-    CanSupportOtherParts True
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	CopyDamageToBanger True
+	SpawnedBangerImpulseParams *nullGuid*
+	PhysicsEnabled True
+	Health 100000.0
+	PartIndex 1
+	CanSupportOtherParts True
 HealthStateData 17F8BD18-3412-47FD-A7C5-11D0AAAC6174
-    $::DataContainer
-    Objects *nullArray*
-    LoosePartPhysics *nullArray*
-    SpawnedBangerBlueprint *nullGuid*
-    CopyDamageToBanger True
-    SpawnedBangerImpulseParams *nullGuid*
-    PhysicsEnabled True
-    Health 0.0
-    PartIndex 0
-    CanSupportOtherParts False
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	CopyDamageToBanger True
+	SpawnedBangerImpulseParams *nullGuid*
+	PhysicsEnabled True
+	Health 0.0
+	PartIndex 0
+	CanSupportOtherParts False
 InterfaceDescriptorData AA6ACC7E-E079-40D1-90EA-D1B7FE8F311A
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id -1174111641
-                AccessType FieldAccessType_Source
-    InputEvents *nullArray*
-    OutputEvents *nullArray*
-    InputLinks::array
-        member(0)::DynamicLink
-            Id -510838215 (PathFollowing)
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -1174111641 (OutTransform)
+				AccessType FieldAccessType_Source
+	InputEvents *nullArray*
+	OutputEvents *nullArray*
+	InputLinks::array
+		member(0)::DynamicLink
+			Id -510838215 (PathFollowing)
+	OutputLinks *nullArray*
 ObjectBlueprint 0D427DB8-4219-ABB2-6C71-CC100A4F35EA #primary instance
-    $::Blueprint
-        $::EntityBusData
-            $::DataBusData
-                $::Asset
-                    $::DataContainer
-                    Name Vehicles/BMP2/BMP2_Midrange
-                PropertyConnections::array
-                    member(0)::PropertyConnection
-                        Source 1274D0D1-210E-4C26-80F0-C1F7B6AAB61C
-                        Target 959ED821-0FD6-4D87-9682-37AB94BE7FDE
-                        SourceFieldId -1174111641 (OutTransform)
-                        TargetFieldId 5862146 (In)
-                    member(1)::PropertyConnection
-                        Source 959ED821-0FD6-4D87-9682-37AB94BE7FDE
-                        Target AA6ACC7E-E079-40D1-90EA-D1B7FE8F311A
-                        SourceFieldId 193453899 (Out)
-                        TargetFieldId -1174111641 (OutTransform)
-                LinkConnections::array
-                    member(0)::LinkConnection
-                        Source 1274D0D1-210E-4C26-80F0-C1F7B6AAB61C
-                        Target 35011CF5-BDC9-11E0-B102-EBAB140C0DDA
-                        SourceFieldId -900749990 (ExcludedEntities)
-                        TargetFieldId 0
-                    member(1)::LinkConnection
-                        Source AA6ACC7E-E079-40D1-90EA-D1B7FE8F311A
-                        Target 1C85A037-EF68-44DE-BFDC-21CFF55878B4
-                        SourceFieldId -510838215 (PathFollowing)
-                        TargetFieldId 0
-            EventConnections *nullArray*
-            Descriptor AA6ACC7E-E079-40D1-90EA-D1B7FE8F311A
-            NeedNetworkId True
-            InterfaceHasConnections True
-            AlwaysCreateEntityBusClient False
-            AlwaysCreateEntityBusServer False
-    Object 35011CF5-BDC9-11E0-B102-EBAB140C0DDA
+	$::Blueprint
+		$::EntityBusData
+			$::DataBusData
+				$::Asset
+					$::DataContainer
+					Name Vehicles/BMP2/BMP2_Midrange
+				PropertyConnections::array
+					member(0)::PropertyConnection
+						Source 1274D0D1-210E-4C26-80F0-C1F7B6AAB61C
+						Target 959ED821-0FD6-4D87-9682-37AB94BE7FDE
+						SourceFieldId -1174111641 (OutTransform)
+						TargetFieldId 5862146 (In)
+					member(1)::PropertyConnection
+						Source 959ED821-0FD6-4D87-9682-37AB94BE7FDE
+						Target AA6ACC7E-E079-40D1-90EA-D1B7FE8F311A
+						SourceFieldId 193453899 (Out)
+						TargetFieldId -1174111641 (OutTransform)
+				LinkConnections::array
+					member(0)::LinkConnection
+						Source 1274D0D1-210E-4C26-80F0-C1F7B6AAB61C
+						Target 35011CF5-BDC9-11E0-B102-EBAB140C0DDA
+						SourceFieldId -900749990 (ExcludedEntities)
+						TargetFieldId 0
+					member(1)::LinkConnection
+						Source AA6ACC7E-E079-40D1-90EA-D1B7FE8F311A
+						Target 1C85A037-EF68-44DE-BFDC-21CFF55878B4
+						SourceFieldId -510838215 (PathFollowing)
+						TargetFieldId 0
+			EventConnections *nullArray*
+			Descriptor AA6ACC7E-E079-40D1-90EA-D1B7FE8F311A
+			NeedNetworkId True
+			InterfaceHasConnections True
+			AlwaysCreateEntityBusClient False
+			AlwaysCreateEntityBusServer False
+	Object 35011CF5-BDC9-11E0-B102-EBAB140C0DDA
 PartComponentData 3C6A1094-FD1D-FCC0-A4BF-D3B111373CEA
-    $::ComponentData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-        Transform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-        Components *nullArray*
-        Excluded False
-    HealthStates::array
-        member(0) 63B509F7-BCD2-D8BF-0FBE-AF8714944134
-        member(1) 17F8BD18-3412-47FD-A7C5-11D0AAAC6174
-    PartLinks *nullArray*
-    IsSupported False
-    IsFragile False
-    IsNetworkable True
-    IsWindow False
-    AnimatePhysics False
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	HealthStates::array
+		member(0) 63B509F7-BCD2-D8BF-0FBE-AF8714944134
+		member(1) 17F8BD18-3412-47FD-A7C5-11D0AAAC6174
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
 PathFollowingComponentData 1C85A037-EF68-44DE-BFDC-21CFF55878B4
-    $::ComponentData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 2
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-        Transform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-        Components *nullArray*
-        Excluded False
-    UpdatePathAtDistancePercent 25.0
-    PreferredPathfindingIndex 0
-    AlternatePathfindingIndices *nullArray*
-    MovementCorridorRadius 0.0
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	UpdatePathAtDistancePercent 25.0
+	PreferredPathfindingIndex 0
+	AlternatePathfindingIndices *nullArray*
+	MovementCorridorRadius 0.0
 StaticModelEntityData 35011CF5-BDC9-11E0-B102-EBAB140C0DDA
-    $::GamePhysicsEntityData
-        $::GameEntityData
-            $::SpatialEntityData
-                $::EntityData
-                    $::GameObjectData
-                        $::GameDataContainer
-                            $::DataContainer
-                        IsEventConnectionTarget 2
-                        IsPropertyConnectionTarget 2
-                        IndexInBlueprint 0
-                Transform::LinearTransform
-                    right::Vec3
-                        x 1.0
-                        y 0.0
-                        z 0.0
-                    up::Vec3
-                        x 0.0
-                        y 1.0
-                        z 0.0
-                    forward::Vec3
-                        x 0.0
-                        y 0.0
-                        z 1.0
-                    trans::Vec3
-                        x 0.0
-                        y 0.0
-                        z 0.0
-            Enabled True
-            Components::array
-                member(0) 3C6A1094-FD1D-FCC0-A4BF-D3B111373CEA
-                member(1) 1C85A037-EF68-44DE-BFDC-21CFF55878B4
-                member(2) 1274D0D1-210E-4C26-80F0-C1F7B6AAB61C
-                member(3) 959ED821-0FD6-4D87-9682-37AB94BE7FDE
-            RuntimeComponentCount 3
-        PhysicsData *nullGuid*
-    PartLinks *nullArray*
-    Mesh vehicles/bmp2/bmp2_midrange_Mesh/0DFA3D33-7C59-8BC3-36E4-46742B89BCAC
-    BoneCount 0
-    BasePoseTransforms *nullArray*
-    ExcludeFromNearbyObjectDestruction False
-    PhysicsPartInfos::array
-        member(0)::PhysicsPartInfo
-            PartComponentIndex 0
-            HealthStateIndex 1
-        member(1)::PhysicsPartInfo
-            PartComponentIndex 0
-            HealthStateIndex 0
-    NetworkInfo::StaticModelNetworkInfo
-        PartNetworkIdRanges::array
-            member(0)::IndexRange
-                First 0
-                Last 0
-        NetworkIdCount 1
-        ChildNetworkInfos *nullArray*
-        ChildNetworkIdCount 0
-    AnimatePhysics False
-    Visible True
+	$::GamePhysicsEntityData
+		$::GameEntityData
+			$::SpatialEntityData
+				$::EntityData
+					$::GameObjectData
+						$::GameDataContainer
+							$::DataContainer
+						IsEventConnectionTarget 2
+						IsPropertyConnectionTarget 2
+						IndexInBlueprint 0
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+			Enabled True
+			Components::array
+				member(0) 3C6A1094-FD1D-FCC0-A4BF-D3B111373CEA
+				member(1) 1C85A037-EF68-44DE-BFDC-21CFF55878B4
+				member(2) 1274D0D1-210E-4C26-80F0-C1F7B6AAB61C
+				member(3) 959ED821-0FD6-4D87-9682-37AB94BE7FDE
+			RuntimeComponentCount 3
+		PhysicsData *nullGuid*
+	PartLinks *nullArray*
+	Mesh vehicles/bmp2/bmp2_midrange_Mesh/0DFA3D33-7C59-8BC3-36E4-46742B89BCAC
+	BoneCount 0
+	BasePoseTransforms *nullArray*
+	ExcludeFromNearbyObjectDestruction False
+	PhysicsPartInfos::array
+		member(0)::PhysicsPartInfo
+			PartComponentIndex 0
+			HealthStateIndex 1
+		member(1)::PhysicsPartInfo
+			PartComponentIndex 0
+			HealthStateIndex 0
+	NetworkInfo::StaticModelNetworkInfo
+		PartNetworkIdRanges::array
+			member(0)::IndexRange
+				First 0
+				Last 0
+		NetworkIdCount 1
+		ChildNetworkInfos *nullArray*
+		ChildNetworkIdCount 0
+	AnimatePhysics False
+	Visible True
 SyncedTransformEntityData 959ED821-0FD6-4D87-9682-37AB94BE7FDE
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 2
-            IndexInBlueprint 4
-    Interpolate True
-    In::LinearTransform
-        right::Vec3
-            x 1.0
-            y 0.0
-            z 0.0
-        up::Vec3
-            x 0.0
-            y 1.0
-            z 0.0
-        forward::Vec3
-            x 0.0
-            y 0.0
-            z 1.0
-        trans::Vec3
-            x 0.0
-            y 0.0
-            z 0.0
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 4
+	Interpolate True
+	In::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0

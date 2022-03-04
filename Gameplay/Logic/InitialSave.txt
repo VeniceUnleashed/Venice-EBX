@@ -1,138 +1,138 @@
 Partition 75B9D585-E111-11E0-92F4-F7F84C4B2B50
 DelayEntityData D281C694-75F1-4315-B65D-2B0563E2A91C
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    Delay 0.10000000149
-    Realm Realm_Server
-    AutoStart False
-    RunOnce False
-    RemoveDuplicateEvents True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Delay 0.10000000149011612
+	Realm Realm_Server
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
 EventMemoryEntityData 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
-    $::GameEntityData
-        $::SpatialEntityData
-            $::EntityData
-                $::GameObjectData
-                    $::GameDataContainer
-                        $::DataContainer
-                    IsEventConnectionTarget 1
-                    IsPropertyConnectionTarget 3
-                    IndexInBlueprint 0
-            Transform::LinearTransform
-                right::Vec3
-                    x 1.0
-                    y 0.0
-                    z 0.0
-                up::Vec3
-                    x 0.0
-                    y 1.0
-                    z 0.0
-                forward::Vec3
-                    x 0.0
-                    y 0.0
-                    z 1.0
-                trans::Vec3
-                    x 0.0
-                    y 0.0
-                    z 0.0
-        Enabled True
-        Components *nullArray*
-        RuntimeComponentCount 0
-    Realm Realm_Server
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 1
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	Realm Realm_Server
 InterfaceDescriptorData 5DDB6503-19A3-4364-B60B-C5F1B1FA3933
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields *nullArray*
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id 2089420676 (Save)
-    OutputEvents::array
-        member(0)::DynamicEvent
-            Id 333815684 (Continue)
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 2089420676 (Save)
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 333815684 (Continue)
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint DE8BA858-5981-4148-0BE5-E31E1A04E8FB #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/Logic/InitialSave
-                    PropertyConnections *nullArray*
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 5DDB6503-19A3-4364-B60B-C5F1B1FA3933
-                        Target 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
-                        SourceEvent::EventSpec
-                            Id 2089420676 (Save)
-                        TargetEvent::EventSpec
-                            Id 714915618 (LoadMemory)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
-                        Target 5DDB6503-19A3-4364-B60B-C5F1B1FA3933
-                        SourceEvent::EventSpec
-                            Id -2015345591 (OnMemoryEvent)
-                        TargetEvent::EventSpec
-                            Id 333815684 (Continue)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source D281C694-75F1-4315-B65D-2B0563E2A91C
-                        Target 3289ECA1-C803-4427-B01B-ECC3FA2351EB
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id 2089420676 (Save)
-                        TargetType EventConnectionTargetType_Server
-                    member(3)::EventConnection
-                        Source 3289ECA1-C803-4427-B01B-ECC3FA2351EB
-                        Target 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
-                        SourceEvent::EventSpec
-                            Id -213362971 (OnSaveDone)
-                        TargetEvent::EventSpec
-                            Id -155654884 (FireMemory)
-                        TargetType EventConnectionTargetType_Server
-                    member(4)::EventConnection
-                        Source 3289ECA1-C803-4427-B01B-ECC3FA2351EB
-                        Target 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
-                        SourceEvent::EventSpec
-                            Id -26482462 (OnLoadDone)
-                        TargetEvent::EventSpec
-                            Id -155654884 (FireMemory)
-                        TargetType EventConnectionTargetType_Server
-                    member(5)::EventConnection
-                        Source 5DDB6503-19A3-4364-B60B-C5F1B1FA3933
-                        Target D281C694-75F1-4315-B65D-2B0563E2A91C
-                        SourceEvent::EventSpec
-                            Id 2089420676 (Save)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                Descriptor 5DDB6503-19A3-4364-B60B-C5F1B1FA3933
-                NeedNetworkId False
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
-            member(1) 3289ECA1-C803-4427-B01B-ECC3FA2351EB
-            member(2) D281C694-75F1-4315-B65D-2B0563E2A91C
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/InitialSave
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 5DDB6503-19A3-4364-B60B-C5F1B1FA3933
+						Target 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
+						SourceEvent::EventSpec
+							Id 2089420676 (Save)
+						TargetEvent::EventSpec
+							Id 714915618 (LoadMemory)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
+						Target 5DDB6503-19A3-4364-B60B-C5F1B1FA3933
+						SourceEvent::EventSpec
+							Id -2015345591 (OnMemoryEvent)
+						TargetEvent::EventSpec
+							Id 333815684 (Continue)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source D281C694-75F1-4315-B65D-2B0563E2A91C
+						Target 3289ECA1-C803-4427-B01B-ECC3FA2351EB
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id 2089420676 (Save)
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source 3289ECA1-C803-4427-B01B-ECC3FA2351EB
+						Target 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
+						SourceEvent::EventSpec
+							Id -213362971 (OnSaveDone)
+						TargetEvent::EventSpec
+							Id -155654884 (FireMemory)
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source 3289ECA1-C803-4427-B01B-ECC3FA2351EB
+						Target 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
+						SourceEvent::EventSpec
+							Id -26482462 (OnLoadDone)
+						TargetEvent::EventSpec
+							Id -155654884 (FireMemory)
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source 5DDB6503-19A3-4364-B60B-C5F1B1FA3933
+						Target D281C694-75F1-4315-B65D-2B0563E2A91C
+						SourceEvent::EventSpec
+							Id 2089420676 (Save)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+				Descriptor 5DDB6503-19A3-4364-B60B-C5F1B1FA3933
+				NeedNetworkId False
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) 1E2A1987-4695-4C9F-ABCA-D79AD515BCCB
+			member(1) 3289ECA1-C803-4427-B01B-ECC3FA2351EB
+			member(2) D281C694-75F1-4315-B65D-2B0563E2A91C
 SaveEntityData 3289ECA1-C803-4427-B01B-ECC3FA2351EB
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-    SaveScreenTexture *nullGuid*
-    LevelName *nullString*
-    SaveFileName *nullString*
-    SaveNameSID Initial
-    CheckForHumanPlayer False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	SaveScreenTexture *nullGuid*
+	LevelName 
+	SaveFileName 
+	SaveNameSID Initial
+	CheckForHumanPlayer False

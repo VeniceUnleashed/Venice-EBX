@@ -1,163 +1,163 @@
 Partition 9A7D2ABF-C68B-11E0-9E9A-C4DB1AAA3813
 CompareIntEntityData 5D6B1098-990A-44A7-AF26-DB08CFC5F576
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 2
-            IndexInBlueprint 1
-    Realm Realm_Server
-    A 0
-    B 0
-    TriggerOnPropertyChange True
-    TriggerOnStart False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 1
+	Realm Realm_Server
+	A 0
+	B 0
+	TriggerOnPropertyChange True
+	TriggerOnStart False
 CompareIntEntityData 384A5BAA-1598-43CF-98AB-0960534469F8
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 2
-            IndexInBlueprint 2
-    Realm Realm_Server
-    A 0
-    B 0
-    TriggerOnPropertyChange False
-    TriggerOnStart False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 2
+	Realm Realm_Server
+	A 0
+	B 0
+	TriggerOnPropertyChange False
+	TriggerOnStart False
 DelayEntityData FDA80423-DF36-4EA2-8A9E-AD0BD4798404
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 3
-    Delay 0.0299999993294
-    Realm Realm_Server
-    AutoStart False
-    RunOnce False
-    RemoveDuplicateEvents True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	Delay 0.029999999329447746
+	Realm Realm_Server
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
 IntEntityData 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 0
-    Realm Realm_Server
-    DefaultValue 0
-    IncDecValue 1
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Realm Realm_Server
+	DefaultValue 0
+	IncDecValue 1
 InterfaceDescriptorData 351D96CE-8B8E-411E-926D-D932B7E1C527
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id 5862146
-                AccessType FieldAccessType_Target
-    InputEvents *nullArray*
-    OutputEvents::array
-        member(0)::DynamicEvent
-            Id 193453899 (Out)
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 5862146 (In)
+				AccessType FieldAccessType_Target
+	InputEvents *nullArray*
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 193453899 (Out)
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint FE3E88DD-0002-2B30-EF96-F64D2FB4E89F #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/Logic/IntToEvent
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
-                            Target 5D6B1098-990A-44A7-AF26-DB08CFC5F576
-                            SourceFieldId 225375086 (Value)
-                            TargetFieldId 177639 (B)
-                        member(1)::PropertyConnection
-                            Source 351D96CE-8B8E-411E-926D-D932B7E1C527
-                            Target 5D6B1098-990A-44A7-AF26-DB08CFC5F576
-                            SourceFieldId 5862146 (In)
-                            TargetFieldId 177636 (A)
-                        member(2)::PropertyConnection
-                            Source 351D96CE-8B8E-411E-926D-D932B7E1C527
-                            Target 384A5BAA-1598-43CF-98AB-0960534469F8
-                            SourceFieldId 5862146 (In)
-                            TargetFieldId 177636 (A)
-                        member(3)::PropertyConnection
-                            Source 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
-                            Target 384A5BAA-1598-43CF-98AB-0960534469F8
-                            SourceFieldId 225375086 (Value)
-                            TargetFieldId 177639 (B)
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 5D6B1098-990A-44A7-AF26-DB08CFC5F576
-                        Target 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
-                        SourceEvent::EventSpec
-                            Id 193445336 (A>B)
-                        TargetEvent::EventSpec
-                            Id 1736970756 (Increment)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source 5D6B1098-990A-44A7-AF26-DB08CFC5F576
-                        Target 351D96CE-8B8E-411E-926D-D932B7E1C527
-                        SourceEvent::EventSpec
-                            Id 193445336 (A>B)
-                        TargetEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source 384A5BAA-1598-43CF-98AB-0960534469F8
-                        Target 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
-                        SourceEvent::EventSpec
-                            Id 193445336 (A>B)
-                        TargetEvent::EventSpec
-                            Id 1736970756 (Increment)
-                        TargetType EventConnectionTargetType_Server
-                    member(3)::EventConnection
-                        Source 384A5BAA-1598-43CF-98AB-0960534469F8
-                        Target 351D96CE-8B8E-411E-926D-D932B7E1C527
-                        SourceEvent::EventSpec
-                            Id 193445336 (A>B)
-                        TargetEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetType EventConnectionTargetType_Server
-                    member(4)::EventConnection
-                        Source 5D6B1098-990A-44A7-AF26-DB08CFC5F576
-                        Target FDA80423-DF36-4EA2-8A9E-AD0BD4798404
-                        SourceEvent::EventSpec
-                            Id 193445336 (A>B)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                    member(5)::EventConnection
-                        Source FDA80423-DF36-4EA2-8A9E-AD0BD4798404
-                        Target 384A5BAA-1598-43CF-98AB-0960534469F8
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                    member(6)::EventConnection
-                        Source 384A5BAA-1598-43CF-98AB-0960534469F8
-                        Target FDA80423-DF36-4EA2-8A9E-AD0BD4798404
-                        SourceEvent::EventSpec
-                            Id 193445336 (A>B)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                Descriptor 351D96CE-8B8E-411E-926D-D932B7E1C527
-                NeedNetworkId False
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
-            member(1) 5D6B1098-990A-44A7-AF26-DB08CFC5F576
-            member(2) 384A5BAA-1598-43CF-98AB-0960534469F8
-            member(3) FDA80423-DF36-4EA2-8A9E-AD0BD4798404
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/IntToEvent
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
+							Target 5D6B1098-990A-44A7-AF26-DB08CFC5F576
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 177639 (B)
+						member(1)::PropertyConnection
+							Source 351D96CE-8B8E-411E-926D-D932B7E1C527
+							Target 5D6B1098-990A-44A7-AF26-DB08CFC5F576
+							SourceFieldId 5862146 (In)
+							TargetFieldId 177636 (A)
+						member(2)::PropertyConnection
+							Source 351D96CE-8B8E-411E-926D-D932B7E1C527
+							Target 384A5BAA-1598-43CF-98AB-0960534469F8
+							SourceFieldId 5862146 (In)
+							TargetFieldId 177636 (A)
+						member(3)::PropertyConnection
+							Source 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
+							Target 384A5BAA-1598-43CF-98AB-0960534469F8
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 177639 (B)
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 5D6B1098-990A-44A7-AF26-DB08CFC5F576
+						Target 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
+						SourceEvent::EventSpec
+							Id 193445336 (A>B)
+						TargetEvent::EventSpec
+							Id 1736970756 (Increment)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 5D6B1098-990A-44A7-AF26-DB08CFC5F576
+						Target 351D96CE-8B8E-411E-926D-D932B7E1C527
+						SourceEvent::EventSpec
+							Id 193445336 (A>B)
+						TargetEvent::EventSpec
+							Id 193453899 (Out)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source 384A5BAA-1598-43CF-98AB-0960534469F8
+						Target 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
+						SourceEvent::EventSpec
+							Id 193445336 (A>B)
+						TargetEvent::EventSpec
+							Id 1736970756 (Increment)
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source 384A5BAA-1598-43CF-98AB-0960534469F8
+						Target 351D96CE-8B8E-411E-926D-D932B7E1C527
+						SourceEvent::EventSpec
+							Id 193445336 (A>B)
+						TargetEvent::EventSpec
+							Id 193453899 (Out)
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source 5D6B1098-990A-44A7-AF26-DB08CFC5F576
+						Target FDA80423-DF36-4EA2-8A9E-AD0BD4798404
+						SourceEvent::EventSpec
+							Id 193445336 (A>B)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source FDA80423-DF36-4EA2-8A9E-AD0BD4798404
+						Target 384A5BAA-1598-43CF-98AB-0960534469F8
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source 384A5BAA-1598-43CF-98AB-0960534469F8
+						Target FDA80423-DF36-4EA2-8A9E-AD0BD4798404
+						SourceEvent::EventSpec
+							Id 193445336 (A>B)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+				Descriptor 351D96CE-8B8E-411E-926D-D932B7E1C527
+				NeedNetworkId False
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
+			member(1) 5D6B1098-990A-44A7-AF26-DB08CFC5F576
+			member(2) 384A5BAA-1598-43CF-98AB-0960534469F8
+			member(3) FDA80423-DF36-4EA2-8A9E-AD0BD4798404

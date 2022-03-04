@@ -1,257 +1,257 @@
 Partition 5CE45320-B4F9-11DF-83CC-DE92AA0EF562
 EventGateEntityData A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 7
-    Default True
-    Realm Realm_Server
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 7
+	Default True
+	Realm Realm_Server
 EventGateEntityData FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 8
-    Default True
-    Realm Realm_Server
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 8
+	Default True
+	Realm Realm_Server
 InterfaceDescriptorData 8709FC78-85D7-46CB-A153-04DB165B614A
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields *nullArray*
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id 2099208964 (OnCaptured)
-        member(1)::DynamicEvent
-            Id -1433788352 (OnLost)
-        member(2)::DynamicEvent
-            Id 444463510 (EndgameWinningTeam1)
-        member(3)::DynamicEvent
-            Id 444463509 (EndgameWinningTeam2)
-        member(4)::DynamicEvent
-            Id -912021666
-        member(5)::DynamicEvent
-            Id -912021667
-        member(6)::DynamicEvent
-            Id 193454151
-        member(7)::DynamicEvent
-            Id 777574576
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 2099208964 (OnCaptured)
+		member(1)::DynamicEvent
+			Id -1433788352 (OnLost)
+		member(2)::DynamicEvent
+			Id 444463510 (EndgameWinningTeam1)
+		member(3)::DynamicEvent
+			Id 444463509 (EndgameWinningTeam2)
+		member(4)::DynamicEvent
+			Id -912021666
+		member(5)::DynamicEvent
+			Id -912021667
+		member(6)::DynamicEvent
+			Id 193454151 (OOB)
+		member(7)::DynamicEvent
+			Id 777574576
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint 72D2813E-6CA5-B979-1381-0C442FD869DF #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/GameModes/ConquestVoiceOvers
-                    PropertyConnections *nullArray*
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 8709FC78-85D7-46CB-A153-04DB165B614A
-                        Target 256F1E56-9968-4EF9-8432-0EEFFA38681E
-                        SourceEvent::EventSpec
-                            Id 2099208964 (OnCaptured)
-                        TargetEvent::EventSpec
-                            Id -1688613187 (Trigger)
-                        TargetType EventConnectionTargetType_NetworkedClient
-                    member(1)::EventConnection
-                        Source 8709FC78-85D7-46CB-A153-04DB165B614A
-                        Target B99D1BA2-3E29-4D33-B104-B7849D6624B0
-                        SourceEvent::EventSpec
-                            Id -1433788352 (OnLost)
-                        TargetEvent::EventSpec
-                            Id -1688613187 (Trigger)
-                        TargetType EventConnectionTargetType_NetworkedClient
-                    member(2)::EventConnection
-                        Source 8709FC78-85D7-46CB-A153-04DB165B614A
-                        Target 2E90F6EE-06A2-43A9-8462-6A3B570A324E
-                        SourceEvent::EventSpec
-                            Id -912021666
-                        TargetEvent::EventSpec
-                            Id -1688613187 (Trigger)
-                        TargetType EventConnectionTargetType_NetworkedClient
-                    member(3)::EventConnection
-                        Source 8709FC78-85D7-46CB-A153-04DB165B614A
-                        Target BC324223-3426-4767-9116-BB0B763E7BDB
-                        SourceEvent::EventSpec
-                            Id -912021667
-                        TargetEvent::EventSpec
-                            Id -1688613187 (Trigger)
-                        TargetType EventConnectionTargetType_NetworkedClient
-                    member(4)::EventConnection
-                        Source 8709FC78-85D7-46CB-A153-04DB165B614A
-                        Target 8A5D1DFB-5F2F-499D-B30B-F31829B0F513
-                        SourceEvent::EventSpec
-                            Id 193454151
-                        TargetEvent::EventSpec
-                            Id -1688613187 (Trigger)
-                        TargetType EventConnectionTargetType_NetworkedClient
-                    member(5)::EventConnection
-                        Source 8709FC78-85D7-46CB-A153-04DB165B614A
-                        Target A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
-                        SourceEvent::EventSpec
-                            Id 444463510 (EndgameWinningTeam1)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                    member(6)::EventConnection
-                        Source A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
-                        Target 5F7171AF-76F2-4526-9D70-22821546465B
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id -1688613187 (Trigger)
-                        TargetType EventConnectionTargetType_NetworkedClient
-                    member(7)::EventConnection
-                        Source 8709FC78-85D7-46CB-A153-04DB165B614A
-                        Target A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
-                        SourceEvent::EventSpec
-                            Id 777574576
-                        TargetEvent::EventSpec
-                            Id 212633683 (Close)
-                        TargetType EventConnectionTargetType_Server
-                    member(8)::EventConnection
-                        Source 8709FC78-85D7-46CB-A153-04DB165B614A
-                        Target FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
-                        SourceEvent::EventSpec
-                            Id 444463509 (EndgameWinningTeam2)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                    member(9)::EventConnection
-                        Source FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
-                        Target BF41DA13-AE1E-4EBF-B583-A2660702FCB7
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id -1688613187 (Trigger)
-                        TargetType EventConnectionTargetType_NetworkedClient
-                    member(10)::EventConnection
-                        Source 8709FC78-85D7-46CB-A153-04DB165B614A
-                        Target FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
-                        SourceEvent::EventSpec
-                            Id 777574576
-                        TargetEvent::EventSpec
-                            Id 212633683 (Close)
-                        TargetType EventConnectionTargetType_Server
-                Descriptor 8709FC78-85D7-46CB-A153-04DB165B614A
-                NeedNetworkId True
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient True
-                AlwaysCreateEntityBusServer True
-        Objects::array
-            member(0) B99D1BA2-3E29-4D33-B104-B7849D6624B0
-            member(1) 256F1E56-9968-4EF9-8432-0EEFFA38681E
-            member(2) 5F7171AF-76F2-4526-9D70-22821546465B
-            member(3) BF41DA13-AE1E-4EBF-B583-A2660702FCB7
-            member(4) 2E90F6EE-06A2-43A9-8462-6A3B570A324E
-            member(5) BC324223-3426-4767-9116-BB0B763E7BDB
-            member(6) 8A5D1DFB-5F2F-499D-B30B-F31829B0F513
-            member(7) A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
-            member(8) FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/GameModes/ConquestVoiceOvers
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 8709FC78-85D7-46CB-A153-04DB165B614A
+						Target 256F1E56-9968-4EF9-8432-0EEFFA38681E
+						SourceEvent::EventSpec
+							Id 2099208964 (OnCaptured)
+						TargetEvent::EventSpec
+							Id -1688613187 (Trigger)
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(1)::EventConnection
+						Source 8709FC78-85D7-46CB-A153-04DB165B614A
+						Target B99D1BA2-3E29-4D33-B104-B7849D6624B0
+						SourceEvent::EventSpec
+							Id -1433788352 (OnLost)
+						TargetEvent::EventSpec
+							Id -1688613187 (Trigger)
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(2)::EventConnection
+						Source 8709FC78-85D7-46CB-A153-04DB165B614A
+						Target 2E90F6EE-06A2-43A9-8462-6A3B570A324E
+						SourceEvent::EventSpec
+							Id -912021666
+						TargetEvent::EventSpec
+							Id -1688613187 (Trigger)
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(3)::EventConnection
+						Source 8709FC78-85D7-46CB-A153-04DB165B614A
+						Target BC324223-3426-4767-9116-BB0B763E7BDB
+						SourceEvent::EventSpec
+							Id -912021667
+						TargetEvent::EventSpec
+							Id -1688613187 (Trigger)
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(4)::EventConnection
+						Source 8709FC78-85D7-46CB-A153-04DB165B614A
+						Target 8A5D1DFB-5F2F-499D-B30B-F31829B0F513
+						SourceEvent::EventSpec
+							Id 193454151 (OOB)
+						TargetEvent::EventSpec
+							Id -1688613187 (Trigger)
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(5)::EventConnection
+						Source 8709FC78-85D7-46CB-A153-04DB165B614A
+						Target A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
+						SourceEvent::EventSpec
+							Id 444463510 (EndgameWinningTeam1)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
+						Target 5F7171AF-76F2-4526-9D70-22821546465B
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id -1688613187 (Trigger)
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(7)::EventConnection
+						Source 8709FC78-85D7-46CB-A153-04DB165B614A
+						Target A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
+						SourceEvent::EventSpec
+							Id 777574576
+						TargetEvent::EventSpec
+							Id 212633683 (Close)
+						TargetType EventConnectionTargetType_Server
+					member(8)::EventConnection
+						Source 8709FC78-85D7-46CB-A153-04DB165B614A
+						Target FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
+						SourceEvent::EventSpec
+							Id 444463509 (EndgameWinningTeam2)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+					member(9)::EventConnection
+						Source FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
+						Target BF41DA13-AE1E-4EBF-B583-A2660702FCB7
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id -1688613187 (Trigger)
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(10)::EventConnection
+						Source 8709FC78-85D7-46CB-A153-04DB165B614A
+						Target FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
+						SourceEvent::EventSpec
+							Id 777574576
+						TargetEvent::EventSpec
+							Id 212633683 (Close)
+						TargetType EventConnectionTargetType_Server
+				Descriptor 8709FC78-85D7-46CB-A153-04DB165B614A
+				NeedNetworkId True
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient True
+				AlwaysCreateEntityBusServer True
+		Objects::array
+			member(0) B99D1BA2-3E29-4D33-B104-B7849D6624B0
+			member(1) 256F1E56-9968-4EF9-8432-0EEFFA38681E
+			member(2) 5F7171AF-76F2-4526-9D70-22821546465B
+			member(3) BF41DA13-AE1E-4EBF-B583-A2660702FCB7
+			member(4) 2E90F6EE-06A2-43A9-8462-6A3B570A324E
+			member(5) BC324223-3426-4767-9116-BB0B763E7BDB
+			member(6) 8A5D1DFB-5F2F-499D-B30B-F31829B0F513
+			member(7) A7D78779-0FAA-4909-A6EB-9892CA9B5FF0
+			member(8) FA7C27EC-CE9B-4A14-82E5-DFFF29CE0713
 VoiceOverEventEntityData B99D1BA2-3E29-4D33-B104-B7849D6624B0
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 0
-    VoEvent Sound/VO/Logic/GM_Conquest/7D1C8556-27CC-4C53-9852-267467A09179
-    EventPlayer Sound/VO/Logic/GM_Conquest/D24275FB-4802-4F75-9989-FAFFC1C3B1BD
-    ExtraEventPlayer *nullGuid*
-    TriggerDelay 0.0
-    FinishedDelay 0.0
-    RunOnce False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	VoEvent Sound/VO/Logic/GM_Conquest/7D1C8556-27CC-4C53-9852-267467A09179
+	EventPlayer Sound/VO/Logic/GM_Conquest/D24275FB-4802-4F75-9989-FAFFC1C3B1BD
+	ExtraEventPlayer *nullGuid*
+	TriggerDelay 0.0
+	FinishedDelay 0.0
+	RunOnce False
 VoiceOverEventEntityData 256F1E56-9968-4EF9-8432-0EEFFA38681E
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-    VoEvent Sound/VO/Logic/GM_Conquest/DFE3402E-8132-4CA7-8A35-F9750BFF3AB4
-    EventPlayer Sound/VO/Logic/GM_Conquest/D4E9BAC7-75FA-4715-B539-4748C617A651
-    ExtraEventPlayer *nullGuid*
-    TriggerDelay 0.0
-    FinishedDelay 0.0
-    RunOnce False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	VoEvent Sound/VO/Logic/GM_Conquest/DFE3402E-8132-4CA7-8A35-F9750BFF3AB4
+	EventPlayer Sound/VO/Logic/GM_Conquest/D4E9BAC7-75FA-4715-B539-4748C617A651
+	ExtraEventPlayer *nullGuid*
+	TriggerDelay 0.0
+	FinishedDelay 0.0
+	RunOnce False
 VoiceOverEventEntityData 5F7171AF-76F2-4526-9D70-22821546465B
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    VoEvent Sound/VO/Logic/GM_Conquest/3FB5245F-C0F8-43D9-AD72-C67AAEF4385C
-    EventPlayer *nullGuid*
-    ExtraEventPlayer *nullGuid*
-    TriggerDelay 0.0
-    FinishedDelay 0.0
-    RunOnce False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	VoEvent Sound/VO/Logic/GM_Conquest/3FB5245F-C0F8-43D9-AD72-C67AAEF4385C
+	EventPlayer *nullGuid*
+	ExtraEventPlayer *nullGuid*
+	TriggerDelay 0.0
+	FinishedDelay 0.0
+	RunOnce False
 VoiceOverEventEntityData BF41DA13-AE1E-4EBF-B583-A2660702FCB7
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 3
-    VoEvent Sound/VO/Logic/GM_Conquest/35A7E451-022C-497D-A65F-E4B293C03CF2
-    EventPlayer *nullGuid*
-    ExtraEventPlayer *nullGuid*
-    TriggerDelay 0.0
-    FinishedDelay 0.0
-    RunOnce False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	VoEvent Sound/VO/Logic/GM_Conquest/35A7E451-022C-497D-A65F-E4B293C03CF2
+	EventPlayer *nullGuid*
+	ExtraEventPlayer *nullGuid*
+	TriggerDelay 0.0
+	FinishedDelay 0.0
+	RunOnce False
 VoiceOverEventEntityData 2E90F6EE-06A2-43A9-8462-6A3B570A324E
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 4
-    VoEvent Sound/VO/Logic/GM_Conquest/428CA4C1-564B-4687-94A6-95029577277F
-    EventPlayer *nullGuid*
-    ExtraEventPlayer *nullGuid*
-    TriggerDelay 0.0
-    FinishedDelay 0.0
-    RunOnce False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 4
+	VoEvent Sound/VO/Logic/GM_Conquest/428CA4C1-564B-4687-94A6-95029577277F
+	EventPlayer *nullGuid*
+	ExtraEventPlayer *nullGuid*
+	TriggerDelay 0.0
+	FinishedDelay 0.0
+	RunOnce False
 VoiceOverEventEntityData BC324223-3426-4767-9116-BB0B763E7BDB
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 5
-    VoEvent Sound/VO/Logic/GM_Conquest/A382E6BE-4359-4695-806E-92E65972A2AB
-    EventPlayer *nullGuid*
-    ExtraEventPlayer *nullGuid*
-    TriggerDelay 0.0
-    FinishedDelay 0.0
-    RunOnce False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 5
+	VoEvent Sound/VO/Logic/GM_Conquest/A382E6BE-4359-4695-806E-92E65972A2AB
+	EventPlayer *nullGuid*
+	ExtraEventPlayer *nullGuid*
+	TriggerDelay 0.0
+	FinishedDelay 0.0
+	RunOnce False
 VoiceOverEventEntityData 8A5D1DFB-5F2F-499D-B30B-F31829B0F513
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 6
-    VoEvent Sound/VO/Logic/AutoTriggers_MP/E18904C9-83E0-4D9B-966F-7E5CB59B5A59
-    EventPlayer Sound/VO/Logic/AutoTriggers_MP/3AC7AB73-2AA5-4231-A2CC-9C3C05E8443A
-    ExtraEventPlayer *nullGuid*
-    TriggerDelay 0.0
-    FinishedDelay 0.0
-    RunOnce False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 6
+	VoEvent Sound/VO/Logic/AutoTriggers_MP/E18904C9-83E0-4D9B-966F-7E5CB59B5A59
+	EventPlayer Sound/VO/Logic/AutoTriggers_MP/3AC7AB73-2AA5-4231-A2CC-9C3C05E8443A
+	ExtraEventPlayer *nullGuid*
+	TriggerDelay 0.0
+	FinishedDelay 0.0
+	RunOnce False

@@ -1,172 +1,172 @@
 Partition CCDFE81C-59BA-479A-81A2-86E3EBE5FC6B
 GeometryTriggerEntityData A27876A1-4264-4DFC-BD47-75BCDF63D9E4
-    $::AreaTriggerEntityData
-        $::TriggerEntityData
-            $::GameEntityData
-                $::SpatialEntityData
-                    $::EntityData
-                        $::GameObjectData
-                            $::GameDataContainer
-                                $::DataContainer
-                            IsEventConnectionTarget 1
-                            IsPropertyConnectionTarget 3
-                            IndexInBlueprint 0
-                    Transform::LinearTransform
-                        right::Vec3
-                            x 1.0
-                            y 0.0
-                            z 0.0
-                        up::Vec3
-                            x 0.0
-                            y 1.0
-                            z 0.0
-                        forward::Vec3
-                            x 0.0
-                            y 0.0
-                            z 1.0
-                        trans::Vec3
-                            x 0.0
-                            y 0.0
-                            z 0.0
-                Enabled True
-                Components *nullArray*
-                RuntimeComponentCount 0
-            Delay 0.0
-            RunOnce False
-        GeometryTransform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-        Include ATPlayers
-        UseCharacterEntity False
-        Radius 0.0
-        InsideAreaEventRepeatTime 0.0
-        OneInsideAreaEventPerSoldier False
-        TriggerOnlyOnLeave False
-        ResetOnEnable False
-        TriggerOnLeaveOnDeath True
-        TriggerOnLeaveOnDisable True
+	$::AreaTriggerEntityData
+		$::TriggerEntityData
+			$::GameEntityData
+				$::SpatialEntityData
+					$::EntityData
+						$::GameObjectData
+							$::GameDataContainer
+								$::DataContainer
+							IsEventConnectionTarget 1
+							IsPropertyConnectionTarget 3
+							IndexInBlueprint 0
+					Transform::LinearTransform
+						right::Vec3
+							x 1.0
+							y 0.0
+							z 0.0
+						up::Vec3
+							x 0.0
+							y 1.0
+							z 0.0
+						forward::Vec3
+							x 0.0
+							y 0.0
+							z 1.0
+						trans::Vec3
+							x 0.0
+							y 0.0
+							z 0.0
+				Enabled True
+				Components *nullArray*
+				RuntimeComponentCount 0
+			Delay 0.0
+			RunOnce False
+		GeometryTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Include ATPlayers
+		UseCharacterEntity False
+		Radius 0.0
+		InsideAreaEventRepeatTime 0.0
+		OneInsideAreaEventPerSoldier False
+		TriggerOnlyOnLeave False
+		ResetOnEnable False
+		TriggerOnLeaveOnDeath True
+		TriggerOnLeaveOnDisable True
 InterfaceDescriptorData 06058380-F168-4818-8D51-D42C5E9916E0
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields *nullArray*
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id -1952177180 (Enable)
-        member(1)::DynamicEvent
-            Id -117303631 (Disable)
-    OutputEvents::array
-        member(0)::DynamicEvent
-            Id -1670697813 (FailEvent)
-    InputLinks *nullArray*
-    OutputLinks::array
-        member(0)::DynamicLink
-            Id 664676898
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1952177180 (Enable)
+		member(1)::DynamicEvent
+			Id -117303631 (Disable)
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1670697813 (FailEvent)
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id 664676898
 LogicPrefabBlueprint 5EC93358-09D4-48CC-81FB-30CA105DB85F #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/Logic/OutOfBounds_SP_5S
-                    PropertyConnections *nullArray*
-                    LinkConnections::array
-                        member(0)::LinkConnection
-                            Source A27876A1-4264-4DFC-BD47-75BCDF63D9E4
-                            Target 06058380-F168-4818-8D51-D42C5E9916E0
-                            SourceFieldId 838548383 (Geometry)
-                            TargetFieldId 664676898
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 06058380-F168-4818-8D51-D42C5E9916E0
-                        Target A27876A1-4264-4DFC-BD47-75BCDF63D9E4
-                        SourceEvent::EventSpec
-                            Id -1952177180 (Enable)
-                        TargetEvent::EventSpec
-                            Id -1952177180 (Enable)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source 06058380-F168-4818-8D51-D42C5E9916E0
-                        Target A27876A1-4264-4DFC-BD47-75BCDF63D9E4
-                        SourceEvent::EventSpec
-                            Id -117303631 (Disable)
-                        TargetEvent::EventSpec
-                            Id -117303631 (Disable)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source A27876A1-4264-4DFC-BD47-75BCDF63D9E4
-                        Target 4DA609C9-6623-4A64-93D2-B703E32E5BC0
-                        SourceEvent::EventSpec
-                            Id -80368276
-                        TargetEvent::EventSpec
-                            Id 230748069 (Start)
-                        TargetType EventConnectionTargetType_Server
-                    member(3)::EventConnection
-                        Source A27876A1-4264-4DFC-BD47-75BCDF63D9E4
-                        Target 4DA609C9-6623-4A64-93D2-B703E32E5BC0
-                        SourceEvent::EventSpec
-                            Id -70038721 (OnLeave)
-                        TargetEvent::EventSpec
-                            Id 2089401213 (Stop)
-                        TargetType EventConnectionTargetType_Server
-                    member(4)::EventConnection
-                        Source 4DA609C9-6623-4A64-93D2-B703E32E5BC0
-                        Target 06058380-F168-4818-8D51-D42C5E9916E0
-                        SourceEvent::EventSpec
-                            Id -910201930 (Player)
-                        TargetEvent::EventSpec
-                            Id -1670697813 (FailEvent)
-                        TargetType EventConnectionTargetType_Server
-                Descriptor 06058380-F168-4818-8D51-D42C5E9916E0
-                NeedNetworkId True
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) A27876A1-4264-4DFC-BD47-75BCDF63D9E4
-            member(1) 4DA609C9-6623-4A64-93D2-B703E32E5BC0
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/OutOfBounds_SP_5S
+					PropertyConnections *nullArray*
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source A27876A1-4264-4DFC-BD47-75BCDF63D9E4
+							Target 06058380-F168-4818-8D51-D42C5E9916E0
+							SourceFieldId 838548383 (Geometry)
+							TargetFieldId 664676898
+				EventConnections::array
+					member(0)::EventConnection
+						Source 06058380-F168-4818-8D51-D42C5E9916E0
+						Target A27876A1-4264-4DFC-BD47-75BCDF63D9E4
+						SourceEvent::EventSpec
+							Id -1952177180 (Enable)
+						TargetEvent::EventSpec
+							Id -1952177180 (Enable)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 06058380-F168-4818-8D51-D42C5E9916E0
+						Target A27876A1-4264-4DFC-BD47-75BCDF63D9E4
+						SourceEvent::EventSpec
+							Id -117303631 (Disable)
+						TargetEvent::EventSpec
+							Id -117303631 (Disable)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source A27876A1-4264-4DFC-BD47-75BCDF63D9E4
+						Target 4DA609C9-6623-4A64-93D2-B703E32E5BC0
+						SourceEvent::EventSpec
+							Id -80368276 (OnEnter)
+						TargetEvent::EventSpec
+							Id 230748069 (Start)
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source A27876A1-4264-4DFC-BD47-75BCDF63D9E4
+						Target 4DA609C9-6623-4A64-93D2-B703E32E5BC0
+						SourceEvent::EventSpec
+							Id -70038721 (OnLeave)
+						TargetEvent::EventSpec
+							Id 2089401213 (Stop)
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source 4DA609C9-6623-4A64-93D2-B703E32E5BC0
+						Target 06058380-F168-4818-8D51-D42C5E9916E0
+						SourceEvent::EventSpec
+							Id -910201930 (Player)
+						TargetEvent::EventSpec
+							Id -1670697813 (FailEvent)
+						TargetType EventConnectionTargetType_Server
+				Descriptor 06058380-F168-4818-8D51-D42C5E9916E0
+				NeedNetworkId True
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) A27876A1-4264-4DFC-BD47-75BCDF63D9E4
+			member(1) 4DA609C9-6623-4A64-93D2-B703E32E5BC0
 LogicReferenceObjectData 4DA609C9-6623-4A64-93D2-B703E32E5BC0
-    $::ReferenceObjectData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-        BlueprintTransform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-        Blueprint Gameplay/Logic/OutOfBounds_Countdown/D716F9BE-B4D1-5BF8-AB90-D5E5B8741623
-        ObjectVariation *nullGuid*
-        StreamRealm StreamRealm_None
-        CastSunShadowEnable True
-        Excluded False
-    SubRealm SubRealm_All
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Blueprint Gameplay/Logic/OutOfBounds_Countdown/D716F9BE-B4D1-5BF8-AB90-D5E5B8741623
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		CastSunShadowEnable True
+		Excluded False
+	SubRealm SubRealm_All

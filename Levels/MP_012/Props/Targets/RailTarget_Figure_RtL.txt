@@ -1,320 +1,342 @@
-Partition 32FEAD73-5BB8-4AF2-B29B-CDE2DAF905CD
-EventGateEntityData 1E7F39F0-978C-4A7A-9016-37F4C53A86E1
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 2
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 4
-    Default False
-    Realm Realm_ClientAndServer
-InterfaceDescriptorData 8DB40C46-CEE8-4CD8-AF62-FB71F224F10C
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields *nullArray*
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id -559281700 (Activate)
-        member(1)::DynamicEvent
-            Id 1928776733 (Deactivate)
-    OutputEvents::array
-        member(0)::DynamicEvent
-            Id 1142724007
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
-ReferenceObjectData C5C2AFFF-89C1-4A7E-B3FC-EEC77C0A756E
-    $::GameObjectData
-        $::GameDataContainer
-            $::DataContainer
-        IsEventConnectionTarget 3
-        IsPropertyConnectionTarget 3
-        IndexInBlueprint 0
-    BlueprintTransform::LinearTransform
-        right::Vec3
-            x 1.0
-            y 0.0
-            z 0.0
-        up::Vec3
-            x 0.0
-            y 1.0
-            z 0.0
-        forward::Vec3
-            x 0.0
-            y 0.0
-            z 1.0
-        trans::Vec3
-            x 0.0
-            y 0.0
-            z 0.0
-    Blueprint Levels/MP_012/Props/Targets/Target_Rail/D4F7C01A-8CBA-6729-DA41-4E2F43D7592E
-    ObjectVariation *nullGuid*
-    StreamRealm StreamRealm_None
-    CastSunShadowEnable True
-    Excluded False
-ReferenceObjectData 09BECB9A-25D5-4020-B622-1CD4E2C8BAA2
-    $::GameObjectData
-        $::GameDataContainer
-            $::DataContainer
-        IsEventConnectionTarget 3
-        IsPropertyConnectionTarget 3
-        IndexInBlueprint 1
-    BlueprintTransform::LinearTransform
-        right::Vec3
-            x 1.0
-            y 0.0
-            z 0.0
-        up::Vec3
-            x 0.0
-            y 1.0
-            z 0.0
-        forward::Vec3
-            x 0.0
-            y 0.0
-            z 1.0
-        trans::Vec3
-            x -5.11999511719
-            y 0.0
-            z 0.0
-    Blueprint Levels/MP_012/Props/Targets/Target_Rail/D4F7C01A-8CBA-6729-DA41-4E2F43D7592E
-    ObjectVariation *nullGuid*
-    StreamRealm StreamRealm_None
-    CastSunShadowEnable True
-    Excluded False
-ReferenceObjectData FD2CD5ED-1490-4A51-8ED1-BD2791BF55E9
-    $::GameObjectData
-        $::GameDataContainer
-            $::DataContainer
-        IsEventConnectionTarget 2
-        IsPropertyConnectionTarget 2
-        IndexInBlueprint 2
-    BlueprintTransform::LinearTransform
-        right::Vec3
-            x 0.999999880791
-            y 0.0
-            z 8.74227623626e-08
-        up::Vec3
-            x 0.0
-            y 1.0
-            z 0.0
-        forward::Vec3
-            x -8.74227623626e-08
-            y 0.0
-            z 0.999999880791
-        trans::Vec3
-            x 1.2800000906
-            y 0.0
-            z -0.0114190205932
-    Blueprint Levels/MP_012/Props/Targets/PopperTarget_Plate/04D74766-E510-4524-831B-4CAF91B7C49C
-    ObjectVariation *nullGuid*
-    StreamRealm StreamRealm_None
-    CastSunShadowEnable True
-    Excluded False
-SequenceEntityData 30BBE219-47E2-4749-A27C-E7FD7E71F26A
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 2
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 3
-    Events *nullArray*
-    SequenceStartTime 0
-    SequenceLength 10000
-    Looping True
-    AutoStart False
-    AutoPlayFirstFrame False
-    PlayInReverse False
-    Realm Realm_ClientAndServer
-    PropertyTracks::array
-        member(0) B87BA586-FBE5-455B-8EA2-65DF7FC23545
-        member(1) AEE8DB81-2A18-41D6-80B0-73AFF0BB1499
-        member(2) 409B88F2-FEEB-4818-B7A4-76132D605E0C
-        member(3) B5FE88D0-07F5-47E5-87C7-AF5346B64DEC
-        member(4) 261E8B10-8655-4D08-8B5C-E1E126CBA5A4
-        member(5) 93A28028-3F36-42BD-AB20-75ED17DAE030
-    CustomSequenceTracks *nullArray*
-    ClientUpdatePass UpdatePass_PostFrame
-    ServerUpdatePass UpdatePass_PreSim
-    ExternalTime 0.0
-SpatialPrefabBlueprint 35F9BB4F-2F30-44F8-B290-5CC72B710085 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Levels/MP_012/Props/Targets/RailTarget_Figure_RtL
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source 30BBE219-47E2-4749-A27C-E7FD7E71F26A
-                            Target FD2CD5ED-1490-4A51-8ED1-BD2791BF55E9
-                            SourceFieldId 1089920010
-                            TargetFieldId -409930682 (BlueprintTransform)
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 8DB40C46-CEE8-4CD8-AF62-FB71F224F10C
-                        Target FD2CD5ED-1490-4A51-8ED1-BD2791BF55E9
-                        SourceEvent::EventSpec
-                            Id -559281700 (Activate)
-                        TargetEvent::EventSpec
-                            Id -559281700 (Activate)
-                        TargetType EventConnectionTargetType_ClientAndServer
-                    member(1)::EventConnection
-                        Source 8DB40C46-CEE8-4CD8-AF62-FB71F224F10C
-                        Target 30BBE219-47E2-4749-A27C-E7FD7E71F26A
-                        SourceEvent::EventSpec
-                            Id -559281700 (Activate)
-                        TargetEvent::EventSpec
-                            Id 230748069 (Start)
-                        TargetType EventConnectionTargetType_ClientAndServer
-                    member(2)::EventConnection
-                        Source FD2CD5ED-1490-4A51-8ED1-BD2791BF55E9
-                        Target 8DB40C46-CEE8-4CD8-AF62-FB71F224F10C
-                        SourceEvent::EventSpec
-                            Id 193458192 (Hit)
-                        TargetEvent::EventSpec
-                            Id 1142724007
-                        TargetType EventConnectionTargetType_ClientAndServer
-                    member(3)::EventConnection
-                        Source 8DB40C46-CEE8-4CD8-AF62-FB71F224F10C
-                        Target 1E7F39F0-978C-4A7A-9016-37F4C53A86E1
-                        SourceEvent::EventSpec
-                            Id 1928776733 (Deactivate)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_ClientAndServer
-                    member(4)::EventConnection
-                        Source 1E7F39F0-978C-4A7A-9016-37F4C53A86E1
-                        Target FD2CD5ED-1490-4A51-8ED1-BD2791BF55E9
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id 1928776733 (Deactivate)
-                        TargetType EventConnectionTargetType_ClientAndServer
-                    member(5)::EventConnection
-                        Source 8DB40C46-CEE8-4CD8-AF62-FB71F224F10C
-                        Target 1E7F39F0-978C-4A7A-9016-37F4C53A86E1
-                        SourceEvent::EventSpec
-                            Id -559281700 (Activate)
-                        TargetEvent::EventSpec
-                            Id 2089008817 (Open)
-                        TargetType EventConnectionTargetType_ClientAndServer
-                    member(6)::EventConnection
-                        Source 1E7F39F0-978C-4A7A-9016-37F4C53A86E1
-                        Target 1E7F39F0-978C-4A7A-9016-37F4C53A86E1
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id 212633683 (Close)
-                        TargetType EventConnectionTargetType_ClientAndServer
-                    member(7)::EventConnection
-                        Source 1E7F39F0-978C-4A7A-9016-37F4C53A86E1
-                        Target 30BBE219-47E2-4749-A27C-E7FD7E71F26A
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id 229946160 (Reset)
-                        TargetType EventConnectionTargetType_ClientAndServer
-                Descriptor 8DB40C46-CEE8-4CD8-AF62-FB71F224F10C
-                NeedNetworkId True
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) C5C2AFFF-89C1-4A7E-B3FC-EEC77C0A756E
-            member(1) 09BECB9A-25D5-4020-B622-1CD4E2C8BAA2
-            member(2) FD2CD5ED-1490-4A51-8ED1-BD2791BF55E9
-            member(3) 30BBE219-47E2-4749-A27C-E7FD7E71F26A
-            member(4) 1E7F39F0-978C-4A7A-9016-37F4C53A86E1
-TransformPartPropertyTrackData B87BA586-FBE5-455B-8EA2-65DF7FC23545
-    $::PropertyTrackData
-        $::DataContainer
-        Id 1089920010
-        Times *nullArray*
-    TransformPart TransformPart_TranslationX
-    PreInfinity CurveInfinityType_Constant
-    PostInfinity CurveInfinityType_Constant
-    Values *nullArray*
-    EvaluatorFps 1.0
-    Weighted False
-    ResourceName Levels/MP_012/Props/Targets/AnimTrackData/30BBE219-47E2-4749-A27C-E7FD7E71F26A_Move_01
-    KeyStartIndex 0
-    KeyCount 3
-    IsStatic False
-TransformPartPropertyTrackData AEE8DB81-2A18-41D6-80B0-73AFF0BB1499
-    $::PropertyTrackData
-        $::DataContainer
-        Id 1089920010
-        Times *nullArray*
-    TransformPart TransformPart_TranslationY
-    PreInfinity CurveInfinityType_Constant
-    PostInfinity CurveInfinityType_Constant
-    Values *nullArray*
-    EvaluatorFps 1.0
-    Weighted False
-    ResourceName Levels/MP_012/Props/Targets/AnimTrackData/30BBE219-47E2-4749-A27C-E7FD7E71F26A_Move_01
-    KeyStartIndex 3
-    KeyCount 3
-    IsStatic True
-TransformPartPropertyTrackData 409B88F2-FEEB-4818-B7A4-76132D605E0C
-    $::PropertyTrackData
-        $::DataContainer
-        Id 1089920010
-        Times *nullArray*
-    TransformPart TransformPart_TranslationZ
-    PreInfinity CurveInfinityType_Constant
-    PostInfinity CurveInfinityType_Constant
-    Values *nullArray*
-    EvaluatorFps 1.0
-    Weighted False
-    ResourceName Levels/MP_012/Props/Targets/AnimTrackData/30BBE219-47E2-4749-A27C-E7FD7E71F26A_Move_01
-    KeyStartIndex 6
-    KeyCount 3
-    IsStatic True
-TransformPartPropertyTrackData B5FE88D0-07F5-47E5-87C7-AF5346B64DEC
-    $::PropertyTrackData
-        $::DataContainer
-        Id 1089920010
-        Times *nullArray*
-    TransformPart TransformPart_RotationX
-    PreInfinity CurveInfinityType_Constant
-    PostInfinity CurveInfinityType_Constant
-    Values *nullArray*
-    EvaluatorFps 1.0
-    Weighted False
-    ResourceName Levels/MP_012/Props/Targets/AnimTrackData/30BBE219-47E2-4749-A27C-E7FD7E71F26A_Move_01
-    KeyStartIndex 9
-    KeyCount 3
-    IsStatic True
-TransformPartPropertyTrackData 261E8B10-8655-4D08-8B5C-E1E126CBA5A4
-    $::PropertyTrackData
-        $::DataContainer
-        Id 1089920010
-        Times *nullArray*
-    TransformPart TransformPart_RotationY
-    PreInfinity CurveInfinityType_Constant
-    PostInfinity CurveInfinityType_Constant
-    Values *nullArray*
-    EvaluatorFps 1.0
-    Weighted False
-    ResourceName Levels/MP_012/Props/Targets/AnimTrackData/30BBE219-47E2-4749-A27C-E7FD7E71F26A_Move_01
-    KeyStartIndex 12
-    KeyCount 3
-    IsStatic True
-TransformPartPropertyTrackData 93A28028-3F36-42BD-AB20-75ED17DAE030
-    $::PropertyTrackData
-        $::DataContainer
-        Id 1089920010
-        Times *nullArray*
-    TransformPart TransformPart_RotationZ
-    PreInfinity CurveInfinityType_Constant
-    PostInfinity CurveInfinityType_Constant
-    Values *nullArray*
-    EvaluatorFps 1.0
-    Weighted False
-    ResourceName Levels/MP_012/Props/Targets/AnimTrackData/30BBE219-47E2-4749-A27C-E7FD7E71F26A_Move_01
-    KeyStartIndex 15
-    KeyCount 3
-    IsStatic True
+Partition FE06218F-CDE9-41EA-A400-7C13EE190F3C
+InterfaceDescriptorData F3AA9739-F916-4FB8-974A-A2A30DF82C9F
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -559281700 (Activate)
+		member(1)::DynamicEvent
+			Id 1928776733 (Deactivate)
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 1223765815 (Finished)
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+ReferenceObjectData 39BE34C9-92E2-4B63-8C70-839F8FFB0813
+	$::GameObjectData
+		$::GameDataContainer
+			$::DataContainer
+		IsEventConnectionTarget 3
+		IsPropertyConnectionTarget 3
+		IndexInBlueprint 0
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Blueprint Levels/MP_012/Props/Targets/Target_Rail/D4F7C01A-8CBA-6729-DA41-4E2F43D7592E
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	CastSunShadowEnable True
+	Excluded False
+ReferenceObjectData B21A52B7-406F-4595-BBF5-005D5D80E76D
+	$::GameObjectData
+		$::GameDataContainer
+			$::DataContainer
+		IsEventConnectionTarget 3
+		IsPropertyConnectionTarget 3
+		IndexInBlueprint 1
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x -5.1199951171875
+			y 0.0
+			z 0.0
+	Blueprint Levels/MP_012/Props/Targets/Target_Rail/D4F7C01A-8CBA-6729-DA41-4E2F43D7592E
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	CastSunShadowEnable True
+	Excluded False
+ReferenceObjectData 8F86120D-A251-41B1-A91A-E7DDFC3E9522
+	$::GameObjectData
+		$::GameDataContainer
+			$::DataContainer
+		IsEventConnectionTarget 2
+		IsPropertyConnectionTarget 2
+		IndexInBlueprint 2
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x -1.0
+			y 0.0
+			z 8.742277657347586e-08
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x -8.742277657347586e-08
+			y 0.0
+			z -1.0
+		trans::Vec3
+			x 1.9199985265731812
+			y 0.0
+			z -0.4851113557815552
+	Blueprint Levels/MP_012/Props/Targets/PopperTarget_Figure/927A93E3-1E1B-4464-BDE8-35E53A901FFD
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	CastSunShadowEnable True
+	Excluded False
+SequenceEntityData DE7C66B4-FE94-4BC6-8284-44E6153532FA
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	Events *nullArray*
+	SequenceStartTime 0
+	SequenceLength 10000
+	Looping True
+	AutoStart False
+	AutoPlayFirstFrame False
+	PlayInReverse False
+	Realm Realm_ClientAndServer
+	PropertyTracks::array
+		member(0) 751F9EDD-4AC6-4527-85C8-FB0D8AED2B8C
+		member(1) EE77E85D-2DC8-48CD-8BDA-4C0E411B4BBF
+		member(2) 9237787E-A94B-40C7-A11A-7D874E7700BC
+		member(3) 1E0AD966-A6FC-4D30-AF49-E4D2C32C04DD
+		member(4) 00F240A9-DB0C-4C9B-B2A9-F5D8DBA7D1A4
+		member(5) B8359AED-02D1-47AD-9B87-ACB2834431D8
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostFrame
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+SoundEntityData 4E1859B0-6557-4D23-8887-080700503A9C
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 4
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Sound Sound/Levels/SP_Villa/SFX/SP_Villa_SFX_Rail_TargetFigure_01/539AAA05-7E3B-4EEC-9DFD-4944F239D3BE
+	PlayOnCreation False
+SpatialPrefabBlueprint 0BCFF8AF-387F-44E2-97D4-C3DA71138296 #primary instance
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Levels/MP_012/Props/Targets/RailTarget_Figure_RtL
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source DE7C66B4-FE94-4BC6-8284-44E6153532FA
+							Target 8F86120D-A251-41B1-A91A-E7DDFC3E9522
+							SourceFieldId 1089920010
+							TargetFieldId -409930682 (BlueprintTransform)
+						member(1)::PropertyConnection
+							Source DE7C66B4-FE94-4BC6-8284-44E6153532FA
+							Target 4E1859B0-6557-4D23-8887-080700503A9C
+							SourceFieldId 1089920010
+							TargetFieldId -2024647575 (Transform)
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source F3AA9739-F916-4FB8-974A-A2A30DF82C9F
+						Target 8F86120D-A251-41B1-A91A-E7DDFC3E9522
+						SourceEvent::EventSpec
+							Id -559281700 (Activate)
+						TargetEvent::EventSpec
+							Id -559281700 (Activate)
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(1)::EventConnection
+						Source F3AA9739-F916-4FB8-974A-A2A30DF82C9F
+						Target DE7C66B4-FE94-4BC6-8284-44E6153532FA
+						SourceEvent::EventSpec
+							Id -559281700 (Activate)
+						TargetEvent::EventSpec
+							Id 230748069 (Start)
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(2)::EventConnection
+						Source F3AA9739-F916-4FB8-974A-A2A30DF82C9F
+						Target DE7C66B4-FE94-4BC6-8284-44E6153532FA
+						SourceEvent::EventSpec
+							Id 1928776733 (Deactivate)
+						TargetEvent::EventSpec
+							Id 232316407 (Pause)
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(3)::EventConnection
+						Source 8F86120D-A251-41B1-A91A-E7DDFC3E9522
+						Target DE7C66B4-FE94-4BC6-8284-44E6153532FA
+						SourceEvent::EventSpec
+							Id 1223765815 (Finished)
+						TargetEvent::EventSpec
+							Id 232316407 (Pause)
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(4)::EventConnection
+						Source 8F86120D-A251-41B1-A91A-E7DDFC3E9522
+						Target F3AA9739-F916-4FB8-974A-A2A30DF82C9F
+						SourceEvent::EventSpec
+							Id 1223765815 (Finished)
+						TargetEvent::EventSpec
+							Id 1223765815 (Finished)
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(5)::EventConnection
+						Source DE7C66B4-FE94-4BC6-8284-44E6153532FA
+						Target 4E1859B0-6557-4D23-8887-080700503A9C
+						SourceEvent::EventSpec
+							Id -1193365339 (OnStarted)
+						TargetEvent::EventSpec
+							Id 230748069 (Start)
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source DE7C66B4-FE94-4BC6-8284-44E6153532FA
+						Target 4E1859B0-6557-4D23-8887-080700503A9C
+						SourceEvent::EventSpec
+							Id -1176973715 (OnStopped)
+						TargetEvent::EventSpec
+							Id 2089401213 (Stop)
+						TargetType EventConnectionTargetType_Client
+					member(7)::EventConnection
+						Source 8F86120D-A251-41B1-A91A-E7DDFC3E9522
+						Target 4E1859B0-6557-4D23-8887-080700503A9C
+						SourceEvent::EventSpec
+							Id 1223765815 (Finished)
+						TargetEvent::EventSpec
+							Id 2089401213 (Stop)
+						TargetType EventConnectionTargetType_Client
+				Descriptor F3AA9739-F916-4FB8-974A-A2A30DF82C9F
+				NeedNetworkId True
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) 39BE34C9-92E2-4B63-8C70-839F8FFB0813
+			member(1) B21A52B7-406F-4595-BBF5-005D5D80E76D
+			member(2) 8F86120D-A251-41B1-A91A-E7DDFC3E9522
+			member(3) DE7C66B4-FE94-4BC6-8284-44E6153532FA
+			member(4) 4E1859B0-6557-4D23-8887-080700503A9C
+TransformPartPropertyTrackData 751F9EDD-4AC6-4527-85C8-FB0D8AED2B8C
+	$::PropertyTrackData
+		$::DataContainer
+		Id 1089920010
+		Times *nullArray*
+	TransformPart TransformPart_TranslationX
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	Weighted False
+	ResourceName Levels/MP_012/Props/Targets/AnimTrackData/DE7C66B4-FE94-4BC6-8284-44E6153532FA_Move_01
+	KeyStartIndex 0
+	KeyCount 4
+	IsStatic False
+TransformPartPropertyTrackData EE77E85D-2DC8-48CD-8BDA-4C0E411B4BBF
+	$::PropertyTrackData
+		$::DataContainer
+		Id 1089920010
+		Times *nullArray*
+	TransformPart TransformPart_TranslationY
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	Weighted False
+	ResourceName Levels/MP_012/Props/Targets/AnimTrackData/DE7C66B4-FE94-4BC6-8284-44E6153532FA_Move_01
+	KeyStartIndex 4
+	KeyCount 2
+	IsStatic True
+TransformPartPropertyTrackData 9237787E-A94B-40C7-A11A-7D874E7700BC
+	$::PropertyTrackData
+		$::DataContainer
+		Id 1089920010
+		Times *nullArray*
+	TransformPart TransformPart_TranslationZ
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	Weighted False
+	ResourceName Levels/MP_012/Props/Targets/AnimTrackData/DE7C66B4-FE94-4BC6-8284-44E6153532FA_Move_01
+	KeyStartIndex 6
+	KeyCount 2
+	IsStatic True
+TransformPartPropertyTrackData 1E0AD966-A6FC-4D30-AF49-E4D2C32C04DD
+	$::PropertyTrackData
+		$::DataContainer
+		Id 1089920010
+		Times *nullArray*
+	TransformPart TransformPart_RotationX
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	Weighted False
+	ResourceName Levels/MP_012/Props/Targets/AnimTrackData/DE7C66B4-FE94-4BC6-8284-44E6153532FA_Move_01
+	KeyStartIndex 8
+	KeyCount 2
+	IsStatic True
+TransformPartPropertyTrackData 00F240A9-DB0C-4C9B-B2A9-F5D8DBA7D1A4
+	$::PropertyTrackData
+		$::DataContainer
+		Id 1089920010
+		Times *nullArray*
+	TransformPart TransformPart_RotationY
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	Weighted False
+	ResourceName Levels/MP_012/Props/Targets/AnimTrackData/DE7C66B4-FE94-4BC6-8284-44E6153532FA_Move_01
+	KeyStartIndex 10
+	KeyCount 2
+	IsStatic True
+TransformPartPropertyTrackData B8359AED-02D1-47AD-9B87-ACB2834431D8
+	$::PropertyTrackData
+		$::DataContainer
+		Id 1089920010
+		Times *nullArray*
+	TransformPart TransformPart_RotationZ
+	PreInfinity CurveInfinityType_Constant
+	PostInfinity CurveInfinityType_Constant
+	Values *nullArray*
+	EvaluatorFps 1.0
+	Weighted False
+	ResourceName Levels/MP_012/Props/Targets/AnimTrackData/DE7C66B4-FE94-4BC6-8284-44E6153532FA_Move_01
+	KeyStartIndex 12
+	KeyCount 2
+	IsStatic True

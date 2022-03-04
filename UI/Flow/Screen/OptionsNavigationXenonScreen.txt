@@ -1,0 +1,327 @@
+Partition 15C9D23E-B6D4-11E0-88EC-93B2F3780B58
+BinaryLogicNode 0C0DD675-FAAE-42C2-B624-E55F06686A44
+	$::UINodeData
+		$::DataContainer
+		Name CanSave
+		IsRootNode False
+		ParentGraph 5C80350B-C050-42C6-36CC-0B2088870C8E
+		ParentIsScreen True
+	In 44FA727F-6CDC-4A03-AA7F-FD8FAFB5F7FE
+	True 5475D354-F8E2-4F22-B1E6-7FDEECB508DD
+	False 62C2EEBA-6607-40AF-93B7-BC656F510FB1
+	DataSourceInfo::UIDataSourceInfo
+		DataName 
+		DataCategory UI/UIComponents/UIMemCardComp/0E6CCF26-5891-6CFF-4F16-A605E086F799
+		DataKey -1955263736
+		UseDirectAccess False
+		UpdateOnInitialize True
+DataSetNode BE33F754-2F1F-446D-8169-84893FBE6C9B
+	$::UINodeData
+		$::DataContainer
+		Name ShowChangeStorage
+		IsRootNode False
+		ParentGraph 5C80350B-C050-42C6-36CC-0B2088870C8E
+		ParentIsScreen True
+	In 360E3FE6-69B6-444D-BE8D-B0E912BEA9D7
+	Out 0BB14247-B69D-4DD5-A6FD-B417154D9C58
+	Param ID_M_BACK,IDB_Rright,false,0;ID_M_OPTIONS_RESET_SETTINGS,IDB_Rup,false,0;ID_M_OPTIONS_CHANGE_STORAGE_DEVICE,IDB_Rleft,false,0;
+	SetToEmptyString False
+	DataSource::UIDataSourceInfo
+		DataName 
+		DataCategory UI/UIComponents/UISettingsComp/3AA69203-174E-09BA-D476-141A0FD4BB9D
+		DataKey -1068419075
+		UseDirectAccess False
+		UpdateOnInitialize True
+DataSetNode D51D9C30-D803-43CF-B882-E2126D530BE7
+	$::UINodeData
+		$::DataContainer
+		Name HideChangeStorage
+		IsRootNode False
+		ParentGraph 5C80350B-C050-42C6-36CC-0B2088870C8E
+		ParentIsScreen True
+	In 7BCD57F6-884C-4108-98C4-E7622B656C3A
+	Out 06467B8A-9F53-4CB9-80F0-984155FF3607
+	Param ID_M_BACK,IDB_Rright,false,0;ID_M_OPTIONS_RESET_SETTINGS,IDB_Rup,false,0;
+	SetToEmptyString False
+	DataSource::UIDataSourceInfo
+		DataName 
+		DataCategory UI/UIComponents/UISettingsComp/3AA69203-174E-09BA-D476-141A0FD4BB9D
+		DataKey -1068419075
+		UseDirectAccess False
+		UpdateOnInitialize True
+InstanceInputNode C4F51D5B-847F-4ECC-B0B7-14CE25503624
+	$::UINodeData
+		$::DataContainer
+		Name EnterScreen
+		IsRootNode False
+		ParentGraph 5C80350B-C050-42C6-36CC-0B2088870C8E
+		ParentIsScreen True
+	Out ECBBD151-E53E-4F69-BFD4-B68E5E95B4D5
+UIButtonDataBinding B1B3FBFB-DDB5-4753-8774-67AD75268D15
+	$::UIDataBinding
+		$::DataContainer
+	ButtonsDatasource::UIDataSourceInfo
+		DataName 
+		DataCategory UI/UIComponents/UISettingsComp/3AA69203-174E-09BA-D476-141A0FD4BB9D
+		DataKey -1068419075
+		UseDirectAccess False
+		UpdateOnInitialize True
+	DefaultButtonSet::UIButtonSet
+		Buttons *nullArray*
+	Visible True
+	InputOnRelease False
+UIDynamicDataBinding 8BFE6EAC-DF82-4A5C-8F03-20334DCD9978
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Setup
+			DataCategory *nullGuid*
+			DataKey 0
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UIDynamicDataBinding F9F62684-A039-4323-8B97-EF03DF143AA4
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Visible
+			DataCategory UI/UIComponents/UISettingsComp/3AA69203-174E-09BA-D476-141A0FD4BB9D
+			DataKey -888049522 (Visible)
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UINodeConnection 22752A4D-D8D6-4D7D-A22F-BB3B329BBD2B
+	$::DataContainer
+	SourceNode C4F51D5B-847F-4ECC-B0B7-14CE25503624
+	TargetNode 0C0DD675-FAAE-42C2-B624-E55F06686A44
+	SourcePort ECBBD151-E53E-4F69-BFD4-B68E5E95B4D5
+	TargetPort 44FA727F-6CDC-4A03-AA7F-FD8FAFB5F7FE
+	NumScreensToPop 0
+UINodeConnection 3790DAB1-0FCC-4353-8AA9-734EB82BE466
+	$::DataContainer
+	SourceNode 0C0DD675-FAAE-42C2-B624-E55F06686A44
+	TargetNode BE33F754-2F1F-446D-8169-84893FBE6C9B
+	SourcePort 5475D354-F8E2-4F22-B1E6-7FDEECB508DD
+	TargetPort 360E3FE6-69B6-444D-BE8D-B0E912BEA9D7
+	NumScreensToPop 0
+UINodeConnection 78EA42E8-2774-496A-9856-B4E4DB9996B5
+	$::DataContainer
+	SourceNode 0C0DD675-FAAE-42C2-B624-E55F06686A44
+	TargetNode D51D9C30-D803-43CF-B882-E2126D530BE7
+	SourcePort 62C2EEBA-6607-40AF-93B7-BC656F510FB1
+	TargetPort 7BCD57F6-884C-4108-98C4-E7622B656C3A
+	NumScreensToPop 0
+UINodePort BB53DC70-42DD-4756-AD08-AD82915E8429
+	$::DataContainer
+	Name Activate
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_OnItemSelected
+	AllowManualRemove False
+UINodePort 808C426C-0C5A-4189-8F30-F0335DD27180
+	$::DataContainer
+	Name Deactivate
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_OnItemOut
+	AllowManualRemove False
+UINodePort 78B487D5-592B-441E-B3F1-E7EA131426BD
+	$::DataContainer
+	Name Edit
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_SetIndex
+	AllowManualRemove False
+UINodePort 455C0DD3-2A42-4FB8-A8C1-42E5B0C7A9AA
+	$::DataContainer
+	Name View
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_OnNavigateLeft
+	AllowManualRemove False
+UINodePort 3E8EA550-E3C3-4672-8F1D-DC3FD33245CB
+	$::DataContainer
+	Name LThumb
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_LThumb
+	AllowManualRemove False
+UINodePort 2A88E238-8547-4BBE-BE13-494BA9B852BE
+	$::DataContainer
+	Name RThumb
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_RThumb
+	AllowManualRemove False
+UINodePort D55B3074-4C1C-4E99-981B-D3DD8E3F07A7
+	$::DataContainer
+	Name UpdateData
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_Update
+	AllowManualRemove False
+UINodePort D57BC7EC-B570-4AB3-A1EC-CFC2CDBCBF9B
+	$::DataContainer
+	Name Show
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_Show
+	AllowManualRemove False
+UINodePort 5BE076AB-1B3E-4D25-9AA1-8AB3E402970F
+	$::DataContainer
+	Name Hide
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_Hide
+	AllowManualRemove False
+UINodePort 80223244-986C-4AF6-B546-D5137047FD94
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+UINodePort D5336AFE-6104-4D27-A2B1-D8BB30E1F01D
+	$::DataContainer
+	Name LTAB
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_LTAB
+	AllowManualRemove False
+UINodePort BE4D5491-6F13-4098-AFEC-0E300165CB25
+	$::DataContainer
+	Name RTAB
+	InstanceName ConsoleButtonBar_01
+	Query UIWidgetEventID_RTAB
+	AllowManualRemove False
+UINodePort 4D780380-42EA-4348-AAEE-B383E3F8000F
+	$::DataContainer
+	Name FadeIn
+	InstanceName Dimmer_01
+	Query UIWidgetEventID_Show
+	AllowManualRemove False
+UINodePort B8988645-8844-462C-969E-B3B8D28078B7
+	$::DataContainer
+	Name FadeOut
+	InstanceName Dimmer_01
+	Query UIWidgetEventID_Hide
+	AllowManualRemove False
+UINodePort ECBBD151-E53E-4F69-BFD4-B68E5E95B4D5
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+UINodePort 44FA727F-6CDC-4A03-AA7F-FD8FAFB5F7FE
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+UINodePort 5475D354-F8E2-4F22-B1E6-7FDEECB508DD
+	$::DataContainer
+	Name True
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+UINodePort 62C2EEBA-6607-40AF-93B7-BC656F510FB1
+	$::DataContainer
+	Name False
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+UINodePort 360E3FE6-69B6-444D-BE8D-B0E912BEA9D7
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+UINodePort 0BB14247-B69D-4DD5-A6FD-B417154D9C58
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+UINodePort 7BCD57F6-884C-4108-98C4-E7622B656C3A
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+UINodePort 06467B8A-9F53-4CB9-80F0-984155FF3607
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+UIScreenAsset 5C80350B-C050-42C6-36CC-0B2088870C8E #primary instance
+	$::UIGraphAsset
+		$::Asset
+			$::DataContainer
+			Name UI/Flow/Screen/OptionsNavigationXenonScreen
+		Nodes::array
+			member(0) 612C40F6-5E2B-4637-8E81-66F7B0A9E372
+			member(1) 1710D8B1-F4F8-4990-B01B-3FD913725EF8
+			member(2) C4F51D5B-847F-4ECC-B0B7-14CE25503624
+			member(3) 0C0DD675-FAAE-42C2-B624-E55F06686A44
+			member(4) BE33F754-2F1F-446D-8169-84893FBE6C9B
+			member(5) D51D9C30-D803-43CF-B882-E2126D530BE7
+		GlobalNode *nullGuid*
+		Connections::array
+			member(0) 22752A4D-D8D6-4D7D-A22F-BB3B329BBD2B
+			member(1) 3790DAB1-0FCC-4353-8AA9-734EB82BE466
+			member(2) 78EA42E8-2774-496A-9856-B4E4DB9996B5
+		AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41B4640B-1973-8469-A254-B1B23E4E6A04
+		BundleAssetName 
+		ProtectScreens False
+		Modal False
+		EventList *nullArray*
+		IsWin32UIGraphAsset True
+		IsXenonUIGraphAsset True
+		IsPs3UIGraphAsset True
+WidgetNode 612C40F6-5E2B-4637-8E81-66F7B0A9E372
+	$::UINodeData
+		$::DataContainer
+		Name ConsoleButtonBar
+		IsRootNode False
+		ParentGraph 5C80350B-C050-42C6-36CC-0B2088870C8E
+		ParentIsScreen True
+	WidgetAsset UI/Assets/ConsoleButtonBar/CF4722C5-D921-BA35-DD71-B479E63568AC
+	FocusIndex 0
+	AlwaysInFocus False
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding B1B3FBFB-DDB5-4753-8774-67AD75268D15
+	InstanceName ConsoleButtonBar_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) BB53DC70-42DD-4756-AD08-AD82915E8429
+		member(1) 808C426C-0C5A-4189-8F30-F0335DD27180
+		member(2) 78B487D5-592B-441E-B3F1-E7EA131426BD
+		member(3) 455C0DD3-2A42-4FB8-A8C1-42E5B0C7A9AA
+		member(4) 3E8EA550-E3C3-4672-8F1D-DC3FD33245CB
+		member(5) 2A88E238-8547-4BBE-BE13-494BA9B852BE
+		member(6) D5336AFE-6104-4D27-A2B1-D8BB30E1F01D
+		member(7) BE4D5491-6F13-4098-AFEC-0E300165CB25
+	Inputs::array
+		member(0) D55B3074-4C1C-4E99-981B-D3DD8E3F07A7
+		member(1) D57BC7EC-B570-4AB3-A1EC-CFC2CDBCBF9B
+		member(2) 5BE076AB-1B3E-4D25-9AA1-8AB3E402970F
+WidgetNode 1710D8B1-F4F8-4990-B01B-3FD913725EF8
+	$::UINodeData
+		$::DataContainer
+		Name Dimmer
+		IsRootNode False
+		ParentGraph 5C80350B-C050-42C6-36CC-0B2088870C8E
+		ParentIsScreen True
+	WidgetAsset UI/Assets/Dimmer/28D9BB5C-24B6-7760-E726-8BE53524BA15
+	FocusIndex 0
+	AlwaysInFocus False
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding F9F62684-A039-4323-8B97-EF03DF143AA4
+	InstanceName Dimmer_01
+	WidgetProperties::array
+		member(0)::UIWidgetProperty
+			Name DimFromStart
+			Value true
+		member(1)::UIWidgetProperty
+			Name InstantDim
+			Value false
+	Outputs *nullArray*
+	Inputs::array
+		member(0) 4D780380-42EA-4348-AAEE-B383E3F8000F
+		member(1) B8988645-8844-462C-969E-B3B8D28078B7

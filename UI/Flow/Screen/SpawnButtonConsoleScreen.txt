@@ -1,85 +1,85 @@
 Partition FED17C5A-7147-49A9-AFA8-1D02A2DC0638
 InstanceOutputNode 02562302-87CA-4409-AB99-FCF5CB1C9B36
-    $::UINodeData
-        $::DataContainer
-        Name Spawn
-        IsRootNode False
-        ParentGraph DF1CD6CA-C4DA-4019-B370-79060E481C22
-        ParentIsScreen True
-    In BB6BE51B-5853-4A74-8F74-FF141BFCEBF8
-    Id 230891742
-    DestroyGraph True
+	$::UINodeData
+		$::DataContainer
+		Name Spawn
+		IsRootNode False
+		ParentGraph DF1CD6CA-C4DA-4019-B370-79060E481C22
+		ParentIsScreen True
+	In BB6BE51B-5853-4A74-8F74-FF141BFCEBF8
+	Id 230891742 (Spawn)
+	DestroyGraph True
 UIDynamicDataBinding 65F5CA84-02A5-4D4D-AEF7-A5CB235AD394
-    $::UIDataBinding
-        $::DataContainer
-    Bindings::array
-        member(0)::UIDataSourceInfo
-            DataName Time
-            DataCategory UI/UIComponents/UISpawnLogicComp/9F27F744-4109-90BE-7EDE-900D89A13BD9
-            DataKey -1005581981
-            UseDirectAccess False
-            UpdateOnInitialize True
-        member(1)::UIDataSourceInfo
-            DataName CanSpawn
-            DataCategory UI/UIComponents/UISpawnPointComp/5C5F1F60-AC8E-3CB6-99E8-E320BDC65575
-            DataKey -990983020
-            UseDirectAccess False
-            UpdateOnInitialize False
-    Refresh True
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Time
+			DataCategory UI/UIComponents/UISpawnLogicComp/9F27F744-4109-90BE-7EDE-900D89A13BD9
+			DataKey -1005581981 (Time)
+			UseDirectAccess False
+			UpdateOnInitialize True
+		member(1)::UIDataSourceInfo
+			DataName CanSpawn
+			DataCategory UI/UIComponents/UISpawnPointComp/5C5F1F60-AC8E-3CB6-99E8-E320BDC65575
+			DataKey -990983020 (CanSpawn)
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
 UINodeConnection F1D4580D-055A-4A36-B7DF-46D5298298DC
-    $::DataContainer
-    SourceNode 9ECB905A-D4D0-4F0B-A7A1-C8E04830821D
-    TargetNode 02562302-87CA-4409-AB99-FCF5CB1C9B36
-    SourcePort 2E482732-9830-4820-AD99-67AD80CA8B16
-    TargetPort BB6BE51B-5853-4A74-8F74-FF141BFCEBF8
-    NumScreensToPop 0
+	$::DataContainer
+	SourceNode 9ECB905A-D4D0-4F0B-A7A1-C8E04830821D
+	TargetNode 02562302-87CA-4409-AB99-FCF5CB1C9B36
+	SourcePort 2E482732-9830-4820-AD99-67AD80CA8B16
+	TargetPort BB6BE51B-5853-4A74-8F74-FF141BFCEBF8
+	NumScreensToPop 0
 UINodePort 2E482732-9830-4820-AD99-67AD80CA8B16
-    $::DataContainer
-    Name Deploy
-    InstanceName SpawnTimer_01
-    Query UIWidgetEventID_OnItemReleased
-    AllowManualRemove False
+	$::DataContainer
+	Name Deploy
+	InstanceName SpawnTimer_01
+	Query UIWidgetEventID_OnItemReleased
+	AllowManualRemove False
 UINodePort BB6BE51B-5853-4A74-8F74-FF141BFCEBF8
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UIScreenAsset DF1CD6CA-C4DA-4019-B370-79060E481C22 #primary instance
-    $::UIGraphAsset
-        $::Asset
-            $::DataContainer
-            Name UI/Flow/Screen/SpawnButtonConsoleScreen
-        Nodes::array
-            member(0) 9ECB905A-D4D0-4F0B-A7A1-C8E04830821D
-            member(1) 02562302-87CA-4409-AB99-FCF5CB1C9B36
-        GlobalNode *nullGuid*
-        Connections::array
-            member(0) F1D4580D-055A-4A36-B7DF-46D5298298DC
-        AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultMaping/85731393-00A9-B3E1-1001-2EAD21F6CF0E
-        BundleAssetName *nullString*
-        ProtectScreens False
-        Modal True
-        EventList *nullArray*
-        IsWin32UIGraphAsset True
-        IsXenonUIGraphAsset True
-        IsPs3UIGraphAsset True
+	$::UIGraphAsset
+		$::Asset
+			$::DataContainer
+			Name UI/Flow/Screen/SpawnButtonConsoleScreen
+		Nodes::array
+			member(0) 9ECB905A-D4D0-4F0B-A7A1-C8E04830821D
+			member(1) 02562302-87CA-4409-AB99-FCF5CB1C9B36
+		GlobalNode *nullGuid*
+		Connections::array
+			member(0) F1D4580D-055A-4A36-B7DF-46D5298298DC
+		AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultMaping/85731393-00A9-B3E1-1001-2EAD21F6CF0E
+		BundleAssetName 
+		ProtectScreens False
+		Modal True
+		EventList *nullArray*
+		IsWin32UIGraphAsset True
+		IsXenonUIGraphAsset True
+		IsPs3UIGraphAsset True
 WidgetNode 9ECB905A-D4D0-4F0B-A7A1-C8E04830821D
-    $::UINodeData
-        $::DataContainer
-        Name SpawnTimer
-        IsRootNode False
-        ParentGraph DF1CD6CA-C4DA-4019-B370-79060E481C22
-        ParentIsScreen True
-    WidgetAsset UI/Assets/SpawnTimer/59B1572C-EBFD-5EBB-BAA1-6FF4564FF51A
-    FocusIndex 0
-    AlwaysInFocus False
-    VerticalAlign WVA_Center
-    HorisontalAlign WHA_Center
-    ZDepthLevel 0
-    DataBinding 65F5CA84-02A5-4D4D-AEF7-A5CB235AD394
-    InstanceName SpawnTimer_01
-    WidgetProperties *nullArray*
-    Outputs::array
-        member(0) 2E482732-9830-4820-AD99-67AD80CA8B16
-    Inputs *nullArray*
+	$::UINodeData
+		$::DataContainer
+		Name SpawnTimer
+		IsRootNode False
+		ParentGraph DF1CD6CA-C4DA-4019-B370-79060E481C22
+		ParentIsScreen True
+	WidgetAsset UI/Assets/SpawnTimer/59B1572C-EBFD-5EBB-BAA1-6FF4564FF51A
+	FocusIndex 0
+	AlwaysInFocus False
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding 65F5CA84-02A5-4D4D-AEF7-A5CB235AD394
+	InstanceName SpawnTimer_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) 2E482732-9830-4820-AD99-67AD80CA8B16
+	Inputs *nullArray*
