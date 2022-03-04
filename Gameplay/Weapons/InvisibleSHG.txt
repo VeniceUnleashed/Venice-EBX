@@ -1,375 +1,375 @@
 Partition CC75A3CD-EDE6-45FC-BD98-9C57492D1229
 AlternateSpawnEntityData 1A3CC450-D4D0-11F5-236E-5E6F7F81E325
-    $::SpatialEntityData
-        $::EntityData
-            $::GameObjectData
-                $::GameDataContainer
-                    $::DataContainer
-                IsEventConnectionTarget 2
-                IsPropertyConnectionTarget 3
-                IndexInBlueprint 4
-        Transform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-    Team Team2
-    Priority 1.0
-    Enabled True
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 2
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 4
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Team Team2
+	Priority 1.0
+	Enabled True
 EventSplitterEntityData 148AA4BB-E5F4-41B8-A804-054031C376F0
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-    RunOnce False
-    Realm Realm_Server
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	RunOnce False
+	Realm Realm_Server
 EventSplitterEntityData A6BD6395-32C0-4805-8AD6-C1FC54B86F4E
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    RunOnce True
-    Realm Realm_Server
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	RunOnce True
+	Realm Realm_Server
 InterfaceDescriptorData CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id -2024647575
-                AccessType FieldAccessType_Target
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id 1999497757 (FireShot)
-        member(1)::DynamicEvent
-            Id 1999519237 (FireStop)
-        member(2)::DynamicEvent
-            Id -1060157340
-    OutputEvents::array
-        member(0)::DynamicEvent
-            Id 1428441180
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -2024647575 (Transform)
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1999497757 (FireShot)
+		member(1)::DynamicEvent
+			Id 1999519237 (FireStop)
+		member(2)::DynamicEvent
+			Id -1060157340
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 1428441180
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 SpatialPrefabBlueprint BE58FA9A-B7C2-43C3-8FF6-D93AF5E1C058 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/Weapons/InvisibleSHG
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
-                            Target E957D189-0B13-4207-B1A3-B33077918419
-                            SourceFieldId -2024647575 (Transform)
-                            TargetFieldId 2085022312 (ControllableTransform)
-                    LinkConnections::array
-                        member(0)::LinkConnection
-                            Source 3745601A-C163-4E28-BD8E-EDBCA824A33E
-                            Target E957D189-0B13-4207-B1A3-B33077918419
-                            SourceFieldId 403876000 (VehicleToCheck)
-                            TargetFieldId 0
-                        member(1)::LinkConnection
-                            Source E957D189-0B13-4207-B1A3-B33077918419
-                            Target 1A3CC450-D4D0-11F5-236E-5E6F7F81E325
-                            SourceFieldId -2001390482 (AlternativeSpawnPoints)
-                            TargetFieldId 0
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
-                        Target A6BD6395-32C0-4805-8AD6-C1FC54B86F4E
-                        SourceEvent::EventSpec
-                            Id 1999497757 (FireShot)
-                        TargetEvent::EventSpec
-                            Id 1723395486 (Impulse)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
-                        Target 148AA4BB-E5F4-41B8-A804-054031C376F0
-                        SourceEvent::EventSpec
-                            Id 1999497757 (FireShot)
-                        TargetEvent::EventSpec
-                            Id 1723395486 (Impulse)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source A6BD6395-32C0-4805-8AD6-C1FC54B86F4E
-                        Target E957D189-0B13-4207-B1A3-B33077918419
-                        SourceEvent::EventSpec
-                            Id -137490305 (OnImpulse)
-                        TargetEvent::EventSpec
-                            Id 230891742 (Spawn)
-                        TargetType EventConnectionTargetType_Server
-                    member(3)::EventConnection
-                        Source A6BD6395-32C0-4805-8AD6-C1FC54B86F4E
-                        Target E957D189-0B13-4207-B1A3-B33077918419
-                        SourceEvent::EventSpec
-                            Id -137490305 (OnImpulse)
-                        TargetEvent::EventSpec
-                            Id 777187609 (TakeControl)
-                        TargetType EventConnectionTargetType_Server
-                    member(4)::EventConnection
-                        Source 148AA4BB-E5F4-41B8-A804-054031C376F0
-                        Target E957D189-0B13-4207-B1A3-B33077918419
-                        SourceEvent::EventSpec
-                            Id -137490305 (OnImpulse)
-                        TargetEvent::EventSpec
-                            Id 1999497757 (FireShot)
-                        TargetType EventConnectionTargetType_Server
-                    member(5)::EventConnection
-                        Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
-                        Target E957D189-0B13-4207-B1A3-B33077918419
-                        SourceEvent::EventSpec
-                            Id 1999519237 (FireStop)
-                        TargetEvent::EventSpec
-                            Id 1999519237 (FireStop)
-                        TargetType EventConnectionTargetType_Server
-                    member(6)::EventConnection
-                        Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
-                        Target E957D189-0B13-4207-B1A3-B33077918419
-                        SourceEvent::EventSpec
-                            Id 1999519237 (FireStop)
-                        TargetEvent::EventSpec
-                            Id -597186424 (ReturnControl)
-                        TargetType EventConnectionTargetType_Server
-                    member(7)::EventConnection
-                        Source 148AA4BB-E5F4-41B8-A804-054031C376F0
-                        Target CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
-                        SourceEvent::EventSpec
-                            Id -137490305 (OnImpulse)
-                        TargetEvent::EventSpec
-                            Id 1428441180
-                        TargetType EventConnectionTargetType_Server
-                    member(8)::EventConnection
-                        Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
-                        Target E957D189-0B13-4207-B1A3-B33077918419
-                        SourceEvent::EventSpec
-                            Id -1060157340
-                        TargetEvent::EventSpec
-                            Id -834116283 (Unspawn)
-                        TargetType EventConnectionTargetType_Server
-                Descriptor CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
-                NeedNetworkId True
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) 3745601A-C163-4E28-BD8E-EDBCA824A33E
-            member(1) 148AA4BB-E5F4-41B8-A804-054031C376F0
-            member(2) A6BD6395-32C0-4805-8AD6-C1FC54B86F4E
-            member(3) E957D189-0B13-4207-B1A3-B33077918419
-            member(4) 1A3CC450-D4D0-11F5-236E-5E6F7F81E325
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Weapons/InvisibleSHG
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
+							Target E957D189-0B13-4207-B1A3-B33077918419
+							SourceFieldId -2024647575 (Transform)
+							TargetFieldId 2085022312 (ControllableTransform)
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source 3745601A-C163-4E28-BD8E-EDBCA824A33E
+							Target E957D189-0B13-4207-B1A3-B33077918419
+							SourceFieldId 403876000 (VehicleToCheck)
+							TargetFieldId 0
+						member(1)::LinkConnection
+							Source E957D189-0B13-4207-B1A3-B33077918419
+							Target 1A3CC450-D4D0-11F5-236E-5E6F7F81E325
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
+							TargetFieldId 0
+				EventConnections::array
+					member(0)::EventConnection
+						Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
+						Target A6BD6395-32C0-4805-8AD6-C1FC54B86F4E
+						SourceEvent::EventSpec
+							Id 1999497757 (FireShot)
+						TargetEvent::EventSpec
+							Id 1723395486 (Impulse)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
+						Target 148AA4BB-E5F4-41B8-A804-054031C376F0
+						SourceEvent::EventSpec
+							Id 1999497757 (FireShot)
+						TargetEvent::EventSpec
+							Id 1723395486 (Impulse)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source A6BD6395-32C0-4805-8AD6-C1FC54B86F4E
+						Target E957D189-0B13-4207-B1A3-B33077918419
+						SourceEvent::EventSpec
+							Id -137490305 (OnImpulse)
+						TargetEvent::EventSpec
+							Id 230891742 (Spawn)
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source A6BD6395-32C0-4805-8AD6-C1FC54B86F4E
+						Target E957D189-0B13-4207-B1A3-B33077918419
+						SourceEvent::EventSpec
+							Id -137490305 (OnImpulse)
+						TargetEvent::EventSpec
+							Id 777187609 (TakeControl)
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source 148AA4BB-E5F4-41B8-A804-054031C376F0
+						Target E957D189-0B13-4207-B1A3-B33077918419
+						SourceEvent::EventSpec
+							Id -137490305 (OnImpulse)
+						TargetEvent::EventSpec
+							Id 1999497757 (FireShot)
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
+						Target E957D189-0B13-4207-B1A3-B33077918419
+						SourceEvent::EventSpec
+							Id 1999519237 (FireStop)
+						TargetEvent::EventSpec
+							Id 1999519237 (FireStop)
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
+						Target E957D189-0B13-4207-B1A3-B33077918419
+						SourceEvent::EventSpec
+							Id 1999519237 (FireStop)
+						TargetEvent::EventSpec
+							Id -597186424 (ReturnControl)
+						TargetType EventConnectionTargetType_Server
+					member(7)::EventConnection
+						Source 148AA4BB-E5F4-41B8-A804-054031C376F0
+						Target CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
+						SourceEvent::EventSpec
+							Id -137490305 (OnImpulse)
+						TargetEvent::EventSpec
+							Id 1428441180
+						TargetType EventConnectionTargetType_Server
+					member(8)::EventConnection
+						Source CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
+						Target E957D189-0B13-4207-B1A3-B33077918419
+						SourceEvent::EventSpec
+							Id -1060157340
+						TargetEvent::EventSpec
+							Id -834116283 (Unspawn)
+						TargetType EventConnectionTargetType_Server
+				Descriptor CB5AA5EA-E759-434A-9EF7-3EE15FBA6830
+				NeedNetworkId True
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) 3745601A-C163-4E28-BD8E-EDBCA824A33E
+			member(1) 148AA4BB-E5F4-41B8-A804-054031C376F0
+			member(2) A6BD6395-32C0-4805-8AD6-C1FC54B86F4E
+			member(3) E957D189-0B13-4207-B1A3-B33077918419
+			member(4) 1A3CC450-D4D0-11F5-236E-5E6F7F81E325
 VehicleSpawnReferenceObjectData E957D189-0B13-4207-B1A3-B33077918419
-    $::SpawnReferenceObjectData
-        $::ReferenceObjectData
-            $::GameObjectData
-                $::GameDataContainer
-                    $::DataContainer
-                IsEventConnectionTarget 1
-                IsPropertyConnectionTarget 2
-                IndexInBlueprint 3
-            BlueprintTransform::LinearTransform
-                right::Vec3
-                    x 1.0
-                    y 0.0
-                    z 0.0
-                up::Vec3
-                    x 0.0
-                    y 1.0
-                    z 0.0
-                forward::Vec3
-                    x 0.0
-                    y 0.0
-                    z 1.0
-                trans::Vec3
-                    x 0.0
-                    y 0.0
-                    z 0.0
-            Blueprint Vehicles/DummyWeapons/Dummy_SHG/73FE34C8-1B73-46F4-AD52-6B98C0D2169C
-            ObjectVariation *nullGuid*
-            StreamRealm StreamRealm_None
-            CastSunShadowEnable True
-            Excluded False
-        Enabled True
-        LocationNameSid *nullString*
-        LocationTextSid *nullString*
-        Team Team2
-        LockedTeam False
-        InitialAutoSpawn True
-        AutoSpawn False
-        UseAsSpawnPoint True
-        InitialSpawnDelay 0.0
-        SpawnDelay 0.0
-        MaxCount 1
-        MaxCountSimultaneously 0
-        TotalCountSimultaneouslyOfType 0
-        SpawnAreaRadius 2.5
-        SpawnProtectionRadius 0.0
-        SpawnProtectionCheckAllTeams True
-        SpawnProtectionFriendlyKilledCount 0
-        SpawnProtectionFriendlyKilledTime 30.0
-        ClearBangersOnSpawn True
-        OnlySendEventForHumanPlayers True
-        SendWeaponEvents False
-        TryToSpawnOutOfSight False
-        TakeControlEntryIndex 0
-        TakeControlOnTransformChange True
-        ReturnControlOnIdle True
-        RotationYaw 0.0
-        RotationPitch 0.0
-        RotationRoll 0.0
-        Throttle 0.0
-        OverwriteThrottle False
-        InitialVelocity 0.0
-        ControllableTransform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-        ControllableInput::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-        IsDynamicSpawn False
-        AirdropTransform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-    WreckDuration 0.0
-    SetTeamOnSpawn False
-    AffectedByImpulse True
-    EnterRestriction EntryEnterRestriction_OnlyPrimaryEntry
-    BotBailWhenHealthBelow 0.0
-    BotBailOutDelay 0.5
-    ApplyDamageToAbandonedVehicles False
-    RespawnRange 15.0
-    TimeUntilAbandoned 10.0
-    TimeUntilAbandonedIsDestroyed 10.0
-    KeepAliveRadius 50.0
-    ActiveStanceEntryIndex 0
-    ActiveStance 0
-    VehicleIsNearDistance 0.0
-    EnableAvailableSeatOutput False
-    DisregardSpawnAllowedSetting False
-    AirDropCarrierTransform::LinearTransform
-        right::Vec3
-            x 1.0
-            y 0.0
-            z 0.0
-        up::Vec3
-            x 0.0
-            y 1.0
-            z 0.0
-        forward::Vec3
-            x 0.0
-            y 0.0
-            z 1.0
-        trans::Vec3
-            x 0.0
-            y 0.0
-            z 0.0
+	$::SpawnReferenceObjectData
+		$::ReferenceObjectData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 1
+				IsPropertyConnectionTarget 2
+				IndexInBlueprint 3
+			BlueprintTransform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+			Blueprint Vehicles/DummyWeapons/Dummy_SHG/73FE34C8-1B73-46F4-AD52-6B98C0D2169C
+			ObjectVariation *nullGuid*
+			StreamRealm StreamRealm_None
+			CastSunShadowEnable True
+			Excluded False
+		Enabled True
+		LocationNameSid 
+		LocationTextSid 
+		Team Team2
+		LockedTeam False
+		InitialAutoSpawn True
+		AutoSpawn False
+		UseAsSpawnPoint True
+		InitialSpawnDelay 0.0
+		SpawnDelay 0.0
+		MaxCount 1
+		MaxCountSimultaneously 0
+		TotalCountSimultaneouslyOfType 0
+		SpawnAreaRadius 2.5
+		SpawnProtectionRadius 0.0
+		SpawnProtectionCheckAllTeams True
+		SpawnProtectionFriendlyKilledCount 0
+		SpawnProtectionFriendlyKilledTime 30.0
+		ClearBangersOnSpawn True
+		OnlySendEventForHumanPlayers True
+		SendWeaponEvents False
+		TryToSpawnOutOfSight False
+		TakeControlEntryIndex 0
+		TakeControlOnTransformChange True
+		ReturnControlOnIdle True
+		RotationYaw 0.0
+		RotationPitch 0.0
+		RotationRoll 0.0
+		Throttle 0.0
+		OverwriteThrottle False
+		InitialVelocity 0.0
+		ControllableTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		ControllableInput::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		IsDynamicSpawn False
+		AirdropTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	WreckDuration 0.0
+	SetTeamOnSpawn False
+	AffectedByImpulse True
+	EnterRestriction EntryEnterRestriction_OnlyPrimaryEntry
+	BotBailWhenHealthBelow 0.0
+	BotBailOutDelay 0.5
+	ApplyDamageToAbandonedVehicles False
+	RespawnRange 15.0
+	TimeUntilAbandoned 10.0
+	TimeUntilAbandonedIsDestroyed 10.0
+	KeepAliveRadius 50.0
+	ActiveStanceEntryIndex 0
+	ActiveStance 0
+	VehicleIsNearDistance 0.0
+	EnableAvailableSeatOutput False
+	DisregardSpawnAllowedSetting False
+	AirDropCarrierTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
 VehicleStateTriggerEntityData 3745601A-C163-4E28-BD8E-EDBCA824A33E
-    $::TriggerEntityData
-        $::GameEntityData
-            $::SpatialEntityData
-                $::EntityData
-                    $::GameObjectData
-                        $::GameDataContainer
-                            $::DataContainer
-                        IsEventConnectionTarget 3
-                        IsPropertyConnectionTarget 3
-                        IndexInBlueprint 0
-                Transform::LinearTransform
-                    right::Vec3
-                        x 1.0
-                        y 0.0
-                        z 0.0
-                    up::Vec3
-                        x 0.0
-                        y 1.0
-                        z 0.0
-                    forward::Vec3
-                        x 0.0
-                        y 0.0
-                        z 1.0
-                    trans::Vec3
-                        x 0.0
-                        y 0.0
-                        z 0.0
-            Enabled True
-            Components *nullArray*
-            RuntimeComponentCount 0
-        Delay 0.0
-        RunOnce False
-    LockAmount 0.0
-    AllowHumanToEnterAllSeats False
-    RestrictHumanToSpecificSeat False
-    SeatSpecificIndexForHuman 0
-    AllowAiToEnterAllSeats True
-    BanAiFromSpecificSeat False
-    SeatSpecificIndexForAi 0
-    BulletCount 1
-    HealthToSet 100
-    HealthToCheck 100
-    TriggerCriticalOnHealthSet False
-    CheckHealthGreaterOrEqual True
-    DestructionRadius 5.0
-    ShouldDestroyVehicles True
-    ShouldDestroyBangers True
+	$::TriggerEntityData
+		$::GameEntityData
+			$::SpatialEntityData
+				$::EntityData
+					$::GameObjectData
+						$::GameDataContainer
+							$::DataContainer
+						IsEventConnectionTarget 3
+						IsPropertyConnectionTarget 3
+						IndexInBlueprint 0
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+			Enabled True
+			Components *nullArray*
+			RuntimeComponentCount 0
+		Delay 0.0
+		RunOnce False
+	LockAmount 0.0
+	AllowHumanToEnterAllSeats False
+	RestrictHumanToSpecificSeat False
+	SeatSpecificIndexForHuman 0
+	AllowAiToEnterAllSeats True
+	BanAiFromSpecificSeat False
+	SeatSpecificIndexForAi 0
+	BulletCount 1
+	HealthToSet 100
+	HealthToCheck 100
+	TriggerCriticalOnHealthSet False
+	CheckHealthGreaterOrEqual True
+	DestructionRadius 5.0
+	ShouldDestroyVehicles True
+	ShouldDestroyBangers True

@@ -1,310 +1,310 @@
 Partition A1B4B23F-ABC8-11E0-B82F-D25929ECB21B
 DamageAreaTriggerEntityData 0119EF29-6491-457B-AA0E-1BDCC264268D
-    $::TriggerEntityData
-        $::GameEntityData
-            $::SpatialEntityData
-                $::EntityData
-                    $::GameObjectData
-                        $::GameDataContainer
-                            $::DataContainer
-                        IsEventConnectionTarget 1
-                        IsPropertyConnectionTarget 3
-                        IndexInBlueprint 0
-                Transform::LinearTransform
-                    right::Vec3
-                        x 1.0
-                        y 0.0
-                        z 0.0
-                    up::Vec3
-                        x 0.0
-                        y 1.0
-                        z 0.0
-                    forward::Vec3
-                        x 0.0
-                        y 0.0
-                        z 1.0
-                    trans::Vec3
-                        x 0.0
-                        y 0.0
-                        z 0.0
-            Enabled True
-            Components *nullArray*
-            RuntimeComponentCount 0
-        Delay 0.0
-        RunOnce True
-    DamageCharacters True
-    DamageVehicles False
-    DamageBangers False
-    DamagePerSecond 666.0
-    DamageTime 0.0
-    ExcludeImmortalCharactersInTeam True
-    TeamOfImmortalCharacters Team1
-    ExcludeShieldedSoldiers False
+	$::TriggerEntityData
+		$::GameEntityData
+			$::SpatialEntityData
+				$::EntityData
+					$::GameObjectData
+						$::GameDataContainer
+							$::DataContainer
+						IsEventConnectionTarget 1
+						IsPropertyConnectionTarget 3
+						IndexInBlueprint 0
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+			Enabled True
+			Components *nullArray*
+			RuntimeComponentCount 0
+		Delay 0.0
+		RunOnce True
+	DamageCharacters True
+	DamageVehicles False
+	DamageBangers False
+	DamagePerSecond 666.0
+	DamageTime 0.0
+	ExcludeImmortalCharactersInTeam True
+	TeamOfImmortalCharacters Team1
+	ExcludeShieldedSoldiers False
 InterfaceDescriptorData C68BB837-D31C-4FCE-9037-569E63B08DC1
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields *nullArray*
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id -1368112537
-        member(1)::DynamicEvent
-            Id -1087992257
-        member(2)::DynamicEvent
-            Id 275818933
-    OutputEvents::array
-        member(0)::DynamicEvent
-            Id -9036162
-    InputLinks *nullArray*
-    OutputLinks::array
-        member(0)::DynamicLink
-            Id 838548383 (Geometry)
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1368112537
+		member(1)::DynamicEvent
+			Id -1087992257
+		member(2)::DynamicEvent
+			Id 275818933
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -9036162
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id 838548383 (Geometry)
 LogicPrefabBlueprint 597529DA-9C53-E1B5-671D-535978128202 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/Prefabs/CoOp_FailSafe
-                    PropertyConnections *nullArray*
-                    LinkConnections::array
-                        member(0)::LinkConnection
-                            Source 361CAEA1-FF15-427E-B60C-AE6C71604ED1
-                            Target C68BB837-D31C-4FCE-9037-569E63B08DC1
-                            SourceFieldId 838548383 (Geometry)
-                            TargetFieldId 838548383 (Geometry)
-                        member(1)::LinkConnection
-                            Source 0119EF29-6491-457B-AA0E-1BDCC264268D
-                            Target C68BB837-D31C-4FCE-9037-569E63B08DC1
-                            SourceFieldId 838548383 (Geometry)
-                            TargetFieldId 838548383 (Geometry)
-                        member(2)::LinkConnection
-                            Source *nullGuid*
-                            Target B41F6002-D13A-4DAC-8CB4-1A607AF0D326
-                            SourceFieldId 0
-                            TargetFieldId 0
-                        member(3)::LinkConnection
-                            Source *nullGuid*
-                            Target 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
-                            SourceFieldId 0
-                            TargetFieldId 0
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source C68BB837-D31C-4FCE-9037-569E63B08DC1
-                        Target B41F6002-D13A-4DAC-8CB4-1A607AF0D326
-                        SourceEvent::EventSpec
-                            Id -1368112537
-                        TargetEvent::EventSpec
-                            Id 230748069 (Start)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source B41F6002-D13A-4DAC-8CB4-1A607AF0D326
-                        Target 361CAEA1-FF15-427E-B60C-AE6C71604ED1
-                        SourceEvent::EventSpec
-                            Id -575753723 (SpottingEvent)
-                        TargetEvent::EventSpec
-                            Id 2089405309 (Spot)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source B41F6002-D13A-4DAC-8CB4-1A607AF0D326
-                        Target 0119EF29-6491-457B-AA0E-1BDCC264268D
-                        SourceEvent::EventSpec
-                            Id -713836199 (DamageArea)
-                        TargetEvent::EventSpec
-                            Id -713836199 (DamageArea)
-                        TargetType EventConnectionTargetType_Server
-                    member(3)::EventConnection
-                        Source C68BB837-D31C-4FCE-9037-569E63B08DC1
-                        Target B41F6002-D13A-4DAC-8CB4-1A607AF0D326
-                        SourceEvent::EventSpec
-                            Id -1087992257
-                        TargetEvent::EventSpec
-                            Id 2089401213 (Stop)
-                        TargetType EventConnectionTargetType_Server
-                    member(4)::EventConnection
-                        Source B41F6002-D13A-4DAC-8CB4-1A607AF0D326
-                        Target B41F6002-D13A-4DAC-8CB4-1A607AF0D326
-                        SourceEvent::EventSpec
-                            Id -1176973715 (OnStopped)
-                        TargetEvent::EventSpec
-                            Id 229946160 (Reset)
-                        TargetType EventConnectionTargetType_Server
-                    member(5)::EventConnection
-                        Source 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
-                        Target 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
-                        SourceEvent::EventSpec
-                            Id -1176973715 (OnStopped)
-                        TargetEvent::EventSpec
-                            Id 229946160 (Reset)
-                        TargetType EventConnectionTargetType_Server
-                    member(6)::EventConnection
-                        Source 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
-                        Target C68BB837-D31C-4FCE-9037-569E63B08DC1
-                        SourceEvent::EventSpec
-                            Id -9036162
-                        TargetEvent::EventSpec
-                            Id -9036162
-                        TargetType EventConnectionTargetType_Server
-                    member(7)::EventConnection
-                        Source C68BB837-D31C-4FCE-9037-569E63B08DC1
-                        Target 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
-                        SourceEvent::EventSpec
-                            Id -1087992257
-                        TargetEvent::EventSpec
-                            Id 2089401213 (Stop)
-                        TargetType EventConnectionTargetType_Server
-                    member(8)::EventConnection
-                        Source C68BB837-D31C-4FCE-9037-569E63B08DC1
-                        Target 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
-                        SourceEvent::EventSpec
-                            Id 275818933
-                        TargetEvent::EventSpec
-                            Id 230748069 (Start)
-                        TargetType EventConnectionTargetType_Server
-                    member(9)::EventConnection
-                        Source 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
-                        Target 361CAEA1-FF15-427E-B60C-AE6C71604ED1
-                        SourceEvent::EventSpec
-                            Id -575753723 (SpottingEvent)
-                        TargetEvent::EventSpec
-                            Id 2089405309 (Spot)
-                        TargetType EventConnectionTargetType_Server
-                    member(10)::EventConnection
-                        Source C68BB837-D31C-4FCE-9037-569E63B08DC1
-                        Target 57BEE19D-FC45-4E72-BBE3-55792AA63065
-                        SourceEvent::EventSpec
-                            Id -1368112537
-                        TargetEvent::EventSpec
-                            Id 231942004 (Print)
-                        TargetType EventConnectionTargetType_Server
-                    member(11)::EventConnection
-                        Source C68BB837-D31C-4FCE-9037-569E63B08DC1
-                        Target 57BEE19D-FC45-4E72-BBE3-55792AA63065
-                        SourceEvent::EventSpec
-                            Id 275818933
-                        TargetEvent::EventSpec
-                            Id 231942004 (Print)
-                        TargetType EventConnectionTargetType_Server
-                    member(12)::EventConnection
-                        Source C68BB837-D31C-4FCE-9037-569E63B08DC1
-                        Target 17DD7B93-CF84-4DC9-8BC1-B13C0638DB39
-                        SourceEvent::EventSpec
-                            Id -1087992257
-                        TargetEvent::EventSpec
-                            Id 231942004 (Print)
-                        TargetType EventConnectionTargetType_Server
-                Descriptor C68BB837-D31C-4FCE-9037-569E63B08DC1
-                NeedNetworkId True
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) 0119EF29-6491-457B-AA0E-1BDCC264268D
-            member(1) 361CAEA1-FF15-427E-B60C-AE6C71604ED1
-            member(2) B41F6002-D13A-4DAC-8CB4-1A607AF0D326
-            member(3) 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
-            member(4) 57BEE19D-FC45-4E72-BBE3-55792AA63065
-            member(5) 17DD7B93-CF84-4DC9-8BC1-B13C0638DB39
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Prefabs/CoOp_FailSafe
+					PropertyConnections *nullArray*
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source 361CAEA1-FF15-427E-B60C-AE6C71604ED1
+							Target C68BB837-D31C-4FCE-9037-569E63B08DC1
+							SourceFieldId 838548383 (Geometry)
+							TargetFieldId 838548383 (Geometry)
+						member(1)::LinkConnection
+							Source 0119EF29-6491-457B-AA0E-1BDCC264268D
+							Target C68BB837-D31C-4FCE-9037-569E63B08DC1
+							SourceFieldId 838548383 (Geometry)
+							TargetFieldId 838548383 (Geometry)
+						member(2)::LinkConnection
+							Source *nullGuid*
+							Target B41F6002-D13A-4DAC-8CB4-1A607AF0D326
+							SourceFieldId 0
+							TargetFieldId 0
+						member(3)::LinkConnection
+							Source *nullGuid*
+							Target 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
+							SourceFieldId 0
+							TargetFieldId 0
+				EventConnections::array
+					member(0)::EventConnection
+						Source C68BB837-D31C-4FCE-9037-569E63B08DC1
+						Target B41F6002-D13A-4DAC-8CB4-1A607AF0D326
+						SourceEvent::EventSpec
+							Id -1368112537
+						TargetEvent::EventSpec
+							Id 230748069 (Start)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source B41F6002-D13A-4DAC-8CB4-1A607AF0D326
+						Target 361CAEA1-FF15-427E-B60C-AE6C71604ED1
+						SourceEvent::EventSpec
+							Id -575753723 (SpottingEvent)
+						TargetEvent::EventSpec
+							Id 2089405309 (Spot)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source B41F6002-D13A-4DAC-8CB4-1A607AF0D326
+						Target 0119EF29-6491-457B-AA0E-1BDCC264268D
+						SourceEvent::EventSpec
+							Id -713836199 (DamageArea)
+						TargetEvent::EventSpec
+							Id -713836199 (DamageArea)
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source C68BB837-D31C-4FCE-9037-569E63B08DC1
+						Target B41F6002-D13A-4DAC-8CB4-1A607AF0D326
+						SourceEvent::EventSpec
+							Id -1087992257
+						TargetEvent::EventSpec
+							Id 2089401213 (Stop)
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source B41F6002-D13A-4DAC-8CB4-1A607AF0D326
+						Target B41F6002-D13A-4DAC-8CB4-1A607AF0D326
+						SourceEvent::EventSpec
+							Id -1176973715 (OnStopped)
+						TargetEvent::EventSpec
+							Id 229946160 (Reset)
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
+						Target 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
+						SourceEvent::EventSpec
+							Id -1176973715 (OnStopped)
+						TargetEvent::EventSpec
+							Id 229946160 (Reset)
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
+						Target C68BB837-D31C-4FCE-9037-569E63B08DC1
+						SourceEvent::EventSpec
+							Id -9036162
+						TargetEvent::EventSpec
+							Id -9036162
+						TargetType EventConnectionTargetType_Server
+					member(7)::EventConnection
+						Source C68BB837-D31C-4FCE-9037-569E63B08DC1
+						Target 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
+						SourceEvent::EventSpec
+							Id -1087992257
+						TargetEvent::EventSpec
+							Id 2089401213 (Stop)
+						TargetType EventConnectionTargetType_Server
+					member(8)::EventConnection
+						Source C68BB837-D31C-4FCE-9037-569E63B08DC1
+						Target 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
+						SourceEvent::EventSpec
+							Id 275818933
+						TargetEvent::EventSpec
+							Id 230748069 (Start)
+						TargetType EventConnectionTargetType_Server
+					member(9)::EventConnection
+						Source 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
+						Target 361CAEA1-FF15-427E-B60C-AE6C71604ED1
+						SourceEvent::EventSpec
+							Id -575753723 (SpottingEvent)
+						TargetEvent::EventSpec
+							Id 2089405309 (Spot)
+						TargetType EventConnectionTargetType_Server
+					member(10)::EventConnection
+						Source C68BB837-D31C-4FCE-9037-569E63B08DC1
+						Target 57BEE19D-FC45-4E72-BBE3-55792AA63065
+						SourceEvent::EventSpec
+							Id -1368112537
+						TargetEvent::EventSpec
+							Id 231942004 (Print)
+						TargetType EventConnectionTargetType_Server
+					member(11)::EventConnection
+						Source C68BB837-D31C-4FCE-9037-569E63B08DC1
+						Target 57BEE19D-FC45-4E72-BBE3-55792AA63065
+						SourceEvent::EventSpec
+							Id 275818933
+						TargetEvent::EventSpec
+							Id 231942004 (Print)
+						TargetType EventConnectionTargetType_Server
+					member(12)::EventConnection
+						Source C68BB837-D31C-4FCE-9037-569E63B08DC1
+						Target 17DD7B93-CF84-4DC9-8BC1-B13C0638DB39
+						SourceEvent::EventSpec
+							Id -1087992257
+						TargetEvent::EventSpec
+							Id 231942004 (Print)
+						TargetType EventConnectionTargetType_Server
+				Descriptor C68BB837-D31C-4FCE-9037-569E63B08DC1
+				NeedNetworkId True
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) 0119EF29-6491-457B-AA0E-1BDCC264268D
+			member(1) 361CAEA1-FF15-427E-B60C-AE6C71604ED1
+			member(2) B41F6002-D13A-4DAC-8CB4-1A607AF0D326
+			member(3) 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
+			member(4) 57BEE19D-FC45-4E72-BBE3-55792AA63065
+			member(5) 17DD7B93-CF84-4DC9-8BC1-B13C0638DB39
 PrintDebugTextEntityData 57BEE19D-FC45-4E72-BBE3-55792AA63065
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 4
-    Realm Realm_Server
-    Text FAIL SAFE STARTS
-    TextColor::Vec3
-        x 0.0
-        y 1.0
-        z 0.0
-    Enabled True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 4
+	Realm Realm_Server
+	Text FAIL SAFE STARTS
+	TextColor::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	Enabled True
 PrintDebugTextEntityData 17DD7B93-CF84-4DC9-8BC1-B13C0638DB39
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 5
-    Realm Realm_Server
-    Text FAIL SAFE STOPS
-    TextColor::Vec3
-        x 0.0
-        y 1.0
-        z 0.0
-    Enabled True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 5
+	Realm Realm_Server
+	Text FAIL SAFE STOPS
+	TextColor::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	Enabled True
 SpottingEntityData 361CAEA1-FF15-427E-B60C-AE6C71604ED1
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-    Realm Realm_Server
-    Enabled True
-    TeamToSpot Team2
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Realm Realm_Server
+	Enabled True
+	TeamToSpot Team2
 SyncedSequenceEntityData B41F6002-D13A-4DAC-8CB4-1A607AF0D326
-    $::SequenceEntityData
-        $::EntityData
-            $::GameObjectData
-                $::GameDataContainer
-                    $::DataContainer
-                IsEventConnectionTarget 2
-                IsPropertyConnectionTarget 3
-                IndexInBlueprint 2
-        Events::array
-            member(0)::SequenceEventData
-                Event::EventSpec
-                    Id -575753723 (SpottingEvent)
-                Time 0
-            member(1)::SequenceEventData
-                Event::EventSpec
-                    Id -713836199 (DamageArea)
-                Time 15000
-        SequenceStartTime 0
-        SequenceLength 15000
-        Looping False
-        AutoStart False
-        AutoPlayFirstFrame False
-        PlayInReverse False
-        Realm Realm_ClientAndServer
-        PropertyTracks *nullArray*
-        CustomSequenceTracks *nullArray*
-        ClientUpdatePass UpdatePass_PreSim
-        ServerUpdatePass UpdatePass_PreSim
-        ExternalTime 0.0
-    InterpolateTime True
+	$::SequenceEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 2
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 2
+		Events::array
+			member(0)::SequenceEventData
+				Event::EventSpec
+					Id -575753723 (SpottingEvent)
+				Time 0
+			member(1)::SequenceEventData
+				Event::EventSpec
+					Id -713836199 (DamageArea)
+				Time 15000
+		SequenceStartTime 0
+		SequenceLength 15000
+		Looping False
+		AutoStart False
+		AutoPlayFirstFrame False
+		PlayInReverse False
+		Realm Realm_ClientAndServer
+		PropertyTracks *nullArray*
+		CustomSequenceTracks *nullArray*
+		ClientUpdatePass UpdatePass_PreSim
+		ServerUpdatePass UpdatePass_PreSim
+		ExternalTime 0.0
+	InterpolateTime True
 SyncedSequenceEntityData 3593501E-FEDC-456C-8DFF-D3D2B09BEE19
-    $::SequenceEntityData
-        $::EntityData
-            $::GameObjectData
-                $::GameDataContainer
-                    $::DataContainer
-                IsEventConnectionTarget 2
-                IsPropertyConnectionTarget 3
-                IndexInBlueprint 3
-        Events::array
-            member(0)::SequenceEventData
-                Event::EventSpec
-                    Id -575753723 (SpottingEvent)
-                Time 0
-            member(1)::SequenceEventData
-                Event::EventSpec
-                    Id -9036162
-                Time 15000
-        SequenceStartTime 0
-        SequenceLength 15000
-        Looping False
-        AutoStart False
-        AutoPlayFirstFrame False
-        PlayInReverse False
-        Realm Realm_ClientAndServer
-        PropertyTracks *nullArray*
-        CustomSequenceTracks *nullArray*
-        ClientUpdatePass UpdatePass_PreSim
-        ServerUpdatePass UpdatePass_PreSim
-        ExternalTime 0.0
-    InterpolateTime True
+	$::SequenceEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 2
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 3
+		Events::array
+			member(0)::SequenceEventData
+				Event::EventSpec
+					Id -575753723 (SpottingEvent)
+				Time 0
+			member(1)::SequenceEventData
+				Event::EventSpec
+					Id -9036162
+				Time 15000
+		SequenceStartTime 0
+		SequenceLength 15000
+		Looping False
+		AutoStart False
+		AutoPlayFirstFrame False
+		PlayInReverse False
+		Realm Realm_ClientAndServer
+		PropertyTracks *nullArray*
+		CustomSequenceTracks *nullArray*
+		ClientUpdatePass UpdatePass_PreSim
+		ServerUpdatePass UpdatePass_PreSim
+		ExternalTime 0.0
+	InterpolateTime True

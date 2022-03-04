@@ -1,161 +1,161 @@
 Partition BE90EBEC-3DA6-496F-8C7E-7638DF4E2905
 BoolEntityData 14EF06B5-5B6E-4F1B-A8C7-94DDEDFB9450
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    Realm Realm_Client
-    DefaultValue False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Realm Realm_Client
+	DefaultValue False
 BoolToEventEntityData 32CEE52B-A659-468A-8064-2B7EE8175E82
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 0
-            IndexInBlueprint 1
-    Realm Realm_Client
-    Value False
-    InitalEvent False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 0
+			IndexInBlueprint 1
+	Realm Realm_Client
+	Value False
+	InitalEvent False
 InterfaceDescriptorData 9CFC5868-8244-4554-86CC-B76FC67478CD
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id 1921607888
-                AccessType FieldAccessType_Target
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id -569252259 (EnterUIGraph)
-        member(1)::DynamicEvent
-            Id -1684556875 (ExitUIGraph)
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 1921607888
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -569252259 (EnterUIGraph)
+		member(1)::DynamicEvent
+			Id -1684556875 (ExitUIGraph)
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint AE923D02-C328-470B-A374-8701C6B23C12 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Vehicles/common/DefaultSPJetHUD
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source 9CFC5868-8244-4554-86CC-B76FC67478CD
-                            Target D02CE3E2-EB65-4C2F-A5A9-D600C679B8B9
-                            SourceFieldId 1921607888
-                            TargetFieldId 193450867 (In1)
-                        member(1)::PropertyConnection
-                            Source 14EF06B5-5B6E-4F1B-A8C7-94DDEDFB9450
-                            Target D02CE3E2-EB65-4C2F-A5A9-D600C679B8B9
-                            SourceFieldId 225375086 (Value)
-                            TargetFieldId 193450864 (In2)
-                        member(2)::PropertyConnection
-                            Source D02CE3E2-EB65-4C2F-A5A9-D600C679B8B9
-                            Target 32CEE52B-A659-468A-8064-2B7EE8175E82
-                            SourceFieldId 193453899 (Out)
-                            TargetFieldId 225375086 (Value)
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 9CFC5868-8244-4554-86CC-B76FC67478CD
-                        Target 14EF06B5-5B6E-4F1B-A8C7-94DDEDFB9450
-                        SourceEvent::EventSpec
-                            Id -569252259 (EnterUIGraph)
-                        TargetEvent::EventSpec
-                            Id -1541066415 (SetTrue)
-                        TargetType EventConnectionTargetType_Client
-                    member(1)::EventConnection
-                        Source 9CFC5868-8244-4554-86CC-B76FC67478CD
-                        Target 14EF06B5-5B6E-4F1B-A8C7-94DDEDFB9450
-                        SourceEvent::EventSpec
-                            Id -1684556875 (ExitUIGraph)
-                        TargetEvent::EventSpec
-                            Id 668205626 (SetFalse)
-                        TargetType EventConnectionTargetType_Client
-                    member(2)::EventConnection
-                        Source 32CEE52B-A659-468A-8064-2B7EE8175E82
-                        Target 07934AE9-D7EC-4163-B923-4DC760A1258F
-                        SourceEvent::EventSpec
-                            Id -1433512622 (OnTrue)
-                        TargetEvent::EventSpec
-                            Id -569252259 (EnterUIGraph)
-                        TargetType EventConnectionTargetType_Client
-                    member(3)::EventConnection
-                        Source 32CEE52B-A659-468A-8064-2B7EE8175E82
-                        Target 07934AE9-D7EC-4163-B923-4DC760A1258F
-                        SourceEvent::EventSpec
-                            Id -81881639 (OnFalse)
-                        TargetEvent::EventSpec
-                            Id -1684556875 (ExitUIGraph)
-                        TargetType EventConnectionTargetType_Client
-                    member(4)::EventConnection
-                        Source 32CEE52B-A659-468A-8064-2B7EE8175E82
-                        Target D2833D65-7BCF-46D9-9C62-4C183E9FF3D8
-                        SourceEvent::EventSpec
-                            Id -1433512622 (OnTrue)
-                        TargetEvent::EventSpec
-                            Id -1771043689 (DisableSoldierCrossHair)
-                        TargetType EventConnectionTargetType_Client
-                    member(5)::EventConnection
-                        Source 32CEE52B-A659-468A-8064-2B7EE8175E82
-                        Target D2833D65-7BCF-46D9-9C62-4C183E9FF3D8
-                        SourceEvent::EventSpec
-                            Id -81881639 (OnFalse)
-                        TargetEvent::EventSpec
-                            Id -1199221726 (EnableSoldierCrosshair)
-                        TargetType EventConnectionTargetType_Client
-                Descriptor 9CFC5868-8244-4554-86CC-B76FC67478CD
-                NeedNetworkId False
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) 07934AE9-D7EC-4163-B923-4DC760A1258F
-            member(1) 32CEE52B-A659-468A-8064-2B7EE8175E82
-            member(2) 14EF06B5-5B6E-4F1B-A8C7-94DDEDFB9450
-            member(3) D02CE3E2-EB65-4C2F-A5A9-D600C679B8B9
-            member(4) D2833D65-7BCF-46D9-9C62-4C183E9FF3D8
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Vehicles/common/DefaultSPJetHUD
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 9CFC5868-8244-4554-86CC-B76FC67478CD
+							Target D02CE3E2-EB65-4C2F-A5A9-D600C679B8B9
+							SourceFieldId 1921607888
+							TargetFieldId 193450867 (In1)
+						member(1)::PropertyConnection
+							Source 14EF06B5-5B6E-4F1B-A8C7-94DDEDFB9450
+							Target D02CE3E2-EB65-4C2F-A5A9-D600C679B8B9
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450864 (In2)
+						member(2)::PropertyConnection
+							Source D02CE3E2-EB65-4C2F-A5A9-D600C679B8B9
+							Target 32CEE52B-A659-468A-8064-2B7EE8175E82
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 225375086 (Value)
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 9CFC5868-8244-4554-86CC-B76FC67478CD
+						Target 14EF06B5-5B6E-4F1B-A8C7-94DDEDFB9450
+						SourceEvent::EventSpec
+							Id -569252259 (EnterUIGraph)
+						TargetEvent::EventSpec
+							Id -1541066415 (SetTrue)
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 9CFC5868-8244-4554-86CC-B76FC67478CD
+						Target 14EF06B5-5B6E-4F1B-A8C7-94DDEDFB9450
+						SourceEvent::EventSpec
+							Id -1684556875 (ExitUIGraph)
+						TargetEvent::EventSpec
+							Id 668205626 (SetFalse)
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 32CEE52B-A659-468A-8064-2B7EE8175E82
+						Target 07934AE9-D7EC-4163-B923-4DC760A1258F
+						SourceEvent::EventSpec
+							Id -1433512622 (OnTrue)
+						TargetEvent::EventSpec
+							Id -569252259 (EnterUIGraph)
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 32CEE52B-A659-468A-8064-2B7EE8175E82
+						Target 07934AE9-D7EC-4163-B923-4DC760A1258F
+						SourceEvent::EventSpec
+							Id -81881639 (OnFalse)
+						TargetEvent::EventSpec
+							Id -1684556875 (ExitUIGraph)
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 32CEE52B-A659-468A-8064-2B7EE8175E82
+						Target D2833D65-7BCF-46D9-9C62-4C183E9FF3D8
+						SourceEvent::EventSpec
+							Id -1433512622 (OnTrue)
+						TargetEvent::EventSpec
+							Id -1771043689 (DisableSoldierCrossHair)
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 32CEE52B-A659-468A-8064-2B7EE8175E82
+						Target D2833D65-7BCF-46D9-9C62-4C183E9FF3D8
+						SourceEvent::EventSpec
+							Id -81881639 (OnFalse)
+						TargetEvent::EventSpec
+							Id -1199221726 (EnableSoldierCrosshair)
+						TargetType EventConnectionTargetType_Client
+				Descriptor 9CFC5868-8244-4554-86CC-B76FC67478CD
+				NeedNetworkId False
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) 07934AE9-D7EC-4163-B923-4DC760A1258F
+			member(1) 32CEE52B-A659-468A-8064-2B7EE8175E82
+			member(2) 14EF06B5-5B6E-4F1B-A8C7-94DDEDFB9450
+			member(3) D02CE3E2-EB65-4C2F-A5A9-D600C679B8B9
+			member(4) D2833D65-7BCF-46D9-9C62-4C183E9FF3D8
 OrEntityData D02CE3E2-EB65-4C2F-A5A9-D600C679B8B9
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 2
-            IndexInBlueprint 3
-    Realm Realm_Client
-    In1 False
-    In2 False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 2
+			IndexInBlueprint 3
+	Realm Realm_Client
+	In1 False
+	In2 False
 UIGraphEntityData 07934AE9-D7EC-4163-B923-4DC760A1258F
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 0
-    Events *nullArray*
-    GraphAsset UI/Flow/Graph/Vehicle/SPJetGraph/5BAC88EC-7061-C20C-F853-2EFB5EB6541C
-    GraphPriority UIGraphPriority_Low
-    PopPreviousGraph False
-    State UIState_Playing
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Events *nullArray*
+	GraphAsset UI/Flow/Graph/Vehicle/SPJetGraph/5BAC88EC-7061-C20C-F853-2EFB5EB6541C
+	GraphPriority UIGraphPriority_Low
+	PopPreviousGraph False
+	State UIState_Playing
 UIGraphEntityData D2833D65-7BCF-46D9-9C62-4C183E9FF3D8
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 4
-    Events *nullArray*
-    GraphAsset UI/Flow/Graph/Vehicle/VehicleHudDataGraph/391445AB-18F5-7676-E83E-A6910F8999C4
-    GraphPriority UIGraphPriority_Normal
-    PopPreviousGraph False
-    State UIState_Playing
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 4
+	Events *nullArray*
+	GraphAsset UI/Flow/Graph/Vehicle/VehicleHudDataGraph/391445AB-18F5-7676-E83E-A6910F8999C4
+	GraphPriority UIGraphPriority_Normal
+	PopPreviousGraph False
+	State UIState_Playing

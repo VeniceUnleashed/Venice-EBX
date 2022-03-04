@@ -1,123 +1,123 @@
 Partition 6EB8FD3E-8613-11E0-9EFB-F3A771CF0BA5
 BoolEntityData 65093417-0E2F-44FB-B96A-BB6290E5E76A
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 2
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    Realm Realm_ClientAndServer
-    DefaultValue True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Realm Realm_ClientAndServer
+	DefaultValue True
 CustomizeSoldierEntityData 0F82D67E-CDD9-4D9A-92CD-8A458540D066
-    $::CustomizeBaseEntityData
-        $::EntityData
-            $::GameObjectData
-                $::GameDataContainer
-                    $::DataContainer
-                IsEventConnectionTarget 1
-                IsPropertyConnectionTarget 3
-                IndexInBlueprint 0
-        Realm Realm_Server
-    CustomizeSoldierData Characters/Soldiers/Customizations/SP_RUS_Kiril_Gasmask/4F307E7D-1BE7-4BCC-B396-69E56EEA742D
+	$::CustomizeBaseEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 1
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 0
+		Realm Realm_Server
+	CustomizeSoldierData Characters/Soldiers/Customizations/SP_RUS_Kiril_Gasmask/4F307E7D-1BE7-4BCC-B396-69E56EEA742D
 CustomizeSoldierEntityData 2D4D1E46-1147-4BB8-A5FC-75C70BD4232E
-    $::CustomizeBaseEntityData
-        $::EntityData
-            $::GameObjectData
-                $::GameDataContainer
-                    $::DataContainer
-                IsEventConnectionTarget 1
-                IsPropertyConnectionTarget 3
-                IndexInBlueprint 1
-        Realm Realm_Server
-    CustomizeSoldierData Characters/Soldiers/Customizations/SP_RUS_Kiril/6AAAF411-A0CD-40B4-BEB5-44AD97B19F37
+	$::CustomizeBaseEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 1
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 1
+		Realm Realm_Server
+	CustomizeSoldierData Characters/Soldiers/Customizations/SP_RUS_Kiril/6AAAF411-A0CD-40B4-BEB5-44AD97B19F37
 InterfaceDescriptorData 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id 495955022
-                AccessType FieldAccessType_Source
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id 1077549735
-        member(1)::DynamicEvent
-            Id -1584155022
-        member(2)::DynamicEvent
-            Id -1488672277
-        member(3)::DynamicEvent
-            Id 996092901
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks::array
-        member(0)::DynamicLink
-            Id 221670128 (Kiril)
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 495955022 (IsTarget)
+				AccessType FieldAccessType_Source
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1077549735
+		member(1)::DynamicEvent
+			Id -1584155022
+		member(2)::DynamicEvent
+			Id -1488672277
+		member(3)::DynamicEvent
+			Id 996092901
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id 221670128 (Kiril)
 SpatialPrefabBlueprint B40C4F9F-0CE5-241A-4739-66F398EB1372 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Levels/SP_Paris/Prefabs/KirilFunctions
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source 65093417-0E2F-44FB-B96A-BB6290E5E76A
-                            Target 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
-                            SourceFieldId 225375086 (Value)
-                            TargetFieldId 495955022 (IsTarget)
-                    LinkConnections::array
-                        member(0)::LinkConnection
-                            Source 0F82D67E-CDD9-4D9A-92CD-8A458540D066
-                            Target 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
-                            SourceFieldId 1085151375 (Characters)
-                            TargetFieldId 221670128 (Kiril)
-                        member(1)::LinkConnection
-                            Source 2D4D1E46-1147-4BB8-A5FC-75C70BD4232E
-                            Target 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
-                            SourceFieldId 1085151375 (Characters)
-                            TargetFieldId 221670128 (Kiril)
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
-                        Target 0F82D67E-CDD9-4D9A-92CD-8A458540D066
-                        SourceEvent::EventSpec
-                            Id 996092901
-                        TargetEvent::EventSpec
-                            Id 206074481 (Apply)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
-                        Target 2D4D1E46-1147-4BB8-A5FC-75C70BD4232E
-                        SourceEvent::EventSpec
-                            Id -1488672277
-                        TargetEvent::EventSpec
-                            Id 206074481 (Apply)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
-                        Target 65093417-0E2F-44FB-B96A-BB6290E5E76A
-                        SourceEvent::EventSpec
-                            Id 1077549735
-                        TargetEvent::EventSpec
-                            Id -1541066415 (SetTrue)
-                        TargetType EventConnectionTargetType_NetworkedClientAndServer
-                    member(3)::EventConnection
-                        Source 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
-                        Target 65093417-0E2F-44FB-B96A-BB6290E5E76A
-                        SourceEvent::EventSpec
-                            Id -1584155022
-                        TargetEvent::EventSpec
-                            Id 668205626 (SetFalse)
-                        TargetType EventConnectionTargetType_NetworkedClientAndServer
-                Descriptor 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
-                NeedNetworkId True
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient True
-                AlwaysCreateEntityBusServer True
-        Objects::array
-            member(0) 0F82D67E-CDD9-4D9A-92CD-8A458540D066
-            member(1) 2D4D1E46-1147-4BB8-A5FC-75C70BD4232E
-            member(2) 65093417-0E2F-44FB-B96A-BB6290E5E76A
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Levels/SP_Paris/Prefabs/KirilFunctions
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 65093417-0E2F-44FB-B96A-BB6290E5E76A
+							Target 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 495955022 (IsTarget)
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source 0F82D67E-CDD9-4D9A-92CD-8A458540D066
+							Target 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
+							SourceFieldId 1085151375 (Characters)
+							TargetFieldId 221670128 (Kiril)
+						member(1)::LinkConnection
+							Source 2D4D1E46-1147-4BB8-A5FC-75C70BD4232E
+							Target 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
+							SourceFieldId 1085151375 (Characters)
+							TargetFieldId 221670128 (Kiril)
+				EventConnections::array
+					member(0)::EventConnection
+						Source 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
+						Target 0F82D67E-CDD9-4D9A-92CD-8A458540D066
+						SourceEvent::EventSpec
+							Id 996092901
+						TargetEvent::EventSpec
+							Id 206074481 (Apply)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
+						Target 2D4D1E46-1147-4BB8-A5FC-75C70BD4232E
+						SourceEvent::EventSpec
+							Id -1488672277
+						TargetEvent::EventSpec
+							Id 206074481 (Apply)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
+						Target 65093417-0E2F-44FB-B96A-BB6290E5E76A
+						SourceEvent::EventSpec
+							Id 1077549735
+						TargetEvent::EventSpec
+							Id -1541066415 (SetTrue)
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+					member(3)::EventConnection
+						Source 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
+						Target 65093417-0E2F-44FB-B96A-BB6290E5E76A
+						SourceEvent::EventSpec
+							Id -1584155022
+						TargetEvent::EventSpec
+							Id 668205626 (SetFalse)
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+				Descriptor 9BAD0396-D0B2-4E13-A7E8-75CE51108BD0
+				NeedNetworkId True
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient True
+				AlwaysCreateEntityBusServer True
+		Objects::array
+			member(0) 0F82D67E-CDD9-4D9A-92CD-8A458540D066
+			member(1) 2D4D1E46-1147-4BB8-A5FC-75C70BD4232E
+			member(2) 65093417-0E2F-44FB-B96A-BB6290E5E76A

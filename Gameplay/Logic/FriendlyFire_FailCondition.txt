@@ -1,269 +1,269 @@
 Partition D4DD25FA-BCEF-11E0-8ECE-82E36A2674F9
 DelayEntityData 99B10D4F-F0C6-47A1-809F-3C427BEBF391
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 5
-    Delay 1.0
-    Realm Realm_Client
-    AutoStart False
-    RunOnce False
-    RemoveDuplicateEvents True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 5
+	Delay 1.0
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
 DelayEntityData 40BB0590-23B6-42E3-B118-B3AD735E9F92
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 7
-    Delay 3.0
-    Realm Realm_Client
-    AutoStart False
-    RunOnce False
-    RemoveDuplicateEvents True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 7
+	Delay 3.0
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
 EventSplitterEntityData 162E9B9C-E9E5-4CBB-B120-1945C86601B7
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 6
-    RunOnce False
-    Realm Realm_Client
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 6
+	RunOnce False
+	Realm Realm_Client
 FriendlyFireEntityData C9E666D7-F6F8-44FC-A69D-3F11DBDA7DDC
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    Teams *nullArray*
-    EnemyCommitmentAllocation 0.0
-    FriendlyCommitmentAllocation -400.0
-    MaxCommitment 0.0
-    FailureThreshold -1.5
-    DecayRate 1000.0
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Teams *nullArray*
+	EnemyCommitmentAllocation 0.0
+	FriendlyCommitmentAllocation -400.0
+	MaxCommitment 0.0
+	FailureThreshold -1.5
+	DecayRate 1000.0
 FriendlyFireEntityData C92B3CC1-1D9E-4DDD-A18C-BF6FB6D869FC
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 8
-    Teams *nullArray*
-    EnemyCommitmentAllocation 4.0
-    FriendlyCommitmentAllocation -2.0
-    MaxCommitment 12.0
-    FailureThreshold -12.0
-    DecayRate 0.0320000015199
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 8
+	Teams *nullArray*
+	EnemyCommitmentAllocation 4.0
+	FriendlyCommitmentAllocation -2.0
+	MaxCommitment 12.0
+	FailureThreshold -12.0
+	DecayRate 0.03200000151991844
 InterfaceDescriptorData 9FB2CBE3-3A84-4E50-BB0C-4FF0AACD73D0
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields *nullArray*
-    InputEvents *nullArray*
-    OutputEvents::array
-        member(0)::DynamicEvent
-            Id 1019679487 (TriggerFail)
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents *nullArray*
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 1019679487 (TriggerFail)
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint 5FBED28C-7F31-B0D2-0223-E952A155237A #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/Logic/FriendlyFire_FailCondition
-                    PropertyConnections *nullArray*
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source C92B3CC1-1D9E-4DDD-A18C-BF6FB6D869FC
-                        Target B48597CE-8D7C-4A1C-ABE3-FC775FB71009
-                        SourceEvent::EventSpec
-                            Id 1592746791 (OnFailed)
-                        TargetEvent::EventSpec
-                            Id 230748069 (Start)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source C9E666D7-F6F8-44FC-A69D-3F11DBDA7DDC
-                        Target 054E3AB6-2D03-4636-8107-B195438E1FD0
-                        SourceEvent::EventSpec
-                            Id 1592746791 (OnFailed)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_NetworkedClient
-                    member(2)::EventConnection
-                        Source 054E3AB6-2D03-4636-8107-B195438E1FD0
-                        Target B5005DD1-2E4C-4676-9B44-DBA9C5732CCE
-                        SourceEvent::EventSpec
-                            Id 1807224781 (ShowMessage)
-                        TargetEvent::EventSpec
-                            Id 1037321618 (SendMessage)
-                        TargetType EventConnectionTargetType_Client
-                    member(3)::EventConnection
-                        Source 99B10D4F-F0C6-47A1-809F-3C427BEBF391
-                        Target 054E3AB6-2D03-4636-8107-B195438E1FD0
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id -2142935067
-                        TargetType EventConnectionTargetType_Client
-                    member(4)::EventConnection
-                        Source 162E9B9C-E9E5-4CBB-B120-1945C86601B7
-                        Target FFBD55EE-39E2-494B-81B1-6518A2CC373A
-                        SourceEvent::EventSpec
-                            Id -137490305 (OnImpulse)
-                        TargetEvent::EventSpec
-                            Id 1037321618 (SendMessage)
-                        TargetType EventConnectionTargetType_Client
-                    member(5)::EventConnection
-                        Source 162E9B9C-E9E5-4CBB-B120-1945C86601B7
-                        Target 9FB2CBE3-3A84-4E50-BB0C-4FF0AACD73D0
-                        SourceEvent::EventSpec
-                            Id -137490305 (OnImpulse)
-                        TargetEvent::EventSpec
-                            Id 1019679487 (TriggerFail)
-                        TargetType EventConnectionTargetType_Client
-                    member(6)::EventConnection
-                        Source C92B3CC1-1D9E-4DDD-A18C-BF6FB6D869FC
-                        Target 162E9B9C-E9E5-4CBB-B120-1945C86601B7
-                        SourceEvent::EventSpec
-                            Id 1592746791 (OnFailed)
-                        TargetEvent::EventSpec
-                            Id 1723395486 (Impulse)
-                        TargetType EventConnectionTargetType_NetworkedClient
-                    member(7)::EventConnection
-                        Source 054E3AB6-2D03-4636-8107-B195438E1FD0
-                        Target 162E9B9C-E9E5-4CBB-B120-1945C86601B7
-                        SourceEvent::EventSpec
-                            Id 2088662791 (Fail)
-                        TargetEvent::EventSpec
-                            Id 1723395486 (Impulse)
-                        TargetType EventConnectionTargetType_Client
-                    member(8)::EventConnection
-                        Source B5005DD1-2E4C-4676-9B44-DBA9C5732CCE
-                        Target 054E3AB6-2D03-4636-8107-B195438E1FD0
-                        SourceEvent::EventSpec
-                            Id -1411113229 (OnSendMessage)
-                        TargetEvent::EventSpec
-                            Id 1284080902 (SelectWait)
-                        TargetType EventConnectionTargetType_Client
-                    member(9)::EventConnection
-                        Source B5005DD1-2E4C-4676-9B44-DBA9C5732CCE
-                        Target 40BB0590-23B6-42E3-B118-B3AD735E9F92
-                        SourceEvent::EventSpec
-                            Id -1411113229 (OnSendMessage)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Client
-                    member(10)::EventConnection
-                        Source 40BB0590-23B6-42E3-B118-B3AD735E9F92
-                        Target 054E3AB6-2D03-4636-8107-B195438E1FD0
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id 1283474351 (SelectFail)
-                        TargetType EventConnectionTargetType_Client
-                    member(11)::EventConnection
-                        Source 40BB0590-23B6-42E3-B118-B3AD735E9F92
-                        Target 99B10D4F-F0C6-47A1-809F-3C427BEBF391
-                        SourceEvent::EventSpec
-                            Id 193453899 (Out)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Client
-                Descriptor 9FB2CBE3-3A84-4E50-BB0C-4FF0AACD73D0
-                NeedNetworkId True
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient True
-                AlwaysCreateEntityBusServer True
-        Objects::array
-            member(0) FFBD55EE-39E2-494B-81B1-6518A2CC373A
-            member(1) B48597CE-8D7C-4A1C-ABE3-FC775FB71009
-            member(2) C9E666D7-F6F8-44FC-A69D-3F11DBDA7DDC
-            member(3) 054E3AB6-2D03-4636-8107-B195438E1FD0
-            member(4) B5005DD1-2E4C-4676-9B44-DBA9C5732CCE
-            member(5) 99B10D4F-F0C6-47A1-809F-3C427BEBF391
-            member(6) 162E9B9C-E9E5-4CBB-B120-1945C86601B7
-            member(7) 40BB0590-23B6-42E3-B118-B3AD735E9F92
-            member(8) C92B3CC1-1D9E-4DDD-A18C-BF6FB6D869FC
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/FriendlyFire_FailCondition
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source C92B3CC1-1D9E-4DDD-A18C-BF6FB6D869FC
+						Target B48597CE-8D7C-4A1C-ABE3-FC775FB71009
+						SourceEvent::EventSpec
+							Id 1592746791 (OnFailed)
+						TargetEvent::EventSpec
+							Id 230748069 (Start)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source C9E666D7-F6F8-44FC-A69D-3F11DBDA7DDC
+						Target 054E3AB6-2D03-4636-8107-B195438E1FD0
+						SourceEvent::EventSpec
+							Id 1592746791 (OnFailed)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(2)::EventConnection
+						Source 054E3AB6-2D03-4636-8107-B195438E1FD0
+						Target B5005DD1-2E4C-4676-9B44-DBA9C5732CCE
+						SourceEvent::EventSpec
+							Id 1807224781 (ShowMessage)
+						TargetEvent::EventSpec
+							Id 1037321618 (SendMessage)
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 99B10D4F-F0C6-47A1-809F-3C427BEBF391
+						Target 054E3AB6-2D03-4636-8107-B195438E1FD0
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id -2142935067
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 162E9B9C-E9E5-4CBB-B120-1945C86601B7
+						Target FFBD55EE-39E2-494B-81B1-6518A2CC373A
+						SourceEvent::EventSpec
+							Id -137490305 (OnImpulse)
+						TargetEvent::EventSpec
+							Id 1037321618 (SendMessage)
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 162E9B9C-E9E5-4CBB-B120-1945C86601B7
+						Target 9FB2CBE3-3A84-4E50-BB0C-4FF0AACD73D0
+						SourceEvent::EventSpec
+							Id -137490305 (OnImpulse)
+						TargetEvent::EventSpec
+							Id 1019679487 (TriggerFail)
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source C92B3CC1-1D9E-4DDD-A18C-BF6FB6D869FC
+						Target 162E9B9C-E9E5-4CBB-B120-1945C86601B7
+						SourceEvent::EventSpec
+							Id 1592746791 (OnFailed)
+						TargetEvent::EventSpec
+							Id 1723395486 (Impulse)
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(7)::EventConnection
+						Source 054E3AB6-2D03-4636-8107-B195438E1FD0
+						Target 162E9B9C-E9E5-4CBB-B120-1945C86601B7
+						SourceEvent::EventSpec
+							Id 2088662791 (Fail)
+						TargetEvent::EventSpec
+							Id 1723395486 (Impulse)
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source B5005DD1-2E4C-4676-9B44-DBA9C5732CCE
+						Target 054E3AB6-2D03-4636-8107-B195438E1FD0
+						SourceEvent::EventSpec
+							Id -1411113229 (OnSendMessage)
+						TargetEvent::EventSpec
+							Id 1284080902 (SelectWait)
+						TargetType EventConnectionTargetType_Client
+					member(9)::EventConnection
+						Source B5005DD1-2E4C-4676-9B44-DBA9C5732CCE
+						Target 40BB0590-23B6-42E3-B118-B3AD735E9F92
+						SourceEvent::EventSpec
+							Id -1411113229 (OnSendMessage)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Client
+					member(10)::EventConnection
+						Source 40BB0590-23B6-42E3-B118-B3AD735E9F92
+						Target 054E3AB6-2D03-4636-8107-B195438E1FD0
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id 1283474351 (SelectFail)
+						TargetType EventConnectionTargetType_Client
+					member(11)::EventConnection
+						Source 40BB0590-23B6-42E3-B118-B3AD735E9F92
+						Target 99B10D4F-F0C6-47A1-809F-3C427BEBF391
+						SourceEvent::EventSpec
+							Id 193453899 (Out)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Client
+				Descriptor 9FB2CBE3-3A84-4E50-BB0C-4FF0AACD73D0
+				NeedNetworkId True
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient True
+				AlwaysCreateEntityBusServer True
+		Objects::array
+			member(0) FFBD55EE-39E2-494B-81B1-6518A2CC373A
+			member(1) B48597CE-8D7C-4A1C-ABE3-FC775FB71009
+			member(2) C9E666D7-F6F8-44FC-A69D-3F11DBDA7DDC
+			member(3) 054E3AB6-2D03-4636-8107-B195438E1FD0
+			member(4) B5005DD1-2E4C-4676-9B44-DBA9C5732CCE
+			member(5) 99B10D4F-F0C6-47A1-809F-3C427BEBF391
+			member(6) 162E9B9C-E9E5-4CBB-B120-1945C86601B7
+			member(7) 40BB0590-23B6-42E3-B118-B3AD735E9F92
+			member(8) C92B3CC1-1D9E-4DDD-A18C-BF6FB6D869FC
 LogicReferenceObjectData B48597CE-8D7C-4A1C-ABE3-FC775FB71009
-    $::ReferenceObjectData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-        BlueprintTransform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y 0.0
-                z 0.0
-        Blueprint Gameplay/Logic/SP_Fail_Effect/5C132065-B402-4CCB-A603-05A3C1D30E5D
-        ObjectVariation *nullGuid*
-        StreamRealm StreamRealm_None
-        CastSunShadowEnable True
-        Excluded False
-    SubRealm SubRealm_All
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Blueprint Gameplay/Logic/SP_Fail_Effect/5C132065-B402-4CCB-A603-05A3C1D30E5D
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		CastSunShadowEnable True
+		Excluded False
+	SubRealm SubRealm_All
 MessageEntityData FFBD55EE-39E2-494B-81B1-6518A2CC373A
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 0
-    MessageSid ID_H_ALERT_FAILED_FRIENDLY_FIRE
-    AdditionalMessages *nullArray*
-    MessageType UIMessageEntityType_FailState
-    DisplayTime 5.0
-    EntryInputAction EIAUndefined
-    Enabled True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	MessageSid ID_H_ALERT_FAILED_FRIENDLY_FIRE
+	AdditionalMessages *nullArray*
+	MessageType UIMessageEntityType_FailState
+	DisplayTime 5.0
+	EntryInputAction EIANoInput
+	Enabled True
 MessageEntityData B5005DD1-2E4C-4676-9B44-DBA9C5732CCE
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 4
-    MessageSid ID_H_ALERT_FAILED_FRIENDLY_FIRE
-    AdditionalMessages *nullArray*
-    MessageType UIMessageEntityType_Message
-    DisplayTime 5.0
-    EntryInputAction EIAUndefined
-    Enabled True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 4
+	MessageSid ID_H_ALERT_FAILED_FRIENDLY_FIRE
+	AdditionalMessages *nullArray*
+	MessageType UIMessageEntityType_Message
+	DisplayTime 5.0
+	EntryInputAction EIANoInput
+	Enabled True
 SelectEventEntityData 054E3AB6-2D03-4636-8107-B195438E1FD0
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 3
-    Realm Realm_Client
-    Events::array
-        member(0) ShowMessage
-        member(1) Fail
-        member(2) Wait
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	Realm Realm_Client
+	Events::array
+		member(0) ShowMessage
+		member(1) Fail
+		member(2) Wait

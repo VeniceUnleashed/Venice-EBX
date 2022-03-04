@@ -1,114 +1,114 @@
 Partition 28676289-7352-4AD3-A163-4218557B157D
 BoolEntityData 215A895D-BBFC-45EB-B01D-2E45BC15346D
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    Realm Realm_Server
-    DefaultValue False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Realm Realm_Server
+	DefaultValue False
 CompareIntEntityData A5A07178-12EF-4CE5-B5FE-E6FF464B389C
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 1
-            IndexInBlueprint 1
-    Realm Realm_Server
-    A 0
-    B 0
-    TriggerOnPropertyChange True
-    TriggerOnStart False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 1
+			IndexInBlueprint 1
+	Realm Realm_Server
+	A 0
+	B 0
+	TriggerOnPropertyChange True
+	TriggerOnStart False
 IntEntityData 31E8FC3C-AB1D-4B42-80E9-5B7B3FB5E13A
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 0
-    Realm Realm_Server
-    DefaultValue 0
-    IncDecValue 1
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	Realm Realm_Server
+	DefaultValue 0
+	IncDecValue 1
 InterfaceDescriptorData 15D4DFF3-95FD-4ACE-97BC-8EA28209CDB3
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id 1074580540
-                AccessType FieldAccessType_Source
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id 853531813 (EnemySpawned)
-        member(1)::DynamicEvent
-            Id 67402812 (EnemyKilled)
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 1074580540
+				AccessType FieldAccessType_Source
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 853531813 (EnemySpawned)
+		member(1)::DynamicEvent
+			Id 67402812 (EnemyKilled)
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint FBAAEA77-D043-4649-ACFE-EF4B026EFC21 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/Logic/AllEnemiesKilled_Bool_Dontuse
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source 31E8FC3C-AB1D-4B42-80E9-5B7B3FB5E13A
-                            Target A5A07178-12EF-4CE5-B5FE-E6FF464B389C
-                            SourceFieldId 225375086 (Value)
-                            TargetFieldId 177636 (A)
-                        member(1)::PropertyConnection
-                            Source 215A895D-BBFC-45EB-B01D-2E45BC15346D
-                            Target 15D4DFF3-95FD-4ACE-97BC-8EA28209CDB3
-                            SourceFieldId 225375086 (Value)
-                            TargetFieldId 1074580540
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 15D4DFF3-95FD-4ACE-97BC-8EA28209CDB3
-                        Target 31E8FC3C-AB1D-4B42-80E9-5B7B3FB5E13A
-                        SourceEvent::EventSpec
-                            Id 853531813 (EnemySpawned)
-                        TargetEvent::EventSpec
-                            Id 1736970756 (Increment)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source 15D4DFF3-95FD-4ACE-97BC-8EA28209CDB3
-                        Target 31E8FC3C-AB1D-4B42-80E9-5B7B3FB5E13A
-                        SourceEvent::EventSpec
-                            Id 67402812 (EnemyKilled)
-                        TargetEvent::EventSpec
-                            Id -395651742 (Decrement)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source A5A07178-12EF-4CE5-B5FE-E6FF464B389C
-                        Target 215A895D-BBFC-45EB-B01D-2E45BC15346D
-                        SourceEvent::EventSpec
-                            Id 193445179 (A=B)
-                        TargetEvent::EventSpec
-                            Id -1541066415 (SetTrue)
-                        TargetType EventConnectionTargetType_Server
-                    member(3)::EventConnection
-                        Source A5A07178-12EF-4CE5-B5FE-E6FF464B389C
-                        Target 215A895D-BBFC-45EB-B01D-2E45BC15346D
-                        SourceEvent::EventSpec
-                            Id 2088703386 (A!=B)
-                        TargetEvent::EventSpec
-                            Id 668205626 (SetFalse)
-                        TargetType EventConnectionTargetType_Server
-                Descriptor 15D4DFF3-95FD-4ACE-97BC-8EA28209CDB3
-                NeedNetworkId False
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) 31E8FC3C-AB1D-4B42-80E9-5B7B3FB5E13A
-            member(1) A5A07178-12EF-4CE5-B5FE-E6FF464B389C
-            member(2) 215A895D-BBFC-45EB-B01D-2E45BC15346D
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/AllEnemiesKilled_Bool_Dontuse
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 31E8FC3C-AB1D-4B42-80E9-5B7B3FB5E13A
+							Target A5A07178-12EF-4CE5-B5FE-E6FF464B389C
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 177636 (A)
+						member(1)::PropertyConnection
+							Source 215A895D-BBFC-45EB-B01D-2E45BC15346D
+							Target 15D4DFF3-95FD-4ACE-97BC-8EA28209CDB3
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 1074580540
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 15D4DFF3-95FD-4ACE-97BC-8EA28209CDB3
+						Target 31E8FC3C-AB1D-4B42-80E9-5B7B3FB5E13A
+						SourceEvent::EventSpec
+							Id 853531813 (EnemySpawned)
+						TargetEvent::EventSpec
+							Id 1736970756 (Increment)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 15D4DFF3-95FD-4ACE-97BC-8EA28209CDB3
+						Target 31E8FC3C-AB1D-4B42-80E9-5B7B3FB5E13A
+						SourceEvent::EventSpec
+							Id 67402812 (EnemyKilled)
+						TargetEvent::EventSpec
+							Id -395651742 (Decrement)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source A5A07178-12EF-4CE5-B5FE-E6FF464B389C
+						Target 215A895D-BBFC-45EB-B01D-2E45BC15346D
+						SourceEvent::EventSpec
+							Id 193445179 (A=B)
+						TargetEvent::EventSpec
+							Id -1541066415 (SetTrue)
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source A5A07178-12EF-4CE5-B5FE-E6FF464B389C
+						Target 215A895D-BBFC-45EB-B01D-2E45BC15346D
+						SourceEvent::EventSpec
+							Id 2088703386 (A!=B)
+						TargetEvent::EventSpec
+							Id 668205626 (SetFalse)
+						TargetType EventConnectionTargetType_Server
+				Descriptor 15D4DFF3-95FD-4ACE-97BC-8EA28209CDB3
+				NeedNetworkId False
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) 31E8FC3C-AB1D-4B42-80E9-5B7B3FB5E13A
+			member(1) A5A07178-12EF-4CE5-B5FE-E6FF464B389C
+			member(2) 215A895D-BBFC-45EB-B01D-2E45BC15346D

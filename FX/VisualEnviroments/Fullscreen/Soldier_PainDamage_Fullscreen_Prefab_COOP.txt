@@ -1,131 +1,131 @@
 Partition 2A839B17-803F-4C65-BED6-B65E94BC464A
 InterfaceDescriptorData 7E603190-E628-45C5-B381-A1C0A2B83918
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields *nullArray*
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id -1580500076
-        member(1)::DynamicEvent
-            Id -1896829288
-        member(2)::DynamicEvent
-            Id -1653183230
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1580500076 (Trigger_Fullscreen_Pain)
+		member(1)::DynamicEvent
+			Id -1896829288 (Disable_Fullscreen_Pain)
+		member(2)::DynamicEvent
+			Id -1653183230
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint 81D74399-0AF7-4DA4-A33C-8E2CF24492E6 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name FX/VisualEnviroments/Fullscreen/Soldier_PainDamage_Fullscreen_Prefab_COOP
-                    PropertyConnections *nullArray*
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 7E603190-E628-45C5-B381-A1C0A2B83918
-                        Target 714D427E-3649-4D42-9CF9-54F583D60068
-                        SourceEvent::EventSpec
-                            Id -1580500076
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Client
-                    member(1)::EventConnection
-                        Source 714D427E-3649-4D42-9CF9-54F583D60068
-                        Target 9E3203B6-0992-4C96-81DA-56418FE6F82B
-                        SourceEvent::EventSpec
-                            Id -1864525248 (OnTriggerOnlyForPlayer)
-                        TargetEvent::EventSpec
-                            Id -1952177180 (Enable)
-                        TargetType EventConnectionTargetType_Client
-                    member(2)::EventConnection
-                        Source 7E603190-E628-45C5-B381-A1C0A2B83918
-                        Target 39014036-EB1D-4929-B2D7-678DBDF6BF1D
-                        SourceEvent::EventSpec
-                            Id -1896829288
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Client
-                    member(3)::EventConnection
-                        Source 39014036-EB1D-4929-B2D7-678DBDF6BF1D
-                        Target 9E3203B6-0992-4C96-81DA-56418FE6F82B
-                        SourceEvent::EventSpec
-                            Id -1864525248 (OnTriggerOnlyForPlayer)
-                        TargetEvent::EventSpec
-                            Id -117303631 (Disable)
-                        TargetType EventConnectionTargetType_Client
-                    member(4)::EventConnection
-                        Source 7E603190-E628-45C5-B381-A1C0A2B83918
-                        Target 9E3203B6-0992-4C96-81DA-56418FE6F82B
-                        SourceEvent::EventSpec
-                            Id -1653183230
-                        TargetEvent::EventSpec
-                            Id -117303631 (Disable)
-                        TargetType EventConnectionTargetType_Client
-                    member(5)::EventConnection
-                        Source 7E603190-E628-45C5-B381-A1C0A2B83918
-                        Target 058A046D-78B3-41DC-8631-003CB1358745
-                        SourceEvent::EventSpec
-                            Id -1653183230
-                        TargetEvent::EventSpec
-                            Id 231942004 (Print)
-                        TargetType EventConnectionTargetType_Client
-                Descriptor 7E603190-E628-45C5-B381-A1C0A2B83918
-                NeedNetworkId False
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) 9E3203B6-0992-4C96-81DA-56418FE6F82B
-            member(1) 714D427E-3649-4D42-9CF9-54F583D60068
-            member(2) 39014036-EB1D-4929-B2D7-678DBDF6BF1D
-            member(3) 058A046D-78B3-41DC-8631-003CB1358745
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name FX/VisualEnviroments/Fullscreen/Soldier_PainDamage_Fullscreen_Prefab_COOP
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source 7E603190-E628-45C5-B381-A1C0A2B83918
+						Target 714D427E-3649-4D42-9CF9-54F583D60068
+						SourceEvent::EventSpec
+							Id -1580500076 (Trigger_Fullscreen_Pain)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 714D427E-3649-4D42-9CF9-54F583D60068
+						Target 9E3203B6-0992-4C96-81DA-56418FE6F82B
+						SourceEvent::EventSpec
+							Id -1864525248 (OnTriggerOnlyForPlayer)
+						TargetEvent::EventSpec
+							Id -1952177180 (Enable)
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 7E603190-E628-45C5-B381-A1C0A2B83918
+						Target 39014036-EB1D-4929-B2D7-678DBDF6BF1D
+						SourceEvent::EventSpec
+							Id -1896829288 (Disable_Fullscreen_Pain)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 39014036-EB1D-4929-B2D7-678DBDF6BF1D
+						Target 9E3203B6-0992-4C96-81DA-56418FE6F82B
+						SourceEvent::EventSpec
+							Id -1864525248 (OnTriggerOnlyForPlayer)
+						TargetEvent::EventSpec
+							Id -117303631 (Disable)
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 7E603190-E628-45C5-B381-A1C0A2B83918
+						Target 9E3203B6-0992-4C96-81DA-56418FE6F82B
+						SourceEvent::EventSpec
+							Id -1653183230
+						TargetEvent::EventSpec
+							Id -117303631 (Disable)
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 7E603190-E628-45C5-B381-A1C0A2B83918
+						Target 058A046D-78B3-41DC-8631-003CB1358745
+						SourceEvent::EventSpec
+							Id -1653183230
+						TargetEvent::EventSpec
+							Id 231942004 (Print)
+						TargetType EventConnectionTargetType_Client
+				Descriptor 7E603190-E628-45C5-B381-A1C0A2B83918
+				NeedNetworkId False
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) 9E3203B6-0992-4C96-81DA-56418FE6F82B
+			member(1) 714D427E-3649-4D42-9CF9-54F583D60068
+			member(2) 39014036-EB1D-4929-B2D7-678DBDF6BF1D
+			member(3) 058A046D-78B3-41DC-8631-003CB1358745
 LogicVisualEnvironmentEntityData 9E3203B6-0992-4C96-81DA-56418FE6F82B
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 0
-    VisualEnvironment FX/VisualEnviroments/Fullscreen/VE_FS_Pain_COOP/20B4E6C0-C2A3-4D1D-B274-467325F5A9EA
-    Visibility 1.0
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 0
+	VisualEnvironment FX/VisualEnviroments/Fullscreen/VE_FS_Pain_COOP/20B4E6C0-C2A3-4D1D-B274-467325F5A9EA
+	Visibility 1.0
 PlayerFilterEntityData 714D427E-3649-4D42-9CF9-54F583D60068
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-    Realm Realm_Client
-    InvertFilter False
-    ForwardToSpectators False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Realm Realm_Client
+	InvertFilter False
+	ForwardToSpectators False
 PlayerFilterEntityData 39014036-EB1D-4929-B2D7-678DBDF6BF1D
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    Realm Realm_Client
-    InvertFilter False
-    ForwardToSpectators False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Realm Realm_Client
+	InvertFilter False
+	ForwardToSpectators False
 PrintDebugTextEntityData 058A046D-78B3-41DC-8631-003CB1358745
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 3
-    Realm Realm_Client
-    Text FullScreenOff
-    TextColor::Vec3
-        x 1.0
-        y 0.0
-        z 0.0
-    Enabled True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	Realm Realm_Client
+	Text FullScreenOff
+	TextColor::Vec3
+		x 1.0
+		y 0.0
+		z 0.0
+	Enabled True

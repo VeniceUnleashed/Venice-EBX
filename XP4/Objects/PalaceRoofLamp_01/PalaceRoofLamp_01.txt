@@ -1,350 +1,350 @@
 Partition C3564794-AE30-43D3-BFEB-195F7DAC1664
 HavokAsset 17D0C48E-AA08-3A62-DE34-F0A40BBA6AA5
-    $::Asset
-        $::DataContainer
-        Name XP4/Objects/PalaceRoofLamp_01/PalaceRoofLamp_01_Physics_0_Win32
-    Scale 1.0
-    ExternalAssets *nullArray*
+	$::Asset
+		$::DataContainer
+		Name XP4/Objects/PalaceRoofLamp_01/PalaceRoofLamp_01_Physics_0_Win32
+	Scale 1.0
+	ExternalAssets *nullArray*
 HavokAsset A59DBA71-FEA1-1118-BDB7-C1193C83D005
-    $::Asset
-        $::DataContainer
-        Name XP4/Objects/PalaceRoofLamp_01/PalaceRoofLamp_01_Physics_1_Win32
-    Scale 1.29999995232
-    ExternalAssets *nullArray*
+	$::Asset
+		$::DataContainer
+		Name XP4/Objects/PalaceRoofLamp_01/PalaceRoofLamp_01_Physics_1_Win32
+	Scale 1.2999999523162842
+	ExternalAssets *nullArray*
 HealthStateData 57830680-BD78-4E51-8B53-219D88426D5B
-    $::DataContainer
-    Objects::array
-        member(0) F3070EFD-AFF5-461A-A52A-EFC7B67407A4
-    LoosePartPhysics *nullArray*
-    SpawnedBangerBlueprint *nullGuid*
-    CopyDamageToBanger True
-    SpawnedBangerImpulseParams *nullGuid*
-    PhysicsEnabled True
-    Health 100.0
-    PartIndex 0
-    CanSupportOtherParts True
+	$::DataContainer
+	Objects::array
+		member(0) F3070EFD-AFF5-461A-A52A-EFC7B67407A4
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	CopyDamageToBanger True
+	SpawnedBangerImpulseParams *nullGuid*
+	PhysicsEnabled True
+	Health 100.0
+	PartIndex 0
+	CanSupportOtherParts True
 HealthStateData F9B01689-7DDF-408C-8F3C-45B7EA7377D5
-    $::DataContainer
-    Objects *nullArray*
-    LoosePartPhysics *nullArray*
-    SpawnedBangerBlueprint *nullGuid*
-    CopyDamageToBanger True
-    SpawnedBangerImpulseParams *nullGuid*
-    PhysicsEnabled True
-    Health 100.0
-    PartIndex 1
-    CanSupportOtherParts True
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	CopyDamageToBanger True
+	SpawnedBangerImpulseParams *nullGuid*
+	PhysicsEnabled True
+	Health 100.0
+	PartIndex 1
+	CanSupportOtherParts True
 InterfaceDescriptorData 38787943-58A9-4E10-8B66-CD693281C080
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id -448529818
-                AccessType FieldAccessType_Target
-            member(1)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id -458572566
-                AccessType FieldAccessType_Target
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id 1846480770 (EnableSpotlight)
-        member(1)::DynamicEvent
-            Id -1099953353 (DisableSpotlight)
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -448529818 (CastShadow)
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -458572566 (Intensity)
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1846480770 (EnableSpotlight)
+		member(1)::DynamicEvent
+			Id -1099953353 (DisableSpotlight)
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 ObjectBlueprint 0D472651-C810-45A1-9656-51B1D3C5DE44 #primary instance
-    $::Blueprint
-        $::EntityBusData
-            $::DataBusData
-                $::Asset
-                    $::DataContainer
-                    Name XP4/Objects/PalaceRoofLamp_01/PalaceRoofLamp_01
-                PropertyConnections::array
-                    member(0)::PropertyConnection
-                        Source 38787943-58A9-4E10-8B66-CD693281C080
-                        Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
-                        SourceFieldId -448529818 (CastShadow)
-                        TargetFieldId -327958220 (CastShadowsEnable)
-                    member(1)::PropertyConnection
-                        Source 38787943-58A9-4E10-8B66-CD693281C080
-                        Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
-                        SourceFieldId -458572566 (Intensity)
-                        TargetFieldId -458572566 (Intensity)
-                LinkConnections *nullArray*
-            EventConnections::array
-                member(0)::EventConnection
-                    Source 38787943-58A9-4E10-8B66-CD693281C080
-                    Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
-                    SourceEvent::EventSpec
-                        Id 1846480770 (EnableSpotlight)
-                    TargetEvent::EventSpec
-                        Id -1952177180 (Enable)
-                    TargetType EventConnectionTargetType_Client
-                member(1)::EventConnection
-                    Source 38787943-58A9-4E10-8B66-CD693281C080
-                    Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
-                    SourceEvent::EventSpec
-                        Id -1099953353 (DisableSpotlight)
-                    TargetEvent::EventSpec
-                        Id -117303631 (Disable)
-                    TargetType EventConnectionTargetType_Client
-            Descriptor 38787943-58A9-4E10-8B66-CD693281C080
-            NeedNetworkId False
-            InterfaceHasConnections True
-            AlwaysCreateEntityBusClient False
-            AlwaysCreateEntityBusServer False
-    Object 12433F6C-4DFA-4D2E-9158-DDFD634C56D6
+	$::Blueprint
+		$::EntityBusData
+			$::DataBusData
+				$::Asset
+					$::DataContainer
+					Name XP4/Objects/PalaceRoofLamp_01/PalaceRoofLamp_01
+				PropertyConnections::array
+					member(0)::PropertyConnection
+						Source 38787943-58A9-4E10-8B66-CD693281C080
+						Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
+						SourceFieldId -448529818 (CastShadow)
+						TargetFieldId -327958220 (CastShadowsEnable)
+					member(1)::PropertyConnection
+						Source 38787943-58A9-4E10-8B66-CD693281C080
+						Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
+						SourceFieldId -458572566 (Intensity)
+						TargetFieldId -458572566 (Intensity)
+				LinkConnections *nullArray*
+			EventConnections::array
+				member(0)::EventConnection
+					Source 38787943-58A9-4E10-8B66-CD693281C080
+					Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
+					SourceEvent::EventSpec
+						Id 1846480770 (EnableSpotlight)
+					TargetEvent::EventSpec
+						Id -1952177180 (Enable)
+					TargetType EventConnectionTargetType_Client
+				member(1)::EventConnection
+					Source 38787943-58A9-4E10-8B66-CD693281C080
+					Target F3070EFD-AFF5-461A-A52A-EFC7B67407A4
+					SourceEvent::EventSpec
+						Id -1099953353 (DisableSpotlight)
+					TargetEvent::EventSpec
+						Id -117303631 (Disable)
+					TargetType EventConnectionTargetType_Client
+			Descriptor 38787943-58A9-4E10-8B66-CD693281C080
+			NeedNetworkId False
+			InterfaceHasConnections True
+			AlwaysCreateEntityBusClient False
+			AlwaysCreateEntityBusServer False
+	Object 12433F6C-4DFA-4D2E-9158-DDFD634C56D6
 PartComponentData 7917AA5A-39CC-403B-B0A6-8CD3E60A9114
-    $::ComponentData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-        Transform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y -0.524961531162
-                z 0.0
-        Components *nullArray*
-        Excluded False
-    HealthStates::array
-        member(0) 57830680-BD78-4E51-8B53-219D88426D5B
-    PartLinks *nullArray*
-    IsSupported False
-    IsFragile False
-    IsNetworkable True
-    IsWindow False
-    AnimatePhysics False
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y -0.524961531162262
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	HealthStates::array
+		member(0) 57830680-BD78-4E51-8B53-219D88426D5B
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
 PartComponentData 71AFAB7E-1DFB-4CB3-B360-AB6E48FF0EF9
-    $::ComponentData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-        Transform::LinearTransform
-            right::Vec3
-                x 1.0
-                y 0.0
-                z 0.0
-            up::Vec3
-                x 0.0
-                y 1.0
-                z 0.0
-            forward::Vec3
-                x 0.0
-                y 0.0
-                z 1.0
-            trans::Vec3
-                x 0.0
-                y -0.524961531162
-                z 0.0
-        Components *nullArray*
-        Excluded False
-    HealthStates::array
-        member(0) F9B01689-7DDF-408C-8F3C-45B7EA7377D5
-    PartLinks *nullArray*
-    IsSupported False
-    IsFragile False
-    IsNetworkable True
-    IsWindow False
-    AnimatePhysics False
+	$::ComponentData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y -0.524961531162262
+				z 0.0
+		Components *nullArray*
+		Excluded False
+	HealthStates::array
+		member(0) F9B01689-7DDF-408C-8F3C-45B7EA7377D5
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
 PhysicsEntityData 7D151E41-CB28-4496-9EE1-05C5A833ABCF
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 3
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 65535
-    Asset *nullGuid*
-    ScaledAssets::array
-        member(0) 17D0C48E-AA08-3A62-DE34-F0A40BBA6AA5
-        member(1) A59DBA71-FEA1-1118-BDB7-C1193C83D005
-    RigidBodies::array
-        member(0) 660C6E23-6706-4026-8A11-E48430CD195E
-        member(1) B0D19DB3-7935-4B39-8476-8674DD86CFAE
-    EncapsulatePartsInLists False
-    FloatPhysics *nullGuid*
-    Mass 1000010.0
-    InertiaModifier::Vec3
-        x 1.0
-        y 1.0
-        z 1.0
-    Friction 1000010.0
-    Restitution 1000010.0
-    AngularVelocityDamping -1.0
-    LinearVelocityDamping -1.0
-    Proximity *nullGuid*
-    Constraints *nullArray*
-    MovableParts True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 3
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 65535
+	Asset *nullGuid*
+	ScaledAssets::array
+		member(0) 17D0C48E-AA08-3A62-DE34-F0A40BBA6AA5
+		member(1) A59DBA71-FEA1-1118-BDB7-C1193C83D005
+	RigidBodies::array
+		member(0) 660C6E23-6706-4026-8A11-E48430CD195E
+		member(1) B0D19DB3-7935-4B39-8476-8674DD86CFAE
+	EncapsulatePartsInLists False
+	FloatPhysics *nullGuid*
+	Mass 1000010.0
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Friction 1000010.0
+	Restitution 1000010.0
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	Proximity *nullGuid*
+	Constraints *nullArray*
+	MovableParts True
 RigidBodyData 660C6E23-6706-4026-8A11-E48430CD195E
-    $::DataContainer
-    RigidBodyType RBTypeCollision
-    Mass 0.0
-    Friction 0.5
-    Restitution 0.40000000596
-    InertiaModifier::Vec3
-        x 1.0
-        y 1.0
-        z 1.0
-    AngularVelocityDamping -1.0
-    LinearVelocityDamping -1.0
-    InteractionToolkitCollisionVolumeId 0
-    MotionType RigidBodyMotionType_Fixed
-    QualityType RigidBodyQualityType_Invalid
-    CollisionLayer RigidBodyCollisionLayer_Invalid
-    FloatPhysics *nullGuid*
-    Constraints *nullArray*
+	$::DataContainer
+	RigidBodyType RBTypeCollision
+	Mass 0.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Fixed
+	QualityType RigidBodyQualityType_Invalid
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	FloatPhysics *nullGuid*
+	Constraints *nullArray*
 RigidBodyData B0D19DB3-7935-4B39-8476-8674DD86CFAE
-    $::DataContainer
-    RigidBodyType RBTypeRaycast
-    Mass 0.0
-    Friction 0.5
-    Restitution 0.40000000596
-    InertiaModifier::Vec3
-        x 1.0
-        y 1.0
-        z 1.0
-    AngularVelocityDamping -1.0
-    LinearVelocityDamping -1.0
-    InteractionToolkitCollisionVolumeId 0
-    MotionType RigidBodyMotionType_Fixed
-    QualityType RigidBodyQualityType_Invalid
-    CollisionLayer RigidBodyCollisionLayer_Invalid
-    FloatPhysics *nullGuid*
-    Constraints *nullArray*
+	$::DataContainer
+	RigidBodyType RBTypeRaycast
+	Mass 0.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Fixed
+	QualityType RigidBodyQualityType_Invalid
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	FloatPhysics *nullGuid*
+	Constraints *nullArray*
 SpotLightEntityData F3070EFD-AFF5-461A-A52A-EFC7B67407A4
-    $::LocalLightEntityData
-        $::SpatialEntityData
-            $::EntityData
-                $::GameObjectData
-                    $::GameDataContainer
-                        $::DataContainer
-                    IsEventConnectionTarget 0
-                    IsPropertyConnectionTarget 2
-                    IndexInBlueprint 65535
-            Transform::LinearTransform
-                right::Vec3
-                    x 1.0
-                    y 0.0
-                    z 0.0
-                up::Vec3
-                    x 0.0
-                    y -4.37113882867e-08
-                    z -1.0
-                forward::Vec3
-                    x 0.0
-                    y 1.0
-                    z -4.37113882867e-08
-                trans::Vec3
-                    x -5.96046447754e-08
-                    y -0.612846195698
-                    z -5.96046412227e-08
-        Color::Vec3
-            x 1.0
-            y 1.0
-            z 1.0
-        Radius 8.5
-        Intensity 30.0
-        AttenuationOffset 0.00999999977648
-        Visible False
-        SpecularEnable True
-        EnlightenColorMode EnlightenColorMode_Multiply
-        EnlightenEnable False
-        EnlightenColorScale::Vec3
-            x 1.0
-            y 1.0
-            z 1.0
-        ParticleColorScale::Vec3
-            x 1.0
-            y 1.0
-            z 1.0
-    Shape SpotLightShape_Cone
-    ConeInnerAngle 0.0
-    ConeOuterAngle 102.652999878
-    FrustumFov 40.0
-    FrustumAspect 1.0
-    OrthoWidth 5.0
-    OrthoHeight 5.0
-    Texture *nullGuid*
-    CastShadowsEnable False
-    CastShadowsMinLevel QualityLevel_Low
+	$::LocalLightEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 0
+					IsPropertyConnectionTarget 2
+					IndexInBlueprint 65535
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y -4.371138828673793e-08
+					z -1.0
+				forward::Vec3
+					x 0.0
+					y 1.0
+					z -4.371138828673793e-08
+				trans::Vec3
+					x -5.960464477539063e-08
+					y -0.6128461956977844
+					z -5.9604641222676946e-08
+		Color::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+		Radius 8.5
+		Intensity 30.0
+		AttenuationOffset 0.009999999776482582
+		Visible False
+		SpecularEnable True
+		EnlightenColorMode EnlightenColorMode_Multiply
+		EnlightenEnable False
+		EnlightenColorScale::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+		ParticleColorScale::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+	Shape SpotLightShape_Cone
+	ConeInnerAngle 0.0
+	ConeOuterAngle 102.65299987792969
+	FrustumFov 40.0
+	FrustumAspect 1.0
+	OrthoWidth 5.0
+	OrthoHeight 5.0
+	Texture *nullGuid*
+	CastShadowsEnable False
+	CastShadowsMinLevel QualityLevel_Low
 StaticModelEntityData 12433F6C-4DFA-4D2E-9158-DDFD634C56D6
-    $::GamePhysicsEntityData
-        $::GameEntityData
-            $::SpatialEntityData
-                $::EntityData
-                    $::GameObjectData
-                        $::GameDataContainer
-                            $::DataContainer
-                        IsEventConnectionTarget 2
-                        IsPropertyConnectionTarget 2
-                        IndexInBlueprint 0
-                Transform::LinearTransform
-                    right::Vec3
-                        x 1.0
-                        y 0.0
-                        z 0.0
-                    up::Vec3
-                        x 0.0
-                        y 1.0
-                        z 0.0
-                    forward::Vec3
-                        x 0.0
-                        y 0.0
-                        z 1.0
-                    trans::Vec3
-                        x 0.0
-                        y 0.0
-                        z 0.0
-            Enabled True
-            Components::array
-                member(0) 7917AA5A-39CC-403B-B0A6-8CD3E60A9114
-                member(1) 71AFAB7E-1DFB-4CB3-B360-AB6E48FF0EF9
-            RuntimeComponentCount 2
-        PhysicsData 7D151E41-CB28-4496-9EE1-05C5A833ABCF
-    PartLinks *nullArray*
-    Mesh xp4/objects/palacerooflamp_01/palacerooflamp_01_Mesh/63D62480-B8CA-46F7-A2F1-4329D3D87308
-    BoneCount 0
-    BasePoseTransforms *nullArray*
-    ExcludeFromNearbyObjectDestruction False
-    PhysicsPartInfos::array
-        member(0)::PhysicsPartInfo
-            PartComponentIndex 0
-            HealthStateIndex 0
-        member(1)::PhysicsPartInfo
-            PartComponentIndex 1
-            HealthStateIndex 0
-    NetworkInfo::StaticModelNetworkInfo
-        PartNetworkIdRanges::array
-            member(0)::IndexRange
-                First 4294967295
-                Last 4294967295
-            member(1)::IndexRange
-                First 4294967295
-                Last 4294967295
-        NetworkIdCount 0
-        ChildNetworkInfos *nullArray*
-        ChildNetworkIdCount 0
-    AnimatePhysics False
-    Visible True
+	$::GamePhysicsEntityData
+		$::GameEntityData
+			$::SpatialEntityData
+				$::EntityData
+					$::GameObjectData
+						$::GameDataContainer
+							$::DataContainer
+						IsEventConnectionTarget 2
+						IsPropertyConnectionTarget 2
+						IndexInBlueprint 0
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+			Enabled True
+			Components::array
+				member(0) 7917AA5A-39CC-403B-B0A6-8CD3E60A9114
+				member(1) 71AFAB7E-1DFB-4CB3-B360-AB6E48FF0EF9
+			RuntimeComponentCount 2
+		PhysicsData 7D151E41-CB28-4496-9EE1-05C5A833ABCF
+	PartLinks *nullArray*
+	Mesh xp4/objects/palacerooflamp_01/palacerooflamp_01_Mesh/63D62480-B8CA-46F7-A2F1-4329D3D87308
+	BoneCount 0
+	BasePoseTransforms *nullArray*
+	ExcludeFromNearbyObjectDestruction False
+	PhysicsPartInfos::array
+		member(0)::PhysicsPartInfo
+			PartComponentIndex 0
+			HealthStateIndex 0
+		member(1)::PhysicsPartInfo
+			PartComponentIndex 1
+			HealthStateIndex 0
+	NetworkInfo::StaticModelNetworkInfo
+		PartNetworkIdRanges::array
+			member(0)::IndexRange
+				First 4294967295
+				Last 4294967295
+			member(1)::IndexRange
+				First 4294967295
+				Last 4294967295
+		NetworkIdCount 0
+		ChildNetworkInfos *nullArray*
+		ChildNetworkIdCount 0
+	AnimatePhysics False
+	Visible True

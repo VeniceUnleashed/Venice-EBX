@@ -1,190 +1,190 @@
 Partition 1A783BD8-2E59-40A4-B999-AA9962686708
 BoolEntityData 44EFF2B1-4191-44D9-B24C-D260A73681D3
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-    Realm Realm_Server
-    DefaultValue True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Realm Realm_Server
+	DefaultValue True
 BoolEntityData BA27F41C-6890-42B8-BCF3-17B43269711D
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 3
-    Realm Realm_Server
-    DefaultValue True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 3
+	Realm Realm_Server
+	DefaultValue True
 InterfaceDescriptorData 44C42016-2FF2-4F2E-826C-70B583CE6B03
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id -816217137
-                AccessType FieldAccessType_Source
-            member(1)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id -120746720
-                AccessType FieldAccessType_Source
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id -1433788352 (OnLost)
-        member(1)::DynamicEvent
-            Id 2099208964 (OnCaptured)
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks *nullArray*
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -816217137
+				AccessType FieldAccessType_Source
+			member(1)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id -120746720
+				AccessType FieldAccessType_Source
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1433788352 (OnLost)
+		member(1)::DynamicEvent
+			Id 2099208964 (OnCaptured)
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
 LogicPrefabBlueprint AC8742C2-EAE9-413B-B802-994AB0F73223 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/Level_Setups/Components/Vehiclespawns_Owner_Team2
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source 44EFF2B1-4191-44D9-B24C-D260A73681D3
-                            Target 44C42016-2FF2-4F2E-826C-70B583CE6B03
-                            SourceFieldId 225375086 (Value)
-                            TargetFieldId -816217137
-                        member(1)::PropertyConnection
-                            Source BA27F41C-6890-42B8-BCF3-17B43269711D
-                            Target 44C42016-2FF2-4F2E-826C-70B583CE6B03
-                            SourceFieldId 225375086 (Value)
-                            TargetFieldId -120746720
-                    LinkConnections *nullArray*
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source A2102B75-4CA2-4DCB-AA40-E58FD583E2F5
-                        Target 44EFF2B1-4191-44D9-B24C-D260A73681D3
-                        SourceEvent::EventSpec
-                            Id -699931768 (OnTriggeredByMatchingTeam)
-                        TargetEvent::EventSpec
-                            Id -1541066415 (SetTrue)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source 44C42016-2FF2-4F2E-826C-70B583CE6B03
-                        Target A2102B75-4CA2-4DCB-AA40-E58FD583E2F5
-                        SourceEvent::EventSpec
-                            Id 2099208964 (OnCaptured)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source 44C42016-2FF2-4F2E-826C-70B583CE6B03
-                        Target BAFF7AC2-80DE-4D7A-A7C4-510AE370329D
-                        SourceEvent::EventSpec
-                            Id 2099208964 (OnCaptured)
-                        TargetEvent::EventSpec
-                            Id 5862146 (In)
-                        TargetType EventConnectionTargetType_Server
-                    member(3)::EventConnection
-                        Source BAFF7AC2-80DE-4D7A-A7C4-510AE370329D
-                        Target 44EFF2B1-4191-44D9-B24C-D260A73681D3
-                        SourceEvent::EventSpec
-                            Id -699931768 (OnTriggeredByMatchingTeam)
-                        TargetEvent::EventSpec
-                            Id 668205626 (SetFalse)
-                        TargetType EventConnectionTargetType_Server
-                    member(4)::EventConnection
-                        Source A2102B75-4CA2-4DCB-AA40-E58FD583E2F5
-                        Target BA27F41C-6890-42B8-BCF3-17B43269711D
-                        SourceEvent::EventSpec
-                            Id -699931768 (OnTriggeredByMatchingTeam)
-                        TargetEvent::EventSpec
-                            Id -1541066415 (SetTrue)
-                        TargetType EventConnectionTargetType_Server
-                    member(5)::EventConnection
-                        Source 44C42016-2FF2-4F2E-826C-70B583CE6B03
-                        Target BA27F41C-6890-42B8-BCF3-17B43269711D
-                        SourceEvent::EventSpec
-                            Id -1433788352 (OnLost)
-                        TargetEvent::EventSpec
-                            Id 668205626 (SetFalse)
-                        TargetType EventConnectionTargetType_Server
-                Descriptor 44C42016-2FF2-4F2E-826C-70B583CE6B03
-                NeedNetworkId False
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) A2102B75-4CA2-4DCB-AA40-E58FD583E2F5
-            member(1) 44EFF2B1-4191-44D9-B24C-D260A73681D3
-            member(2) BAFF7AC2-80DE-4D7A-A7C4-510AE370329D
-            member(3) BA27F41C-6890-42B8-BCF3-17B43269711D
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Level_Setups/Components/Vehiclespawns_Owner_Team2
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 44EFF2B1-4191-44D9-B24C-D260A73681D3
+							Target 44C42016-2FF2-4F2E-826C-70B583CE6B03
+							SourceFieldId 225375086 (Value)
+							TargetFieldId -816217137
+						member(1)::PropertyConnection
+							Source BA27F41C-6890-42B8-BCF3-17B43269711D
+							Target 44C42016-2FF2-4F2E-826C-70B583CE6B03
+							SourceFieldId 225375086 (Value)
+							TargetFieldId -120746720
+					LinkConnections *nullArray*
+				EventConnections::array
+					member(0)::EventConnection
+						Source A2102B75-4CA2-4DCB-AA40-E58FD583E2F5
+						Target 44EFF2B1-4191-44D9-B24C-D260A73681D3
+						SourceEvent::EventSpec
+							Id -699931768 (OnTriggeredByMatchingTeam)
+						TargetEvent::EventSpec
+							Id -1541066415 (SetTrue)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 44C42016-2FF2-4F2E-826C-70B583CE6B03
+						Target A2102B75-4CA2-4DCB-AA40-E58FD583E2F5
+						SourceEvent::EventSpec
+							Id 2099208964 (OnCaptured)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source 44C42016-2FF2-4F2E-826C-70B583CE6B03
+						Target BAFF7AC2-80DE-4D7A-A7C4-510AE370329D
+						SourceEvent::EventSpec
+							Id 2099208964 (OnCaptured)
+						TargetEvent::EventSpec
+							Id 5862146 (In)
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source BAFF7AC2-80DE-4D7A-A7C4-510AE370329D
+						Target 44EFF2B1-4191-44D9-B24C-D260A73681D3
+						SourceEvent::EventSpec
+							Id -699931768 (OnTriggeredByMatchingTeam)
+						TargetEvent::EventSpec
+							Id 668205626 (SetFalse)
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source A2102B75-4CA2-4DCB-AA40-E58FD583E2F5
+						Target BA27F41C-6890-42B8-BCF3-17B43269711D
+						SourceEvent::EventSpec
+							Id -699931768 (OnTriggeredByMatchingTeam)
+						TargetEvent::EventSpec
+							Id -1541066415 (SetTrue)
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source 44C42016-2FF2-4F2E-826C-70B583CE6B03
+						Target BA27F41C-6890-42B8-BCF3-17B43269711D
+						SourceEvent::EventSpec
+							Id -1433788352 (OnLost)
+						TargetEvent::EventSpec
+							Id 668205626 (SetFalse)
+						TargetType EventConnectionTargetType_Server
+				Descriptor 44C42016-2FF2-4F2E-826C-70B583CE6B03
+				NeedNetworkId False
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) A2102B75-4CA2-4DCB-AA40-E58FD583E2F5
+			member(1) 44EFF2B1-4191-44D9-B24C-D260A73681D3
+			member(2) BAFF7AC2-80DE-4D7A-A7C4-510AE370329D
+			member(3) BA27F41C-6890-42B8-BCF3-17B43269711D
 TeamFilterEntityData A2102B75-4CA2-4DCB-AA40-E58FD583E2F5
-    $::GameEntityData
-        $::SpatialEntityData
-            $::EntityData
-                $::GameObjectData
-                    $::GameDataContainer
-                        $::DataContainer
-                    IsEventConnectionTarget 1
-                    IsPropertyConnectionTarget 3
-                    IndexInBlueprint 0
-            Transform::LinearTransform
-                right::Vec3
-                    x 1.0
-                    y 0.0
-                    z 0.0
-                up::Vec3
-                    x 0.0
-                    y 1.0
-                    z 0.0
-                forward::Vec3
-                    x 0.0
-                    y 0.0
-                    z 1.0
-                trans::Vec3
-                    x 0.0
-                    y 0.0
-                    z 0.0
-        Enabled True
-        Components *nullArray*
-        RuntimeComponentCount 0
-    Realm Realm_Server
-    InvertFilter False
-    Team Team2
-    GenerateEventForEveryMatchingTeamMember False
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 1
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	Realm Realm_Server
+	InvertFilter False
+	Team Team2
+	GenerateEventForEveryMatchingTeamMember False
 TeamFilterEntityData BAFF7AC2-80DE-4D7A-A7C4-510AE370329D
-    $::GameEntityData
-        $::SpatialEntityData
-            $::EntityData
-                $::GameObjectData
-                    $::GameDataContainer
-                        $::DataContainer
-                    IsEventConnectionTarget 1
-                    IsPropertyConnectionTarget 3
-                    IndexInBlueprint 2
-            Transform::LinearTransform
-                right::Vec3
-                    x 1.0
-                    y 0.0
-                    z 0.0
-                up::Vec3
-                    x 0.0
-                    y 1.0
-                    z 0.0
-                forward::Vec3
-                    x 0.0
-                    y 0.0
-                    z 1.0
-                trans::Vec3
-                    x 0.0
-                    y 0.0
-                    z 0.0
-        Enabled True
-        Components *nullArray*
-        RuntimeComponentCount 0
-    Realm Realm_Server
-    InvertFilter False
-    Team Team1
-    GenerateEventForEveryMatchingTeamMember False
+	$::GameEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 1
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 2
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Enabled True
+		Components *nullArray*
+		RuntimeComponentCount 0
+	Realm Realm_Server
+	InvertFilter False
+	Team Team1
+	GenerateEventForEveryMatchingTeamMember False

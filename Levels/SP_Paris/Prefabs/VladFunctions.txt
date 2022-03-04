@@ -1,123 +1,123 @@
 Partition AE3901BC-8612-11E0-9EFB-F3A771CF0BA5
 BoolEntityData DEA69422-E75C-4581-A4F9-0E49C404AE05
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 2
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    Realm Realm_ClientAndServer
-    DefaultValue True
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 2
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	Realm Realm_ClientAndServer
+	DefaultValue True
 CustomizeSoldierEntityData 2D730A8A-BFBC-4D33-B8E6-C7C694094124
-    $::CustomizeBaseEntityData
-        $::EntityData
-            $::GameObjectData
-                $::GameDataContainer
-                    $::DataContainer
-                IsEventConnectionTarget 1
-                IsPropertyConnectionTarget 3
-                IndexInBlueprint 0
-        Realm Realm_Server
-    CustomizeSoldierData Characters/Soldiers/Customizations/SP_RUS_Alexey_Gasmask/40B9CD5A-682F-4605-A27C-24784A589354
+	$::CustomizeBaseEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 1
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 0
+		Realm Realm_Server
+	CustomizeSoldierData Characters/Soldiers/Customizations/SP_RUS_Alexey_Gasmask/40B9CD5A-682F-4605-A27C-24784A589354
 CustomizeSoldierEntityData D23F58D5-4AB6-46A8-9EEE-169AEA7F0AB1
-    $::CustomizeBaseEntityData
-        $::EntityData
-            $::GameObjectData
-                $::GameDataContainer
-                    $::DataContainer
-                IsEventConnectionTarget 1
-                IsPropertyConnectionTarget 3
-                IndexInBlueprint 1
-        Realm Realm_Server
-    CustomizeSoldierData Characters/Soldiers/Customizations/SP_RUS_Alexey/6CCCF216-7EEC-4F39-913D-AD73DDA44BB0
+	$::CustomizeBaseEntityData
+		$::EntityData
+			$::GameObjectData
+				$::GameDataContainer
+					$::DataContainer
+				IsEventConnectionTarget 1
+				IsPropertyConnectionTarget 3
+				IndexInBlueprint 1
+		Realm Realm_Server
+	CustomizeSoldierData Characters/Soldiers/Customizations/SP_RUS_Alexey/6CCCF216-7EEC-4F39-913D-AD73DDA44BB0
 InterfaceDescriptorData 826A9B99-F346-4543-877F-99D413B9416A
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields::array
-            member(0)::DataField
-                Value *nullString*
-                ValueRef *nullGuid*
-                Id 495955022
-                AccessType FieldAccessType_Source
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id 996092901
-        member(1)::DynamicEvent
-            Id -1488672277
-        member(2)::DynamicEvent
-            Id 1077549735
-        member(3)::DynamicEvent
-            Id -1584155022
-    OutputEvents *nullArray*
-    InputLinks *nullArray*
-    OutputLinks::array
-        member(0)::DynamicLink
-            Id 1408929797 (Vladimir)
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value 
+				ValueRef *nullGuid*
+				Id 495955022 (IsTarget)
+				AccessType FieldAccessType_Source
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 996092901
+		member(1)::DynamicEvent
+			Id -1488672277
+		member(2)::DynamicEvent
+			Id 1077549735
+		member(3)::DynamicEvent
+			Id -1584155022
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id 1408929797 (Vladimir)
 SpatialPrefabBlueprint D1A26788-0164-7FCB-ED65-F1066871231A #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Levels/SP_Paris/Prefabs/VladFunctions
-                    PropertyConnections::array
-                        member(0)::PropertyConnection
-                            Source DEA69422-E75C-4581-A4F9-0E49C404AE05
-                            Target 826A9B99-F346-4543-877F-99D413B9416A
-                            SourceFieldId 225375086 (Value)
-                            TargetFieldId 495955022 (IsTarget)
-                    LinkConnections::array
-                        member(0)::LinkConnection
-                            Source 2D730A8A-BFBC-4D33-B8E6-C7C694094124
-                            Target 826A9B99-F346-4543-877F-99D413B9416A
-                            SourceFieldId 1085151375 (Characters)
-                            TargetFieldId 1408929797 (Vladimir)
-                        member(1)::LinkConnection
-                            Source D23F58D5-4AB6-46A8-9EEE-169AEA7F0AB1
-                            Target 826A9B99-F346-4543-877F-99D413B9416A
-                            SourceFieldId 1085151375 (Characters)
-                            TargetFieldId 1408929797 (Vladimir)
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 826A9B99-F346-4543-877F-99D413B9416A
-                        Target 2D730A8A-BFBC-4D33-B8E6-C7C694094124
-                        SourceEvent::EventSpec
-                            Id 996092901
-                        TargetEvent::EventSpec
-                            Id 206074481 (Apply)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source 826A9B99-F346-4543-877F-99D413B9416A
-                        Target D23F58D5-4AB6-46A8-9EEE-169AEA7F0AB1
-                        SourceEvent::EventSpec
-                            Id -1488672277
-                        TargetEvent::EventSpec
-                            Id 206074481 (Apply)
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source 826A9B99-F346-4543-877F-99D413B9416A
-                        Target DEA69422-E75C-4581-A4F9-0E49C404AE05
-                        SourceEvent::EventSpec
-                            Id 1077549735
-                        TargetEvent::EventSpec
-                            Id -1541066415 (SetTrue)
-                        TargetType EventConnectionTargetType_NetworkedClientAndServer
-                    member(3)::EventConnection
-                        Source 826A9B99-F346-4543-877F-99D413B9416A
-                        Target DEA69422-E75C-4581-A4F9-0E49C404AE05
-                        SourceEvent::EventSpec
-                            Id -1584155022
-                        TargetEvent::EventSpec
-                            Id 668205626 (SetFalse)
-                        TargetType EventConnectionTargetType_NetworkedClientAndServer
-                Descriptor 826A9B99-F346-4543-877F-99D413B9416A
-                NeedNetworkId True
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient True
-                AlwaysCreateEntityBusServer True
-        Objects::array
-            member(0) 2D730A8A-BFBC-4D33-B8E6-C7C694094124
-            member(1) D23F58D5-4AB6-46A8-9EEE-169AEA7F0AB1
-            member(2) DEA69422-E75C-4581-A4F9-0E49C404AE05
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Levels/SP_Paris/Prefabs/VladFunctions
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source DEA69422-E75C-4581-A4F9-0E49C404AE05
+							Target 826A9B99-F346-4543-877F-99D413B9416A
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 495955022 (IsTarget)
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source 2D730A8A-BFBC-4D33-B8E6-C7C694094124
+							Target 826A9B99-F346-4543-877F-99D413B9416A
+							SourceFieldId 1085151375 (Characters)
+							TargetFieldId 1408929797 (Vladimir)
+						member(1)::LinkConnection
+							Source D23F58D5-4AB6-46A8-9EEE-169AEA7F0AB1
+							Target 826A9B99-F346-4543-877F-99D413B9416A
+							SourceFieldId 1085151375 (Characters)
+							TargetFieldId 1408929797 (Vladimir)
+				EventConnections::array
+					member(0)::EventConnection
+						Source 826A9B99-F346-4543-877F-99D413B9416A
+						Target 2D730A8A-BFBC-4D33-B8E6-C7C694094124
+						SourceEvent::EventSpec
+							Id 996092901
+						TargetEvent::EventSpec
+							Id 206074481 (Apply)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 826A9B99-F346-4543-877F-99D413B9416A
+						Target D23F58D5-4AB6-46A8-9EEE-169AEA7F0AB1
+						SourceEvent::EventSpec
+							Id -1488672277
+						TargetEvent::EventSpec
+							Id 206074481 (Apply)
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source 826A9B99-F346-4543-877F-99D413B9416A
+						Target DEA69422-E75C-4581-A4F9-0E49C404AE05
+						SourceEvent::EventSpec
+							Id 1077549735
+						TargetEvent::EventSpec
+							Id -1541066415 (SetTrue)
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+					member(3)::EventConnection
+						Source 826A9B99-F346-4543-877F-99D413B9416A
+						Target DEA69422-E75C-4581-A4F9-0E49C404AE05
+						SourceEvent::EventSpec
+							Id -1584155022
+						TargetEvent::EventSpec
+							Id 668205626 (SetFalse)
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+				Descriptor 826A9B99-F346-4543-877F-99D413B9416A
+				NeedNetworkId True
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient True
+				AlwaysCreateEntityBusServer True
+		Objects::array
+			member(0) 2D730A8A-BFBC-4D33-B8E6-C7C694094124
+			member(1) D23F58D5-4AB6-46A8-9EEE-169AEA7F0AB1
+			member(2) DEA69422-E75C-4581-A4F9-0E49C404AE05

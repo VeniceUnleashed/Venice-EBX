@@ -1,56 +1,56 @@
 Partition A831D295-2EC4-11E0-B67B-844992F39386
 PeerServerBackendData C1A9CA11-13EC-5635-A6A1-9D0F3F404DAE #primary instance
-    $::ServerBackendData
-        $::Asset
-            $::DataContainer
-            Name Persistence/OnlineBackends/PeerServerBackend
-        Mappings::array
-            member(0)::ServerBackendAttributeMapping
-                Attribute ServerBackendAttribute_Mission
-                Setting mission
-                DefaultValue *nullString*
-            member(1)::ServerBackendAttributeMapping
-                Attribute ServerBackendAttribute_Difficulty
-                Setting difficulty
-                DefaultValue NORMAL
-            member(2)::ServerBackendAttributeMapping
-                Attribute ServerBackendAttribute_GameMode
-                Setting mode
-                DefaultValue Cooperative
-            member(3)::ServerBackendAttributeMapping
-                Attribute ServerBackendAttribute_Level
-                Setting level
-                DefaultValue *nullString*
-    CreateParameters::PeerCreateGameParameters
-        Base::MatchmakingCreateGameParameters
-            GameTopology MatchmakingNetworkTopology_PeerHosted
-            PeerMode MatchmakingPeer2PeerMode_FullMesh
-            VoipTopology MatchmakingNetworkTopology_Disabled
-            Settings::MatchmakingGameSettings
-                OpenToBrowsing False
-                OpenToInvites True
-                OpenToMatchmaking False
-                OpenToJoinByPlayer False
-                HostMigratable False
-                Ranked True
-                AdminOnlyInvites False
-                EnforceSingleGroupJoin False
-                JoinInProgressSupported True
-                AdminInvitesOnlyIgnoreEntryChecks False
-                EnablePersistedGameId False
-                AllowSameTeamId False
-            Attributes::array
-                member(0)::MatchmakingGameAttribute
-                    Attribute mission
-                    Value *nullString*
-                    Override False
-                member(1)::MatchmakingGameAttribute
-                    Attribute difficulty
-                    Value *nullString*
-                    Override False
-                member(2)::MatchmakingGameAttribute
-                    Attribute mode
-                    Value Cooperative
-                    Override False
-            QueueCapacity 0
-        PlayerCapacity 2
+	$::ServerBackendData
+		$::Asset
+			$::DataContainer
+			Name Persistence/OnlineBackends/PeerServerBackend
+		Mappings::array
+			member(0)::ServerBackendAttributeMapping
+				Attribute ServerBackendAttribute_Mission
+				Setting mission
+				DefaultValue 
+			member(1)::ServerBackendAttributeMapping
+				Attribute ServerBackendAttribute_Difficulty
+				Setting difficulty
+				DefaultValue NORMAL
+			member(2)::ServerBackendAttributeMapping
+				Attribute ServerBackendAttribute_GameMode
+				Setting mode
+				DefaultValue Cooperative
+			member(3)::ServerBackendAttributeMapping
+				Attribute ServerBackendAttribute_Level
+				Setting level
+				DefaultValue 
+	CreateParameters::PeerCreateGameParameters
+		Base::MatchmakingCreateGameParameters
+			GameTopology MatchmakingNetworkTopology_PeerHosted
+			PeerMode MatchmakingPeer2PeerMode_FullMesh
+			VoipTopology MatchmakingNetworkTopology_Disabled
+			Settings::MatchmakingGameSettings
+				OpenToBrowsing False
+				OpenToInvites True
+				OpenToMatchmaking False
+				OpenToJoinByPlayer False
+				HostMigratable False
+				Ranked True
+				AdminOnlyInvites False
+				EnforceSingleGroupJoin False
+				JoinInProgressSupported True
+				AdminInvitesOnlyIgnoreEntryChecks False
+				EnablePersistedGameId False
+				AllowSameTeamId False
+			Attributes::array
+				member(0)::MatchmakingGameAttribute
+					Attribute mission
+					Value 
+					Override False
+				member(1)::MatchmakingGameAttribute
+					Attribute difficulty
+					Value 
+					Override False
+				member(2)::MatchmakingGameAttribute
+					Attribute mode
+					Value Cooperative
+					Override False
+			QueueCapacity 0
+		PlayerCapacity 2

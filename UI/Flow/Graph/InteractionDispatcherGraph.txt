@@ -1,207 +1,207 @@
 Partition 3B8DCD83-9C64-467C-9785-DBEFD69C2EC5
 ActionNode C4AED1B3-6CA4-4A45-B8DD-82DED5A6A586
-    $::UINodeData
-        $::DataContainer
-        Name Ammo
-        IsRootNode False
-        ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
-        ParentIsScreen False
-    ActionKey -885167655
-    Params::array
-        member(0) lowAmmo
-    AppendIncomingParams False
-    ActionAsset *nullGuid*
-    In 4B3839B0-54CD-43D0-9F70-E45FAD9EBF37
-    DataInputs *nullArray*
-    Out 28F95FAD-7EAF-46EA-863C-A4D9A4D96FF7
+	$::UINodeData
+		$::DataContainer
+		Name Ammo
+		IsRootNode False
+		ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
+		ParentIsScreen False
+	ActionKey -885167655 (RemoveInteraction)
+	Params::array
+		member(0) lowAmmo
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	In 4B3839B0-54CD-43D0-9F70-E45FAD9EBF37
+	DataInputs *nullArray*
+	Out 28F95FAD-7EAF-46EA-863C-A4D9A4D96FF7
 ActionNode E986855A-F70F-41BE-81D7-6B91D230456D
-    $::UINodeData
-        $::DataContainer
-        Name Ammo
-        IsRootNode False
-        ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
-        ParentIsScreen False
-    ActionKey -1288931362
-    Params::array
-        member(0) lowAmmo
-        member(1) TO RELOAD
-        member(2) noicon
-    AppendIncomingParams False
-    ActionAsset *nullGuid*
-    In 11BA19E6-16CD-4FC8-80A0-8AB9FD7EC1EE
-    DataInputs *nullArray*
-    Out 01D4FCA8-1456-4D7B-B8FF-DA12DB8661F7
+	$::UINodeData
+		$::DataContainer
+		Name Ammo
+		IsRootNode False
+		ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
+		ParentIsScreen False
+	ActionKey -1288931362 (AddInteraction)
+	Params::array
+		member(0) lowAmmo
+		member(1) TO RELOAD
+		member(2) noicon
+	AppendIncomingParams False
+	ActionAsset *nullGuid*
+	In 11BA19E6-16CD-4FC8-80A0-8AB9FD7EC1EE
+	DataInputs *nullArray*
+	Out 01D4FCA8-1456-4D7B-B8FF-DA12DB8661F7
 InstanceInputNode D2C3DF62-168C-482A-8042-66703DC0D54E
-    $::UINodeData
-        $::DataContainer
-        Name LowAmmo
-        IsRootNode False
-        ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
-        ParentIsScreen False
-    Out 6353B66B-FA23-4E81-957A-A33AA4C903BB
+	$::UINodeData
+		$::DataContainer
+		Name LowAmmo
+		IsRootNode False
+		ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
+		ParentIsScreen False
+	Out 6353B66B-FA23-4E81-957A-A33AA4C903BB
 InstanceInputNode 127C23E5-DC42-49FF-AF95-7253AF1776FA
-    $::UINodeData
-        $::DataContainer
-        Name AmmoReplenished
-        IsRootNode False
-        ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
-        ParentIsScreen False
-    Out 540018E2-D2E1-4502-9FF1-48E646D16983
+	$::UINodeData
+		$::DataContainer
+		Name AmmoReplenished
+		IsRootNode False
+		ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
+		ParentIsScreen False
+	Out 540018E2-D2E1-4502-9FF1-48E646D16983
 InstanceOutputNode 9A517DC7-853D-4CBC-8CF8-6689752F2259
-    $::UINodeData
-        $::DataContainer
-        Name Exit
-        IsRootNode False
-        ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
-        ParentIsScreen False
-    In 150F8872-8F93-4116-A0C2-C79FADC40039
-    Id 2088518501
-    DestroyGraph True
+	$::UINodeData
+		$::DataContainer
+		Name Exit
+		IsRootNode False
+		ParentGraph C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7
+		ParentIsScreen False
+	In 150F8872-8F93-4116-A0C2-C79FADC40039
+	Id 2088518501 (Exit)
+	DestroyGraph True
 UIGraphAsset C5D2BD4C-439D-4EBD-82BA-AC888E1F02E7 #primary instance
-    $::Asset
-        $::DataContainer
-        Name UI/Flow/Graph/InteractionDispatcherGraph
-    Nodes::array
-        member(0) D2C3DF62-168C-482A-8042-66703DC0D54E
-        member(1) 9A517DC7-853D-4CBC-8CF8-6689752F2259
-        member(2) 127C23E5-DC42-49FF-AF95-7253AF1776FA
-        member(3) C4AED1B3-6CA4-4A45-B8DD-82DED5A6A586
-        member(4) E986855A-F70F-41BE-81D7-6B91D230456D
-    GlobalNode *nullGuid*
-    Connections::array
-        member(0) FE312F1A-14D0-408C-970A-C1A318CF11B4
-        member(1) E1270E55-C7DB-4430-9FD0-404B93539952
-        member(2) 3BF38992-58A4-44A6-A803-210024C63D2D
-        member(3) 1CE88A9D-8C8F-4568-A05B-4F88EAFC0633
-    AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41B4640B-1973-8469-A254-B1B23E4E6A04
-    BundleAssetName *nullString*
-    ProtectScreens False
-    Modal False
-    EventList *nullArray*
-    IsWin32UIGraphAsset True
-    IsXenonUIGraphAsset True
-    IsPs3UIGraphAsset True
+	$::Asset
+		$::DataContainer
+		Name UI/Flow/Graph/InteractionDispatcherGraph
+	Nodes::array
+		member(0) D2C3DF62-168C-482A-8042-66703DC0D54E
+		member(1) 9A517DC7-853D-4CBC-8CF8-6689752F2259
+		member(2) 127C23E5-DC42-49FF-AF95-7253AF1776FA
+		member(3) C4AED1B3-6CA4-4A45-B8DD-82DED5A6A586
+		member(4) E986855A-F70F-41BE-81D7-6B91D230456D
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) FE312F1A-14D0-408C-970A-C1A318CF11B4
+		member(1) E1270E55-C7DB-4430-9FD0-404B93539952
+		member(2) 3BF38992-58A4-44A6-A803-210024C63D2D
+		member(3) 1CE88A9D-8C8F-4568-A05B-4F88EAFC0633
+	AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41B4640B-1973-8469-A254-B1B23E4E6A04
+	BundleAssetName 
+	ProtectScreens False
+	Modal False
+	EventList *nullArray*
+	IsWin32UIGraphAsset True
+	IsXenonUIGraphAsset True
+	IsPs3UIGraphAsset True
 UINodeConnection FE312F1A-14D0-408C-970A-C1A318CF11B4
-    $::DataContainer
-    SourceNode C4AED1B3-6CA4-4A45-B8DD-82DED5A6A586
-    TargetNode 9A517DC7-853D-4CBC-8CF8-6689752F2259
-    SourcePort 28F95FAD-7EAF-46EA-863C-A4D9A4D96FF7
-    TargetPort 150F8872-8F93-4116-A0C2-C79FADC40039
-    NumScreensToPop 0
+	$::DataContainer
+	SourceNode C4AED1B3-6CA4-4A45-B8DD-82DED5A6A586
+	TargetNode 9A517DC7-853D-4CBC-8CF8-6689752F2259
+	SourcePort 28F95FAD-7EAF-46EA-863C-A4D9A4D96FF7
+	TargetPort 150F8872-8F93-4116-A0C2-C79FADC40039
+	NumScreensToPop 0
 UINodeConnection E1270E55-C7DB-4430-9FD0-404B93539952
-    $::DataContainer
-    SourceNode D2C3DF62-168C-482A-8042-66703DC0D54E
-    TargetNode E986855A-F70F-41BE-81D7-6B91D230456D
-    SourcePort 6353B66B-FA23-4E81-957A-A33AA4C903BB
-    TargetPort 11BA19E6-16CD-4FC8-80A0-8AB9FD7EC1EE
-    NumScreensToPop 0
+	$::DataContainer
+	SourceNode D2C3DF62-168C-482A-8042-66703DC0D54E
+	TargetNode E986855A-F70F-41BE-81D7-6B91D230456D
+	SourcePort 6353B66B-FA23-4E81-957A-A33AA4C903BB
+	TargetPort 11BA19E6-16CD-4FC8-80A0-8AB9FD7EC1EE
+	NumScreensToPop 0
 UINodeConnection 3BF38992-58A4-44A6-A803-210024C63D2D
-    $::DataContainer
-    SourceNode 127C23E5-DC42-49FF-AF95-7253AF1776FA
-    TargetNode C4AED1B3-6CA4-4A45-B8DD-82DED5A6A586
-    SourcePort 540018E2-D2E1-4502-9FF1-48E646D16983
-    TargetPort 4B3839B0-54CD-43D0-9F70-E45FAD9EBF37
-    NumScreensToPop 0
+	$::DataContainer
+	SourceNode 127C23E5-DC42-49FF-AF95-7253AF1776FA
+	TargetNode C4AED1B3-6CA4-4A45-B8DD-82DED5A6A586
+	SourcePort 540018E2-D2E1-4502-9FF1-48E646D16983
+	TargetPort 4B3839B0-54CD-43D0-9F70-E45FAD9EBF37
+	NumScreensToPop 0
 UINodeConnection 1CE88A9D-8C8F-4568-A05B-4F88EAFC0633
-    $::DataContainer
-    SourceNode E986855A-F70F-41BE-81D7-6B91D230456D
-    TargetNode 9A517DC7-853D-4CBC-8CF8-6689752F2259
-    SourcePort 01D4FCA8-1456-4D7B-B8FF-DA12DB8661F7
-    TargetPort 150F8872-8F93-4116-A0C2-C79FADC40039
-    NumScreensToPop 0
+	$::DataContainer
+	SourceNode E986855A-F70F-41BE-81D7-6B91D230456D
+	TargetNode 9A517DC7-853D-4CBC-8CF8-6689752F2259
+	SourcePort 01D4FCA8-1456-4D7B-B8FF-DA12DB8661F7
+	TargetPort 150F8872-8F93-4116-A0C2-C79FADC40039
+	NumScreensToPop 0
 UINodePort F5E92796-5C55-4DC7-B625-CB0DCC4E492B
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort DD631697-C160-4893-B4F2-355CB5BCDFFA
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 6353B66B-FA23-4E81-957A-A33AA4C903BB
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 150F8872-8F93-4116-A0C2-C79FADC40039
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 540018E2-D2E1-4502-9FF1-48E646D16983
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 8F302A9B-74F9-4431-9F8F-3942321FA1A9
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 0E41EBAC-582D-4430-89CE-5DF8C80DFAD7
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort FE00797B-04A9-45EA-85EF-B7104A9D35D9
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 4B3839B0-54CD-43D0-9F70-E45FAD9EBF37
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 28F95FAD-7EAF-46EA-863C-A4D9A4D96FF7
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort C92C998A-0DC4-4186-8502-A19E9B1C6710
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 0DCFC973-F6B7-4056-A6C6-E52A8AC0426A
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 0C4ADA8F-B83F-4493-8A74-5B3705C4FECC
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 70FCBB33-FF73-4B9E-B347-B09C826A82D5
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 11BA19E6-16CD-4FC8-80A0-8AB9FD7EC1EE
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False
 UINodePort 01D4FCA8-1456-4D7B-B8FF-DA12DB8661F7
-    $::DataContainer
-    Name *nullString*
-    InstanceName *nullString*
-    Query UIWidgetEventID_None
-    AllowManualRemove False
+	$::DataContainer
+	Name 
+	InstanceName 
+	Query UIWidgetEventID_None
+	AllowManualRemove False

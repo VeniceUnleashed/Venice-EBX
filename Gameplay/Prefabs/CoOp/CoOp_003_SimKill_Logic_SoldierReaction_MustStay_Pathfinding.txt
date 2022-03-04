@@ -1,159 +1,159 @@
 Partition 33AA6449-1249-409A-BDA6-7F3D82B36FA6
 AnimationSignalEntityData ACA1D6BB-3546-4EF1-AD72-9B0B5118AB9E
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 0
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 1
-    Realm Realm_Client
-    Signal::AntRef
-        AssetId 357072917
-    IntGameState::AntRef
-        AssetId -1
-    FloatGameState::AntRef
-        AssetId -1
-    ValueInt 0
-    ValueFloat 0.0
-    Reset False
-    Continuous False
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 0
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 1
+	Realm Realm_Client
+	Signal::AntRef
+		AssetId 357072917
+	IntGameState::AntRef
+		AssetId -1
+	FloatGameState::AntRef
+		AssetId -1
+	ValueInt 0
+	ValueFloat 0.0
+	Reset False
+	Continuous False
 EventSplitterEntityData 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
-    $::EntityData
-        $::GameObjectData
-            $::GameDataContainer
-                $::DataContainer
-            IsEventConnectionTarget 1
-            IsPropertyConnectionTarget 3
-            IndexInBlueprint 2
-    RunOnce True
-    Realm Realm_Server
+	$::EntityData
+		$::GameObjectData
+			$::GameDataContainer
+				$::DataContainer
+			IsEventConnectionTarget 1
+			IsPropertyConnectionTarget 3
+			IndexInBlueprint 2
+	RunOnce True
+	Realm Realm_Server
 InterfaceDescriptorData 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-    $::DynamicDataContainer
-        $::DataContainer
-        Fields *nullArray*
-    InputEvents::array
-        member(0)::DynamicEvent
-            Id 1851906734
-        member(1)::DynamicEvent
-            Id 764201467
-    OutputEvents::array
-        member(0)::DynamicEvent
-            Id 1762125924 (OnDestinationReached)
-        member(1)::DynamicEvent
-            Id 1189488771
-        member(2)::DynamicEvent
-            Id 946447544
-    InputLinks *nullArray*
-    OutputLinks::array
-        member(0)::DynamicLink
-            Id -1086273423 (Animatable)
-        member(1)::DynamicLink
-            Id 966302209
-        member(2)::DynamicLink
-            Id 1122649000
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1851906734
+		member(1)::DynamicEvent
+			Id 764201467
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 1762125924 (OnDestinationReached)
+		member(1)::DynamicEvent
+			Id 1189488771
+		member(2)::DynamicEvent
+			Id 946447544
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id -1086273423 (Animatable)
+		member(1)::DynamicLink
+			Id 966302209
+		member(2)::DynamicLink
+			Id 1122649000
 LogicPrefabBlueprint 6EFB2F97-9820-4CC2-8E87-29DCD8A88551 #primary instance
-    $::PrefabBlueprint
-        $::Blueprint
-            $::EntityBusData
-                $::DataBusData
-                    $::Asset
-                        $::DataContainer
-                        Name Gameplay/Prefabs/CoOp/CoOp_003_SimKill_Logic_SoldierReaction_MustStay_Pathfinding
-                    PropertyConnections *nullArray*
-                    LinkConnections::array
-                        member(0)::LinkConnection
-                            Source ACA1D6BB-3546-4EF1-AD72-9B0B5118AB9E
-                            Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-                            SourceFieldId -1086273423 (Animatable)
-                            TargetFieldId -1086273423 (Animatable)
-                        member(1)::LinkConnection
-                            Source 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
-                            Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-                            SourceFieldId -1481696500 (RouteWaypoints)
-                            TargetFieldId 966302209
-                        member(2)::LinkConnection
-                            Source 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
-                            Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-                            SourceFieldId -616190660 (Soldiers)
-                            TargetFieldId 1122649000
-                EventConnections::array
-                    member(0)::EventConnection
-                        Source 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
-                        Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-                        SourceEvent::EventSpec
-                            Id 1762125924 (OnDestinationReached)
-                        TargetEvent::EventSpec
-                            Id 1762125924 (OnDestinationReached)
-                        TargetType EventConnectionTargetType_Server
-                    member(1)::EventConnection
-                        Source 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
-                        Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-                        SourceEvent::EventSpec
-                            Id -137490305 (OnImpulse)
-                        TargetEvent::EventSpec
-                            Id 1189488771
-                        TargetType EventConnectionTargetType_Server
-                    member(2)::EventConnection
-                        Source 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-                        Target 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
-                        SourceEvent::EventSpec
-                            Id 1851906734
-                        TargetEvent::EventSpec
-                            Id 1723395486 (Impulse)
-                        TargetType EventConnectionTargetType_Server
-                    member(3)::EventConnection
-                        Source 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
-                        Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-                        SourceEvent::EventSpec
-                            Id -137490305 (OnImpulse)
-                        TargetEvent::EventSpec
-                            Id 946447544
-                        TargetType EventConnectionTargetType_Server
-                    member(4)::EventConnection
-                        Source 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
-                        Target 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
-                        SourceEvent::EventSpec
-                            Id -137490305 (OnImpulse)
-                        TargetEvent::EventSpec
-                            Id -770075886 (IssueOrder)
-                        TargetType EventConnectionTargetType_Server
-                    member(5)::EventConnection
-                        Source 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-                        Target ACA1D6BB-3546-4EF1-AD72-9B0B5118AB9E
-                        SourceEvent::EventSpec
-                            Id 764201467
-                        TargetEvent::EventSpec
-                            Id 434301581 (SignalTrue)
-                        TargetType EventConnectionTargetType_Client
-                Descriptor 0997E71B-9579-4DF9-B9E7-6F746D58B92B
-                NeedNetworkId False
-                InterfaceHasConnections True
-                AlwaysCreateEntityBusClient False
-                AlwaysCreateEntityBusServer False
-        Objects::array
-            member(0) 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
-            member(1) ACA1D6BB-3546-4EF1-AD72-9B0B5118AB9E
-            member(2) 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Prefabs/CoOp/CoOp_003_SimKill_Logic_SoldierReaction_MustStay_Pathfinding
+					PropertyConnections *nullArray*
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source ACA1D6BB-3546-4EF1-AD72-9B0B5118AB9E
+							Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
+							SourceFieldId -1086273423 (Animatable)
+							TargetFieldId -1086273423 (Animatable)
+						member(1)::LinkConnection
+							Source 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
+							Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
+							SourceFieldId -1481696500 (RouteWaypoints)
+							TargetFieldId 966302209
+						member(2)::LinkConnection
+							Source 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
+							Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
+							SourceFieldId -616190660 (Soldiers)
+							TargetFieldId 1122649000
+				EventConnections::array
+					member(0)::EventConnection
+						Source 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
+						Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
+						SourceEvent::EventSpec
+							Id 1762125924 (OnDestinationReached)
+						TargetEvent::EventSpec
+							Id 1762125924 (OnDestinationReached)
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
+						Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
+						SourceEvent::EventSpec
+							Id -137490305 (OnImpulse)
+						TargetEvent::EventSpec
+							Id 1189488771
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source 0997E71B-9579-4DF9-B9E7-6F746D58B92B
+						Target 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
+						SourceEvent::EventSpec
+							Id 1851906734
+						TargetEvent::EventSpec
+							Id 1723395486 (Impulse)
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
+						Target 0997E71B-9579-4DF9-B9E7-6F746D58B92B
+						SourceEvent::EventSpec
+							Id -137490305 (OnImpulse)
+						TargetEvent::EventSpec
+							Id 946447544
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
+						Target 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
+						SourceEvent::EventSpec
+							Id -137490305 (OnImpulse)
+						TargetEvent::EventSpec
+							Id -770075886 (IssueOrder)
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source 0997E71B-9579-4DF9-B9E7-6F746D58B92B
+						Target ACA1D6BB-3546-4EF1-AD72-9B0B5118AB9E
+						SourceEvent::EventSpec
+							Id 764201467
+						TargetEvent::EventSpec
+							Id 434301581 (SignalTrue)
+						TargetType EventConnectionTargetType_Client
+				Descriptor 0997E71B-9579-4DF9-B9E7-6F746D58B92B
+				NeedNetworkId False
+				InterfaceHasConnections True
+				AlwaysCreateEntityBusClient False
+				AlwaysCreateEntityBusServer False
+		Objects::array
+			member(0) 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
+			member(1) ACA1D6BB-3546-4EF1-AD72-9B0B5118AB9E
+			member(2) 713B24B0-1E7E-472A-8948-70DAF5FA6C0C
 PatrolOrderEntityData 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
-    $::BFOrderEntityData
-        $::OrderEntityData
-            $::EntityData
-                $::GameObjectData
-                    $::GameDataContainer
-                        $::DataContainer
-                    IsEventConnectionTarget 1
-                    IsPropertyConnectionTarget 3
-                    IndexInBlueprint 0
-            DebugName PatrolOrder 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
-            IssueOrderDelay 0.0
-            OnCompleteTimeOut 0.0
-            OnFailedTimeOut 0.0
-            Enabled True
-            ReadinessOnStart RLCombat
-        ForbiddenToFire False
-    TypeOfRoute RouteStop
-    UsePathFinding True
-    CombatMode CombatPatrolMode_MustStayOnPath
-    StartAtGeometricallyClosestWaypoint True
-    StartingWaypoint *nullGuid*
+	$::BFOrderEntityData
+		$::OrderEntityData
+			$::EntityData
+				$::GameObjectData
+					$::GameDataContainer
+						$::DataContainer
+					IsEventConnectionTarget 1
+					IsPropertyConnectionTarget 3
+					IndexInBlueprint 0
+			DebugName PatrolOrder 1CA8446D-7058-4AFE-9EA4-34CDE20DF0CE
+			IssueOrderDelay 0.0
+			OnCompleteTimeOut 0.0
+			OnFailedTimeOut 0.0
+			Enabled True
+			ReadinessOnStart RLCombat
+		ForbiddenToFire False
+	TypeOfRoute RouteStop
+	UsePathFinding True
+	CombatMode CombatPatrolMode_MustStayOnPath
+	StartAtGeometricallyClosestWaypoint True
+	StartingWaypoint *nullGuid*
